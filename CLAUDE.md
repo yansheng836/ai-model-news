@@ -50,6 +50,7 @@ Examples:
 - **参数规模** — total parameters (e.g., 671B)
 - **激活参数** — active parameters for MoE models (e.g., 37B)
 - **上下文长度** — context window (e.g., 128K, 200K, 1M)
+- **状态信息** — 如有暂停、弃用、停用等状态变更，需在版本说明中注明（如 `⚠️ 2026年6月12日起暂停`）
 
 ### README.md timeline table must include columns:
 

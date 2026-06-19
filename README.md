@@ -120,8 +120,8 @@
 | 中国 | 阿里巴巴 | 通义千问 | WebWorld-32B | 📝 | 677K | 未公开 | 2026年5月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3-TTS | 🎤 | — | — | 2026年 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen-Image-Bench | 👁️📝 | 27B | 未公开 | 2026年 |
-| 美国 | Anthropic | Claude | Claude Fable 5（claude-fable-5） | 🌐🖥️ | 未公开 | 1M | 2026年6月9日 |
-| 美国 | Anthropic | Claude | Claude Mythos 5（claude-mythos-5） | 🌐🖥️ | 未公开 | 1M | 2026年6月9日 |
+| 美国 | Anthropic | Claude | Claude Fable 5（claude-fable-5） | 🌐🖥️ | 未公开 | 1M | 2026年6月9日（⚠️ 6月12日起暂停） |
+| 美国 | Anthropic | Claude | Claude Mythos 5（claude-mythos-5） | 🌐🖥️ | 未公开 | 1M | 2026年6月9日（⚠️ 6月12日起暂停） |
 | 美国 | OpenAI | GPT | GPT-5.5（gpt-5.5） | 🌐🧠🖥️ | 未公开 | 1M | 2026年 |
 | 美国 | Google | Gemini | Gemini 3.5 Flash（Stable） | 🌐🧠💻🖥️ | 未公开 | 未公开 | 2026年 |
 | 美国 | Google | Gemini | Gemini 3.1 Pro（Preview） | 🌐🧠💻🖥️ | 未公开 | 未公开 | 2026年 |

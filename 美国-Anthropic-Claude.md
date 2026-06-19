@@ -37,8 +37,8 @@
 | Claude Opus 4.7（claude-opus-4-7） | 2026年初 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking（取代Extended Thinking），新tokenizer |
 | Claude Sonnet 4.6（claude-sonnet-4-6） | 2026年 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Extended Thinking + Adaptive Thinking，$3/$15 MTok |
 | Claude Opus 4.8（claude-opus-4-8） | 2026年 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking，$5/$25 MTok，知识截止2026年1月 |
-| Claude Fable 5（claude-fable-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 最强广泛发布模型，Adaptive Thinking，$10/$50 MTok |
-| Claude Mythos 5（claude-mythos-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 仅限Project Glasswing邀请用户 |
+| Claude Fable 5（claude-fable-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 最强广泛发布模型，Adaptive Thinking，$10/$50 MTok，**⚠️ 2026年6月12日起暂停访问** |
+| Claude Mythos 5（claude-mythos-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 仅限Project Glasswing邀请用户，**⚠️ 2026年6月12日起暂停访问** |
 
 ## 模型详细介绍
 
@@ -74,6 +74,28 @@ Anthropic的第二代模型，支持100K（后扩展至200K）上下文窗口。
 最新一代模型：
 - **Claude Fable 5**（claude-fable-5）：2026年6月9日发布，Anthropic最强大的广泛发布模型。1M上下文，128K最大输出，$10/$50 MTok。支持Adaptive Thinking（始终开启），适用于最复杂的推理和长期自主代理工作。
 - **Claude Mythos 5**（claude-mythos-5）：同日发布，仅通过Project Glasswing提供给受邀客户，用于防御性网络安全工作流。
+
+### ⚠️ Fable 5 和 Mythos 5 暂停事件（2026年6月12日）
+**状态：已暂停访问（Suspended）**
+
+2026年6月12日，美国政府以国家安全为由，发布出口管制指令，要求暂停所有外国人对 Fable 5 和 Mythos 5 的访问。Anthropic 已 comply 并停止了这两个模型的服务。
+
+**事件详情：**
+- **暂停时间**：2026年6月12日 17:21 (ET)
+- **原因**：美国政府发现了一个潜在的越狱(jailbreak)方法，可能绕过模型的安全防护
+- **影响范围**：所有用户（包括美国境内和境外的外国人）
+- **其他模型**：不受影响，Opus 4.8、Sonnet 4.6、Haiku 4.5 等继续正常服务
+
+**Anthropic 的立场：**
+- 已与美国政府、英国 AISI 等机构进行了数千小时的红队测试
+- 未发现通用越狱(universal jailbreak)方法
+- 政府提供的越狱示例是窄范围的(non-universal)，其他模型（如 GPT-5.5）也能实现类似功能
+- 不认同暂停决定，认为这将阻碍所有前沿模型的部署
+- 正在努力恢复访问
+
+**参考链接：**
+- 官方声明：https://anthropic.com/news/fable-mythos-access
+- 状态页面：https://status.anthropic.com/
 
 ### Extended Thinking vs Adaptive Thinking
 - **Extended Thinking**（扩展思考）：Claude 4系列引入的功能，模型在回答前进行内部推理链思考。通过API参数控制是否开启。
