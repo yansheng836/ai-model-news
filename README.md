@@ -6,7 +6,7 @@
 
 同时将所有厂家的大模型的发版时间整理到README.md文档中，一览无遗，需要包括公司所在国家、公司名、大模型名称、版本、发版时间。
 
-> ⚠️ **数据说明**：本项目数据截止至 **2026年6月20日**，通过 `WebFetch` 抓取各厂商官方文档更新。部分厂商数据可能仍有遗漏，欢迎补充更新。
+> ⚠️ **数据说明**：本项目数据截止至 **2026年6月20日**，通过 `WebFetch` 抓取各厂商官方文档更新。已验证更新的厂商包括：Anthropic、OpenAI、Google、xAI、Mistral、DeepSeek、阿里巴巴、Meta、NVIDIA、智谱AI、月之暗面、百度、腾讯、字节跳动、科大讯飞、华为。部分厂商数据可能仍有遗漏，欢迎补充更新。
 
 ## 问题
 
@@ -167,6 +167,19 @@
 | 法国 | Mistral AI | Mistral | Ministral 3（3B/8B/14B） | 📝🌐 | 3B/8B/14B | 未公开 | 2025年12月 |
 | 法国 | Mistral AI | Voxtral | Voxtral TTS | 🎤 | 未公开 | 未公开 | 2026年3月 |
 | 法国 | Mistral AI | OCR | OCR 3 | 👁️ | 未公开 | 未公开 | 2025年12月 |
+| 中国 | 百度 | 文心一言 | ERNIE-5.0 | 🌐🧠 | 未公开 | 119K | 2025-2026年 |
+| 中国 | 百度 | 文心一言 | ERNIE X1.1 Preview | 🧠 | 未公开 | 64K | 2025-2026年 |
+| 中国 | 百度 | 文心一言 | ERNIE 4.5 Turbo | 📝 | 未公开 | 128K | 2025年 |
+| 中国 | 百度 | 文心一言 | ERNIE 4.5 Turbo VL | 👁️📝 | 未公开 | 128K | 2025年 |
+| 中国 | 腾讯 | 混元 | Tencent HY 2.0 Think | 🧠 | 未公开 | 128K | 2025年 |
+| 中国 | 腾讯 | 混元 | Tencent HY 2.0 Instruct | 📝 | 未公开 | 128K | 2025年 |
+| 中国 | 腾讯 | 混元 | Tencent HY Vision 1.5 Instruct | 👁️📝 | 未公开 | 未公开 | 2025年 |
+| 中国 | 字节跳动 | 豆包 | Doubao Seed 2.0 | 🌐🧠 | 未公开 | 未公开 | 2026年2月14日 |
+| 中国 | 字节跳动 | 豆包 | Seedance 2.0 系列 | 🎬 | — | — | 2025-2026年 |
+| 中国 | 字节跳动 | 豆包 | Seedream 4.0-5.0 | 🖼️ | — | — | 2025-2026年 |
+| 中国 | 科大讯飞 | 星火 | 星火V5.0 | 🌐🧠💻 | 未公开 | 未公开 | 2025年 |
+| 中国 | 科大讯飞 | 星火 | 星火深度推理模型 | 🧠 | 未公开 | 未公开 | 2025年 |
+| 中国 | 华为 | 盘古 | 盘古大模型5.0 | 🌐🧠🔮🔬 | 未公开 | 未公开 | 2025年 |
 | 中国 | 阿里巴巴 | 通义千问 | qwen3.7-max | 🌐🧠💻 | 未公开 | 未公开 | 2026年 |
 | 中国 | 阿里巴巴 | 通义千问 | qwen3.5-omni-plus | 🌐🎤 | 未公开 | 未公开 | 2026年 |
 | 中国 | 阿里巴巴 | 通义千问 | qwen-image-2.0-pro | 🖼️ | — | — | 2026年 |
@@ -181,7 +194,7 @@
 | 美国 | Anthropic | Claude | Claude Haiku 4.5（claude-haiku-4-5-20251001） | 🌐🧠 | 未公开 | 200K | 2025年10月1日 |
 | 美国 | Anthropic | Claude | Claude Opus 4.5（claude-opus-4-5-20251101） | 🌐🧠🖥️ | 未公开 | 200K | 2025年11月1日 |
 | 美国 | Anthropic | Claude | Claude Sonnet 4.5（claude-sonnet-4-5-20250929） | 🌐🧠🖥️ | 未公开 | 200K | 2025年9月29日 |
-| 美国 | Anthropic | Claude | Claude Opus 4.1（claude-opus-4-1-20250805） | 🌐🧠🖥️ | 未公开 | 200K | 2025年8月5日 |
+| 美国 | Anthropic | Claude | Claude Opus 4.1（claude-opus-4-1-20250805） | 🌐🧠🖥️ | 未公开 | 200K | 2025年8月5日（⏰ 2026/8/5退役） |
 | 美国 | Anthropic | Claude | Claude Opus 4.6（claude-opus-4-6） | 🌐🧠🖥️ | 未公开 | 1M | 2025年底 |
 | 美国 | Anthropic | Claude | Claude Sonnet 4.6（claude-sonnet-4-6） | 🌐🧠🖥️ | 未公开 | 1M | 2026年 |
 | 美国 | Anthropic | Claude | Claude Opus 4.7（claude-opus-4-7） | 🌐🖥️ | 未公开 | 1M | 2026年初 |
