@@ -29,7 +29,16 @@
 | Claude 3.5 Haiku（claude-3-5-haiku-20241022） | 2024年10月22日 | 🌐 多模态 | 未公开 | 200K | 轻量版升级 |
 | Claude 4 Sonnet（claude-sonnet-4-20250514） | 2025年5月14日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 编程能力大幅提升 |
 | Claude 4 Opus（claude-opus-4-20250514） | 2025年5月14日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 最强下一代模型 |
-| Claude Haiku 4.5 | 2025年 | 🌐 多模态 | 未公开 | 200K | 新一代轻量模型 |
+| Claude Haiku 4.5（claude-haiku-4-5-20251001） | 2025年10月1日 | 🌐🧠 多模态+推理 | 未公开 | 200K | 支持Extended Thinking，知识截止2025年2月 |
+| Claude Opus 4.1（claude-opus-4-1-20250805） | 2025年8月5日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，定价$15/$75 MTok |
+| Claude Sonnet 4.5（claude-sonnet-4-5-20250929） | 2025年9月29日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，$3/$15 MTok |
+| Claude Opus 4.5（claude-opus-4-5-20251101） | 2025年11月1日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，知识截止2025年5月 |
+| Claude Opus 4.6（claude-opus-4-6） | 2025年底 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Extended Thinking，上下文提升至1M |
+| Claude Opus 4.7（claude-opus-4-7） | 2026年初 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking（取代Extended Thinking），新tokenizer |
+| Claude Sonnet 4.6（claude-sonnet-4-6） | 2026年 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Extended Thinking + Adaptive Thinking，$3/$15 MTok |
+| Claude Opus 4.8（claude-opus-4-8） | 2026年 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking，$5/$25 MTok，知识截止2026年1月 |
+| Claude Fable 5（claude-fable-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 最强广泛发布模型，Adaptive Thinking，$10/$50 MTok |
+| Claude Mythos 5（claude-mythos-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 仅限Project Glasswing邀请用户 |
 
 ## 模型详细介绍
 
@@ -47,8 +56,44 @@ Anthropic的第二代模型，支持100K（后扩展至200K）上下文窗口。
 ### Claude 3.5 Sonnet
 在发布时超越了Claude 3 Opus的性能，同时成本仅为1/5。v2版本新增Computer Use能力，可以操作桌面应用程序（移动鼠标、点击按钮、输入文字等）。
 
-### Claude 4系列
+### Claude 4系列（2025年5月）
 下一代模型家族。Sonnet 4在编程能力上大幅提升，成为编程竞赛中的顶级模型。Opus 4是最强版本，在复杂推理、多步骤任务上表现出色。两个版本均支持Computer Use。
+
+### Claude 4.x 系列（2025年下半年 - 2026年上半年）
+快速迭代的模型家族：
+- **Opus 4.1**（2025年8月）：首个定价$15/$75 MTok的高端模型，支持Extended Thinking
+- **Haiku 4.5**（2025年10月）：新一代轻量模型，$1/$5 MTok，支持Extended Thinking
+- **Sonnet 4.5**（2025年9月）：性能与成本的最佳平衡，$3/$15 MTok
+- **Opus 4.5**（2025年11月）：知识截止2025年5月，支持Extended Thinking
+- **Opus 4.6**（2025年底）：上下文窗口从200K提升至1M
+- **Opus 4.7**（2026年初）：引入Adaptive Thinking（自适应思考，取代固定Extended Thinking），新tokenizer（相同文本产生约30%更多token）
+- **Sonnet 4.6**（2026年）：同时支持Extended Thinking和Adaptive Thinking
+- **Opus 4.8**（2026年）：当前最强Opus模型，知识截止2026年1月，effort参数默认为high
+
+### Claude 5系列（2026年6月）
+最新一代模型：
+- **Claude Fable 5**（claude-fable-5）：2026年6月9日发布，Anthropic最强大的广泛发布模型。1M上下文，128K最大输出，$10/$50 MTok。支持Adaptive Thinking（始终开启），适用于最复杂的推理和长期自主代理工作。
+- **Claude Mythos 5**（claude-mythos-5）：同日发布，仅通过Project Glasswing提供给受邀客户，用于防御性网络安全工作流。
+
+### Extended Thinking vs Adaptive Thinking
+- **Extended Thinking**（扩展思考）：Claude 4系列引入的功能，模型在回答前进行内部推理链思考。通过API参数控制是否开启。
+- **Adaptive Thinking**（自适应思考）：从Claude Opus 4.7开始引入，模型根据任务复杂度自动调整思考深度，始终开启。比Extended Thinking更高效，不需要手动控制。
 
 ### Constitutional AI（宪法AI）
 Anthropic的核心训练方法，通过一组"宪法"原则指导模型行为，让模型自我评估和改进回答，减少有害输出。
+
+### 定价体系（当前模型）
+
+| 模型 | 输入价格 ($/MTok) | 输出价格 ($/MTok) |
+|------|-------------------|-------------------|
+| Claude Fable 5 | $10 | $50 |
+| Claude Opus 4.8 | $5 | $25 |
+| Claude Opus 4.7 | $5 | $25 |
+| Claude Opus 4.6 | $5 | $25 |
+| Claude Sonnet 4.6 | $3 | $15 |
+| Claude Haiku 4.5 | $1 | $5 |
+
+### 模型命名规则
+- Claude 4.6代及之后：无日期格式的模型ID（如 `claude-opus-4-6`），是固定快照
+- Claude 4.6代之前：带日期的模型ID（如 `claude-3-5-sonnet-20241022`），alias指向最新版本
+- 所有模型ID都是固定快照，alias在4.6代之前是便捷指针

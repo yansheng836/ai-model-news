@@ -75,3 +75,45 @@ Examples:
 - When adding a new company, also add its release entries to the timeline table in `README.md`.
 - Keep data up to date — the AI model field iterates very fast.
 - Update the ⚠️ data cutoff notice in README.md when refreshing data.
+
+## Data Update Strategy (数据更新策略)
+
+### Problem
+
+- `WebSearch` tool is unreliable — returns model-generated text instead of real search results.
+- `WebFetch` works for some URLs but many sites block it (403 Forbidden, anti-scraping, auth walls).
+- Solution: use `WebFetch` to access **official API documentation pages** which typically don't have anti-scraping.
+
+### Official Documentation URLs (优先级从高到低)
+
+| Vendor | URL | Status |
+|--------|-----|--------|
+| Anthropic | `https://platform.claude.com/docs/en/docs/about-claude/models` | ✅ Verified - 完整模型列表 |
+| OpenAI | `https://developers.openai.com/api/docs/models` | ✅ Verified - 重定向后可用，获取到GPT-5.5/5.4 |
+| Google Gemini | `https://ai.google.dev/gemini-api/docs/models` | ✅ Verified - 完整模型列表含Gemini 3系列 |
+| Meta Llama | `https://developer.meta.com/ai/docs/overview/` | ⚠️ 内容有限，需GitHub补充 |
+| xAI Grok | `https://docs.x.ai/docs/models` | ✅ Verified - 完整模型列表含Grok 4.3 |
+| Mistral | `https://docs.mistral.ai/getting-started/models/` | ✅ Verified - 完整模型列表含生命周期信息 |
+| DeepSeek | `https://github.com/deepseek-ai/DeepSeek-V3` | ⚠️ GitHub可用但仅V3详情 |
+| 阿里通义千问 | `https://help.aliyun.com/zh/model-studio/getting-started/models` | ⚠️ 高层列表，需补充详情 |
+| Qwen GitHub | `https://github.com/QwenLM/Qwen3` | ✅ Verified - Qwen3完整列表含2507版 |
+| 智谱AI GLM | `https://github.com/THUDM/GLM-4` | ✅ Verified - GLM-4/0414/Z1完整列表 |
+| 月之暗面 Kimi | `https://github.com/MoonshotAI/Kimi-VL` | ✅ Verified - Kimi-VL系列 |
+
+### Update Procedure
+
+1. Use `WebFetch` to access the official documentation URL for each vendor
+2. Parse the model list, extract: model name, API ID, release date, context window, pricing, capabilities
+3. Update the per-company markdown file with new models
+4. Add new entries to the README.md timeline table
+5. Update the ⚠️ data cutoff notice in README.md
+6. If `WebFetch` fails for a vendor, try alternative URLs (GitHub repos, blog posts, Wikipedia)
+7. Mark URL status in the table above after verification
+
+### Fallback Strategy
+
+If official docs are inaccessible:
+1. Try the vendor's GitHub repository (releases/README)
+2. Try Wikipedia pages for the model family
+3. Try tech news sites (Ars Technica, The Verge, etc.)
+4. Document what was tried and why it failed
