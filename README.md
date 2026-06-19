@@ -8,6 +8,26 @@
 
 > ⚠️ **数据说明**：本项目数据截止至 **2025年5月**，2025年5月之后发布的模型版本尚未收录。各厂商模型迭代频繁，如有遗漏或错误，欢迎补充更新。
 
+## 问题
+
+我发现了一些问题：
+
+1.消息严重滞后，今天是 2026年6月20日，但是最新版的大模型时间是
+  2025年5-6月，需要搜索新闻进行内容更新，大模型迭代非常快。
+
+2.需要精确到 具体模型的版本，比如
+  Claude 4 Opus，这个就太笼统了，需要精确到 Claude 4 Opus 4.7
+  这样。
+
+3.需要特别注明模型的功能属性，比如
+  多模型、纯文本模型、文生图、文生视屏、试图、语音模型等。
+
+4.需要注明 模型的参数，启动参数，上下文长度。
+
+5.文档命名规则：国家-公司-该公司经典大模型名称.md，例如：中国-深度求索-DeepSeek.md
+
+6.各个文档里面，除了总览，还需要有该模型的具体的介绍。
+
 ## 功能属性图例
 
 | 图例 | 含义 |
@@ -26,25 +46,25 @@
 
 | 厂家 | 文件 | 国家 |
 |------|------|------|
-| OpenAI | [openai.md](openai.md) | 美国 |
-| Google DeepMind | [google.md](google.md) | 美国 |
-| Anthropic | [anthropic.md](anthropic.md) | 美国 |
-| Meta | [meta.md](meta.md) | 美国 |
-| Mistral AI | [mistral.md](mistral.md) | 法国 |
-| xAI | [xai.md](xai.md) | 美国 |
-| 百度 | [baidu.md](baidu.md) | 中国 |
-| 阿里巴巴 | [alibaba.md](alibaba.md) | 中国 |
-| 字节跳动 | [bytedance.md](bytedance.md) | 中国 |
-| 腾讯 | [tencent.md](tencent.md) | 中国 |
-| 华为 | [huawei.md](huawei.md) | 中国 |
-| 小米 | [xiaomi.md](xiaomi.md) | 中国 |
-| 科大讯飞 | [iflytek.md](iflytek.md) | 中国 |
-| DeepSeek（深度求索） | [deepseek.md](deepseek.md) | 中国 |
-| 智谱AI | [zhipu.md](zhipu.md) | 中国 |
-| 月之暗面 | [moonshot.md](moonshot.md) | 中国 |
-| 零一万物 | [lingyiwanwu.md](lingyiwanwu.md) | 中国 |
-| MiniMax | [minimax.md](minimax.md) | 中国 |
-| 百川智能 | [baichuan.md](baichuan.md) | 中国 |
+| OpenAI | [美国-OpenAI-GPT.md](美国-OpenAI-GPT.md) | 美国 |
+| Google DeepMind | [美国-Google-Gemini.md](美国-Google-Gemini.md) | 美国 |
+| Anthropic | [美国-Anthropic-Claude.md](美国-Anthropic-Claude.md) | 美国 |
+| Meta | [美国-Meta-Llama.md](美国-Meta-Llama.md) | 美国 |
+| Mistral AI | [法国-Mistral-Mistral.md](法国-Mistral-Mistral.md) | 法国 |
+| xAI | [美国-xAI-Grok.md](美国-xAI-Grok.md) | 美国 |
+| 百度 | [中国-百度-文心.md](中国-百度-文心.md) | 中国 |
+| 阿里巴巴 | [中国-阿里巴巴-通义千问.md](中国-阿里巴巴-通义千问.md) | 中国 |
+| 字节跳动 | [中国-字节跳动-豆包.md](中国-字节跳动-豆包.md) | 中国 |
+| 腾讯 | [中国-腾讯-混元.md](中国-腾讯-混元.md) | 中国 |
+| 华为 | [中国-华为-盘古.md](中国-华为-盘古.md) | 中国 |
+| 小米 | [中国-小米-MiLM.md](中国-小米-MiLM.md) | 中国 |
+| 科大讯飞 | [中国-科大讯飞-星火.md](中国-科大讯飞-星火.md) | 中国 |
+| DeepSeek（深度求索） | [中国-深度求索-DeepSeek.md](中国-深度求索-DeepSeek.md) | 中国 |
+| 智谱AI | [中国-智谱AI-GLM.md](中国-智谱AI-GLM.md) | 中国 |
+| 月之暗面 | [中国-月之暗面-Kimi.md](中国-月之暗面-Kimi.md) | 中国 |
+| 零一万物 | [中国-零一万物-Yi.md](中国-零一万物-Yi.md) | 中国 |
+| MiniMax | [中国-MiniMax-abab.md](中国-MiniMax-abab.md) | 中国 |
+| 百川智能 | [中国-百川智能-Baichuan.md](中国-百川智能-Baichuan.md) | 中国 |
 
 ## 大模型发版时间线总览
 
