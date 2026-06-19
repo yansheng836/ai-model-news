@@ -87,19 +87,33 @@ Examples:
 
 ### Official Documentation URLs (优先级从高到低)
 
-| Vendor | URL | Status |
-|--------|-----|--------|
-| Anthropic | `https://platform.claude.com/docs/en/docs/about-claude/models` | ✅ Verified - 完整模型列表 |
-| OpenAI | `https://developers.openai.com/api/docs/models` | ✅ Verified - 重定向后可用，获取到GPT-5.5/5.4 |
-| Google Gemini | `https://ai.google.dev/gemini-api/docs/models` | ✅ Verified - 完整模型列表含Gemini 3系列 |
-| Meta Llama | `https://developer.meta.com/ai/docs/overview/` | ⚠️ 内容有限，需GitHub补充 |
-| xAI Grok | `https://docs.x.ai/docs/models` | ✅ Verified - 完整模型列表含Grok 4.3 |
-| Mistral | `https://docs.mistral.ai/getting-started/models/` | ✅ Verified - 完整模型列表含生命周期信息 |
-| DeepSeek | `https://github.com/deepseek-ai/DeepSeek-V3` | ⚠️ GitHub可用但仅V3详情 |
-| 阿里通义千问 | `https://help.aliyun.com/zh/model-studio/getting-started/models` | ⚠️ 高层列表，需补充详情 |
-| Qwen GitHub | `https://github.com/QwenLM/Qwen3` | ✅ Verified - Qwen3完整列表含2507版 |
-| 智谱AI GLM | `https://github.com/THUDM/GLM-4` | ✅ Verified - GLM-4/0414/Z1完整列表 |
-| 月之暗面 Kimi | `https://github.com/MoonshotAI/Kimi-VL` | ✅ Verified - Kimi-VL系列 |
+| Vendor | URL | Status | 备注 |
+|--------|-----|--------|------|
+| **Anthropic** | `https://platform.claude.com/docs/en/docs/about-claude/models` | ✅ Verified | 完整模型列表，含定价、上下文、弃用信息 |
+| **OpenAI** | `https://developers.openai.com/api/docs/models` | ✅ Verified | 重定向后可用，含GPT-5.5/5.4/o系列 |
+| **Google Gemini** | `https://ai.google.dev/gemini-api/docs/models` | ✅ Verified | 完整模型列表含Gemini 3系列、Veo、Lyria |
+| **xAI Grok** | `https://docs.x.ai/docs/models` | ✅ Verified | 完整模型列表含grok-4.3、图像/视频/语音模型 |
+| **Mistral** | `https://docs.mistral.ai/getting-started/models/` | ✅ Verified | 完整模型列表含生命周期（弃用/退役日期） |
+| **Meta Llama** | `https://huggingface.co/meta-llama` | ✅ Verified | HuggingFace页面比developer.meta.com更完整 |
+| **DeepSeek** | `https://github.com/deepseek-ai/DeepSeek-V3` | ⚠️ GitHub可用 | 仅V3详情，V4信息需从README时间线推断 |
+| **Qwen（阿里）** | `https://github.com/QwenLM/Qwen3` | ✅ Verified | Qwen3完整列表含2507版，Apache 2.0 |
+| **智谱AI GLM** | `https://github.com/THUDM/GLM-4` | ✅ Verified | GLM-4/0414/Z1完整列表，含基准分数 |
+| **月之暗面 Kimi** | `https://github.com/MoonshotAI/Kimi-VL` | ✅ Verified | Kimi-VL-A3B系列，含Thinking/Instruct版 |
+| **百度文心** | `https://cloud.baidu.com/product-s/qianfan_home` | ✅ Verified | 千帆平台首页，含ERNIE 5.0/X1.1/4.5 Turbo |
+| **腾讯混元** | `https://cloud.tencent.com/document/product/1729/97731` | ✅ Verified | 定价页含HY 2.0、T1、TurboS等模型列表 |
+| **字节豆包** | `https://en.wikipedia.org/wiki/Doubao` | ⚠️ Wikipedia | 官方文档JS渲染无法抓取，Wikipedia有基本信息 |
+| **科大讯飞星火** | `https://xinghuo.xfyun.cn/desk` | ❌ 无法抓取 | 页面JS渲染，无有效内容 |
+| **NVIDIA Nemotron** | `https://huggingface.co/nvidia` | ✅ Verified | HuggingFace含完整Nemotron/Cosmos/GR00T系列 |
+| **MiniMax** | — | ⚠️ 待补充 | 官方文档地址待确认 |
+| **百川智能** | — | ⚠️ 待补充 | 官方文档地址待确认 |
+
+### 备用数据源（当官方文档不可用时）
+
+| 数据源 | URL | 适用场景 |
+|--------|-----|----------|
+| **HuggingFace** | `https://huggingface.co/{org}` | 开源模型列表、参数、架构 |
+| **Wikipedia** | `https://en.wikipedia.org/wiki/{Model}` | 模型历史、发布时间、用户规模 |
+| **GitHub** | `https://github.com/{org}/{repo}` | 模型详情、基准分数、训练数据 |
 
 ### Update Procedure
 
@@ -115,6 +129,14 @@ Examples:
 
 If official docs are inaccessible:
 1. Try the vendor's GitHub repository (releases/README)
-2. Try Wikipedia pages for the model family
-3. Try tech news sites (Ars Technica, The Verge, etc.)
-4. Document what was tried and why it failed
+2. Try HuggingFace organization page (`https://huggingface.co/{org}`)
+3. Try Wikipedia pages for the model family
+4. Try tech news sites (Ars Technica, The Verge, etc.)
+5. Document what was tried and why it failed
+
+### 已知限制
+
+- **JS渲染页面**：火山引擎（字节跳动）、科大讯飞等使用JS动态渲染，WebFetch无法获取内容
+- **认证墙**：部分厂商文档需要登录才能访问（如阿里云、腾讯云部分页面）
+- **反爬虫**：部分网站返回403或需要特殊headers
+- **解决方案**：优先使用GitHub/HuggingFace/Wikipedia等开放平台
