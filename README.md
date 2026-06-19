@@ -99,6 +99,7 @@
 | 零一万物 | [中国-零一万物-Yi.md](中国-零一万物-Yi.md) | 中国 |
 | MiniMax | [中国-MiniMax-abab.md](中国-MiniMax-abab.md) | 中国 |
 | 百川智能 | [中国-百川智能-Baichuan.md](中国-百川智能-Baichuan.md) | 中国 |
+| 商汤科技 | [中国-商汤科技-日日新.md](中国-商汤科技-日日新.md) | 中国 |
 
 ## 大模型发版时间线总览
 
@@ -106,6 +107,12 @@
 
 | 国家 | 公司名 | 大模型名称 | 版本 | 功能属性 | 参数规模 | 上下文 | 发版时间 |
 |------|--------|-----------|------|----------|----------|--------|----------|
+| 中国 | 商汤科技 | 日日新 | ConsistCompose-BAGEL-7B-MoT | 🌐 | 15B MoE | 未公开 | 2026年6月 |
+| 中国 | 商汤科技 | 日日新 | SenseNova-U1-8B-MoT-Interleaved | 🌐 | 18B MoE | 未公开 | 2026年6月 |
+| 中国 | 商汤科技 | 日日新 | SenseNova-U1-8B-MoT | 🌐 | 18B MoE | 未公开 | 2025年5月 |
+| 中国 | 商汤科技 | 日日新 | SenseNova-U1-A3B-MoT | 🌐 | 39B MoE | 未公开 | 2025年5月 |
+| 中国 | 商汤科技 | 日日新 | SenseNova-SI-1.5-8B | 👁️📝 | 8B | 未公开 | 2025年5月 |
+| 中国 | 商汤科技 | 日日新 | SenseNova-SI-1.3-Qwen3-VL-8B | 👁️📝 | 9B | 未公开 | 2025年4月 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro | 📝 | 862B MoE | 未公开 | 2026年 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Flash | 📝 | 158B MoE | 未公开 | 2026年 |
 | 中国 | DeepSeek | DeepSeek | deepseek-chat | 📝 | — | — | ⏰ 2026/7/24弃用 |
