@@ -85,6 +85,7 @@
 | Meta | [美国-Meta-Llama.md](美国-Meta-Llama.md) | 美国 |
 | Mistral AI | [法国-Mistral-Mistral.md](法国-Mistral-Mistral.md) | 法国 |
 | xAI | [美国-xAI-Grok.md](美国-xAI-Grok.md) | 美国 |
+| NVIDIA | [美国-NVIDIA-Nemotron.md](美国-NVIDIA-Nemotron.md) | 美国 |
 | 百度 | [中国-百度-文心.md](中国-百度-文心.md) | 中国 |
 | 阿里巴巴 | [中国-阿里巴巴-通义千问.md](中国-阿里巴巴-通义千问.md) | 中国 |
 | 字节跳动 | [中国-字节跳动-豆包.md](中国-字节跳动-豆包.md) | 中国 |
@@ -134,6 +135,25 @@
 | 美国 | xAI | Grok | grok-4.20（推理/非推理/多代理） | 🧠🌐💻 | 未公开 | 1M | 2026年3月9日 |
 | 美国 | xAI | Grok | 旧版Grok模型 | 📝 | — | — | 🔄 2026年5月15日退役 |
 | 美国 | xAI | Grok | grok-imagine-video-1.5 | 🎬 | — | — | 2026年 |
+| 美国 | NVIDIA | Nemotron | Cosmos 3 | 🌐🤖 | 未公开 | 未公开 | 2026年6月 |
+| 美国 | NVIDIA | Nemotron | Nemotron 3.5 Content Safety | 📝🌐 | 4B | 未公开 | 2026年6月 |
+| 美国 | NVIDIA | Nemotron | Nemotron 3.5 ASR | 🎤 | 未公开 | 未公开 | 2026年6月 |
+| 美国 | NVIDIA | Nemotron | Diffusion Language Models | 📝 | 未公开 | 未公开 | 2026年6月 |
+| 美国 | NVIDIA | Nemotron | Nemotron 3 Ultra（550B/55B） | 📝🧠 | 550B MoE/55B激活 | 1M | 2026年 |
+| 美国 | NVIDIA | Nemotron | Nemotron 3 Super（120B/12B） | 📝🧠 | 120B MoE/12B激活 | 1M | 2026年 |
+| 美国 | NVIDIA | Nemotron | Nemotron 3 Nano Omni | 🌐🎤 | 未公开 | 1M | 2026年4月 |
+| 美国 | NVIDIA | Nemotron | Isaac GR00T N1.7 | 🤖 | 未公开 | 未公开 | 2026年4月 |
+| 美国 | NVIDIA | Nemotron | Nemotron 3 Nano 4B | 📝🧠 | 4B | 未公开 | 2026年3月 |
+| 美国 | NVIDIA | Nemotron | Cosmos Reason 2 | 🧠🤖 | 未公开 | 未公开 | 2026年1月 |
+| 美国 | NVIDIA | Nemotron | Cosmos Policy | 🤖 | 未公开 | 未公开 | 2026年1月 |
+| 美国 | NVIDIA | Nemotron | Earth-2 | 🌐 | 未公开 | 未公开 | 2026年1月 |
+| 美国 | NVIDIA | Nemotron | Llama Nemotron RAG | 📝 | 未公开 | 未公开 | 2026年1月 |
+| 美国 | NVIDIA | Nemotron | Llama-Embed-Nemotron-8B | 📝 | 8B | — | 2025年10月 |
+| 美国 | NVIDIA | Nemotron | Cosmos Predict 2.5 / Transfer 2.5 | 🌐🤖 | 未公开 | 未公开 | 2025年10月 |
+| 美国 | NVIDIA | Nemotron | OpenReasoning-Nemotron | 🧠 | 未公开 | 未公开 | 2025年7月 |
+| 美国 | NVIDIA | Nemotron | Llama Nemotron Nano VLM | 👁️📝 | 未公开 | 未公开 | 2025年6月 |
+| 美国 | NVIDIA | Nemotron | Llama Nemotron Nano 4B | 📝🧠 | 4B | 未公开 | 2025年6月 |
+| 美国 | NVIDIA | Nemotron | Nemotron 3 Nano（30B/3B） | 📝🧠 | 30B MoE/3B激活 | 1M | 2025年12月 |
 | 法国 | Mistral AI | Mistral | Mistral Medium 3.5 | 🌐🧠💻🖥️ | 未公开 | 未公开 | 2026年4月 |
 | 法国 | Mistral AI | Mistral | Mistral Small 4 | 📝🧠💻 | 未公开 | 未公开 | 2026年3月 |
 | 法国 | Mistral AI | Mistral | Mistral Large 3 | 🌐 | 未公开 | 未公开 | 2025年12月 |
