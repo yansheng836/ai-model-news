@@ -10,20 +10,23 @@
 | 创始人 | Dario Amodei、Daniela Amodei（前OpenAI成员） |
 | 定位 | AI安全研究，打造安全可靠的AI系统 |
 
+> **功能属性图例**：📝 纯文本 | 🌐 多模态（文本+图像） | 👁️ 视觉理解 | 🧠 推理 | 💻 代码 | 🖥️ 计算机操作
+
 ## 大模型产品
 
 ### Claude 系列
 
-| 版本 | 发布时间 | 主要特点 |
-|------|----------|----------|
-| Claude 1 | 2023年初 | 首个版本，注重安全和有用性 |
-| Claude 2 | 2023年7月 | 性能提升，100K上下文窗口 |
-| Claude Instant 1.2 | 2023年中 | 快速轻量版 |
-| Claude 3 Haiku | 2024年3月 | 最快最经济，适合高并发场景 |
-| Claude 3 Sonnet | 2024年3月 | 速度与智能的平衡 |
-| Claude 3 Opus | 2024年3月 | 最强能力版本 |
-| Claude 3.5 Sonnet | 2024年6月 | 多项基准超越 Claude 3 Opus，成本更低 |
-| Claude 3.5 Sonnet（更新版） | 2024年10月 | 支持 Computer Use（计算机操作） |
-| Claude 3.5 Haiku | 2024年10-11月 | 轻量版升级 |
-| Claude 4 Sonnet | 2025年5-6月 | 下一代模型 |
-| Claude 4 Opus | 2025年 | 最强下一代模型 |
+| 版本 | 发布时间 | 功能属性 | 主要特点 |
+|------|----------|----------|----------|
+| Claude 1（claude-1.0） | 2023年3月 | 📝 纯文本 | 首个版本，100K上下文 |
+| Claude 2（claude-2.0/2.1） | 2023年7月/11月 | 📝 纯文本 | 性能提升，200K上下文 |
+| Claude Instant 1.2 | 2023年中 | 📝 纯文本 | 快速轻量版 |
+| Claude 3 Haiku（claude-3-haiku-20240307） | 2024年3月4日 | 🌐 多模态 | 最快最经济，200K上下文 |
+| Claude 3 Sonnet（claude-3-sonnet-20240229） | 2024年3月4日 | 🌐 多模态 | 速度与智能平衡 |
+| Claude 3 Opus（claude-3-opus-20240229） | 2024年3月4日 | 🌐 多模态 | 最强能力版本，200K上下文 |
+| Claude 3.5 Sonnet（claude-3-5-sonnet-20240620） | 2024年6月20日 | 🌐 多模态 | 多项基准超越Claude 3 Opus，成本更低 |
+| Claude 3.5 Sonnet v2（claude-3-5-sonnet-20241022） | 2024年10月22日 | 🌐 多模态🖥️ 计算机操作 | 支持Computer Use，可操作桌面应用 |
+| Claude 3.5 Haiku（claude-3-5-haiku-20241022） | 2024年10月22日 | 🌐 多模态 | 轻量版升级 |
+| Claude 4 Sonnet（claude-sonnet-4-20250514） | 2025年5月14日 | 🌐 多模态🖥️ 计算机操作 | 下一代模型，编程能力大幅提升 |
+| Claude 4 Opus（claude-opus-4-20250514） | 2025年5月14日 | 🌐 多模态🖥️ 计算机操作 | 最强下一代模型 |
+| Claude Haiku 4.5 | 2025年 | 🌐 多模态 | 新一代轻量模型 |
