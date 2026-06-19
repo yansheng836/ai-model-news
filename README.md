@@ -107,6 +107,8 @@
 |------|--------|-----------|------|----------|----------|--------|----------|
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro | 📝 | 862B MoE | 未公开 | 2026年 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Flash | 📝 | 158B MoE | 未公开 | 2026年 |
+| 中国 | DeepSeek | DeepSeek | deepseek-chat | 📝 | — | — | ⏰ 2026/7/24弃用 |
+| 中国 | DeepSeek | DeepSeek | deepseek-reasoner | 🧠 | — | — | ⏰ 2026/7/24弃用 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro-Base | 📝 | 1.6T MoE | 未公开 | 2026年4月 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Flash-Base | 📝 | 292B MoE | 未公开 | 2026年4月 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-OCR-2 | 👁️📝 | 3B | — | 2026年2月 |
@@ -130,6 +132,7 @@
 | 美国 | Google | Lyria | Lyria 3 Pro（Preview） | 🎵 | — | — | 2026年 |
 | 美国 | xAI | Grok | grok-4.3 | 🌐🧠💻 | 未公开 | 1M | 2026年 |
 | 美国 | xAI | Grok | grok-4.20（推理/非推理/多代理） | 🧠🌐💻 | 未公开 | 1M | 2026年3月9日 |
+| 美国 | xAI | Grok | 旧版Grok模型 | 📝 | — | — | 🔄 2026年5月15日退役 |
 | 美国 | xAI | Grok | grok-imagine-video-1.5 | 🎬 | — | — | 2026年 |
 | 法国 | Mistral AI | Mistral | Mistral Medium 3.5 | 🌐🧠💻🖥️ | 未公开 | 未公开 | 2026年4月 |
 | 法国 | Mistral AI | Mistral | Mistral Small 4 | 📝🧠💻 | 未公开 | 未公开 | 2026年3月 |

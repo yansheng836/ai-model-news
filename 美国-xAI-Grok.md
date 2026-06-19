@@ -74,6 +74,11 @@ xAI在图像和视频生成领域布局：
 - 追加日期（如 `-0309`）锁定特定版本
 - Grok 3和Grok 4的知识截止均为2024年11月
 
+### ⚠️ 模型退役通知
+- **2026年5月15日**：xAI进行了模型退役(Model Retirement)，旧版Grok模型已停止服务
+- 用户需迁移到 Grok 4.3 或 Grok Build 0.1
+- 详见官方迁移指南：https://docs.x.ai/docs/guides/model-retirement-on-may-15
+
 ### 定价体系（当前模型）
 
 | 模型 | 输入价格 ($/MTok) | 输出价格 ($/MTok) | 上下文 |
