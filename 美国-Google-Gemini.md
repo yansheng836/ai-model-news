@@ -32,11 +32,11 @@
 | Gemini 2.5 Flash TTS | 2025年 | 🎤 语音合成 | 未公开 | 未公开 | 可控文本转语音 |
 | Gemini 2.5 Pro TTS | 2025年 | 🎤 语音合成 | 未公开 | 未公开 | 高保真播客/有声书语音合成 |
 | Gemini 3 Flash | 2026年（Preview） | 🌐🧠 多模态+推理 | 未公开 | 未公开 | 前沿性能，成本更低 |
-| Gemini 3.1 Flash-Lite | 2026年 | 🌐🧠 多模态+推理 | 未公开 | 未公开 | 成本优化前沿模型（已关闭Preview） |
-| Gemini 3.1 Pro | 2026年（Preview） | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开 | 未公开 | 复杂问题解决、代理编程 |
+| Gemini 3.1 Flash-Lite | 2026年5月19日 | 🌐🧠 多模态+推理 | 未公开 | 未公开 | 成本优化前沿模型（已关闭Preview） |
+| Gemini 3.1 Pro | 2026年5月19日（Preview） | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开 | 未公开 | 复杂问题解决、代理编程 |
 | Gemini 3.1 Flash Live | 2026年（Preview） | 🎤🌐 语音+多模态 | 未公开 | 未公开 | 实时对话和语音优先AI应用 |
 | Gemini 3.1 Flash TTS | 2026年（Preview） | 🎤 语音合成 | 未公开 | 未公开 | 低延迟语音生成 |
-| Gemini 3.5 Flash | 2026年（Stable） | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开 | 未公开 | 最智能模型，代理和编程任务 |
+| Gemini 3.5 Flash | 2026年5月19日（Stable） | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开 | 未公开 | 最智能模型，代理和编程任务 |
 | Gemini 3.5 Live Translate | 2026年（Preview） | 🎤 语音翻译 | 未公开 | 未公开 | 实时语音翻译，70+语言 |
 | Nano Banana 2 | 2026年 | 🖼️ 文生图 | — | — | 基于Gemini 3.1 Flash，高速图像生成 |
 | Nano Banana Pro | 2026年 | 🖼️ 文生图 | — | — | 基于Gemini 3 Pro，高质量图像生成 |

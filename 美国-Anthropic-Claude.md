@@ -29,14 +29,14 @@
 | Claude 3.5 Haiku（claude-3-5-haiku-20241022） | 2024年10月22日 | 🌐 多模态 | 未公开 | 200K | 轻量版升级 |
 | Claude 4 Sonnet（claude-sonnet-4-20250514） | 2025年5月14日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 编程能力大幅提升 |
 | Claude 4 Opus（claude-opus-4-20250514） | 2025年5月14日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 最强下一代模型 |
-| Claude Haiku 4.5（claude-haiku-4-5-20251001） | 2025年10月1日 | 🌐🧠 多模态+推理 | 未公开 | 200K | 支持Extended Thinking，知识截止2025年2月 |
+| Claude Haiku 4.5（claude-haiku-4-5-20251001） | 2025年10月15日 | 🌐🧠 多模态+推理 | 未公开 | 200K | 支持Extended Thinking，知识截止2025年2月 |
 | Claude Opus 4.1（claude-opus-4-1-20250805） | 2025年8月5日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，定价$15/$75 MTok |
 | Claude Sonnet 4.5（claude-sonnet-4-5-20250929） | 2025年9月29日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，$3/$15 MTok |
 | Claude Opus 4.5（claude-opus-4-5-20251101） | 2025年11月1日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，知识截止2025年5月 |
 | Claude Opus 4.6（claude-opus-4-6） | 2025年底 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Extended Thinking，上下文提升至1M |
 | Claude Opus 4.7（claude-opus-4-7） | 2026年初 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking（取代Extended Thinking），新tokenizer |
-| Claude Sonnet 4.6（claude-sonnet-4-6） | 2026年 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Extended Thinking + Adaptive Thinking，$3/$15 MTok |
-| Claude Opus 4.8（claude-opus-4-8） | 2026年 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking，$5/$25 MTok，知识截止2026年1月 |
+| Claude Sonnet 4.6（claude-sonnet-4-6） | 2026年2月17日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Extended Thinking + Adaptive Thinking，$3/$15 MTok |
+| Claude Opus 4.8（claude-opus-4-8） | 2026年5月28日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking，$5/$25 MTok，知识截止2026年1月 |
 | Claude Fable 5（claude-fable-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 最强广泛发布模型，Adaptive Thinking，$10/$50 MTok，**⚠️ 2026年6月12日起暂停访问** |
 | Claude Mythos 5（claude-mythos-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 仅限Project Glasswing邀请用户，**⚠️ 2026年6月12日起暂停访问** |
 

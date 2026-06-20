@@ -50,6 +50,7 @@ Examples:
 - **参数规模** — total parameters (e.g., 671B)
 - **激活参数** — active parameters for MoE models (e.g., 37B)
 - **上下文长度** — context window (e.g., 128K, 200K, 1M)
+- **精确发布时间** — 必须精确到天或月，不能只标注年份或时间范围。格式：`YYYY年MM月DD日` 或 `YYYY年MM月`。例如：`2025年8月7日`，不能写成`2025年`或`2025-2026年`
 - **状态信息** — 如有暂停、弃用、停用等状态变更，需在版本说明中注明（如 `⚠️ 2026年6月12日起暂停`）
 
 ### README.md timeline table must include columns:
