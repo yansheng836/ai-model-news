@@ -368,9 +368,13 @@
 | 中国 | 阿里巴巴 | 通义千问 | Qwen-Audio | 🎤📝 | 7B | 32K | 2023年11月30日 |
 | 法国 | Mistral AI | Mixtral | Mixtral 8x7B（47B/13B MoE） | 📝 | 47B MoE/13B激活 | 32K | 2023年12月 |
 | 中国 | 零一万物 | Yi | Yi-6B / Yi-34B | 📝 | 6B/34B | 200K | 2023年11月2日 |
+| 中国 | 小米 | MiMo | MiMo-V2.5-Pro | 📝🧠 | 1T MoE | 未公开 | 2025年5月8日 |
+| 中国 | 小米 | MiMo | MiMo-V2.5 | 📝🧠 | 311B MoE | 未公开 | 2025年5月8日 |
+| 中国 | 小米 | MiMo | MiMo-V2-Flash | 📝 | 310B MoE | 未公开 | 2025年4月20日 |
 | 中国 | 小米 | MiMo | MiMo-7B-RL | 🧠 | 7B | 未公开 | 2025年4月25日 |
 | 中国 | 小米 | MiMo | MiMo-7B-SFT | 📝🧠 | 7B | 未公开 | 2025年4月25日 |
-| 中国 | 小米 | MiMo | MiMo-7B-Base | 📝 | 7B | 未公开 | 2025年4月25日 |
+| 中国 | 小米 | MiMo | MiMo-Audio-7B | 🎤 | 8B | 未公开 | 2025年 |
+| 中国 | 小米 | MiMo | MiMo-V2.5-ASR | 🎤 | 8B | 未公开 | 2025年4月24日 |
 | 美国 | OpenAI | GPT | GPT-4 Turbo（1106/0125） | 🌐 | 同GPT-4 | 128K | 2023年11月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen-72B | 📝 | 72B | 32K | 2023年11月29日 |
 | 美国 | xAI | Grok | Grok-1 | 📝 | 314B MoE/86B激活 | 31K | 2023年11月3日 |
