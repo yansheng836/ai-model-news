@@ -120,8 +120,8 @@
 | 中国 | 商汤科技 | 日日新 | SenseNova-SI-1.3-Qwen3-VL-8B | 👁️📝 | 9B | 未公开 | 2025年4月 |
 | 中国 | 商汤科技 | 日日新 | SenseNova 5.5（日日新5.5） | 🌐 | 未公开 | 未公开 | 2024年7月 |
 | 中国 | 商汤科技 | 日日新 | SenseNova 5.0（日日新5.0） | 🌐 | 未公开 | 未公开 | 2023年4月 |
-| 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro | 📝 | 862B MoE | 未公开 | 2026年 |
-| 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Flash | 📝 | 158B MoE | 未公开 | 2026年 |
+| 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro | 📝 | 862B MoE | 1M（384K输出） | 2026年 |
+| 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Flash | 📝 | 158B MoE | 1M（384K输出） | 2026年 |
 | 中国 | DeepSeek | DeepSeek | deepseek-chat | 📝 | — | — | 2024年（⏰ 2026/7/24弃用） |
 | 中国 | DeepSeek | DeepSeek | deepseek-reasoner | 🧠 | — | — | 2025年（⏰ 2026/7/24弃用） |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro-Base | 📝 | 1.6T MoE | 未公开 | 2026年4月 |
@@ -178,13 +178,18 @@
 | 法国 | Mistral AI | Mistral | Ministral 3（3B/8B/14B） | 📝🌐 | 3B/8B/14B | 未公开 | 2025年12月 |
 | 法国 | Mistral AI | Voxtral | Voxtral TTS | 🎤 | 未公开 | 未公开 | 2026年3月 |
 | 法国 | Mistral AI | OCR | OCR 3 | 👁️ | 未公开 | 未公开 | 2025年12月 |
-| 中国 | 百度 | 文心一言 | ERNIE-5.0 | 🌐🧠 | 未公开 | 119K | 2026年 |
+| 中国 | 百度 | 文心一言 | ERNIE-5.0 | 🌐🧠 | 未公开 | 32K/128K | 2026年 |
+| 中国 | 百度 | 文心一言 | ERNIE 5.1 | 📝 | 未公开 | 32K/128K | 2026年 |
+| 中国 | 百度 | 文心一言 | ERNIE-4.5-0.3B | 📝 | 0.3B | 未公开 | 2025年 |
+| 中国 | 百度 | 文心一言 | ERNIE Character（ernie-char-8k） | 📝 | 未公开 | 8K | 2025年 |
 | 中国 | 百度 | 文心一言 | ERNIE X1.1 Preview | 🧠 | 未公开 | 64K | 2025年 |
-| 中国 | 百度 | 文心一言 | ERNIE 4.5 Turbo | 📝 | 未公开 | 128K | 2025年 |
+| 中国 | 百度 | 文心一言 | ERNIE 4.5 Turbo | 📝 | 未公开 | 32K/128K | 2025年 |
 | 中国 | 百度 | 文心一言 | ERNIE 4.5 Turbo VL | 👁️📝 | 未公开 | 128K | 2025年 |
 | 中国 | 腾讯 | 混元 | Tencent HY 2.0 Think | 🧠 | 未公开 | 128K | 2025年 |
 | 中国 | 腾讯 | 混元 | Tencent HY 2.0 Instruct | 📝 | 未公开 | 128K | 2025年 |
 | 中国 | 腾讯 | 混元 | Tencent HY Vision 1.5 Instruct | 👁️📝 | 未公开 | 未公开 | 2025年 |
+| 中国 | 腾讯 | 混元 | Hunyuan-t1-vision | 👁️📝 | 未公开 | 未公开 | 2025年 |
+| 中国 | 腾讯 | 混元 | Hunyuan-translation-lite | 📝 | 未公开 | 未公开 | 2025年 |
 | 中国 | 字节跳动 | 豆包 | Doubao Seed 2.0 | 🌐🧠 | 未公开 | 未公开 | 2026年2月14日 |
 | 中国 | 字节跳动 | 豆包 | Seedance 2.0 系列 | 🎬 | — | — | 2025年 |
 | 中国 | 字节跳动 | 豆包 | Doubao-1.5-pro | 📝 | 未公开 | 128K | 2025年1月 |
@@ -193,8 +198,9 @@
 | 中国 | 字节跳动 | 豆包 | Seedream 4.0-5.0 | 🖼️ | — | — | 2025年 |
 | 中国 | 科大讯飞 | 星火 | 星火V5.0 | 🌐🧠💻 | 未公开 | 未公开 | 2025年 |
 | 中国 | 科大讯飞 | 星火 | 星火深度推理模型 | 🧠 | 未公开 | 未公开 | 2025年 |
-| 中国 | 科大讯飞 | 星火 | 星火Max | 📝 | 未公开 | 未公开 | 2024年 |
-| 中国 | 科大讯飞 | 星火 | 星火Pro | 📝 | 未公开 | 未公开 | 2024年 |
+| 中国 | 科大讯飞 | 星火 | 星火Max（v3.5） | 📝 | 未公开 | 未公开 | 2024年（⚠️ 2026年3月10日下线） |
+| 中国 | 科大讯飞 | 星火 | 星火Pro-128K | 📝 | 未公开 | 131K | 2024年 |
+| 中国 | 科大讯飞 | 星火 | 科技文献大模型 | 📝 | 未公开 | 未公开 | 2025年 |
 | 中国 | 华为 | 盘古 | 盘古大模型5.0 | 🌐🧠🔮🔬 | 未公开 | 未公开 | 2025年 |
 | 中国 | 华为 | 盘古 | 盘古大模型4.0 | 🌐🧠🔮🔬 | 未公开 | 未公开 | 2024年6月 |
 | 中国 | 华为 | 盘古 | PanGu-Weather（盘古气象大模型） | 🌐 | 未公开 | — | 2023年7月 |
@@ -204,16 +210,31 @@
 | 中国 | 阿里巴巴 | 通义千问 | qwen3.7-max | 🌐🧠💻 | 未公开 | 未公开 | 2026年 |
 | 中国 | 阿里巴巴 | 通义千问 | qwen3.5-omni-plus | 🌐🎤 | 未公开 | 未公开 | 2026年 |
 | 中国 | 阿里巴巴 | 通义千问 | qwen-image-2.0-pro | 🖼️ | — | — | 2026年 |
-| 中国 | 智谱AI | GLM | GLM-5.2 | 📝 | 未公开 | 1M | 2026年 |
-| 中国 | 智谱AI | GLM | GLM-5.1 | 📝 | 未公开 | 32K+ | 2026年 |
-| 中国 | 智谱AI | GLM | GLM-5-Turbo | 📝 | 未公开 | 32K+ | 2026年 |
-| 中国 | 智谱AI | GLM | GLM-5 | 📝 | 未公开 | 32K+ | 2026年 |
-| 中国 | 智谱AI | GLM | GLM-4.7 | 📝 | 未公开 | 200K | 2026年 |
-| 中国 | 智谱AI | GLM | GLM-4.7-FlashX | 📝 | 未公开 | 200K | 2026年 |
-| 中国 | 智谱AI | GLM | GLM-4.7-Flash | 📝 | 未公开 | 200K | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-5.2 | 📝 | 未公开 | 1M（128K输出） | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-5.1 | 📝 | 未公开 | 200K（128K输出） | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-5-Turbo | 📝 | 未公开 | 200K（128K输出） | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-5 | 📝 | 未公开 | 200K（128K输出） | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-4.7 | 📝 | 未公开 | 200K（128K输出） | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-4.7-FlashX | 📝 | 未公开 | 200K（128K输出） | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-4.7-Flash | 📝 | 未公开 | 200K（128K输出） | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-5V-Turbo | 👁️📝 | 未公开 | 200K | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-4.6V | 👁️📝 | 未公开 | 128K | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-OCR | 👁️ | 未公开 | — | 2026年 |
+| 中国 | 智谱AI | GLM | CogVideoX-3 | 🎬 | — | — | 2026年 |
+| 中国 | 智谱AI | GLM | Vidu Q1 | 🎬 | — | — | 2026年 |
+| 中国 | 智谱AI | GLM | Vidu 2 | 🎬 | — | — | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-ASR-2512 | 🎤 | — | — | 2025年12月 |
+| 中国 | 智谱AI | GLM | GLM-Realtime | 🌐🎤 | — | — | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-TTS | 🎤 | — | — | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-TTS-Clone | 🎤 | — | — | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-4.5-AirX | 📝 | 未公开 | 128K（96K输出） | 2026年 |
 | 中国 | 智谱AI | GLM | GLM-4.1V-9B-Thinking | 👁️🧠 | 9B | 未公开 | 2025年7月2日 |
 | 中国 | 智谱AI | GLM | GLM-Z1-Rumination-32B | 🧠 | 32B | 128K | 2025年4月14日 |
 | 中国 | 智谱AI | GLM | GLM-4-32B-0414 / GLM-Z1-32B-0414 | 📝🧠 | 32B | 128K | 2025年4月14日 |
+| 中国 | 月之暗面 | Kimi | Kimi K2.7 Code HighSpeed | 💻🧠 | 未公开 | 256K | 2026年 |
+| 中国 | 月之暗面 | Kimi | Kimi K2.7 Code | 💻🧠 | 未公开 | 256K | 2026年 |
+| 中国 | 月之暗面 | Kimi | Kimi K2.6 | 📝🧠 | 未公开 | 256K | 2026年 |
+| 中国 | 月之暗面 | Kimi | Kimi K2.5 | 📝🧠 | 万亿参数 | 256K | 2026年 |
 | 中国 | 月之暗面 | Kimi | Kimi-VL-A3B-Thinking-2506 | 👁️🧠 | 16B MoE/3B激活 | 128K | 2025年6月21日 |
 | 中国 | 月之暗面 | Kimi | Kimi-VL-A3B-Instruct | 👁️📝 | 16B MoE/3B激活 | 128K | 2025年4月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3-235B-A22B-Thinking-2507 | 🧠 | 235B MoE/22B激活 | 256K | 2025年7月25日 |
@@ -271,7 +292,7 @@
 | 中国 | 阿里巴巴 | 通义千问 | Qwen2.5-Max | 📝 | 未公开 MoE | 1M | 2025年1月26日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen2.5-VL（7B/72B） | 👁️📝 | 7B/72B | 128K | 2025年1月26日 |
 | 中国 | 智谱AI | GLM | GLM-Z1 | 🧠 | 未公开 | 128K | 2025年1月 |
-| 中国 | MiniMax | M系列 | MiniMax-M3.0 | 📝🌐💻 | 未公开 | 1M | 2026年6月 |
+| 中国 | MiniMax | M系列 | MiniMax-M3.0 | 📝🌐💻 | 427B MoE/23B激活 | 1M | 2026年6月 |
 | 中国 | MiniMax | M系列 | MiniMax-M2.7 | 📝 | 未公开 | 未公开 | 2026年3月 |
 | 中国 | MiniMax | M系列 | MiniMax-M2.5 / M2.5-Lightning | 📝 | 未公开 | 未公开 | 2026年2月 |
 | 中国 | MiniMax | M系列 | MiniMax-M1 | 📝 | 未公开 | 未公开 | 2025年6月 |
@@ -291,6 +312,9 @@
 | 中国 | DeepSeek | DeepSeek | R1-Lite | 🧠 | 未公开 | 128K | 2024年11月20日 |
 | 中国 | MiniMax | abab | abab 6.5系列 | 📝 | 未公开 | 128K | 2024年4月17日 |
 | 中国 | MiniMax | Speech | Speech-01 | 🎤 | — | — | 2024年 |
+| 中国 | MiniMax | Speech | Speech-2.8-HD | 🎤 | — | — | 2026年 |
+| 中国 | MiniMax | Speech | Speech-2.8-Turbo | 🎤 | — | — | 2026年 |
+| 中国 | MiniMax | music | music-2.6 | 🎵 | — | — | 2026年 |
 | 中国 | MiniMax | abab | abab 1 | 📝 | 未公开 | 未公开 | 2022年4月 |
 | 中国 | MiniMax | abab | abab 2 | 📝 | 未公开 | 未公开 | 2022年6月 |
 | 中国 | MiniMax | abab | abab 3 | 📝 | 未公开 | 未公开 | 2022年10月 |
@@ -336,9 +360,11 @@
 | 中国 | 百川智能 | Baichuan | Baichuan-4-Turbo | 📝 | 未公开 | 128K | 2024年 |
 | 中国 | 百川智能 | Baichuan | Baichuan-NPC | 📝 | 未公开 | 未公开 | 2024年 |
 | 中国 | 百川智能 | Baichuan | BaichuanMed-OCR-7B/72B | 👁️📝 | 8B/73B | 未公开 | 2025年4月7日 |
-| 中国 | 百川智能 | Baichuan | Baichuan-Audio-Base | 🎤 | 10B | — | 2025年2月 |
-| 中国 | 百川智能 | Baichuan | Baichuan-M2-32B | 📝 | 33B | 未公开 | 2025年12月 |
-| 中国 | 百川智能 | Baichuan | Baichuan-M3-235B | 📝 | 235B | 未公开 | 2026年2月 |
+| 中国 | 百川智能 | Baichuan | Baichuan-Audio-Base | 🎤 | 7B | — | 2025年2月 |
+| 中国 | 百川智能 | Baichuan | Baichuan-M2-32B | 📝 | 33B | 未公开 | 2025年9月 |
+| 中国 | 百川智能 | Baichuan | Baichuan-M3-235B | 📝 | 235B | 32K | 2026年2月9日 |
+| 中国 | 百川智能 | Baichuan | Baichuan-Omni-1.5 | 🌐🎤 | 7B | 未公开 | 2025年1月 |
+| 中国 | 百川智能 | Baichuan | M3Plus | 📝 | 未公开 | 未公开 | 待确认 |
 | 美国 | xAI | Grok | Grok-1.5 | 📝 | 未公开 | 128K | 2024年5月15日 |
 | 中国 | 零一万物 | Yi | Yi-Large | 📝 | 未公开 | 128K | 2024年5月 |
 | 中国 | 零一万物 | Yi | Yi-Lightning | 📝 | 未公开 | 128K | 2024年6月 |
