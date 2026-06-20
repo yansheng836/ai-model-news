@@ -50,7 +50,7 @@
 | DeepSeek | `platform.deepseek.com/api-docs` | ⚠️ 待验证 |
 | 阿里通义千问 | `help.aliyun.com/zh/model-studio/getting-started/models` | ⚠️ 待验证 |
 | 百度文心 | `cloud.baidu.com/doc/WENXINWORKSHOP/s/clntwmv7t` | ⚠️ 待验证 |
-| 智谱AI | `open.bigmodel.cn/dev/api` | ⚠️ 待验证 |
+| 智谱AI | `open.bigmodel.cn/dev/api` | ✅ 已验证可用 |
 
 ### 更新流程
 
@@ -183,6 +183,13 @@
 | 中国 | 阿里巴巴 | 通义千问 | qwen3.7-max | 🌐🧠💻 | 未公开 | 未公开 | 2026年 |
 | 中国 | 阿里巴巴 | 通义千问 | qwen3.5-omni-plus | 🌐🎤 | 未公开 | 未公开 | 2026年 |
 | 中国 | 阿里巴巴 | 通义千问 | qwen-image-2.0-pro | 🖼️ | — | — | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-5.2 | 📝 | 未公开 | 1M | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-5.1 | 📝 | 未公开 | 32K+ | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-5-Turbo | 📝 | 未公开 | 32K+ | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-5 | 📝 | 未公开 | 32K+ | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-4.7 | 📝 | 未公开 | 200K | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-4.7-FlashX | 📝 | 未公开 | 200K | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-4.7-Flash | 📝 | 未公开 | 200K | 2026年 |
 | 中国 | 智谱AI | GLM | GLM-4.1V-9B-Thinking | 👁️🧠 | 9B | 未公开 | 2025年7月2日 |
 | 中国 | 智谱AI | GLM | GLM-Z1-Rumination-32B | 🧠 | 32B | 128K | 2025年4月14日 |
 | 中国 | 智谱AI | GLM | GLM-4-32B-0414 / GLM-Z1-32B-0414 | 📝🧠 | 32B | 128K | 2025年4月14日 |
