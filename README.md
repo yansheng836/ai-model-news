@@ -291,6 +291,9 @@
 | 中国 | DeepSeek | DeepSeek | R1-Lite | 🧠 | 未公开 | 128K | 2024年11月20日 |
 | 中国 | MiniMax | abab | abab 6.5系列 | 📝 | 未公开 | 128K | 2024年4月17日 |
 | 中国 | MiniMax | Speech | Speech-01 | 🎤 | — | — | 2024年 |
+| 中国 | MiniMax | abab | abab 1 | 📝 | 未公开 | 未公开 | 2022年4月 |
+| 中国 | MiniMax | abab | abab 2 | 📝 | 未公开 | 未公开 | 2022年6月 |
+| 中国 | MiniMax | abab | abab 3 | 📝 | 未公开 | 未公开 | 2022年10月 |
 | 中国 | MiniMax | abab | abab 5.5 | 📝 | 未公开 | 未公开 | 2023年 |
 | 美国 | Anthropic | Claude | Claude 3.5 Haiku（claude-3-5-haiku-20241022） | 🌐 | 未公开 | 200K | 2024年10月22日 |
 | 美国 | Anthropic | Claude | Claude 3.5 Sonnet v2（claude-3-5-sonnet-20241022） | 🌐🖥️ | 未公开 | 200K | 2024年10月22日 |
@@ -332,6 +335,10 @@
 | 中国 | 百川智能 | Baichuan | Baichuan 4 | 🌐 | 未公开 | 128K | 2024年5月22日 |
 | 中国 | 百川智能 | Baichuan | Baichuan-4-Turbo | 📝 | 未公开 | 128K | 2024年 |
 | 中国 | 百川智能 | Baichuan | Baichuan-NPC | 📝 | 未公开 | 未公开 | 2024年 |
+| 中国 | 百川智能 | Baichuan | BaichuanMed-OCR-7B/72B | 👁️📝 | 8B/73B | 未公开 | 2025年4月7日 |
+| 中国 | 百川智能 | Baichuan | Baichuan-Audio-Base | 🎤 | 10B | — | 2025年2月 |
+| 中国 | 百川智能 | Baichuan | Baichuan-M2-32B | 📝 | 33B | 未公开 | 2025年12月 |
+| 中国 | 百川智能 | Baichuan | Baichuan-M3-235B | 📝 | 235B | 未公开 | 2026年2月 |
 | 美国 | xAI | Grok | Grok-1.5 | 📝 | 未公开 | 128K | 2024年5月15日 |
 | 中国 | 零一万物 | Yi | Yi-Large | 📝 | 未公开 | 128K | 2024年5月 |
 | 中国 | 零一万物 | Yi | Yi-Lightning | 📝 | 未公开 | 128K | 2024年6月 |
@@ -342,7 +349,7 @@
 | 美国 | Anthropic | Claude | Claude 3 Opus（claude-3-opus-20240229） | 🌐 | 未公开 | 200K | 2024年3月4日 |
 | 美国 | Anthropic | Claude | Claude 3 Sonnet（claude-3-sonnet-20240229） | 🌐 | 未公开 | 200K | 2024年3月4日 |
 | 美国 | Anthropic | Claude | Claude 3 Haiku（claude-3-haiku-20240307） | 🌐 | 未公开 | 200K | 2024年3月4日 |
-| 中国 | 零一万物 | Yi | Yi-1.5系列（6B/9B/34B） | 📝 | 6B/9B/34B | 200K | 2024年3月 |
+| 中国 | 零一万物 | Yi | Yi-1.5系列（6B/9B/34B） | 📝 | 6B/9B/34B | 200K | 2024年5月 |
 | 中国 | 月之暗面 | Kimi | Kimi升级（200万字上下文） | 📝 | 未公开 | 200万字 | 2024年3月 |
 | 法国 | Mistral AI | Mistral | Mixtral 8x22B（176B/39B MoE） | 📝 | 176B MoE/39B激活 | 64K | 2024年2月 |
 | 美国 | Google | Gemini | Gemini 1.5 Pro（100万token） | 🌐 | 未公开 MoE | 1M | 2024年2月 |
