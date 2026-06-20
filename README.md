@@ -311,6 +311,8 @@
 | 中国 | 腾讯 | 混元 | 混元升级版 / Hunyuan-DiT | 📝 / 🖼️ | 未公开 | 32K | 2024年5月 |
 | 中国 | DeepSeek | DeepSeek | V2（236B/21B MoE） | 📝 | 236B MoE/21B激活 | 128K | 2024年5月 |
 | 中国 | 百川智能 | Baichuan | Baichuan 4 | 🌐 | 未公开 | 128K | 2024年5月22日 |
+| 中国 | 百川智能 | Baichuan | Baichuan-4-Turbo | 📝 | 未公开 | 128K | 2024年 |
+| 中国 | 百川智能 | Baichuan | Baichuan-NPC | 📝 | 未公开 | 未公开 | 2024年 |
 | 美国 | xAI | Grok | Grok-1.5 | 📝 | 未公开 | 128K | 2024年5月15日 |
 | 中国 | 零一万物 | Yi | Yi-Lightning / Yi-Large | 📝 | 未公开 | 128K | 2024年5-6月 |
 | 美国 | Meta | Llama | Llama 3（8B/70B） | 📝 | 8B/70B | 8K | 2024年4月 |
@@ -325,6 +327,7 @@
 | 中国 | 阿里巴巴 | 通义千问 | Qwen1.5系列（0.5B~110B） | 📝 | 0.5B~110B | 32K | 2024年2月4日 |
 | 中国 | 智谱AI | GLM | GLM-4 / GLM-4V / GLM-4-AllTools | 📝 / 👁️📝 | 未公开 | 128K | 2024年1月 |
 | 中国 | 百川智能 | Baichuan | Baichuan2-192K | 📝 | 13B | 192K | 2024年1月 |
+| 中国 | 百川智能 | Baichuan | Baichuan 3 | 📝 | 未公开 | 未公开 | 2024年1月29日 |
 | 中国 | 科大讯飞 | 星火 | V3.5 | 🌐 | 未公开 | 64K | 2024年1月30日 |
 | 中国 | DeepSeek | DeepSeek | LLM 67B | 📝 | 67B | 4K | 2024年1月 |
 | 法国 | Mistral AI | Mistral | Mistral Small / Medium | 📝 | 未公开 | 32K | 2024年1月 |
