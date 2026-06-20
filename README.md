@@ -143,8 +143,12 @@
 | 美国 | Google | Gemini | Gemini 3.5 Live Translate（Preview） | 🎤 | 未公开 | 未公开 | 2026年 |
 | 美国 | Google | Veo | Veo 3.1（Preview） | 🎬 | — | — | 2026年 |
 | 美国 | Google | Lyria | Lyria 3 Pro（Preview） | 🎵 | — | — | 2026年 |
-| 美国 | xAI | Grok | grok-4.3 | 🌐🧠💻 | 未公开 | 1M | 2026年 |
-| 美国 | xAI | Grok | grok-4.20（推理/非推理/多代理） | 🧠🌐💻 | 未公开 | 1M | 2026年3月9日 |
+| 美国 | xAI | Grok | Grok-4.3 Beta | 🌐🧠💻 | 未公开 | 1M | 2026年4月17日 |
+| 美国 | xAI | Grok | Grok-4.20 Beta | 🌐🧠💻 | 未公开 | 1M | 2026年2月 |
+| 美国 | xAI | Grok | Grok-4.1 / 4.1 Fast | 🌐🧠 | 未公开 | 1M/2M | 2025年11月17-19日 |
+| 美国 | xAI | Grok | Grok-4 Fast | 🌐🧠 | 未公开 | 2M | 2025年9月 |
+| 美国 | xAI | Grok | Grok Code Fast 1 | 💻🧠 | 未公开 | 未公开 | 2025年8月28日 |
+| 美国 | xAI | Grok | Grok-4 / 4 Heavy | 🌐🧠💻 | 未公开 | 1M | 2025年7月9日 |
 | 美国 | xAI | Grok | 旧版Grok模型 | 📝 | — | — | 🔄 2026年5月15日退役 |
 | 美国 | xAI | Grok | grok-imagine-video-1.5 | 🎬 | — | — | 2026年 |
 | 美国 | NVIDIA | Nemotron | Cosmos 3 | 🌐🤖 | 未公开 | 未公开 | 2026年6月 |
@@ -225,7 +229,7 @@
 | 法国 | Mistral AI | Mistral | Devstral 2 | 💻 | 未公开 | 未公开 | 2025年12月 |
 | 法国 | Mistral AI | Magistral | Magistral Medium 1.2 / Small 1.2 | 🧠 | 未公开 | 未公开 | 2025年9月 |
 | 法国 | Mistral AI | Voxtral | Voxtral Small / Mini Transcribe | 🎤 | 未公开 | 未公开 | 2025年7月 |
-| 美国 | xAI | Grok | Grok-3 | 🧠🌐 | 未公开 | 128K | 2025年2月 |
+| 美国 | xAI | Grok | Grok-3 | 🧠🌐 | 未公开 | 128K | 2025年2月17日 |
 | 美国 | xAI | Grok | grok-imagine-image / video | 🖼️🎬 | — | — | 2025-2026年 |
 | 中国 | DeepSeek | DeepSeek | R1-0528 | 🧠 | 671B MoE/37B激活 | 128K | 2025年5月28日 |
 | 中国 | DeepSeek | DeepSeek | V3-0324 | 📝 | 671B MoE/37B激活 | 128K | 2025年2月 |
@@ -254,6 +258,10 @@
 | 中国 | 阿里巴巴 | 通义千问 | Qwen2.5-Max | 📝 | 未公开 MoE | 1M | 2025年1月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen2.5-VL（7B/72B） | 👁️📝 | 7B/72B | 128K | 2025年1月 |
 | 中国 | 智谱AI | GLM | GLM-Z1 | 🧠 | 未公开 | 128K | 2025年1月 |
+| 中国 | MiniMax | M系列 | MiniMax-M3.0 | 📝🌐💻 | 未公开 | 1M | 2026年6月 |
+| 中国 | MiniMax | M系列 | MiniMax-M2.7 | 📝 | 未公开 | 未公开 | 2026年3月 |
+| 中国 | MiniMax | M系列 | MiniMax-M2.5 / M2.5-Lightning | 📝 | 未公开 | 未公开 | 2026年2月 |
+| 中国 | MiniMax | M系列 | MiniMax-M1 | 📝 | 未公开 | 未公开 | 2025年6月 |
 | 中国 | MiniMax | MiniMax-01 | MiniMax-01（456B MoE） | 📝 | 456B MoE/45.9B激活 | 4M | 2025年1月 |
 | 中国 | 月之暗面 | Kimi | k1.5 | 🧠 | 未公开 | 200万字 | 2025年1月 |
 | 美国 | Google | Gemini | Gemini 2.0 Flash（实验版） | 🌐 | 未公开 | 1M | 2024年12月 |
@@ -266,11 +274,11 @@
 | 中国 | 阿里巴巴 | 通义千问 | QwQ-32B | 🧠 | 32B | 128K | 2024年11月 |
 | 中国 | 腾讯 | 混元 | Hunyuan-Large（389B MoE） | 📝 | 389B MoE/52B激活 | 256K | 2024年11月 |
 | 中国 | DeepSeek | DeepSeek | R1-Lite | 🧠 | 未公开 | 128K | 2024年11月 |
-| 中国 | MiniMax | abab | abab 7 | 📝 | 未公开 | 128K | 2024年11月 |
+| 中国 | MiniMax | abab | abab 6.5系列 | 📝 | 未公开 | 128K | 2024年4月17日 |
 | 美国 | Anthropic | Claude | Claude 3.5 Haiku（claude-3-5-haiku-20241022） | 🌐 | 未公开 | 200K | 2024年10月22日 |
 | 美国 | Anthropic | Claude | Claude 3.5 Sonnet v2（claude-3-5-sonnet-20241022） | 🌐🖥️ | 未公开 | 200K | 2024年10月22日 |
-| 美国 | xAI | Grok | Grok-2 | 🌐🖼️ | 未公开 | 128K | 2024年10月 |
-| 美国 | xAI | Grok | Grok-2 mini | 📝 | 未公开 | 128K | 2024年10月 |
+| 美国 | xAI | Grok | Grok-2 | 🌐🖼️ | 未公开 | 128K | 2024年8月14日 |
+| 美国 | xAI | Grok | Grok-2 mini | 📝 | 未公开 | 128K | 2024年8月14日 |
 | 中国 | 智谱AI | GLM | GLM-4-Plus / GLM-4V-Plus | 📝 / 👁️📝 | 未公开 | 128K | 2024年 |
 | 美国 | Meta | Llama | Llama 3.2 Vision（11B/90B） | 👁️📝 | 11B/90B | 128K | 2024年9月 |
 | 美国 | Meta | Llama | Llama 3.2（1B/3B） | 📝 | 1B/3B | 128K | 2024年9月 |
@@ -280,8 +288,8 @@
 | 中国 | 腾讯 | 混元 | 混元 Turbo | 📝 | 未公开 | 32K | 2024年9月 |
 | 美国 | OpenAI | o系列 | o1-preview | 🧠 | 未公开 | 128K | 2024年9月12日 |
 | 美国 | OpenAI | o系列 | o1-mini | 🧠💻 | 未公开 | 128K | 2024年9月12日 |
-| 中国 | MiniMax | video-01 | video-01 | 🎬 | — | — | 2024年8月 |
-| 美国 | xAI | Grok | Grok-1.5 Vision | 👁️📝 | 未公开 | 128K | 2024年8月 |
+| 中国 | MiniMax | video-01 | video-01 | 🎬 | — | — | 2024年9月 |
+| 美国 | xAI | Grok | Grok-1.5 Vision | 👁️📝 | 未公开 | 128K | 2024年4月12日（未公开发布） |
 | 美国 | Google | Gemini | Gemini 1.5 Flash-8B | 🌐 | 8B | 1M | 2024年8-9月 |
 | 美国 | OpenAI | GPT | GPT-4o（2024-08-06） | 🌐 | 未公开 | 128K | 2024年8月6日 |
 | 美国 | OpenAI | GPT | GPT-4o mini | 🌐 | 未公开（推测8B） | 128K | 2024年7月 |
@@ -303,10 +311,10 @@
 | 中国 | 腾讯 | 混元 | 混元升级版 / Hunyuan-DiT | 📝 / 🖼️ | 未公开 | 32K | 2024年5月 |
 | 中国 | DeepSeek | DeepSeek | V2（236B/21B MoE） | 📝 | 236B MoE/21B激活 | 128K | 2024年5月 |
 | 中国 | 百川智能 | Baichuan | Baichuan 4 | 🌐 | 未公开 | 128K | 2024年5月22日 |
-| 美国 | xAI | Grok | Grok-1.5 | 📝 | 未公开 | 128K | 2024年5月 |
+| 美国 | xAI | Grok | Grok-1.5 | 📝 | 未公开 | 128K | 2024年5月15日 |
 | 中国 | 零一万物 | Yi | Yi-Lightning / Yi-Large | 📝 | 未公开 | 128K | 2024年5-6月 |
 | 美国 | Meta | Llama | Llama 3（8B/70B） | 📝 | 8B/70B | 8K | 2024年4月 |
-| 美国 | xAI | Grok | Grok-1（开源，314B MoE） | 📝 | 314B MoE/86B激活 | 31K | 2024年3月 |
+| 美国 | xAI | Grok | Grok-1（开源，314B MoE） | 📝 | 314B MoE/86B激活 | 31K | 2024年3月17日 |
 | 美国 | Anthropic | Claude | Claude 3 Opus（claude-3-opus-20240229） | 🌐 | 未公开 | 200K | 2024年3月4日 |
 | 美国 | Anthropic | Claude | Claude 3 Sonnet（claude-3-sonnet-20240229） | 🌐 | 未公开 | 200K | 2024年3月4日 |
 | 美国 | Anthropic | Claude | Claude 3 Haiku（claude-3-haiku-20240307） | 🌐 | 未公开 | 200K | 2024年3月4日 |
@@ -329,7 +337,7 @@
 | 中国 | 小米 | MiLM | MiLM-6B / MiLM-1.3B | 📝 | 6B/1.3B | — | 2023年11月 |
 | 美国 | OpenAI | GPT | GPT-4 Turbo（1106/0125） | 🌐 | 同GPT-4 | 128K | 2023年11月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen-72B | 📝 | 72B | 32K | 2023年11月 |
-| 美国 | xAI | Grok | Grok-1 | 📝 | 314B MoE/86B激活 | 31K | 2023年11月 |
+| 美国 | xAI | Grok | Grok-1 | 📝 | 314B MoE/86B激活 | 31K | 2023年11月3日 |
 | 中国 | 百度 | 文心一言 | 文心4.0 | 🌐 | 未公开 | 128K | 2023年10月17日 |
 | 中国 | 科大讯飞 | 星火 | V3.0 | 🌐 | 未公开 | 32K | 2023年10月24日 |
 | 中国 | 智谱AI | ChatGLM | ChatGLM3 | 📝💻 | 6B | 128K | 2023年10月 |
