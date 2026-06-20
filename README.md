@@ -230,8 +230,9 @@
 | 中国 | DeepSeek | DeepSeek | R1-0528 | 🧠 | 671B MoE/37B激活 | 128K | 2025年5月28日 |
 | 中国 | DeepSeek | DeepSeek | V3-0324 | 📝 | 671B MoE/37B激活 | 128K | 2025年2月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3系列（0.6B~235B） | 🧠📝 | 0.6B~235B MoE | 128K | 2025年4月 |
-| 美国 | Meta | Llama | Llama 4 Maverick（17B/400B MoE） | 🌐 | 400B/17B激活 | 1M | 2025年4月 |
-| 美国 | Meta | Llama | Llama 4 Scout（17B/109B MoE） | 🌐 | 109B/17B激活 | 10M | 2025年4月 |
+| 美国 | Meta | Llama | Llama 4 Maverick（17B/400B MoE） | 🌐 | 400B/17B激活 | 1M | 2025年4月5日 |
+| 美国 | Meta | Llama | Llama 4 Scout（17B/109B MoE） | 🌐 | 109B/17B激活 | 10M | 2025年4月5日 |
+| 美国 | Meta | Muse | Muse Spark | 🌐 | 未公开 | 未公开 | 2026年4月 |
 | 美国 | OpenAI | GPT | GPT-4.1 | 🌐 | 未公开 | 1M | 2025年4月 |
 | 美国 | OpenAI | o系列 | o3（o3-2025-04-16） | 🧠 | 未公开 | 200K | 2025年4月16日 |
 | 美国 | OpenAI | o系列 | o4-mini | 🧠💻 | 未公开 | 200K | 2025年4月 |
