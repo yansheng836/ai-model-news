@@ -86,6 +86,21 @@ Examples:
 - `WebFetch` works for some URLs but many sites block it (403 Forbidden, anti-scraping, auth walls).
 - Solution: use `WebFetch` to access **official API documentation pages** which typically don't have anti-scraping.
 
+### ⚠️ 重要原则：必须搜索产品官网
+
+**不能只依赖 GitHub/HuggingFace，必须同时搜索产品官网获取准确信息。**
+
+原因：
+1. **HuggingFace "Updated" 时间是上传日期，不是正式发布日期**（如小米 MiMo-V2.5-Pro：HuggingFace显示2025年5月，实际发布于2026年4月27日）
+2. **GitHub README 可能不完整**，只包含部分模型或旧版本
+3. **产品官网包含最准确的发布日期、定价、功能说明**
+
+数据源优先级：
+1. **产品官网/API文档**（如 `mimo.xiaomi.com`、`platform.baichuan-ai.com`）→ 最准确的发布日期
+2. **GitHub 仓库** → 模型架构、训练数据、基准分数
+3. **HuggingFace 组织页面** → 完整模型列表、参数规模
+4. **Wikipedia** → 公司背景、历史时间线
+
 ### Official Documentation URLs (优先级从高到低)
 
 | Vendor | URL | Status | 备注 |
@@ -114,6 +129,7 @@ Examples:
 | **商汤科技** | `https://huggingface.co/SenseNova` | ✅ Verified | 28个模型，含U1/SI系列参数确认 |
 | **小米** | `https://huggingface.co/XiaoMi` | ❌ 401 Unauthorized | 需认证，无法访问 |
 | **小米 MiMo** | `https://huggingface.co/XiaoMiMiMo` | ✅ Verified | 24个模型，含V2.5-Pro(1T)/Audio系列 |
+| **小米 MiMo** | `https://mimo.xiaomi.com` | ✅ Verified | 产品官网，含准确发布日期（如V2.5-Pro: 2026年4月27日） |
 
 ### 备用数据源（当官方文档不可用时）
 
