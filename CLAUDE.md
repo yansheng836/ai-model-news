@@ -96,17 +96,23 @@ Examples:
 | **xAI Grok** | `https://docs.x.ai/docs/models` | ✅ Verified | 完整模型列表含grok-4.3、图像/视频/语音模型 |
 | **Mistral** | `https://docs.mistral.ai/getting-started/models/` | ✅ Verified | 完整模型列表含生命周期（弃用/退役日期） |
 | **Meta Llama** | `https://huggingface.co/meta-llama` | ✅ Verified | HuggingFace页面比developer.meta.com更完整 |
-| **DeepSeek** | `https://github.com/deepseek-ai/DeepSeek-V3` | ⚠️ GitHub可用 | 仅V3详情，V4信息需从README时间线推断 |
+| **DeepSeek** | `https://github.com/deepseek-ai/DeepSeek-V3` | ✅ Verified | V3详情，含架构、训练成本 |
+| **DeepSeek** | `https://huggingface.co/deepseek-ai` | ✅ Verified | 87个模型，含V4/V3.2/OCR参数确认 |
 | **Qwen（阿里）** | `https://github.com/QwenLM/Qwen3` | ✅ Verified | Qwen3完整列表含2507版，Apache 2.0 |
-| **智谱AI GLM** | `https://github.com/THUDM/GLM-4` | ✅ Verified | GLM-4/0414/Z1完整列表，含基准分数 |
+| **智谱AI GLM** | `https://github.com/THUDM/GLM-4` | ✅ Verified | GLM-4/0414/Z1完整列表，含基准分数，GLM-5系列日期 |
 | **月之暗面 Kimi** | `https://github.com/MoonshotAI/Kimi-VL` | ✅ Verified | Kimi-VL-A3B系列，含Thinking/Instruct版 |
 | **百度文心** | `https://cloud.baidu.com/product-s/qianfan_home` | ✅ Verified | 千帆平台首页，含ERNIE 5.0/X1.1/4.5 Turbo |
 | **腾讯混元** | `https://cloud.tencent.com/document/product/1729/97731` | ✅ Verified | 定价页含HY 2.0、T1、TurboS等模型列表 |
+| **腾讯混元** | `https://huggingface.co/Tencent-Hunyuan` | ⚠️ 有限信息 | 仅含HunyuanDiT图像模型，无文本模型详情 |
 | **字节豆包** | `https://en.wikipedia.org/wiki/Doubao` | ⚠️ Wikipedia | 官方文档JS渲染无法抓取，Wikipedia有基本信息 |
+| **字节跳动** | `https://huggingface.co/bytedance` | ⚠️ 有限信息 | 含Bernini/Ouro等模型，无Doubao系列 |
 | **科大讯飞星火** | `https://xinghuo.xfyun.cn/desk` | ❌ 无法抓取 | 页面JS渲染，无有效内容 |
 | **NVIDIA Nemotron** | `https://huggingface.co/nvidia` | ✅ Verified | HuggingFace含完整Nemotron/Cosmos/GR00T系列 |
-| **MiniMax** | — | ⚠️ 待补充 | 官方文档地址待确认 |
-| **百川智能** | — | ⚠️ 待补充 | 官方文档地址待确认 |
+| **MiniMax** | `https://en.wikipedia.org/wiki/MiniMax_(company)` | ✅ Verified | 含abab 1-3早期版本、M系列完整时间线 |
+| **百川智能** | `https://huggingface.co/baichuan-inc` | ✅ Verified | 25个模型，含M2/M3/Med系列新模型 |
+| **01.AI 零一万物** | `https://huggingface.co/01-ai` | ✅ Verified | 28个模型，含Yi/Yi-1.5/Yi-Coder完整列表 |
+| **商汤科技** | `https://huggingface.co/SenseNova` | ✅ Verified | 28个模型，含U1/SI系列参数确认 |
+| **小米** | `https://huggingface.co/XiaoMi` | ❌ 401 Unauthorized | 需认证，无法访问 |
 
 ### 备用数据源（当官方文档不可用时）
 
@@ -115,6 +121,18 @@ Examples:
 | **HuggingFace** | `https://huggingface.co/{org}` | 开源模型列表、参数、架构 |
 | **Wikipedia** | `https://en.wikipedia.org/wiki/{Model}` | 模型历史、发布时间、用户规模 |
 | **GitHub** | `https://github.com/{org}/{repo}` | 模型详情、基准分数、训练数据 |
+
+### 已验证的HuggingFace组织页面
+
+| 厂商 | HuggingFace URL | 模型数量 | 信息丰富度 |
+|------|-----------------|----------|-----------|
+| DeepSeek | `https://huggingface.co/deepseek-ai` | 87 | ⭐⭐⭐ 含参数、架构 |
+| 百川智能 | `https://huggingface.co/baichuan-inc` | 25 | ⭐⭐⭐ 含M2/M3/Med系列 |
+| 01.AI | `https://huggingface.co/01-ai` | 28 | ⭐⭐⭐ 含完整Yi系列 |
+| 商汤科技 | `https://huggingface.co/SenseNova` | 28 | ⭐⭐ 含U1/SI参数 |
+| 腾讯混元 | `https://huggingface.co/Tencent-Hunyuan` | 25 | ⭐ 仅图像模型 |
+| 字节跳动 | `https://huggingface.co/bytedance` | 53 | ⭐ 无Doubao系列 |
+| 小米 | `https://huggingface.co/XiaoMi` | — | ❌ 401需认证 |
 
 ### Update Procedure
 
