@@ -130,6 +130,12 @@ Examples:
 | **小米** | `https://huggingface.co/XiaoMi` | ❌ 401 Unauthorized | 需认证，无法访问 |
 | **小米 MiMo** | `https://huggingface.co/XiaoMiMiMo` | ✅ Verified | 24个模型，含V2.5-Pro(1T)/Audio系列 |
 | **小米 MiMo** | `https://mimo.xiaomi.com` | ✅ Verified | 产品官网，含准确发布日期（如V2.5-Pro: 2026年4月27日） |
+| **DeepSeek** | `https://api-docs.deepseek.com/zh-cn/quick_start/pricing` | ✅ Verified | API定价页，含V4上下文1M/384K输出 |
+| **月之暗面 Kimi** | `https://platform.kimi.com` | ✅ Verified | 平台首页，含K2.5/K2.6/K2.7系列 |
+| **智谱AI GLM** | `https://docs.bigmodel.cn/cn/guide/start/model-overview` | ✅ Verified | 完整模型列表含GLM-5.2/4.7/视觉/视频/音频模型 |
+| **MiniMax** | `https://platform.minimaxi.com` | ✅ Verified | 平台首页，含M3定价、Speech-2.8、music-2.6 |
+| **百川智能** | `https://platform.baichuan-ai.com/docs` | ✅ Verified | 平台文档，含M3Plus、医疗大模型 |
+| **科大讯飞星火** | `https://www.xfyun.cn/doc/spark/Web.html` | ✅ Verified | API文档，含Spark Ultra/Max/Pro/Lite完整信息 |
 
 ### 备用数据源（当官方文档不可用时）
 
