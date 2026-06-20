@@ -113,6 +113,7 @@ Examples:
 | **01.AI 零一万物** | `https://huggingface.co/01-ai` | ✅ Verified | 28个模型，含Yi/Yi-1.5/Yi-Coder完整列表 |
 | **商汤科技** | `https://huggingface.co/SenseNova` | ✅ Verified | 28个模型，含U1/SI系列参数确认 |
 | **小米** | `https://huggingface.co/XiaoMi` | ❌ 401 Unauthorized | 需认证，无法访问 |
+| **小米 MiMo** | `https://huggingface.co/XiaoMiMiMo` | ✅ Verified | 24个模型，含V2.5-Pro(1T)/Audio系列 |
 
 ### 备用数据源（当官方文档不可用时）
 
