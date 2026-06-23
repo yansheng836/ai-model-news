@@ -151,15 +151,11 @@
     .markdown-section h1 .anchor,
     .markdown-section h1 .anchor span {
       font-family: 'Orbitron', 'Noto Sans SC', sans-serif !important;
-      background: linear-gradient(135deg, #00e5ff, #b794f6) !important;
-      -webkit-background-clip: text !important;
-      -webkit-text-fill-color: transparent !important;
-      background-clip: text !important;
+      color: #00e5ff !important;
       font-size: 2rem !important;
       font-weight: 900 !important;
-      padding-bottom: 0.6rem;
-      border-bottom: 2px solid rgba(0, 229, 255, 0.25);
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.8rem !important;
+      text-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
     }
 
     .markdown-section h2,
@@ -169,15 +165,15 @@
       font-family: 'Orbitron', 'Noto Sans SC', sans-serif !important;
       font-size: 1.5rem !important;
       font-weight: 700 !important;
-      margin-top: 0.8rem !important;
-      margin-bottom: 0.6rem !important;
+      margin-top: 1rem !important;
+      margin-bottom: 0.5rem !important;
       text-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
     }
 
     .markdown-section h3,
     .markdown-section h3 .anchor,
     .markdown-section h3 .anchor span {
-      color: #b794f6 !important;
+      color: #00e5ff !important;
       font-size: 1.2rem !important;
       font-weight: 600 !important;
     }
@@ -303,8 +299,8 @@
       border-left: 4px solid #b794f6;
       color: var(--text-primary);
       border-radius: 0 8px 8px 0;
-      padding: 1rem 1.5rem;
-      margin: 1.5rem 0;
+      padding: 0.8rem 1.2rem;
+      margin: 0.8rem 0;
     }
 
     /* ========== 分隔线 ========== */
@@ -408,12 +404,10 @@
       font-family: 'Orbitron', 'Noto Sans SC', sans-serif;
       font-size: 3.5rem;
       font-weight: 900;
-      background: linear-gradient(135deg, #00e5ff, #b794f6, #f687b3);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: #00e5ff;
       margin-bottom: 1rem;
       animation: titleGlow 3s ease-in-out infinite;
+      text-shadow: 0 0 20px rgba(0, 229, 255, 0.5), 0 0 40px rgba(183, 148, 246, 0.3);
     }
 
     @keyframes titleGlow {
