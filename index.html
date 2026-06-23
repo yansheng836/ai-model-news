@@ -376,6 +376,13 @@
       background: var(--bg-primary);
       position: relative;
       overflow: hidden;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    section.cover .cover-main {
+      margin: 0 !important;
+      padding: 0 16px !important;
     }
 
     .cover-main::before {
@@ -384,15 +391,15 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(0, 229, 255, 0.15) 0%, transparent 70%);
-      animation: pulse 4s ease-in-out infinite;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(0, 229, 255, 0.1) 0%, transparent 70%);
+      animation: pulse 5s ease-in-out infinite;
     }
 
     @keyframes pulse {
-      0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
-      50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+      0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
+      50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.7; }
     }
 
     .cover-main > * {
@@ -400,32 +407,42 @@
       z-index: 1;
     }
 
-    .cover-main h1 {
+    .cover-main h1,
+    .cover-main h1 .anchor,
+    .cover-main h1 .anchor span {
       font-family: 'Orbitron', 'Noto Sans SC', sans-serif !important;
-      font-size: 3.5rem !important;
+      font-size: 3rem !important;
       font-weight: 900 !important;
       color: #00e5ff !important;
-      margin-bottom: 1rem;
-      animation: titleGlow 3s ease-in-out infinite;
-      text-shadow: 0 0 20px rgba(0, 229, 255, 0.5), 0 0 40px rgba(183, 148, 246, 0.3) !important;
-    }
-
-    @keyframes titleGlow {
-      0%, 100% { filter: drop-shadow(0 0 20px rgba(0, 229, 255, 0.4)); }
-      50% { filter: drop-shadow(0 0 40px rgba(183, 148, 246, 0.55)); }
+      margin-bottom: 0.5rem;
+      letter-spacing: 3px;
+      background: none !important;
+      -webkit-text-fill-color: #00e5ff !important;
+      text-shadow: none !important;
     }
 
     .cover-main p {
       color: var(--text-secondary);
-      font-size: 1.2rem;
-      max-width: 600px;
-      line-height: 1.8;
+      font-size: 1rem;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+
+    .cover-main blockquote {
+      border: none;
+      padding: 0;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .cover-main blockquote p {
+      color: #a0a0b8;
+      font-size: 0.95rem;
     }
 
     .cover-main .cover-btn {
       display: inline-block;
-      margin-top: 2rem;
-      padding: 12px 36px;
+      margin-top: 1.5rem;
+      padding: 10px 32px;
       background: linear-gradient(135deg, #00e5ff, #b794f6);
       color: #fff;
       text-decoration: none;
