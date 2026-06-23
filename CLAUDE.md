@@ -97,14 +97,49 @@ Examples:
 
 数据源优先级：
 1. **产品官网/API文档**（如 `mimo.xiaomi.com`、`platform.baichuan-ai.com`）→ 最准确的发布日期
-2. **GitHub 仓库** → 模型架构、训练数据、基准分数
-3. **HuggingFace 组织页面** → 完整模型列表、参数规模
-4. **Wikipedia** → 公司背景、历史时间线
+2. **OpenRouter API** → 跨厂商标准化数据（上下文长度、定价、模型ID），可用于交叉验证
+3. **GitHub 仓库** → 模型架构、训练数据、基准分数
+4. **HuggingFace 组织页面** → 完整模型列表、参数规模
+5. **Wikipedia** → 公司背景、历史时间线
+
+### OpenRouter API（跨厂商统一数据源）
+
+OpenRouter 聚合了所有主流厂商的模型数据，提供标准化的 API 接口，适合用于：
+- **交叉验证**：对比各厂商官方文档中的上下文长度、定价是否一致
+- **发现遗漏**：OpenRouter 上架的模型可能尚未在厂商文档中列出
+- **统一格式**：所有模型使用相同的数据结构（id、context_length、pricing）
+
+| 数据 | URL | 说明 |
+|------|-----|------|
+| 全部模型列表 | `https://openrouter.ai/api/v1/models` | JSON格式，含340+模型 |
+| 按厂商筛选 | `https://openrouter.ai/models?q={关键词}` | 网页版，JS动态渲染需用API |
+| 模型详情 | `https://openrouter.ai/{model-id}` | 单个模型的详细信息页 |
+
+**使用方法：**
+```bash
+# 获取全部模型数据（JSON）
+curl -s "https://openrouter.ai/api/v1/models" | node -e "
+const chunks = [];
+process.stdin.on('data', c => chunks.push(c));
+process.stdin.on('end', () => {
+  const data = JSON.parse(Buffer.concat(chunks));
+  data.data.forEach(m => {
+    console.log(m.id + ' | ctx:' + m.context_length + ' | \$' + m.pricing.prompt + '/\$' + m.pricing.completion);
+  });
+});
+"
+```
+
+**已验证的 OpenRouter 厂商覆盖（2026年6月）：**
+- OpenAI: 62 模型 | Qwen: 49 | Google: 28 | Mistral: 19 | Anthropic: 15
+- 智谱AI(z-ai): 12 | Meta: 12 | NVIDIA: 11 | DeepSeek: 11 | MiniMax: 8
+- xAI: 4 | 小米: 2 | 腾讯: 2 | 月之暗面: 6
 
 ### Official Documentation URLs (优先级从高到低)
 
 | Vendor | URL | Status | 备注 |
 |--------|-----|--------|------|
+| **OpenRouter** | `https://openrouter.ai/api/v1/models` | ✅ Verified | **跨厂商统一API**，340+模型，含上下文/定价/模型ID，适合交叉验证 |
 | **Anthropic** | `https://platform.claude.com/docs/en/docs/about-claude/models` | ✅ Verified | 完整模型列表，含定价、上下文、弃用信息 |
 | **OpenAI** | `https://developers.openai.com/api/docs/models` | ✅ Verified | 重定向后可用，含GPT-5.5/5.4/o系列 |
 | **Google Gemini** | `https://ai.google.dev/gemini-api/docs/models` | ✅ Verified | 完整模型列表含Gemini 3系列、Veo、Lyria |
