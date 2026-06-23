@@ -1,0 +1,14 @@
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.webp
+*.svg
+
+# Playwright MCP temp files
+.playwright-mcp/
+
+# OpenRouter temp data
+or_models.json
