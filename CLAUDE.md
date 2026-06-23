@@ -149,7 +149,7 @@ process.stdin.on('end', () => {
 | **DeepSeek** | `https://github.com/deepseek-ai/DeepSeek-V3` | ✅ Verified | V3详情，含架构、训练成本 |
 | **DeepSeek** | `https://huggingface.co/deepseek-ai` | ✅ Verified | 87个模型，含V4/V3.2/OCR参数确认 |
 | **Qwen（阿里）** | `https://github.com/QwenLM/Qwen3` | ✅ Verified | Qwen3完整列表含2507版，Apache 2.0 |
-| **智谱AI GLM** | `https://github.com/THUDM/GLM-4` | ✅ Verified | GLM-4/0414/Z1完整列表，含基准分数，GLM-5系列日期 |
+| **智谱AI GLM** | `https://github.com/zai-org/GLM-5` | ✅ Verified | GLM-5.2/5.1/5完整列表，含基准分数 |
 | **月之暗面 Kimi** | `https://github.com/MoonshotAI/Kimi-VL` | ✅ Verified | Kimi-VL-A3B系列，含Thinking/Instruct版 |
 | **百度文心** | `https://cloud.baidu.com/product-s/qianfan_home` | ✅ Verified | 千帆平台首页，含ERNIE 5.0/X1.1/4.5 Turbo |
 | **腾讯混元** | `https://cloud.tencent.com/document/product/1729/97731` | ✅ Verified | 定价页含HY 2.0、T1、TurboS等模型列表 |
@@ -168,6 +168,7 @@ process.stdin.on('end', () => {
 | **DeepSeek** | `https://api-docs.deepseek.com/zh-cn/quick_start/pricing` | ✅ Verified | API定价页，含V4上下文1M/384K输出 |
 | **月之暗面 Kimi** | `https://platform.kimi.com` | ✅ Verified | 平台首页，含K2.5/K2.6/K2.7系列 |
 | **智谱AI GLM** | `https://docs.bigmodel.cn/cn/guide/start/model-overview` | ✅ Verified | 完整模型列表含GLM-5.2/4.7/视觉/视频/音频模型 |
+| **智谱AI GLM发版日期** | `https://docs.z.ai/release-notes/new-released` | ✅ Verified | 精确发版日期（GLM-5.2:2026-06-16等） |
 | **MiniMax** | `https://platform.minimaxi.com` | ✅ Verified | 平台首页，含M3定价、Speech-2.8、music-2.6 |
 | **百川智能** | `https://platform.baichuan-ai.com/docs` | ✅ Verified | 平台文档，含M3Plus、医疗大模型 |
 | **科大讯飞星火** | `https://www.xfyun.cn/doc/spark/Web.html` | ✅ Verified | API文档，含Spark Ultra/Max/Pro/Lite完整信息 |
