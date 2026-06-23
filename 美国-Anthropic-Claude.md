@@ -38,6 +38,7 @@
 | Claude Sonnet 4.6（claude-sonnet-4-6） | 2026年2月17日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Extended Thinking + Adaptive Thinking，$3/$15 MTok |
 | Claude Opus 4.8（claude-opus-4-8） | 2026年5月28日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking，$5/$25 MTok，知识截止2026年1月 |
 | Claude Fable 5（claude-fable-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 最强广泛发布模型，Adaptive Thinking，$10/$50 MTok，**⚠️ 2026年6月12日起暂停访问** |
+| Claude Mythos Preview（claude-mythos-preview） | 2025年 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 研究预览模型，⏰ 2026年6月30日退役 |
 | Claude Mythos 5（claude-mythos-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 仅限Project Glasswing邀请用户，**⚠️ 2026年6月12日起暂停访问** |
 
 ## 模型详细介绍

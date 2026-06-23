@@ -129,12 +129,15 @@
 | 美国 | Google | Gemini | Antigravity Agent（Preview） | 🧠💻🌐 | 未公开 | 未公开 | 2026年5月 |
 | 中国 | 阿里巴巴 | 通义千问 | WebWorld-32B | 📝 | 32B | 未公开 | 2026年5月 |
 | 中国 | 阿里巴巴 | 通义千问 | WebWorld-14B | 📝 纯文本 | 14B | 未公开 | 2026年5月 |
+| 中国 | 小米 | MiMo | MiMo-V2.5-Pro-UltraSpeed | 📝🧠 | 1T | 未公开 | 2026年 |
 | 中国 | 小米 | MiMo | MiMo-V2.5-Pro | 📝🧠 | 1.02T MoE/42B激活 | 1M | 2026年4月27日 |
+| 中国 | 小米 | MiMo | MiMo-V2-Omni | 🌐 | 未公开 | 未公开 | 2025年 |
 | 中国 | 小米 | MiMo | MiMo-V2.5-Pro-Base | 📝 | 1.02T MoE | 256K | 2026年4月27日 |
 | 中国 | 小米 | MiMo | MiMo-V2.5-Base | 📝 | 310B MoE | 1M | 2026年4月27日 |
 | 中国 | 小米 | MiMo | MiMo-V2.5 | 📝🧠 | 310B MoE/15B激活 | 1M | 2026年4月27日 |
 | 美国 | OpenAI | GPT | GPT-5.5（gpt-5.5） | 🌐🧠🖥️ | 未公开 | 1M | 2026年4月23日 |
-| 美国 | xAI | Grok | Grok-4.3 Beta | 🌐🧠💻 | 未公开 | 1M | 2026年4月17日 |
+| 美国 | xAI | Grok | Grok-4.3 | 🌐🧠💻 | 未公开 | 1M | 2026年4月17日 |
+| 美国 | xAI | Grok | Grok Build 0.1 | 💻🧠 | 未公开 | 256K | 2025年 |
 | 美国 | NVIDIA | Nemotron | Nemotron 3 Nano Omni | 🌐🎤 | 未公开 | 1M | 2026年4月 |
 | 美国 | NVIDIA | Nemotron | Isaac GR00T N1.7 | 🤖 | 未公开 | 未公开 | 2026年4月 |
 | 法国 | Mistral AI | Mistral | Mistral Medium 3.5 | 🌐🧠💻🖥️ | 未公开 | 未公开 | 2026年4月 |
@@ -157,7 +160,9 @@
 | 中国 | 百川智能 | Baichuan | Baichuan-M3-235B | 📝 | 235B | 32K | 2026年2月9日 |
 | 美国 | xAI | Grok | Grok-4.20 Beta | 🌐🧠💻 | 未公开 | 1M | 2026年2月 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-OCR-2 | 👁️📝 | 3B | — | 2026年2月 |
+| 中国 | MiniMax | M系列 | MiniMax-M2.7-highspeed | 📝 | 未公开 | 未公开 | 2026年 |
 | 中国 | MiniMax | M系列 | MiniMax-M2.5 / M2.5-Lightning | 📝 | 未公开 | 未公开 | 2026年2月 |
+| 中国 | MiniMax | Hailuo | Hailuo 2.3 / 2.3 Fast | 🎬 | — | — | 2025年 |
 | 美国 | Anthropic | Claude | Claude Opus 4.7（claude-opus-4-7） | 🌐🖥️ | 未公开 | 1M | 2026年初 |
 | 美国 | NVIDIA | Nemotron | Cosmos Reason 2 | 🧠🤖 | 未公开 | 未公开 | 2026年1月 |
 | 美国 | NVIDIA | Nemotron | Cosmos Policy | 🤖 | 未公开 | 未公开 | 2026年1月 |
@@ -204,10 +209,27 @@
 | 中国 | 智谱AI | GLM | GLM-TTS | 🎤 | — | — | 2026年 |
 | 中国 | 智谱AI | GLM | GLM-TTS-Clone | 🎤 | — | — | 2026年 |
 | 中国 | 智谱AI | GLM | GLM-4.5-AirX | 📝 | 未公开 | 128K（96K输出） | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-4.5-Flash | 📝🧠 | 未公开 | 未公开 | 2025年（免费，即将下线） |
+| 中国 | 智谱AI | GLM | GLM-4.6V-Flash | 👁️📝 | 未公开 | 未公开 | 2025年（免费） |
+| 中国 | 智谱AI | GLM | GLM-4.1V-Thinking-FlashX | 👁️🧠 | 未公开 | 64K | 2025年 |
+| 中国 | 智谱AI | GLM | GLM-4.1V-Thinking-Flash | 👁️🧠 | 未公开 | 64K | 2025年（免费） |
+| 中国 | 智谱AI | GLM | GLM-4V-Flash | 👁️ | 未公开 | 16K | 2024年（免费） |
+| 中国 | 智谱AI | GLM | CogView-3-Flash | 🖼️ | — | — | 2024年（免费） |
+| 中国 | 智谱AI | GLM | CogVideoX-Flash | 🎬 | — | — | 2024年（免费） |
+| 中国 | 智谱AI | GLM | GLM-Image | 🖼️ | — | — | 2024年 |
+| 中国 | 智谱AI | GLM | GLM-4-Voice | 🎤 | — | — | 2025年 |
+| 中国 | 智谱AI | GLM | Embedding-3 | 📝 | — | — | 2024年 |
+| 中国 | 智谱AI | GLM | Rerank | 📝 | — | — | 2024年 |
+| 中国 | 智谱AI | GLM | CodeGeeX-4 | 💻 | 未公开 | 128K | 2025年 |
 | 中国 | 月之暗面 | Kimi | Kimi K2.7 Code HighSpeed | 💻🧠 | 未公开 | 256K | 2026年6月 |
 | 中国 | 月之暗面 | Kimi | Kimi K2.7 Code | 💻🧠 | 未公开 | 256K | 2026年6月16日 |
 | 中国 | 月之暗面 | Kimi | Kimi K2.6 | 📝🧠 | 未公开 | 256K | 2026年4月 |
-| 中国 | 月之暗面 | Kimi | Kimi K2.5 | 📝🧠👁️ | 未公开（推测与K2同级） | 256K | 2026年 |
+| 中国 | 月之暗面 | Kimi | Kimi K2.5 | 📝🧠👁️ | 1T MoE/32B激活 | 256K | 2026年1月 |
+| 中国 | 月之暗面 | Kimi | Kimi-Dev | 💻 | 72B | 未公开 | 2025年6月 |
+| 中国 | 月之暗面 | Kimi | Kimi-Researcher | 🧠 | 未公开 | 未公开 | 2025年6月 |
+| 中国 | 月之暗面 | Kimi | Kimi-K2-Instruct-0905 | 🧠 | 1T MoE/32B激活 | 256K | 2025年9月9日 |
+| 中国 | 月之暗面 | Kimi | Kimi-Linear | 📝 | 48B MoE/3B激活 | 未公开 | 2025年10月 |
+| 中国 | 月之暗面 | Kimi | K2 Thinking | 🧠 | 未公开 | 未公开 | 2025年11月 |
 | 中国 | MiniMax | Speech | Speech-2.8-HD | 🎤 | — | — | 2026年 |
 | 中国 | MiniMax | Speech | Speech-2.8-Turbo | 🎤 | — | — | 2026年 |
 | 中国 | MiniMax | music | music-2.6 | 🎵 | — | — | 2026年 |
@@ -254,6 +276,11 @@
 | 美国 | NVIDIA | Nemotron | Llama Nemotron Nano 4B | 📝🧠 | 4B | 未公开 | 2025年6月 |
 | 法国 | Mistral AI | Mistral | Mistral Small 3.2 | 📝 | 未公开 | 未公开 | 2025年6月 |
 | 法国 | Mistral AI | Magistral | Magistral Medium 1.0 / Small 1.0 | 🧠 | 未公开 | 未公开 | 2025年6月 |
+| 中国 | MiniMax | M系列 | MiniMax-M2 / M2.1 / M2.1-highspeed | 📝 | 未公开 | 未公开 | 2025年 |
+| 中国 | MiniMax | Speech | Speech-2.6-HD / Speech-2.6-Turbo | 🎤 | — | — | 2025年 |
+| 中国 | MiniMax | Speech | Speech-02-HD / Speech-02-Turbo | 🎤 | — | — | 2025年 |
+| 中国 | MiniMax | image | image-01-live | 🖼️ | — | — | 2024年 |
+| 中国 | MiniMax | music | music-cover | 🎵 | — | — | 2025年 |
 | 中国 | MiniMax | M系列 | MiniMax-M1 | 📝 | 未公开 | 未公开 | 2025年6月 |
 | 中国 | DeepSeek | DeepSeek | R1-0528 | 🧠 | 671B MoE/37B激活 | 128K | 2025年5月28日 |
 | 法国 | Mistral AI | Mistral | Mistral Medium 3 | 🌐🧠💻 | 未公开 | 未公开 | 2025年5月 |
@@ -361,6 +388,8 @@
 | 中国 | 华为 | 盘古 | 盘古大模型5.0 | 🌐🧠🔮🔬 | 未公开 | 未公开 | 2025年 |
 | 中国 | 腾讯 | 混元 | Hunyuan-Video 2.0 | 🎬 | — | — | 2025年 |
 | 中国 | 腾讯 | 混元 | Hunyuan-Video | 🎬 | — | — | 2025年 |
+| 中国 | 腾讯 | 混元 | Hunyuan-role-latest | 📝 | 未公开 | 未公开 | 2025年 |
+| 中国 | 腾讯 | 混元 | Hunyuan-embedding | 📝 | — | — | 2025年 |
 | 中国 | 月之暗面 | Kimi | Kimi k2 | 🧠 | 1T MoE/32B激活 | 未公开 | 2025年7月 |
 | 中国 | 小米 | MiMo | MiMo-Audio-7B | 🎤 | 8B | 未公开 | 2025年 |
 | 中国 | 腾讯 | 混元 | Hunyuan-a13b | 📝 纯文本 | 13B | 未公开 | 2025年 |
