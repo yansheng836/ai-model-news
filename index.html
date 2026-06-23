@@ -79,7 +79,7 @@
     /* ========== 侧边栏 ========== */
     .sidebar {
       background: var(--bg-secondary) !important;
-      border-right: 1px solid var(--border-color) !important;
+      border-right: 1px solid rgba(0, 229, 255, 0.25) !important;
       backdrop-filter: blur(20px);
     }
 
@@ -146,25 +146,25 @@
       line-height: 1.8;
     }
 
-    /* 标题样式 */
+    /* 标题样式 - 使用!important覆盖vue.css默认 */
     .markdown-section h1 {
-      font-family: 'Orbitron', 'Noto Sans SC', sans-serif;
-      background: linear-gradient(135deg, #00e5ff, #b794f6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      font-size: 2rem;
-      font-weight: 900;
+      font-family: 'Orbitron', 'Noto Sans SC', sans-serif !important;
+      background: linear-gradient(135deg, #00e5ff, #b794f6) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+      font-size: 2rem !important;
+      font-weight: 900 !important;
       padding-bottom: 1rem;
       border-bottom: 2px solid rgba(0, 229, 255, 0.25);
       margin-bottom: 2rem;
     }
 
     .markdown-section h2 {
-      color: #00e5ff;
-      font-family: 'Orbitron', 'Noto Sans SC', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 700;
+      color: #00e5ff !important;
+      font-family: 'Orbitron', 'Noto Sans SC', sans-serif !important;
+      font-size: 1.5rem !important;
+      font-weight: 700 !important;
       padding-left: 1rem;
       border-left: 3px solid #b794f6;
       margin-top: 3rem;
@@ -172,25 +172,25 @@
     }
 
     .markdown-section h3 {
-      color: #b794f6;
-      font-size: 1.2rem;
-      font-weight: 600;
+      color: #b794f6 !important;
+      font-size: 1.2rem !important;
+      font-weight: 600 !important;
     }
 
     .markdown-section h4 {
-      color: #f687b3;
+      color: #f687b3 !important;
     }
 
     /* 链接样式 */
     .markdown-section a {
-      color: #00e5ff;
+      color: #00e5ff !important;
       text-decoration: none;
       border-bottom: 1px dashed rgba(0, 229, 255, 0.5);
       transition: all 0.3s ease;
     }
 
     .markdown-section a:hover {
-      color: #fff;
+      color: #fff !important;
       border-bottom-color: #00e5ff;
       text-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
     }
@@ -211,7 +211,7 @@
       border-collapse: separate !important;
       border-spacing: 0 !important;
       background: var(--bg-card) !important;
-      border: 1px solid var(--border-color) !important;
+      border: 1px solid rgba(0, 229, 255, 0.25) !important;
       border-radius: 12px !important;
       overflow: hidden !important;
       backdrop-filter: blur(10px);
@@ -227,24 +227,24 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       padding: 14px 16px !important;
-      border-bottom: 1px solid var(--border-color) !important;
+      border-bottom: 1px solid rgba(0, 229, 255, 0.25) !important;
     }
 
     .markdown-section table td {
       padding: 12px 16px !important;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
       font-size: 0.9rem !important;
-      color: var(--text-primary) !important;
-      background: var(--bg-card) !important;
+      color: #e8e8f0 !important;
+      background: rgba(30, 40, 70, 0.9) !important;
       transition: background 0.2s ease;
     }
 
     .markdown-section table tr:nth-child(even) td {
-      background: rgba(22, 33, 62, 0.95) !important;
+      background: rgba(35, 45, 75, 0.95) !important;
     }
 
     .markdown-section table tr:nth-child(odd) td {
-      background: var(--bg-card) !important;
+      background: rgba(25, 35, 65, 0.9) !important;
     }
 
     .markdown-section table tr:hover td,
@@ -264,8 +264,8 @@
 
     /* ========== 代码块 ========== */
     .markdown-section code {
-      background: rgba(0, 229, 255, 0.15);
-      color: #00e5ff;
+      background: rgba(0, 229, 255, 0.15) !important;
+      color: #00e5ff !important;
       padding: 2px 8px;
       border-radius: 4px;
       font-size: 0.85em;
@@ -309,7 +309,7 @@
     .markdown-section .tip,
     .markdown-section .note {
       background: var(--bg-card);
-      border: 1px solid var(--border-color);
+      border: 1px solid rgba(0, 229, 255, 0.25);
       border-radius: 8px;
       padding: 1rem 1.5rem;
       margin: 1.5rem 0;
@@ -318,7 +318,7 @@
     /* ========== 搜索框 ========== */
     .search input {
       background: var(--bg-secondary) !important;
-      border: 1px solid var(--border-color) !important;
+      border: 1px solid rgba(0, 229, 255, 0.25) !important;
       color: var(--text-primary) !important;
       border-radius: 8px !important;
       padding: 10px 16px !important;
@@ -578,12 +578,12 @@
 
     /* ========== 特殊高亮 ========== */
     .markdown-section strong {
-      color: #00e5ff;
-      font-weight: 600;
+      color: #00e5ff !important;
+      font-weight: 600 !important;
     }
 
     .markdown-section em {
-      color: #b794f6;
+      color: #b794f6 !important;
       font-style: normal;
     }
 
@@ -666,7 +666,7 @@
     /* ========== 图片样式 ========== */
     .markdown-section img {
       border-radius: 8px;
-      border: 1px solid var(--border-color);
+      border: 1px solid rgba(0, 229, 255, 0.25);
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
       transition: all 0.3s ease;
     }
@@ -684,7 +684,7 @@
 
     .markdown-section ul li::before {
       content: '▸';
-      color: #00e5ff;
+      color: #00e5ff !important;
       font-weight: bold;
       display: inline-block;
       width: 1em;
@@ -697,7 +697,7 @@
     }
 
     .markdown-section ol li::marker {
-      color: #b794f6;
+      color: #b794f6 !important;
       font-weight: bold;
       opacity: 0.9;
     }

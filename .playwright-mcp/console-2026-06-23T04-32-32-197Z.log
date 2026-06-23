@@ -1,0 +1,8 @@
+[    1336ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap:0
+[    3426ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600:0
+[    4306ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/favicon.ico:0
+[   10588ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap:0
+[   11944ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600:0
+[   29700ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap:0
+[   32155ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600:0
+[   65378ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/robotomono/v31/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2 @ http://localhost:3000/#/:0

@@ -27,7 +27,7 @@
 | Claude 3.5 Sonnet（claude-3-5-sonnet-20240620） | 2024年6月20日 | 🌐 多模态 | 未公开 | 200K | 超越Claude 3 Opus |
 | Claude 3.5 Sonnet v2（claude-3-5-sonnet-20241022） | 2024年10月22日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 支持Computer Use |
 | Claude 3.5 Haiku（claude-3-5-haiku-20241022） | 2024年10月22日 | 🌐 多模态 | 未公开 | 200K | 轻量版升级 |
-| Claude 4 Sonnet（claude-sonnet-4-20250514） | 2025年5月14日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 编程能力大幅提升 |
+| Claude 4 Sonnet（claude-sonnet-4-20250514） | 2025年5月14日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 编程能力大幅提升 |
 | Claude 4 Opus（claude-opus-4-20250514） | 2025年5月14日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 最强下一代模型 |
 | Claude Haiku 4.5（claude-haiku-4-5-20251001） | 2025年10月1日 | 🌐🧠 多模态+推理 | 未公开 | 200K | 支持Extended Thinking，知识截止2025年2月 |
 | Claude Opus 4.1（claude-opus-4-1-20250805） | 2025年8月5日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，定价$15/$75 MTok |

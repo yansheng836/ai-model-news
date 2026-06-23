@@ -1,6 +1,6 @@
 # AI大模型产品目录
 
-<div style="font-family: 'Orbitron', monospace; font-size: 0.85rem; color: #00f0ff; letter-spacing: 4px; margin: 1rem 0 2rem; text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);">
+<div style="font-family: 'Orbitron', monospace; font-size: 0.85rem; color: #00e5ff; letter-spacing: 4px; margin: 1rem 0 2rem; text-shadow: 0 0 20px rgba(0, 229, 255, 0.5);">
 AI MODEL PRODUCTS CATALOG
 </div>
 
