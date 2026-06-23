@@ -147,7 +147,9 @@
     }
 
     /* 标题样式 - 使用!important覆盖vue.css默认 */
-    .markdown-section h1 {
+    .markdown-section h1,
+    .markdown-section h1 .anchor,
+    .markdown-section h1 .anchor span {
       font-family: 'Orbitron', 'Noto Sans SC', sans-serif !important;
       background: linear-gradient(135deg, #00e5ff, #b794f6) !important;
       -webkit-background-clip: text !important;
@@ -160,25 +162,34 @@
       margin-bottom: 2rem;
     }
 
-    .markdown-section h2 {
+    .markdown-section h2,
+    .markdown-section h2 .anchor,
+    .markdown-section h2 .anchor span {
       color: #00e5ff !important;
       font-family: 'Orbitron', 'Noto Sans SC', sans-serif !important;
       font-size: 1.5rem !important;
       font-weight: 700 !important;
-      padding-left: 1rem;
-      border-left: 3px solid #b794f6;
       margin-top: 3rem;
       text-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
     }
 
-    .markdown-section h3 {
+    .markdown-section h3,
+    .markdown-section h3 .anchor,
+    .markdown-section h3 .anchor span {
       color: #b794f6 !important;
       font-size: 1.2rem !important;
       font-weight: 600 !important;
     }
 
-    .markdown-section h4 {
+    .markdown-section h4,
+    .markdown-section h4 .anchor,
+    .markdown-section h4 .anchor span {
       color: #f687b3 !important;
+    }
+
+    /* 覆盖vue.css中 .anchor span 的默认颜色 */
+    .markdown-section .anchor span {
+      color: inherit !important;
     }
 
     /* 链接样式 */
@@ -641,16 +652,6 @@
     }
 
     /* ========== 标题装饰 ========== */
-    .markdown-section h2::after {
-      content: '';
-      display: inline-block;
-      width: 30px;
-      height: 2px;
-      background: linear-gradient(90deg, #00e5ff, transparent);
-      margin-left: 10px;
-      vertical-align: middle;
-      opacity: 0.8;
-    }
 
     /* ========== 选中文字样式 ========== */
     ::selection {

@@ -143,6 +143,13 @@
 | 美国 | OpenAI | GPT | GPT-5-pro / GPT-5-mini / GPT-5-nano | 🌐🧠🖥️ | 未公开 | 400K | 2025年 |
 | 美国 | OpenAI | GPT | GPT-5-codex / GPT-5-image / GPT-5-image-mini | 🌐🧠🖥️ | 未公开 | 400K | 2025年 |
 | 美国 | OpenAI | GPT | GPT-Audio / GPT-Audio-mini | 🎤 | — | 128K | 2025年 |
+| 美国 | OpenAI | GPT | GPT-5.3-chat / GPT-5.3-codex | 🌐🧠💻 | 未公开 | 128K/400K | 2026年 |
+| 美国 | OpenAI | GPT | GPT-5.4-pro | 🌐🧠🖥️ | 未公开 | 1050K | 2026年 |
+| 美国 | OpenAI | GPT | GPT-5.4-image-2 | 🌐🖼️ | 未公开 | 272K | 2026年 |
+| 美国 | OpenAI | GPT | GPT-4.1-nano | 🌐 | 未公开 | 1M | 2025年 |
+| 美国 | OpenAI | o系列 | o1-pro | 🧠 | 未公开 | 200K | 2024年 |
+| 美国 | OpenAI | GPT | GPT-4o search preview / mini | 🌐 | 未公开 | 128K | 2025年 |
+| 美国 | OpenAI | GPT-OSS | GPT-OSS-Safeguard-20B | 📝 | 20B | 131K | 2025年（开源） |
 | 美国 | OpenAI | o系列 | o3-pro | 🧠 | 未公开 | 200K | 2025年 |
 | 美国 | OpenAI | o系列 | o4-mini-high | 🧠💻 | 未公开 | 200K | 2025年 |
 | 美国 | OpenAI | o系列 | o3-deep-research / o4-mini-deep-research | 🧠 | 未公开 | 200K | 2025年 |
@@ -169,7 +176,7 @@
 | 美国 | Anthropic | Claude | Claude Sonnet 4.6（claude-sonnet-4-6） | 🌐🧠🖥️ | 未公开 | 1M | 2026年2月17日 |
 | 中国 | 字节跳动 | 豆包 | Doubao Seed 2.0 | 🌐🧠 | 未公开 | 未公开 | 2026年2月14日 |
 | 中国 | 百川智能 | Baichuan | Baichuan-M3-235B | 📝 | 235B | 32K | 2026年2月9日 |
-| 美国 | xAI | Grok | Grok-4.20 Beta | 🌐🧠💻 | 未公开 | 1M | 2026年2月 |
+| 美国 | xAI | Grok | Grok-4.20 Beta | 🌐🧠💻 | 未公开 | 2M | 2026年2月 |
 | 美国 | xAI | Grok | Grok-4.20 Multi-Agent | 🌐🧠💻🖥️ | 未公开 | 2M | 2026年 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-OCR-2 | 👁️📝 | 3B | — | 2026年2月 |
 | 中国 | MiniMax | M系列 | MiniMax-M2.7-highspeed | 📝 | 未公开 | 未公开 | 2026年 |
@@ -192,6 +199,11 @@
 | 美国 | Google | Gemini | Gemini 3.1 Flash TTS（Preview） | 🎤 | 未公开 | 未公开 | 2026年 |
 | 美国 | Google | Gemini | Gemini Embedding 2 | 📝 | — | — | 2026年 |
 | 美国 | Google | Gemini | Gemini Robotics-ER 1.6（Preview） | 🤖 | — | — | 2026年 |
+| 美国 | Google | Gemini | Gemini 3.1 Pro（Preview） | 🌐🧠💻🖥️ | 未公开 | 1M | 2026年 |
+| 美国 | Google | Gemini | Gemini 3 Pro Image / 3.1 Flash Image | 🖼️ | — | 65K/131K | 2026年 |
+| 美国 | Google | Gemini | Gemini 2.5 Flash Image | 🖼️ | — | 32K | 2025年 |
+| 美国 | Google | Gemma | Gemma 4（26B-A4B / 31B） | 📝 | 26B MoE/31B | 262K | 2026年 |
+| 美国 | Google | Gemma | Gemma 3n（E4B） | 📝 | 4B | 32K | 2025年 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro | 📝 | 862B MoE | 1M（384K输出） | 2026年 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Flash | 📝 | 158B MoE | 1M（384K输出） | 2026年 |
 | 中国 | 阿里巴巴 | 通义千问 | qwen3.7-max | 🌐🧠💻 | 未公开 | 1M | 2026年 |
@@ -216,7 +228,7 @@
 | 中国 | 阿里巴巴 | 通义千问 | qwen-image-2.0-pro | 🖼️ | — | — | 2026年 |
 | 中国 | 智谱AI | GLM | GLM-5.2 | 📝 | 未公开 | 1M（128K输出） | 2026年 |
 | 中国 | 智谱AI | GLM | GLM-5.1 | 📝 | 未公开 | 200K（128K输出） | 2026年 |
-| 中国 | 智谱AI | GLM | GLM-5-Turbo | 📝 | 未公开 | 200K（128K输出） | 2026年 |
+| 中国 | 智谱AI | GLM | GLM-5-Turbo | 📝 | 未公开 | 262K（128K输出） | 2026年 |
 | 中国 | 智谱AI | GLM | GLM-5 | 📝 | 未公开 | 200K（128K输出） | 2026年 |
 | 中国 | 智谱AI | GLM | GLM-4.7 | 📝 | 未公开 | 200K（128K输出） | 2026年 |
 | 中国 | 智谱AI | GLM | GLM-4.7-FlashX | 📝 | 未公开 | 200K（128K输出） | 2026年 |
@@ -302,7 +314,7 @@
 | 中国 | MiniMax | image | image-01-live | 🖼️ | — | — | 2024年 |
 | 中国 | MiniMax | music | music-cover | 🎵 | — | — | 2025年 |
 | 中国 | MiniMax | M系列 | MiniMax-M1 | 📝 | 未公开 | 未公开 | 2025年6月 |
-| 中国 | DeepSeek | DeepSeek | R1-0528 | 🧠 | 671B MoE/37B激活 | 128K | 2025年5月28日 |
+| 中国 | DeepSeek | DeepSeek | R1-0528 | 🧠 | 671B MoE/37B激活 | 160K | 2025年5月28日 |
 | 法国 | Mistral AI | Mistral | Mistral Medium 3 | 🌐🧠💻 | 未公开 | 未公开 | 2025年5月 |
 | 法国 | Mistral AI | Devstral | Devstral | 💻 | 未公开 | 未公开 | 2025年5月 |
 | 法国 | Mistral AI | Codestral | Codestral Embed | 💻 | 未公开 | 未公开 | 2025年5月 |
@@ -366,11 +378,11 @@
 | 美国 | OpenAI | GPT-Realtime | GPT-Realtime-Whisper | 🎤 | — | — | 2025-2026年 |
 | 美国 | OpenAI | GPT-4o | GPT-4o Transcribe / mini Transcribe | 🎤 | — | — | 2025-2026年 |
 | 美国 | OpenAI | o系列 | o3-mini（o3-mini-2025-01-31） | 🧠💻 | 未公开 | 200K | 2025年1月31日 |
-| 中国 | DeepSeek | DeepSeek | R1-Zero | 🧠 | 671B MoE/37B激活 | 128K | 2025年1月28日 |
-| 中国 | DeepSeek | DeepSeek | R1蒸馏模型（1.5B~70B） | 🧠 | 1.5B~70B | 128K | 2025年1月28日 |
+| 中国 | DeepSeek | DeepSeek | R1-Zero | 🧠 | 671B MoE/37B激活 | 160K | 2025年1月28日 |
+| 中国 | DeepSeek | DeepSeek | R1蒸馏模型（1.5B~70B） | 🧠 | 1.5B~70B | 160K | 2025年1月28日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen2.5-Max | 📝 | 未公开 MoE | 1M | 2025年1月29日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen2.5-VL（7B/72B） | 👁️📝 | 7B/72B | 128K | 2025年1月29日 |
-| 中国 | DeepSeek | DeepSeek | R1 | 🧠 | 671B MoE/37B激活 | 128K | 2025年1月20日 |
+| 中国 | DeepSeek | DeepSeek | R1 | 🧠 | 671B MoE/37B激活 | 160K | 2025年1月20日 |
 | 中国 | MiniMax | MiniMax-01 | MiniMax-01（456B MoE） | 📝 | 456B MoE/45.9B激活 | 4M | 2025年1月15日 |
 | 法国 | Mistral AI | Mistral | Mistral Small 3（24B） | 📝 | 24B | 128K | 2025年1月 |
 | 法国 | Mistral AI | Mistral | Mistral Small 3.1 | 📝 | 未公开 | 未公开 | 2025年3月 |

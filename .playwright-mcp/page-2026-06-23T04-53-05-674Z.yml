@@ -1,0 +1,579 @@
+- generic [active] [ref=e1]:
+  - link "View source on Github" [ref=e2] [cursor=pointer]:
+    - /url: https://github.com/yansheng836/ai-model-news
+    - img [ref=e3]
+  - main [ref=e7]:
+    - button "Menu" [ref=e8] [cursor=pointer]
+    - complementary [ref=e13]:
+      - searchbox "Search text" [ref=e16]
+      - heading "AI大模型产品目录" [level=1] [ref=e17]:
+        - link "AI大模型产品目录" [ref=e18] [cursor=pointer]:
+          - /url: /
+      - generic [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e21]:
+            - link "首页" [ref=e22] [cursor=pointer]:
+              - /url: "#/"
+          - listitem [ref=e23]:
+            - link "大模型发版时间线总览" [ref=e24] [cursor=pointer]:
+              - /url: "#/README?id=%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%8f%91%e7%89%88%e6%97%b6%e9%97%b4%e7%ba%bf%e6%80%bb%e8%a7%88"
+        - heading "中国厂商" [level=2] [ref=e25]:
+          - link "中国厂商" [ref=e26] [cursor=pointer]:
+            - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e4%b8%ad%e5%9b%bd%e5%8e%82%e5%95%86"
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - link "阿里巴巴 - 通义千问" [ref=e29] [cursor=pointer]:
+              - /url: "#/中国-阿里巴巴-通义千问"
+          - listitem [ref=e30]:
+            - link "百度 - 文心" [ref=e31] [cursor=pointer]:
+              - /url: "#/中国-百度-文心"
+          - listitem [ref=e32]:
+            - link "字节跳动 - 豆包" [ref=e33] [cursor=pointer]:
+              - /url: "#/中国-字节跳动-豆包"
+          - listitem [ref=e34]:
+            - link "腾讯 - 混元" [ref=e35] [cursor=pointer]:
+              - /url: "#/中国-腾讯-混元"
+          - listitem [ref=e36]:
+            - link "深度求索 - DeepSeek" [ref=e37] [cursor=pointer]:
+              - /url: "#/中国-深度求索-DeepSeek"
+            - list [ref=e38]:
+              - listitem [ref=e39]:
+                - text: "-"
+                - link "公司简介" [ref=e40] [cursor=pointer]:
+                  - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e5%85%ac%e5%8f%b8%e7%ae%80%e4%bb%8b"
+              - listitem [ref=e41]:
+                - text: "-"
+                - link "模型总览" [ref=e42] [cursor=pointer]:
+                  - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e6%a8%a1%e5%9e%8b%e6%80%bb%e8%a7%88"
+              - listitem [ref=e43]:
+                - text: "-"
+                - link "模型详细介绍" [ref=e44] [cursor=pointer]:
+                  - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e6%a8%a1%e5%9e%8b%e8%af%a6%e7%bb%86%e4%bb%8b%e7%bb%8d"
+              - list [ref=e45]:
+                - listitem [ref=e46]:
+                  - text: "-"
+                  - link "DeepSeek LLM 67B（2024年1月）" [ref=e47] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-llm-67b%ef%bc%882024%e5%b9%b41%e6%9c%88%ef%bc%89"
+                - listitem [ref=e48]:
+                  - text: "-"
+                  - link "DeepSeek Coder V1（2024年1月）" [ref=e49] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-coder-v1%ef%bc%882024%e5%b9%b41%e6%9c%88%ef%bc%89"
+                - listitem [ref=e50]:
+                  - text: "-"
+                  - link "DeepSeek-VL（2024年3月）" [ref=e51] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-vl%ef%bc%882024%e5%b9%b43%e6%9c%88%ef%bc%89"
+                - listitem [ref=e52]:
+                  - text: "-"
+                  - link "DeepSeek-V2（2024年5月）" [ref=e53] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-v2%ef%bc%882024%e5%b9%b45%e6%9c%88%ef%bc%89"
+                - listitem [ref=e54]:
+                  - text: "-"
+                  - link "DeepSeek-V2-Lite（2024年5月）" [ref=e55] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-v2-lite%ef%bc%882024%e5%b9%b45%e6%9c%88%ef%bc%89"
+                - listitem [ref=e56]:
+                  - text: "-"
+                  - link "DeepSeek-V3" [ref=e57] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-v3"
+                - listitem [ref=e58]:
+                  - text: "-"
+                  - link "DeepSeek-R1" [ref=e59] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-r1"
+                - listitem [ref=e60]:
+                  - text: "-"
+                  - link "蒸馏模型系列" [ref=e61] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e8%92%b8%e9%a6%8f%e6%a8%a1%e5%9e%8b%e7%b3%bb%e5%88%97"
+                - listitem [ref=e62]:
+                  - text: "-"
+                  - link "DeepSeek-V3.2" [ref=e63] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-v32"
+                - listitem [ref=e64]:
+                  - text: "-"
+                  - link "DeepSeek-V4系列（2026年）" [ref=e65] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-v4%e7%b3%bb%e5%88%97%ef%bc%882026%e5%b9%b4%ef%bc%89"
+                - listitem [ref=e66]:
+                  - text: "-"
+                  - link "⚠️ 模型弃用通知" [ref=e67] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e2%9a%a0%ef%b8%8f-%e6%a8%a1%e5%9e%8b%e5%bc%83%e7%94%a8%e9%80%9a%e7%9f%a5"
+                - listitem [ref=e68]:
+                  - text: "-"
+                  - link "DeepSeek-OCR系列" [ref=e69] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-ocr%e7%b3%bb%e5%88%97"
+                - listitem [ref=e70]:
+                  - text: "-"
+                  - link "核心创新" [ref=e71] [cursor=pointer]:
+                    - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e6%a0%b8%e5%bf%83%e5%88%9b%e6%96%b0"
+              - listitem [ref=e72]:
+                - text: "-"
+                - link "中国厂商" [ref=e73] [cursor=pointer]:
+                  - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e4%b8%ad%e5%9b%bd%e5%8e%82%e5%95%86"
+              - listitem [ref=e74]:
+                - text: "-"
+                - link "美国厂商" [ref=e75] [cursor=pointer]:
+                  - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e7%be%8e%e5%9b%bd%e5%8e%82%e5%95%86"
+              - listitem [ref=e76]:
+                - text: "-"
+                - link "欧洲厂商" [ref=e77] [cursor=pointer]:
+                  - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e6%ac%a7%e6%b4%b2%e5%8e%82%e5%95%86"
+          - listitem [ref=e78]:
+            - link "智谱AI - GLM" [ref=e79] [cursor=pointer]:
+              - /url: "#/中国-智谱AI-GLM"
+          - listitem [ref=e80]:
+            - link "月之暗面 - Kimi" [ref=e81] [cursor=pointer]:
+              - /url: "#/中国-月之暗面-Kimi"
+          - listitem [ref=e82]:
+            - link "科大讯飞 - 星火" [ref=e83] [cursor=pointer]:
+              - /url: "#/中国-科大讯飞-星火"
+          - listitem [ref=e84]:
+            - link "零一万物 - Yi" [ref=e85] [cursor=pointer]:
+              - /url: "#/中国-零一万物-Yi"
+          - listitem [ref=e86]:
+            - link "MiniMax - abab" [ref=e87] [cursor=pointer]:
+              - /url: "#/中国-MiniMax-abab"
+          - listitem [ref=e88]:
+            - link "百川智能 - Baichuan" [ref=e89] [cursor=pointer]:
+              - /url: "#/中国-百川智能-Baichuan"
+          - listitem [ref=e90]:
+            - link "华为 - 盘古" [ref=e91] [cursor=pointer]:
+              - /url: "#/中国-华为-盘古"
+          - listitem [ref=e92]:
+            - link "小米 - MiMo" [ref=e93] [cursor=pointer]:
+              - /url: "#/中国-小米-MiMo"
+          - listitem [ref=e94]:
+            - link "商汤科技 - 日日新" [ref=e95] [cursor=pointer]:
+              - /url: "#/中国-商汤科技-日日新"
+        - heading "美国厂商" [level=2] [ref=e96]:
+          - link "美国厂商" [ref=e97] [cursor=pointer]:
+            - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e7%be%8e%e5%9b%bd%e5%8e%82%e5%95%86"
+        - list [ref=e98]:
+          - listitem [ref=e99]:
+            - link "OpenAI - GPT" [ref=e100] [cursor=pointer]:
+              - /url: "#/美国-OpenAI-GPT"
+          - listitem [ref=e101]:
+            - link "Anthropic - Claude" [ref=e102] [cursor=pointer]:
+              - /url: "#/美国-Anthropic-Claude"
+          - listitem [ref=e103]:
+            - link "Google - Gemini" [ref=e104] [cursor=pointer]:
+              - /url: "#/美国-Google-Gemini"
+          - listitem [ref=e105]:
+            - link "Meta - Llama" [ref=e106] [cursor=pointer]:
+              - /url: "#/美国-Meta-Llama"
+          - listitem [ref=e107]:
+            - link "xAI - Grok" [ref=e108] [cursor=pointer]:
+              - /url: "#/美国-xAI-Grok"
+          - listitem [ref=e109]:
+            - link "NVIDIA - Nemotron" [ref=e110] [cursor=pointer]:
+              - /url: "#/美国-NVIDIA-Nemotron"
+        - heading "欧洲厂商" [level=2] [ref=e111]:
+          - link "欧洲厂商" [ref=e112] [cursor=pointer]:
+            - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e6%ac%a7%e6%b4%b2%e5%8e%82%e5%95%86"
+        - list [ref=e113]:
+          - listitem [ref=e114]:
+            - link "Mistral AI - Mistral" [ref=e115] [cursor=pointer]:
+              - /url: "#/法国-Mistral-Mistral"
+    - article [ref=e117]:
+      - heading "DeepSeek（深度求索）" [level=1] [ref=e118]:
+        - link "DeepSeek（深度求索）" [ref=e119] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek%ef%bc%88%e6%b7%b1%e5%ba%a6%e6%b1%82%e7%b4%a2%ef%bc%89"
+      - heading "公司简介" [level=2] [ref=e120]:
+        - link "公司简介" [ref=e121] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e5%85%ac%e5%8f%b8%e7%ae%80%e4%bb%8b"
+      - table [ref=e122]:
+        - rowgroup [ref=e123]:
+          - row "项目 内容" [ref=e124]:
+            - columnheader "项目" [ref=e125]
+            - columnheader "内容" [ref=e126]
+        - rowgroup [ref=e127]:
+          - row "国家 中国" [ref=e128]:
+            - cell "国家" [ref=e129]
+            - cell "中国" [ref=e130]
+          - row "总部 杭州" [ref=e131]:
+            - cell "总部" [ref=e132]
+            - cell "杭州" [ref=e133]
+          - row "成立时间 2023年11月" [ref=e134]:
+            - cell "成立时间" [ref=e135]
+            - cell "2023年11月" [ref=e136]
+          - row "创始人 梁文锋（幻方量化创始人）" [ref=e137]:
+            - cell "创始人" [ref=e138]
+            - cell "梁文锋（幻方量化创始人）" [ref=e139]
+          - row "定位 专注通用人工智能研究的初创公司，以极低训练成本和开源策略闻名" [ref=e140]:
+            - cell "定位" [ref=e141]
+            - cell "专注通用人工智能研究的初创公司，以极低训练成本和开源策略闻名" [ref=e142]
+      - blockquote [ref=e143]:
+        - paragraph [ref=e144]:
+          - strong [ref=e145]: 功能属性图例
+          - text: ：📝 纯文本 | 🌐 多模态 | 👁️ 视觉理解 | 🧠 推理 | 💻 代码
+      - heading "模型总览" [level=2] [ref=e146]:
+        - link "模型总览" [ref=e147] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e6%a8%a1%e5%9e%8b%e6%80%bb%e8%a7%88"
+      - blockquote [ref=e148]:
+        - paragraph [ref=e149]: ⚠️ 部分模型发布时间仅精确到年份，需后续通过产品官网验证补充精确日期
+      - table [ref=e150]:
+        - rowgroup [ref=e151]:
+          - row "版本 发布时间 功能属性 参数规模 激活参数 上下文长度 主要特点" [ref=e152]:
+            - columnheader "版本" [ref=e153]
+            - columnheader "发布时间" [ref=e154]
+            - columnheader "功能属性" [ref=e155]
+            - columnheader "参数规模" [ref=e156]
+            - columnheader "激活参数" [ref=e157]
+            - columnheader "上下文长度" [ref=e158]
+            - columnheader "主要特点" [ref=e159]
+        - rowgroup [ref=e160]:
+          - row "DeepSeek LLM 67B 2024年1月5日 📝 纯文本 67B 67B 4K 首个开源模型" [ref=e161]:
+            - cell "DeepSeek LLM 67B" [ref=e162]
+            - cell "2024年1月5日" [ref=e163]
+            - cell "📝 纯文本" [ref=e164]
+            - cell "67B" [ref=e165]
+            - cell "67B" [ref=e166]
+            - cell "4K" [ref=e167]
+            - cell "首个开源模型" [ref=e168]
+          - row "DeepSeek Coder V1 2024年1月 💻 代码 未公开 未公开 16K 首个代码模型" [ref=e169]:
+            - cell "DeepSeek Coder V1" [ref=e170]
+            - cell "2024年1月" [ref=e171]
+            - cell "💻 代码" [ref=e172]
+            - cell "未公开" [ref=e173]
+            - cell "未公开" [ref=e174]
+            - cell "16K" [ref=e175]
+            - cell "首个代码模型" [ref=e176]
+          - row "DeepSeek-VL 2024年3月 👁️📝 视觉+文本 未公开 未公开 未公开 首个视觉语言模型" [ref=e177]:
+            - cell "DeepSeek-VL" [ref=e178]
+            - cell "2024年3月" [ref=e179]
+            - cell "👁️📝 视觉+文本" [ref=e180]
+            - cell "未公开" [ref=e181]
+            - cell "未公开" [ref=e182]
+            - cell "未公开" [ref=e183]
+            - cell "首个视觉语言模型" [ref=e184]
+          - row "DeepSeek-V2（236B/21B） 2024年5月6日 📝 纯文本 236B MoE 21B（160专家） 128K MoE架构创新" [ref=e185]:
+            - cell "DeepSeek-V2（236B/21B）" [ref=e186]
+            - cell "2024年5月6日" [ref=e187]
+            - cell "📝 纯文本" [ref=e188]
+            - cell "236B MoE" [ref=e189]
+            - cell "21B（160专家）" [ref=e190]
+            - cell "128K" [ref=e191]
+            - cell "MoE架构创新" [ref=e192]
+          - row "DeepSeek-V2-Lite 2024年5月 📝 纯文本 15.7B MoE 2.4B 32K V2轻量版" [ref=e193]:
+            - cell "DeepSeek-V2-Lite" [ref=e194]
+            - cell "2024年5月" [ref=e195]
+            - cell "📝 纯文本" [ref=e196]
+            - cell "15.7B MoE" [ref=e197]
+            - cell "2.4B" [ref=e198]
+            - cell "32K" [ref=e199]
+            - cell "V2轻量版" [ref=e200]
+          - row "DeepSeek Coder V2 2024年6月 💻📝 代码+文本 236B MoE 21B 128K 代码专用模型" [ref=e201]:
+            - cell "DeepSeek Coder V2" [ref=e202]
+            - cell "2024年6月" [ref=e203]
+            - cell "💻📝 代码+文本" [ref=e204]
+            - cell "236B MoE" [ref=e205]
+            - cell "21B" [ref=e206]
+            - cell "128K" [ref=e207]
+            - cell "代码专用模型" [ref=e208]
+          - row "DeepSeek-V2.5 2024年9月 📝💻 文本+代码 236B MoE 21B 128K 融合Chat和Coder" [ref=e209]:
+            - cell "DeepSeek-V2.5" [ref=e210]
+            - cell "2024年9月" [ref=e211]
+            - cell "📝💻 文本+代码" [ref=e212]
+            - cell "236B MoE" [ref=e213]
+            - cell "21B" [ref=e214]
+            - cell "128K" [ref=e215]
+            - cell "融合Chat和Coder" [ref=e216]
+          - row "DeepSeek-V2.5-0905 2024年9月 📝💻 文本+代码 236B MoE 21B 128K V2到V3过渡版" [ref=e217]:
+            - cell "DeepSeek-V2.5-0905" [ref=e218]
+            - cell "2024年9月" [ref=e219]
+            - cell "📝💻 文本+代码" [ref=e220]
+            - cell "236B MoE" [ref=e221]
+            - cell "21B" [ref=e222]
+            - cell "128K" [ref=e223]
+            - cell "V2到V3过渡版" [ref=e224]
+          - row "DeepSeek-R1-Lite 2024年11月20日 🧠 推理 未公开 未公开 128K 推理模型预览版" [ref=e225]:
+            - cell "DeepSeek-R1-Lite" [ref=e226]
+            - cell "2024年11月20日" [ref=e227]
+            - cell "🧠 推理" [ref=e228]
+            - cell "未公开" [ref=e229]
+            - cell "未公开" [ref=e230]
+            - cell "128K" [ref=e231]
+            - cell "推理模型预览版" [ref=e232]
+          - row "DeepSeek-V3（671B/37B） 2024年12月26日 📝 纯文本 671B MoE 37B（256专家） 128K 训练成本仅$5.5M，FP8训练" [ref=e233]:
+            - cell "DeepSeek-V3（671B/37B）" [ref=e234]
+            - cell "2024年12月26日" [ref=e235]
+            - cell "📝 纯文本" [ref=e236]
+            - cell "671B MoE" [ref=e237]
+            - cell "37B（256专家）" [ref=e238]
+            - cell "128K" [ref=e239]
+            - cell "训练成本仅$5.5M，FP8训练" [ref=e240]
+          - row "DeepSeek-V3-Base 2024年12月 📝 纯文本 671B MoE 37B 128K 预训练基座模型" [ref=e241]:
+            - cell "DeepSeek-V3-Base" [ref=e242]
+            - cell "2024年12月" [ref=e243]
+            - cell "📝 纯文本" [ref=e244]
+            - cell "671B MoE" [ref=e245]
+            - cell "37B" [ref=e246]
+            - cell "128K" [ref=e247]
+            - cell "预训练基座模型" [ref=e248]
+          - row "DeepSeek-R1 2025年1月20日 🧠 推理 671B MoE 37B 128K 对标OpenAI o1" [ref=e249]:
+            - cell "DeepSeek-R1" [ref=e250]
+            - cell "2025年1月20日" [ref=e251]
+            - cell "🧠 推理" [ref=e252]
+            - cell "671B MoE" [ref=e253]
+            - cell "37B" [ref=e254]
+            - cell "128K" [ref=e255]
+            - cell "对标OpenAI o1" [ref=e256]
+          - row "DeepSeek-R1-Zero 2025年1月28日 🧠 推理 671B MoE 37B 128K 纯强化学习训练" [ref=e257]:
+            - cell "DeepSeek-R1-Zero" [ref=e258]
+            - cell "2025年1月28日" [ref=e259]
+            - cell "🧠 推理" [ref=e260]
+            - cell "671B MoE" [ref=e261]
+            - cell "37B" [ref=e262]
+            - cell "128K" [ref=e263]
+            - cell "纯强化学习训练" [ref=e264]
+          - row "DeepSeek-R1蒸馏（1.5B~70B） 2025年1月28日 🧠 推理 1.5B~70B — 128K 多规模蒸馏版" [ref=e265]:
+            - cell "DeepSeek-R1蒸馏（1.5B~70B）" [ref=e266]
+            - cell "2025年1月28日" [ref=e267]
+            - cell "🧠 推理" [ref=e268]
+            - cell "1.5B~70B" [ref=e269]
+            - cell "—" [ref=e270]
+            - cell "128K" [ref=e271]
+            - cell "多规模蒸馏版" [ref=e272]
+          - row "DeepSeek-V3-0324 2025年3月24日 📝 纯文本 671B MoE 37B 128K V3更新版" [ref=e273]:
+            - cell "DeepSeek-V3-0324" [ref=e274]
+            - cell "2025年3月24日" [ref=e275]
+            - cell "📝 纯文本" [ref=e276]
+            - cell "671B MoE" [ref=e277]
+            - cell "37B" [ref=e278]
+            - cell "128K" [ref=e279]
+            - cell "V3更新版" [ref=e280]
+          - row "DeepSeek-R1-0528 2025年5月28日 🧠 推理 671B MoE 37B 128K R1迭代更新" [ref=e281]:
+            - cell "DeepSeek-R1-0528" [ref=e282]
+            - cell "2025年5月28日" [ref=e283]
+            - cell "🧠 推理" [ref=e284]
+            - cell "671B MoE" [ref=e285]
+            - cell "37B" [ref=e286]
+            - cell "128K" [ref=e287]
+            - cell "R1迭代更新" [ref=e288]
+          - row "DeepSeek-VL2 2024年12月13日 👁️📝 视觉+文本 未公开MoE 未公开 128K 视觉语言模型" [ref=e289]:
+            - cell "DeepSeek-VL2" [ref=e290]
+            - cell "2024年12月13日" [ref=e291]
+            - cell "👁️📝 视觉+文本" [ref=e292]
+            - cell "未公开MoE" [ref=e293]
+            - cell "未公开" [ref=e294]
+            - cell "128K" [ref=e295]
+            - cell "视觉语言模型" [ref=e296]
+          - row "DeepSeek-OCR 2025年11月 👁️📝 视觉+文本 3B 3B — OCR专用模型" [ref=e297]:
+            - cell "DeepSeek-OCR" [ref=e298]
+            - cell "2025年11月" [ref=e299]
+            - cell "👁️📝 视觉+文本" [ref=e300]
+            - cell "3B" [ref=e301]
+            - cell "3B" [ref=e302]
+            - cell "—" [ref=e303]
+            - cell "OCR专用模型" [ref=e304]
+          - row "DeepSeek-V3.2-Exp 2025年11月 📝 纯文本 685B MoE 未公开 128K V3.2实验版" [ref=e305]:
+            - cell "DeepSeek-V3.2-Exp" [ref=e306]
+            - cell "2025年11月" [ref=e307]
+            - cell "📝 纯文本" [ref=e308]
+            - cell "685B MoE" [ref=e309]
+            - cell "未公开" [ref=e310]
+            - cell "128K" [ref=e311]
+            - cell "V3.2实验版" [ref=e312]
+          - row "DeepSeek-Math-V2 2025年11月 📝🧠 文本+推理 685B MoE 未公开 128K 数学推理专用" [ref=e313]:
+            - cell "DeepSeek-Math-V2" [ref=e314]
+            - cell "2025年11月" [ref=e315]
+            - cell "📝🧠 文本+推理" [ref=e316]
+            - cell "685B MoE" [ref=e317]
+            - cell "未公开" [ref=e318]
+            - cell "128K" [ref=e319]
+            - cell "数学推理专用" [ref=e320]
+          - row "DeepSeek-V3.2 2025年12月 📝 纯文本 685B MoE 未公开 128K V3正式升级版" [ref=e321]:
+            - cell "DeepSeek-V3.2" [ref=e322]
+            - cell "2025年12月" [ref=e323]
+            - cell "📝 纯文本" [ref=e324]
+            - cell "685B MoE" [ref=e325]
+            - cell "未公开" [ref=e326]
+            - cell "128K" [ref=e327]
+            - cell "V3正式升级版" [ref=e328]
+          - row "DeepSeek-V3.2-Speciale 2025年12月 📝 纯文本 685B MoE 未公开 128K V3.2特别版" [ref=e329]:
+            - cell "DeepSeek-V3.2-Speciale" [ref=e330]
+            - cell "2025年12月" [ref=e331]
+            - cell "📝 纯文本" [ref=e332]
+            - cell "685B MoE" [ref=e333]
+            - cell "未公开" [ref=e334]
+            - cell "128K" [ref=e335]
+            - cell "V3.2特别版" [ref=e336]
+          - row "DeepSeek-OCR-2 2026年2月 👁️📝 视觉+文本 3B 3B — OCR升级版，视觉因果流" [ref=e337]:
+            - cell "DeepSeek-OCR-2" [ref=e338]
+            - cell "2026年2月" [ref=e339]
+            - cell "👁️📝 视觉+文本" [ref=e340]
+            - cell "3B" [ref=e341]
+            - cell "3B" [ref=e342]
+            - cell "—" [ref=e343]
+            - cell "OCR升级版，视觉因果流" [ref=e344]
+          - row "DeepSeek-V4-Flash-Base 2026年4月 📝 纯文本 292B MoE 未公开 未公开 V4 Flash基座模型" [ref=e345]:
+            - cell "DeepSeek-V4-Flash-Base" [ref=e346]
+            - cell "2026年4月" [ref=e347]
+            - cell "📝 纯文本" [ref=e348]
+            - cell "292B MoE" [ref=e349]
+            - cell "未公开" [ref=e350]
+            - cell "未公开" [ref=e351]
+            - cell "V4 Flash基座模型" [ref=e352]
+          - row "DeepSeek-V4-Pro-Base 2026年4月 📝 纯文本 1.6T MoE 未公开 未公开 V4 Pro基座模型" [ref=e353]:
+            - cell "DeepSeek-V4-Pro-Base" [ref=e354]
+            - cell "2026年4月" [ref=e355]
+            - cell "📝 纯文本" [ref=e356]
+            - cell "1.6T MoE" [ref=e357]
+            - cell "未公开" [ref=e358]
+            - cell "未公开" [ref=e359]
+            - cell "V4 Pro基座模型" [ref=e360]
+          - row "DeepSeek-V4-Flash 2026年 📝 纯文本 158B MoE 未公开 1M（384K输出） V4轻量版，定价0.02/1.00/2.00元/M tokens" [ref=e361]:
+            - cell "DeepSeek-V4-Flash" [ref=e362]
+            - cell "2026年" [ref=e363]
+            - cell "📝 纯文本" [ref=e364]
+            - cell "158B MoE" [ref=e365]
+            - cell "未公开" [ref=e366]
+            - cell "1M（384K输出）" [ref=e367]
+            - cell "V4轻量版，定价0.02/1.00/2.00元/M tokens" [ref=e368]
+          - row "DeepSeek-V4-Pro 2026年 📝 纯文本 862B MoE 未公开 1M（384K输出） V4旗舰版，定价0.025/3.00/6.00元/M tokens" [ref=e369]:
+            - cell "DeepSeek-V4-Pro" [ref=e370]
+            - cell "2026年" [ref=e371]
+            - cell "📝 纯文本" [ref=e372]
+            - cell "862B MoE" [ref=e373]
+            - cell "未公开" [ref=e374]
+            - cell "1M（384K输出）" [ref=e375]
+            - cell "V4旗舰版，定价0.025/3.00/6.00元/M tokens" [ref=e376]
+          - row "deepseek-chat 2024年 📝 纯文本 — — — ⏰ 2026年7月24日弃用，对应V4-Flash非思考模式" [ref=e377]:
+            - cell "deepseek-chat" [ref=e378]
+            - cell "2024年" [ref=e379]
+            - cell "📝 纯文本" [ref=e380]
+            - cell "—" [ref=e381]
+            - cell "—" [ref=e382]
+            - cell "—" [ref=e383]
+            - cell "⏰ 2026年7月24日弃用，对应V4-Flash非思考模式" [ref=e384]
+          - row "deepseek-reasoner 2025年 🧠 推理 — — — ⏰ 2026年7月24日弃用，对应V4-Flash思考模式" [ref=e385]:
+            - cell "deepseek-reasoner" [ref=e386]
+            - cell "2025年" [ref=e387]
+            - cell "🧠 推理" [ref=e388]
+            - cell "—" [ref=e389]
+            - cell "—" [ref=e390]
+            - cell "—" [ref=e391]
+            - cell "⏰ 2026年7月24日弃用，对应V4-Flash思考模式" [ref=e392]
+      - heading "模型详细介绍" [level=2] [ref=e393]:
+        - link "模型详细介绍" [ref=e394] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e6%a8%a1%e5%9e%8b%e8%af%a6%e7%bb%86%e4%bb%8b%e7%bb%8d"
+      - heading "DeepSeek LLM 67B（2024年1月）" [level=3] [ref=e395]:
+        - link "DeepSeek LLM 67B（2024年1月）" [ref=e396] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-llm-67b%ef%bc%882024%e5%b9%b41%e6%9c%88%ef%bc%89"
+      - paragraph [ref=e397]: 深度求索首个开源模型，67B参数稠密模型，4K上下文。在多项基准上表现出色，奠定了DeepSeek开源模型的基础。
+      - heading "DeepSeek Coder V1（2024年1月）" [level=3] [ref=e398]:
+        - link "DeepSeek Coder V1（2024年1月）" [ref=e399] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-coder-v1%ef%bc%882024%e5%b9%b41%e6%9c%88%ef%bc%89"
+      - paragraph [ref=e400]: 首个代码专用模型，支持多种编程语言的代码生成和理解。
+      - heading "DeepSeek-VL（2024年3月）" [level=3] [ref=e401]:
+        - link "DeepSeek-VL（2024年3月）" [ref=e402] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-vl%ef%bc%882024%e5%b9%b43%e6%9c%88%ef%bc%89"
+      - paragraph [ref=e403]: 首个视觉语言模型，结合视觉理解和文本生成能力，支持图像描述、视觉问答等任务。
+      - heading "DeepSeek-V2（2024年5月）" [level=3] [ref=e404]:
+        - link "DeepSeek-V2（2024年5月）" [ref=e405] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-v2%ef%bc%882024%e5%b9%b45%e6%9c%88%ef%bc%89"
+      - paragraph [ref=e406]: 首个采用MoE架构的版本，236B总参数仅21B激活，大幅降低推理成本。创新性地使用了多头潜在注意力（MLA）机制，在保持性能的同时显著减少KV Cache内存占用。
+      - heading "DeepSeek-V2-Lite（2024年5月）" [level=3] [ref=e407]:
+        - link "DeepSeek-V2-Lite（2024年5月）" [ref=e408] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-v2-lite%ef%bc%882024%e5%b9%b45%e6%9c%88%ef%bc%89"
+      - paragraph [ref=e409]: V2的轻量版本，15.7B MoE架构仅2.4B激活参数，适合资源受限场景。
+      - heading "DeepSeek-V3" [level=3] [ref=e410]:
+        - link "DeepSeek-V3" [ref=e411] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-v3"
+      - paragraph [ref=e412]: 671B参数MoE模型，37B激活，256个专家。最大亮点是训练成本仅$5.5M（使用2048块H800 GPU训练约2个月），是同级别模型成本的几分之一。采用FP8训练、Multi-Token Prediction（MTP）等创新技术。在多项基准上与GPT-4o竞争。V3-Base是预训练基座模型（无SFT/RL后训练）。
+      - heading "DeepSeek-R1" [level=3] [ref=e413]:
+        - link "DeepSeek-R1" [ref=e414] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-r1"
+      - paragraph [ref=e415]: 深度推理模型，对标OpenAI o1。采用强化学习训练，具备链式思维推理能力。在数学（AIME 2024得分79.8%，MATH-500得分97.3%）、编程（Codeforces评分2029）等任务上达到或超越o1水平。R1-Zero版本完全通过强化学习训练（无监督微调），展示了纯RL训练推理能力的可行性。V3通过从R1系列模型蒸馏知识来增强推理能力。
+      - heading "蒸馏模型系列" [level=3] [ref=e416]:
+        - link "蒸馏模型系列" [ref=e417] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e8%92%b8%e9%a6%8f%e6%a8%a1%e5%9e%8b%e7%b3%bb%e5%88%97"
+      - paragraph [ref=e418]: 将R1的推理能力蒸馏到更小的模型中（1.5B/7B/8B/14B/32B/70B），使小模型也能具备强推理能力。其中DeepSeek-R1-Distill-Qwen-32B在多项推理基准上超越了o1-mini。
+      - heading "DeepSeek-V3.2" [level=3] [ref=e419]:
+        - link "DeepSeek-V3.2" [ref=e420] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-v32"
+      - paragraph [ref=e421]: V3的重大升级版本，685B参数MoE架构。2025年12月发布，包含标准版和Speciale特别版。在多项基准测试中表现优异。
+      - heading "DeepSeek-V4系列（2026年）" [level=3] [ref=e422]:
+        - link "DeepSeek-V4系列（2026年）" [ref=e423] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-v4%e7%b3%bb%e5%88%97%ef%bc%882026%e5%b9%b4%ef%bc%89"
+      - paragraph [ref=e424]: 最新一代模型家族：
+      - list [ref=e425]:
+        - listitem [ref=e426]:
+          - text: ▸
+          - strong [ref=e427]: DeepSeek-V4-Pro
+          - text: ：862B参数MoE架构旗舰模型，最强能力。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中3.00元/M tokens，输出6.00元/M tokens
+        - listitem [ref=e428]:
+          - text: ▸
+          - strong [ref=e429]: DeepSeek-V4-Flash
+          - text: ：158B参数MoE架构，高性能低成本。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中1.00元/M tokens，输出2.00元/M tokens
+        - listitem [ref=e430]:
+          - text: ▸
+          - strong [ref=e431]: DeepSeek-V4-Pro-Base
+          - text: ：1.6T参数MoE基座模型
+        - listitem [ref=e432]:
+          - text: ▸
+          - strong [ref=e433]: DeepSeek-V4-Flash-Base
+          - text: ：292B参数MoE基座模型
+      - heading "⚠️ 模型弃用通知" [level=3] [ref=e434]:
+        - link "⚠️ 模型弃用通知" [ref=e435] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e2%9a%a0%ef%b8%8f-%e6%a8%a1%e5%9e%8b%e5%bc%83%e7%94%a8%e9%80%9a%e7%9f%a5"
+      - list [ref=e436]:
+        - listitem [ref=e437]:
+          - text: ▸
+          - strong [ref=e438]: deepseek-chat
+          - text: 和
+          - strong [ref=e439]: deepseek-reasoner
+          - text: 将于
+          - strong [ref=e440]: 2026年7月24日 15:59 UTC
+          - text: 弃用
+        - listitem [ref=e441]:
+          - text: ▸ 弃用后，
+          - code [ref=e442]: deepseek-chat
+          - text: 对应
+          - code [ref=e443]: deepseek-v4-flash
+          - text: 的非思考模式
+        - listitem [ref=e444]:
+          - text: ▸ 弃用后，
+          - code [ref=e445]: deepseek-reasoner
+          - text: 对应
+          - code [ref=e446]: deepseek-v4-flash
+          - text: 的思考模式
+        - listitem [ref=e447]: ▸ 建议用户尽快迁移到新的模型名称
+      - heading "DeepSeek-OCR系列" [level=3] [ref=e448]:
+        - link "DeepSeek-OCR系列" [ref=e449] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=deepseek-ocr%e7%b3%bb%e5%88%97"
+      - paragraph [ref=e450]: OCR专用模型：
+      - list [ref=e451]:
+        - listitem [ref=e452]:
+          - text: ▸
+          - strong [ref=e453]: DeepSeek-OCR
+          - text: （3B，2025年11月）：首个OCR专用模型
+        - listitem [ref=e454]:
+          - text: ▸
+          - strong [ref=e455]: DeepSeek-OCR-2
+          - text: （3B，2026年2月）：升级版，视觉因果流技术
+      - heading "核心创新" [level=3] [ref=e456]:
+        - link "核心创新" [ref=e457] [cursor=pointer]:
+          - /url: "#/%E4%B8%AD%E5%9B%BD-%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2-DeepSeek?id=%e6%a0%b8%e5%bf%83%e5%88%9b%e6%96%b0"
+      - list [ref=e458]:
+        - listitem [ref=e459]:
+          - text: ▸
+          - strong [ref=e460]: MLA（多头潜在注意力）
+          - text: ：减少KV Cache内存，提高推理效率
+        - listitem [ref=e461]:
+          - text: ▸
+          - strong [ref=e462]: MoE架构
+          - text: ：256专家中仅激活37B参数，成本极低
+        - listitem [ref=e463]:
+          - text: ▸
+          - strong [ref=e464]: FP8训练
+          - text: ：业界首批大规模FP8训练模型之一
+        - listitem [ref=e465]:
+          - text: ▸
+          - strong [ref=e466]: Multi-Token Prediction
+          - text: ：多token预测，提升训练效率
+        - listitem [ref=e467]:
+          - text: ▸
+          - strong [ref=e468]: 纯RL训练
+          - text: ：R1-Zero证明无需监督微调即可涌现推理能力
+        - listitem [ref=e469]:
+          - text: ▸
+          - strong [ref=e470]: 视觉因果流
+          - text: ：DeepSeek-OCR-2采用的新技术
+  - button "↑" [ref=e471] [cursor=pointer]
