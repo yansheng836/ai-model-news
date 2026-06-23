@@ -4,17 +4,17 @@
 AI MODEL PRODUCTS CATALOG
 </div>
 
-> 🚀 全球主流 AI 大模型产品收录与对比
+> 全球主流 AI 大模型产品收录与对比
 >
-> 📊 覆盖 20+ 厂商 · 100+ 模型 · 实时更新
+> 覆盖 20+ 厂商 · 100+ 模型 · 实时更新
 
 **主要厂商**
 
-🇺🇸 OpenAI · Anthropic · Google · Meta · xAI · NVIDIA
+OpenAI · Anthropic · Google · Meta · xAI · NVIDIA
 
-🇨🇳 阿里巴巴 · 百度 · 字节跳动 · 腾讯 · 深度求索 · 智谱AI · 月之暗面 · 科大讯飞 · 零一万物 · MiniMax · 百川智能 · 华为 · 小米 · 商汤科技
+阿里巴巴 · 百度 · 字节跳动 · 腾讯 · 深度求索 · 智谱AI · 月之暗面 · 科大讯飞 · 零一万物 · MiniMax · 百川智能 · 华为 · 小米 · 商汤科技
 
-🇫🇷 Mistral AI
+Mistral AI
 
 [开始探索](README.md)
 [Github](https://github.com/yansheng836/ai-model-news)
