@@ -263,18 +263,21 @@
 | 中国 | 月之暗面 | Kimi | Kimi-Researcher | 🧠 | 未公开 | 未公开 | 2025年6月 |
 | 中国 | 月之暗面 | Kimi | Kimi-K2-Instruct-0905 | 🧠 | 1T MoE/32B激活 | 256K | 2025年9月9日 |
 | 中国 | 月之暗面 | Kimi | Kimi-Linear | 📝 | 48B MoE/3B激活 | 未公开 | 2025年10月 |
-| 中国 | 月之暗面 | Kimi | K2 Thinking | 🧠 | 未公开 | 未公开 | 2025年11月 |
+| 中国 | 月之暗面 | Kimi | K2 Thinking | 🧠 | 未公开 | 256K | 2025年11月 |
+| 中国 | 月之暗面 | Kimi | Kimi-K2-Thinking | 🧠 | 未公开 | 256K | 2025年 |
 | 中国 | MiniMax | Speech | Speech-2.8-HD | 🎤 | — | — | 2026年 |
 | 中国 | MiniMax | Speech | Speech-2.8-Turbo | 🎤 | — | — | 2026年 |
 | 中国 | MiniMax | music | music-2.6 | 🎵 | — | — | 2026年 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-2B | 📝 纯文本 | 2B | 262K | 2026年 |
 | 美国 | Anthropic | Claude | Claude Opus 4.6（claude-opus-4-6） | 🌐🧠🖥️ | 未公开 | 1M | 2025年底 |
+| 美国 | Anthropic | Claude | Claude Opus 4.6/4.7/4.8 Fast | 🌐🧠🖥️ | 未公开 | 1M | 2025-2026年（Fast模式，2x定价） |
 | 美国 | NVIDIA | Nemotron | Nemotron 3 Nano（30B/3B） | 📝🧠 | 30B MoE/3B激活 | 1M | 2025年12月 |
 | 法国 | Mistral AI | Mistral | Mistral Large 3 | 🌐 | 未公开 | 未公开 | 2025年12月 |
 | 法国 | Mistral AI | Mistral | Ministral 3（3B/8B/14B） | 📝🌐 | 3B/8B/14B | 未公开 | 2025年12月 |
 | 法国 | Mistral AI | OCR | OCR 3 | 👁️ | 未公开 | 未公开 | 2025年12月 |
 | 法国 | Mistral AI | Mistral | Devstral 2 | 💻 | 未公开 | 未公开 | 2025年12月 |
-| 中国 | DeepSeek | DeepSeek | DeepSeek-V3.2 | 📝 | 685B MoE | 未公开 | 2025年12月 |
+| 中国 | DeepSeek | DeepSeek | DeepSeek-V3.2 | 📝 | 685B MoE | 160K | 2025年12月 |
+| 中国 | DeepSeek | DeepSeek | DeepSeek-V3.1 / V3.1-Terminus | 📝 | 未公开 | 160K | 2025年 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V3.2-Speciale | 📝 | 685B MoE | 未公开 | 2025年12月 |
 | 中国 | 智谱AI | GLM | GLM-ASR-2512 | 🎤 | — | — | 2025年12月 |
 | 美国 | xAI | Grok | Grok-4.1 / 4.1 Fast | 🌐🧠 | 未公开 | 1M/2M | 2025年11月17-19日 |
@@ -284,7 +287,7 @@
 | 美国 | Anthropic | Claude | Claude Haiku 4.5（claude-haiku-4-5-20251001） | 🌐🧠 | 未公开 | 200K | 2025年10月1日 |
 | 美国 | NVIDIA | Nemotron | Llama-Embed-Nemotron-8B | 📝 | 8B | — | 2025年10月 |
 | 美国 | NVIDIA | Nemotron | Cosmos Predict 2.5 / Transfer 2.5 | 🌐🤖 | 未公开 | 未公开 | 2025年10月 |
-| 美国 | Anthropic | Claude | Claude Sonnet 4.5（claude-sonnet-4-5-20250929） | 🌐🧠🖥️ | 未公开 | 200K | 2025年9月29日 |
+| 美国 | Anthropic | Claude | Claude Sonnet 4.5（claude-sonnet-4-5-20250929） | 🌐🧠🖥️ | 未公开 | 1M | 2025年9月29日 |
 | 美国 | xAI | Grok | Grok-4 Fast | 🌐🧠 | 未公开 | 2M | 2025年9月 |
 | 法国 | Mistral AI | Mistral | Mistral Medium 3.1 | 🌐🧠💻 | 未公开 | 未公开 | 2025年8月 |
 | 法国 | Mistral AI | Codestral | Codestral（代码补全） | 💻 | 未公开 | 未公开 | 2025年8月 |
@@ -366,7 +369,7 @@
 | 美国 | OpenAI | GPT | GPT-4.5（Orion） | 🌐 | 未公开 | 128K | 2025年2月 |
 | 美国 | Google | Gemini | Gemini 2.0 Pro | 🌐 | 未公开 | 2M | 2025年2月 |
 | 美国 | Google | Gemini | Gemini 2.0 Flash（GA） | 🌐 | 未公开 | 1M | 2025年2月 |
-| 中国 | DeepSeek | DeepSeek | V3-0324 | 📝 | 671B MoE/37B激活 | 128K | 2025年3月24日 |
+| 中国 | DeepSeek | DeepSeek | V3-0324 | 📝 | 671B MoE/37B激活 | 160K | 2025年3月24日 |
 | 中国 | 腾讯 | 混元 | 混元 T1 | 🧠 | 未公开 | 128K | 2025年3月21日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen2.5-1M | 📝 | 72B | 1M | 2025年2月 |
 | 中国 | 百川智能 | Baichuan | Baichuan-Audio-Base | 🎤 | 10B | — | 2025年2月 |
@@ -423,9 +426,9 @@
 | 中国 | 腾讯 | 混元 | Hunyuan-role-latest | 📝 | 未公开 | 未公开 | 2025年 |
 | 中国 | 腾讯 | 混元 | Hunyuan-embedding | 📝 | — | — | 2025年 |
 | 中国 | 腾讯 | 混元 | HY3-Preview | 🌐🧠 | 未公开 | 262K | 2026年 |
+| 中国 | 腾讯 | 混元 | Hunyuan-a13b | 📝 | 13B | 128K | 2025年 |
 | 中国 | 月之暗面 | Kimi | Kimi k2 | 🧠 | 1T MoE/32B激活 | 未公开 | 2025年7月 |
 | 中国 | 小米 | MiMo | MiMo-Audio-7B | 🎤 | 8B | 未公开 | 2025年 |
-| 中国 | 腾讯 | 混元 | Hunyuan-a13b | 📝 纯文本 | 13B | 未公开 | 2025年 |
 | 中国 | 腾讯 | 混元 | Hunyuan-turbos-vision | 👁️📝 视觉+文本 | 未公开 | 未公开 | 2025年 |
 | 中国 | 腾讯 | 混元 | Hunyuan-turbos-vision-video | 👁️📝 视觉+文本（视频输入） | 未公开 | 未公开 | 2025年 |
 | 中国 | 腾讯 | 混元 | Hunyuan-large-role | 📝 纯文本（角色扮演） | 未公开 | 未公开 | 2025年 |

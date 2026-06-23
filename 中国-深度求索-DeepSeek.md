@@ -32,11 +32,13 @@
 | DeepSeek-R1 | 2025年1月20日 | 🧠 推理 | 671B MoE | 37B | 160K | 对标OpenAI o1 |
 | DeepSeek-R1-Zero | 2025年1月28日 | 🧠 推理 | 671B MoE | 37B | 160K | 纯强化学习训练 |
 | DeepSeek-R1蒸馏（1.5B~70B） | 2025年1月28日 | 🧠 推理 | 1.5B~70B | — | 160K | 多规模蒸馏版 |
-| DeepSeek-V3-0324 | 2025年3月24日 | 📝 纯文本 | 671B MoE | 37B | 128K | V3更新版 |
+| DeepSeek-V3-0324 | 2025年3月24日 | 📝 纯文本 | 671B MoE | 37B | 160K | V3更新版 |
+| DeepSeek-V3.1 | 2025年 | 📝 纯文本 | 671B MoE | 37B | 160K | V3.1迭代版 |
+| DeepSeek-V3.1-Terminus | 2025年 | 📝 纯文本 | 671B MoE | 37B | 160K | V3.1终结版 |
 | DeepSeek-R1-0528 | 2025年5月28日 | 🧠 推理 | 671B MoE | 37B | 160K | R1迭代更新 |
 | DeepSeek-VL2 | 2024年12月13日 | 👁️📝 视觉+文本 | 未公开MoE | 未公开 | 128K | 视觉语言模型 |
 | DeepSeek-OCR | 2025年11月 | 👁️📝 视觉+文本 | 3B | 3B | — | OCR专用模型 |
-| DeepSeek-V3.2-Exp | 2025年11月 | 📝 纯文本 | 685B MoE | 未公开 | 128K | V3.2实验版 |
+| DeepSeek-V3.2-Exp | 2025年11月 | 📝 纯文本 | 685B MoE | 未公开 | 160K | V3.2实验版 |
 | DeepSeek-Math-V2 | 2025年11月 | 📝🧠 文本+推理 | 685B MoE | 未公开 | 128K | 数学推理专用 |
 | DeepSeek-V3.2 | 2025年12月 | 📝 纯文本 | 685B MoE | 未公开 | 128K | V3正式升级版 |
 | DeepSeek-V3.2-Speciale | 2025年12月 | 📝 纯文本 | 685B MoE | 未公开 | 128K | V3.2特别版 |
