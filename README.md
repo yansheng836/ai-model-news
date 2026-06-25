@@ -396,6 +396,7 @@
 | 美国 | OpenAI | GPT | GPT-4.5（Orion） | 🌐 | 未公开 | 128K | 2025年2月 |
 | 美国 | Google | Gemini | Gemini 2.0 Pro | 🌐 | 未公开 | 2M | 2025年2月 |
 | 美国 | Google | Gemini | Gemini 2.0 Flash（GA） | 🌐 | 未公开 | 1M | 2025年2月 |
+| 美国 | Anthropic | Claude | Claude 3.7 Sonnet（claude-3-7-sonnet-20250219） | 🌐🖥️ | 未公开 | 200K | 2025年2月19日 |
 | 中国 | DeepSeek | DeepSeek | V3-0324 | 📝 | 671B MoE/37B激活 | 160K | 2025年3月24日 |
 | 中国 | 腾讯 | 混元 | 混元 T1 | 🧠 | 未公开 | 128K | 2025年3月21日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen2.5-1M | 📝 | 72B | 1M | 2025年2月 |
