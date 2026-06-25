@@ -183,6 +183,14 @@
 | 中国 | MiniMax | M系列 | MiniMax-M2.7 | 📝 | 未公开 | 未公开 | 2026年3月 |
 | 美国 | Anthropic | Claude | Claude Sonnet 4.6（claude-sonnet-4-6） | 🌐🧠🖥️ | 未公开 | 1M | 2026年2月17日 |
 | 中国 | 字节跳动 | 豆包 | Doubao Seed 2.0 | 🌐🧠 | 未公开 | 未公开 | 2026年2月14日 |
+| 中国 | 字节跳动 | 豆包 | Doubao-Seed-2.1-pro | 🌐🧠💻 | 未公开 | 未公开 | 2026年 |
+| 中国 | 字节跳动 | 豆包 | Doubao-Seed-2.1-turbo | 🌐🧠💻 | 未公开 | 未公开 | 2026年 |
+| 中国 | 字节跳动 | 豆包 | Doubao-Seed-Evolving | 🧠💻 | 未公开 | 未公开 | 2026年 |
+| 中国 | 字节跳动 | 豆包 | Doubao-Seed-Character | 📝 | 未公开 | 未公开 | 2026年 |
+| 中国 | 字节跳动 | 豆包 | Seedream 5.0-lite | 🖼️ | — | — | 2026年 |
+| 中国 | 字节跳动 | 豆包 | Seed3D-2.0 | 🧊 3D生成 | — | — | 2026年 |
+| 中国 | 字节跳动 | 豆包 | Doubao-音频生成-1.0 | 🎤 | — | — | 2026年 |
+| 中国 | 字节跳动 | 豆包 | Doubao-实时语音交互 | 🎤 | — | — | 2026年 |
 | 中国 | 百川智能 | Baichuan | Baichuan-M3-235B | 📝 | 235B | 32K | 2026年2月9日 |
 | 美国 | xAI | Grok | Grok-4.20 Beta | 🌐🧠💻 | 未公开 | 2M | 2026年2月 |
 | 美国 | xAI | Grok | Grok-4.20 Multi-Agent | 🌐🧠💻🖥️ | 未公开 | 2M | 2026年2月 |

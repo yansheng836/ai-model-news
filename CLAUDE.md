@@ -157,6 +157,7 @@ process.stdin.on('end', () => {
 | **腾讯混元** | `https://aistudio.tencent.com/modelSquare` | ✅ Verified（浏览器） | 模型广场，含精确参数（HY3:295B/21B、A13B:80B/13B）、Hy-MT2翻译系列 |
 | **腾讯混元** | `https://huggingface.co/Tencent-Hunyuan` | ⚠️ 有限信息 | 仅含HunyuanDiT图像模型，无文本模型详情 |
 | **字节豆包** | `https://en.wikipedia.org/wiki/Doubao` | ⚠️ Wikipedia | 官方文档JS渲染无法抓取，Wikipedia有基本信息 |
+| **字节豆包** | `https://ark.volcengine.com/region:cn-beijing/model` | ✅ Verified（浏览器） | 火山方舟模型广场，含Seed 2.1/Evolving/Seedance/Seedream/Seed3D/语音系列 |
 | **字节跳动** | `https://huggingface.co/bytedance` | ⚠️ 有限信息 | 含Bernini/Ouro等模型，无Doubao系列 |
 | **科大讯飞星火** | `https://xinghuo.xfyun.cn/desk` | ❌ 无法抓取 | 页面JS渲染，无有效内容 |
 | **NVIDIA Nemotron** | `https://huggingface.co/nvidia` | ✅ Verified | HuggingFace含完整Nemotron/Cosmos/GR00T系列 |
