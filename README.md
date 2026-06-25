@@ -6,7 +6,7 @@
 
 同时将所有厂家的大模型的发版时间整理到README.md文档中，一览无遗，需要包括公司所在国家、公司名、大模型名称、版本、发版时间。
 
-> ⚠️ **数据说明**：本项目数据截止至 **2026年6月25日**，通过 `WebFetch` 抓取各厂商官方文档更新。已验证更新的厂商包括：Anthropic、OpenAI、Google、xAI、Mistral、DeepSeek、阿里巴巴、Meta、NVIDIA、智谱AI、月之暗面、百度、腾讯、字节跳动、科大讯飞、华为。部分厂商数据可能仍有遗漏，欢迎补充更新。
+> ⚠️ **数据说明**：本项目数据截止至 **2026年6月25日**，通过 `WebFetch` 抓取各厂商官方文档更新。已验证更新的厂商包括：Anthropic、OpenAI、Google、xAI、Mistral、DeepSeek、阿里巴巴、Meta、NVIDIA、智谱AI、月之暗面、百度、腾讯、字节跳动、科大讯飞、华为。本次更新内容：修正 Anthropic Fable 5/Mythos 5 暂停状态（已恢复）、新增 Mistral OCR 4/Leanstral。部分厂商数据可能仍有遗漏，欢迎补充更新。
 
 ## 问题
 
@@ -115,9 +115,9 @@
 
 | 国家 | 公司名 | 大模型名称 | 版本 | 功能属性 | 参数规模 | 上下文 | 发版时间 |
 |------|--------|-----------|------|----------|----------|--------|----------|
-| 美国 | Anthropic | Claude | Claude Fable 5（claude-fable-5） | 🌐🖥️ | 未公开 | 1M | 2026年6月9日（⚠️ 6月12日起暂停） |
+| 美国 | Anthropic | Claude | Claude Fable 5（claude-fable-5） | 🌐🖥️ | 未公开 | 1M | 2026年6月9日（⚠️ 6月12日曾短暂暂停，已恢复） |
 | 美国 | Anthropic | Claude | Claude Mythos Preview | 🌐🖥️ | 未公开 | 200K | 2025年（⏰ **2026年6月30日退役 - 仅剩5天**） |
-| 美国 | Anthropic | Claude | Claude Mythos 5（claude-mythos-5） | 🌐🖥️ | 未公开 | 1M | 2026年6月9日（⚠️ 6月12日起暂停） |
+| 美国 | Anthropic | Claude | Claude Mythos 5（claude-mythos-5） | 🌐🖥️ | 未公开 | 1M | 2026年6月9日（⚠️ 6月12日曾短暂暂停，已恢复） |
 | 美国 | NVIDIA | Nemotron | Cosmos 3 | 🌐🤖 | 未公开 | 未公开 | 2026年6月初 |
 | 美国 | NVIDIA | Nemotron | Nemotron 3.5 Content Safety | 📝🌐 | 4B | 未公开 | 2026年6月初 |
 | 美国 | NVIDIA | Nemotron | Nemotron 3.5 ASR | 🎤 | 未公开 | 未公开 | 2026年6月初 |
@@ -161,6 +161,8 @@
 | 美国 | NVIDIA | Nemotron | Nemotron 3 Nano Omni | 🌐🎤 | 未公开 | 1M | 2026年4月 |
 | 美国 | NVIDIA | Nemotron | Isaac GR00T N1.7 | 🤖 | 未公开 | 未公开 | 2026年4月 |
 | 法国 | Mistral AI | Mistral | Mistral Medium 3.5 | 🌐🧠💻🖥️ | 未公开 | 未公开 | 2026年4月 |
+| 法国 | Mistral AI | OCR | OCR 4 | 👁️ | — | — | 2026年4月 |
+| 法国 | Mistral AI | Leanstral | Leanstral | 📝 | 未公开 | 未公开 | 2026年3月（⏰ 2026年6月30日退役） |
 | 美国 | Google | Gemini | Deep Research（Preview） | 🧠🌐 | 未公开 | 未公开 | 2026年4月 |
 | 美国 | Google | Gemini | Deep Research Max（Preview） | 🧠🌐 | — | — | 2026年4月 |
 | 美国 | Meta | Muse | Muse Spark | 🌐 | 未公开 | 未公开 | 2026年4月 |
