@@ -173,7 +173,8 @@ process.stdin.on('end', () => {
 | **智谱AI GLM发版日期** | `https://docs.z.ai/release-notes/new-released` | ✅ Verified | 精确发版日期（GLM-5.2:2026-06-16等） |
 | **MiniMax** | `https://platform.minimaxi.com` | ✅ Verified | 平台首页，含M3定价、Speech-2.8、music-2.6 |
 | **百川智能** | `https://platform.baichuan-ai.com/docs` | ✅ Verified | 平台文档，含M3Plus、医疗大模型 |
-| **科大讯飞星火** | `https://www.xfyun.cn/doc/spark/Web.html` | ✅ Verified | API文档，含Spark Ultra/Max/Pro/Lite完整信息 |
+| **科大讯飞星火** | `https://www.xfyun.cn/doc/spark/Web.html` | ✅ Verified | API文档，含Spark Ultra/Max/Pro/Lite完整信息、上下文长度、domain参数 |
+| **科大讯飞星火** | `https://xinghuo.xfyun.cn/sparkapi` | ⚠️ JS渲染 | 产品页，JS动态渲染无法抓取 |
 
 ### 备用数据源（当官方文档不可用时）
 
