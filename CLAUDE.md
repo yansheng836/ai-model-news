@@ -141,6 +141,8 @@ process.stdin.on('end', () => {
 |--------|-----|--------|------|
 | **OpenRouter** | `https://openrouter.ai/api/v1/models` | ✅ Verified | **跨厂商统一API**，340+模型，含上下文/定价/模型ID，适合交叉验证 |
 | **Anthropic** | `https://platform.claude.com/docs/en/docs/about-claude/models` | ✅ Verified | 完整模型列表，含定价、上下文、弃用信息 |
+| **Anthropic（中文）** | `https://platform.claude.com/docs/zh-CN/about-claude/models/overview` | ✅ Verified | 中文版模型概述，含Fable 5/Mythos 5/Opus 4.8详细参数 |
+| **Anthropic弃用** | `https://platform.claude.com/docs/zh-CN/about-claude/model-deprecations` | ✅ Verified | 模型弃用/停用时间表，含所有历史弃用记录和替代方案 |
 | **OpenAI** | `https://developers.openai.com/api/docs/models` | ✅ Verified | 重定向后可用，含GPT-5.5/5.4/o系列 |
 | **Google Gemini** | `https://ai.google.dev/gemini-api/docs/models` | ✅ Verified | 完整模型列表含Gemini 3系列、Veo、Lyria |
 | **xAI Grok** | `https://docs.x.ai/docs/models` | ✅ Verified | 完整模型列表含grok-4.3、图像/视频/语音模型 |
