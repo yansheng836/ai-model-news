@@ -124,6 +124,9 @@
 | 美国 | NVIDIA | Nemotron | Diffusion Language Models | 📝 | 未公开 | 未公开 | 2026年6月初 |
 | 中国 | 商汤科技 | 日日新 | ConsistCompose-BAGEL-7B-MoT | 🌐 | 15B MoE | 未公开 | 2026年6月中旬 |
 | 中国 | 商汤科技 | 日日新 | SenseNova-U1-8B-MoT-Interleaved | 🌐 | 18B MoE | 未公开 | 2026年6月中旬 |
+| 中国 | 商汤科技 | 日日新 | SenseNova-U1-8B-MoT-LoRAs | 🌐 | 18B MoE | 未公开 | 2026年6月中旬 |
+| 中国 | 商汤科技 | 日日新 | SenseNova 6.7 Flash-Lite | 🌐 智能体 | 未公开 | 未公开 | 2026年 |
+| 中国 | 商汤科技 | 日日新 | SenseNova U1 Fast | 🌐 多模态理解+生成 | 未公开 | 未公开 | 2026年 |
 | 中国 | MiniMax | M系列 | MiniMax-M3.0 | 📝🌐💻 | 427B MoE/23B激活 | 1M | 2026年6月中旬 |
 | 美国 | Anthropic | Claude | Claude Opus 4.8（claude-opus-4-8） | 🌐🖥️ | 未公开 | 1M | 2026年5月28日 |
 | 美国 | Google | Gemini | Gemini 3.5 Flash（Stable） | 🌐🧠💻🖥️ | 未公开 | 未公开 | 2026年5月19日 |

@@ -163,6 +163,7 @@ process.stdin.on('end', () => {
 | **百川智能** | `https://huggingface.co/baichuan-inc` | ✅ Verified | 25个模型，含M2/M3/Med系列新模型 |
 | **01.AI 零一万物** | `https://huggingface.co/01-ai` | ✅ Verified | 28个模型，含Yi/Yi-1.5/Yi-Coder完整列表 |
 | **商汤科技** | `https://huggingface.co/SenseNova` | ✅ Verified | 28个模型，含U1/SI系列参数确认 |
+| **商汤科技** | `https://www.sensenova.cn/models` | ✅ Verified | 产品官网，含SenseNova 6.7 Flash-Lite/U1 Fast等最新模型 |
 | **小米** | `https://huggingface.co/XiaoMi` | ❌ 401 Unauthorized | 需认证，无法访问 |
 | **小米 MiMo** | `https://huggingface.co/XiaoMiMiMo` | ✅ Verified | 24个模型，含V2.5-Pro(1T)/Audio系列 |
 | **小米 MiMo** | `https://mimo.xiaomi.com` | ✅ Verified | 产品官网，含准确发布日期（如V2.5-Pro: 2026年4月27日） |
