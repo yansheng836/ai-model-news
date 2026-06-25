@@ -142,8 +142,8 @@
 | 中国 | 小米 | MiMo | MiMo-V2.5-Pro-Base | 📝 | 1.02T MoE | 256K | 2026年4月27日 |
 | 中国 | 小米 | MiMo | MiMo-V2.5-Base | 📝 | 310B MoE | 1M | 2026年4月27日 |
 | 中国 | 小米 | MiMo | MiMo-V2.5 | 📝🧠 | 310B MoE/15B激活 | 1M | 2026年4月27日 |
-| 美国 | OpenAI | GPT | GPT-5.5（gpt-5.5） | 🌐🧠🖥️ | 未公开 | 1M | 2026年4月23日 |
-| 美国 | OpenAI | GPT | GPT-5.5-pro | 🌐🧠🖥️ | 未公开 | 1M | 2026年4月 |
+| 美国 | OpenAI | GPT | GPT-5.5（gpt-5.5） | 🌐🧠🖥️ | 未公开 | 1050K | 2026年4月23日 |
+| 美国 | OpenAI | GPT | GPT-5.5-pro | 🌐🧠🖥️ | 未公开 | 1050K | 2026年4月 |
 | 美国 | OpenAI | GPT | GPT-5.2 / GPT-5.2-pro / GPT-5.2-codex | 🌐🧠🖥️ | 未公开 | 400K | 2026年2月 |
 | 美国 | OpenAI | GPT | GPT-5.1 / GPT-5.1-codex / GPT-5.1-codex-max | 🌐🧠🖥️ | 未公开 | 400K | 2026年1月 |
 | 美国 | OpenAI | GPT | GPT-5-pro / GPT-5-mini / GPT-5-nano | 🌐🧠🖥️ | 未公开 | 400K | 2025年8月 |
@@ -173,7 +173,7 @@
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro-Base | 📝 | 1.6T MoE | 未公开 | 2026年4月 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Flash-Base | 📝 | 292B MoE | 未公开 | 2026年4月 |
 | 美国 | OpenAI | GPT | GPT-5.4 mini（gpt-5.4-mini） | 🌐🧠🖥️ | 未公开 | 400K | 2026年3月17日 |
-| 美国 | OpenAI | GPT | GPT-5.4（gpt-5.4） | 🌐🧠🖥️ | 未公开 | 1M | 2026年3月5日 |
+| 美国 | OpenAI | GPT | GPT-5.4（gpt-5.4） | 🌐🧠🖥️ | 未公开 | 1050K | 2026年3月5日 |
 | 美国 | NVIDIA | Nemotron | Nemotron 3 Nano 4B | 📝🧠 | 4B | 未公开 | 2026年3月 |
 | 法国 | Mistral AI | Mistral | Mistral Small 4 | 📝🧠💻 | 未公开 | 未公开 | 2026年3月 |
 | 法国 | Mistral AI | Voxtral | Voxtral TTS | 🎤 | 未公开 | 未公开 | 2026年3月 |
