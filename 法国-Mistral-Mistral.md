@@ -10,7 +10,7 @@
 | 创始人 | Arthur Mensch、Guillaume Lample、Timothée Lacroix（前Meta/Google DeepMind成员） |
 | 定位 | 欧洲领先的开源AI公司 |
 
-> **功能属性图例**：📝 纯文本 | 🌐 多模态 | 👁️ 视觉理解 | 💻 代码 | 🎤 语音 | 🧠 推理
+> **功能属性图例**：📝 纯文本 | 🌐 多模态 | 👁️ 视觉理解 | 💻 代码 | 🎤 语音 | 🧠 推理 | 🖥️ 计算机操作
 
 ## 模型总览
 

@@ -38,8 +38,8 @@
 | Claude Opus 4.5（claude-opus-4-5-20251101） | 2025年11月1日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，知识截止2025年5月 |
 | Claude Opus 4.6 Fast（claude-opus-4-6-fast） | 2025年底 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | Opus 4.6快速推理版，$30/$150 MTok |
 | Claude Opus 4.6（claude-opus-4-6） | 2025年底 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Extended Thinking，上下文提升至1M |
-| Claude Opus 4.7 Fast（claude-opus-4-7-fast） | 2026年初 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | Opus 4.7快速推理版，$30/$150 MTok |
-| Claude Opus 4.7（claude-opus-4-7） | 2026年初 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking（取代Extended Thinking），新tokenizer |
+| Claude Opus 4.7 Fast（claude-opus-4-7-fast） | 2026年初 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | Opus 4.7快速推理版，$30/$150 MTok |
+| Claude Opus 4.7（claude-opus-4-7） | 2026年初 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking（取代Extended Thinking），新tokenizer |
 | Claude Opus 4.8 Fast（claude-opus-4-8-fast） | 2026年5月28日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | Opus 4.8快速推理版，$10/$50 MTok |
 | Claude Opus 4.8（claude-opus-4-8） | 2026年5月28日 | 🌐🖥️ 多模态+计算机操作 | 未公开（厂商未公开） | 1M | 支持Adaptive Thinking，$5/$25 MTok，知识截止2026年1月 |
 | Claude Sonnet 4.5（claude-sonnet-4-5-20250929） | 2025年9月29日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，$3/$15 MTok |
@@ -116,6 +116,8 @@ Anthropic的核心训练方法，通过一组"宪法"原则指导模型行为，
 |------|-------------------|-------------------|
 | Claude Fable 5 | $10 | $50 |
 | Claude Opus 4.8 | $5 | $25 |
+| Claude Opus 4.5 | $5 | $25 |
+| Claude Sonnet 4.5 | $3 | $15 |
 | Claude Opus 4.8 Fast | $10 | $50 |
 | Claude Opus 4.7 | $5 | $25 |
 | Claude Opus 4.7 Fast | $30 | $150 |
