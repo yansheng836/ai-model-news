@@ -149,6 +149,7 @@ process.stdin.on('end', () => {
 | **DeepSeek** | `https://github.com/deepseek-ai/DeepSeek-V3` | ✅ Verified | V3详情，含架构、训练成本 |
 | **DeepSeek** | `https://huggingface.co/deepseek-ai` | ✅ Verified | 87个模型，含V4/V3.2/OCR参数确认 |
 | **Qwen（阿里）** | `https://github.com/QwenLM/Qwen3` | ✅ Verified | Qwen3完整列表含2507版，Apache 2.0 |
+| **通义千问（阿里云）** | `https://www.aliyun.com/product/tongyi` | ✅ Verified | 产品官网，含Qwen3.7/万相系列/LiveTranslate等最新模型 |
 | **智谱AI GLM** | `https://github.com/zai-org/GLM-5` | ✅ Verified | GLM-5.2/5.1/5完整列表，含基准分数 |
 | **月之暗面 Kimi** | `https://github.com/MoonshotAI/Kimi-VL` | ✅ Verified | Kimi-VL-A3B系列，含Thinking/Instruct版 |
 | **百度文心** | `https://cloud.baidu.com/product-s/qianfan_home` | ✅ Verified | 千帆平台首页，含ERNIE 5.0/X1.1/4.5 Turbo |

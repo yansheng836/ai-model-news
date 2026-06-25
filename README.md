@@ -210,19 +210,19 @@
 | 美国 | Google | Gemma | Gemma 3n（E4B） | 📝 | 4B | 32K | 2025年11月 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro | 📝 | 862B MoE | 1M（384K输出） | 2026年4月 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Flash | 📝 | 158B MoE | 1M（384K输出） | 2026年4月 |
-| 中国 | 阿里巴巴 | 通义千问 | qwen3.7-max | 🌐🧠💻 | 未公开 | 1M | 2026年6月 |
-| 中国 | 阿里巴巴 | 通义千问 | qwen3.7-plus | 🌐🧠 | 未公开 | 1M | 2026年6月 |
-| 中国 | 阿里巴巴 | 通义千问 | qwen3.6-max-preview | 🌐🧠 | 未公开 | 262K | 2026年5月 |
-| 中国 | 阿里巴巴 | 通义千问 | qwen3.6-plus | 🌐🧠 | 未公开 | 1M | 2026年5月 |
-| 中国 | 阿里巴巴 | 通义千问 | qwen3.6-flash | 🌐🧠 | 未公开 | 1M | 2026年5月 |
-| 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-397b-a17b | 📝 | 397B MoE/17B激活 | 256K | 2026年1月 |
-| 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-122b-a10b | 📝 | 122B MoE/10B激活 | 262K | 2026年1月 |
-| 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-27B | 📝 | 27B | 262K | 2026年1月 |
-| 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-9B | 📝 | 9B | 262K | 2026年1月 |
-| 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-35B-A3B | 📝 | 35B MoE/3B激活 | 262K | 2026年1月 |
-| 中国 | 阿里巴巴 | 通义千问 | qwen3-coder / qwen3-coder-plus / flash / next | 💻 | 未公开 | 1M/262K | 2026年4月 |
-| 中国 | 阿里巴巴 | 通义千问 | qwen3-vl-235b-a22b-instruct | 👁️📝 | 235B MoE/22B激活 | 262K | 2026年2月 |
-| 中国 | 阿里巴巴 | 通义千问 | qwen3-vl-32b-instruct / 30b-a3b / 8b | 👁️📝 | 32B/30B MoE/8B | 262K/256K | 2026年2月 |
+| 中国 | 阿里巴巴 | 通义千问 | qwen3.7-max | 🌐🧠💻 | 未公开 | 1M | 2026年5月21日 |
+| 中国 | 阿里巴巴 | 通义千问 | qwen3.7-plus | 🌐🧠 | 未公开 | 1M | 2026年6月3日 |
+| 中国 | 阿里巴巴 | 通义千问 | qwen3.6-max-preview | 🌐🧠 | 未公开 | 262K | 2026年4月27日 |
+| 中国 | 阿里巴巴 | 通义千问 | qwen3.6-plus | 🌐🧠 | 未公开 | 1M | 2026年4月2日 |
+| 中国 | 阿里巴巴 | 通义千问 | qwen3.6-flash | 🌐🧠 | 未公开 | 1M | 2026年4月27日 |
+| 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-397b-a17b | 📝 | 397B MoE/17B激活 | 256K | 2026年2月16日 |
+| 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-122b-a10b | 📝 | 122B MoE/10B激活 | 262K | 2026年2月25日 |
+| 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-27B | 📝 | 27B | 262K | 2026年2月25日 |
+| 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-9B | 📝 | 9B | 262K | 2026年3月10日 |
+| 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-35B-A3B | 📝 | 35B MoE/3B激活 | 262K | 2026年2月25日 |
+| 中国 | 阿里巴巴 | 通义千问 | qwen3-coder / qwen3-coder-plus / flash / next | 💻 | 未公开 | 1M/262K | 2025年7月-2026年2月 |
+| 中国 | 阿里巴巴 | 通义千问 | qwen3-vl-235b-a22b-instruct | 👁️📝 | 235B MoE/22B激活 | 262K | 2025年9月23日 |
+| 中国 | 阿里巴巴 | 通义千问 | qwen3-vl-32b-instruct / 30b-a3b / 8b | 👁️📝 | 32B/30B MoE/8B | 262K/256K | 2025年10月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-35B-A3B | 📝 | 35B MoE/3B激活 | 262K | 2026年1月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3-TTS | 🎤 | — | — | 2026年3月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen-Image-Bench | 👁️📝 | 27B | 未公开 | 2026年3月 |
@@ -390,7 +390,7 @@
 | 美国 | OpenAI | GPT | GPT-5 | 🌐🧠🖥️ | 未公开 | 未公开 | 2025年8月7日 |
 | 美国 | OpenAI | GPT | GPT-4.1 mini | 🌐 | 未公开 | 1M | 2025年4月 |
 | 美国 | OpenAI | GPT | GPT-5.4 nano | 🌐 | 未公开 | 未公开 | 2026年3月17日 |
-| 美国 | OpenAI | GPT Image | GPT Image 2 | 🖼️ | — | — | 2025-2026年 |
+| 美国 | OpenAI | GPT Image | GPT Image 2 | 🖼️ | — | — | 2025年10月14日 |
 | 美国 | OpenAI | GPT-Realtime | GPT-Realtime-2 / 1.5 / Translate / mini | 🎤 | — | — | 2025-2026年 |
 | 美国 | OpenAI | GPT-Realtime | GPT-Realtime-Whisper | 🎤 | — | — | 2025-2026年 |
 | 美国 | OpenAI | GPT-4o | GPT-4o Transcribe / mini Transcribe | 🎤 | — | — | 2025-2026年 |
