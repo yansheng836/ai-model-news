@@ -153,7 +153,8 @@ process.stdin.on('end', () => {
 | **智谱AI GLM** | `https://github.com/zai-org/GLM-5` | ✅ Verified | GLM-5.2/5.1/5完整列表，含基准分数 |
 | **月之暗面 Kimi** | `https://github.com/MoonshotAI/Kimi-VL` | ✅ Verified | Kimi-VL-A3B系列，含Thinking/Instruct版 |
 | **百度文心** | `https://cloud.baidu.com/product-s/qianfan_home` | ✅ Verified | 千帆平台首页，含ERNIE 5.0/5.0-Thinking/X1.1/4.5 Turbo，含定价和API ID |
-| **腾讯混元** | `https://cloud.tencent.com/document/product/1729/97731` | ✅ Verified | 定价页含HY 2.0、T1、TurboS等模型列表 |
+| **腾讯混元** | `https://cloud.tencent.com/document/product/1729/97731` | ✅ Verified | 定价页含HY 2.0、T1、TurboS等模型列表，含TokenHub迁移通知 |
+| **腾讯混元** | `https://aistudio.tencent.com/modelSquare` | ⚠️ JS渲染 | 模型广场，JS动态渲染无法抓取 |
 | **腾讯混元** | `https://huggingface.co/Tencent-Hunyuan` | ⚠️ 有限信息 | 仅含HunyuanDiT图像模型，无文本模型详情 |
 | **字节豆包** | `https://en.wikipedia.org/wiki/Doubao` | ⚠️ Wikipedia | 官方文档JS渲染无法抓取，Wikipedia有基本信息 |
 | **字节跳动** | `https://huggingface.co/bytedance` | ⚠️ 有限信息 | 含Bernini/Ouro等模型，无Doubao系列 |
