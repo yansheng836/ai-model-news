@@ -177,6 +177,8 @@ process.stdin.on('end', () => {
 | **MiniMax** | `https://platform.minimaxi.com` | ✅ Verified | 平台首页，含M3定价、Speech-2.8、music-2.6 |
 | **MiniMax** | `https://www.minimaxi.com/models/text/m27` | ✅ Verified | M2.7产品页，含基准分数（SWE-Pro/VIBE-Pro/Terminal Bench）、API接入方式、自动Cache说明 |
 | **MiniMax** | `https://platform.minimaxi.com/subscribe/token-plan?tab=api-enterprise` | ❌ JS渲染 | 定价页JS动态渲染+需登录，无法抓取 |
+| **华为盘古** | `https://www.huaweicloud.com/product/pangu.html` | ⚠️ 有限信息 | 产品首页，含五大基础模型（LLM/视觉/多模态/预测/气象）和应用场景，无具体参数和发布时间 |
+| **华为盘古NLP** | `https://www.huaweicloud.com/product/pangu/nlp.html` | ✅ Verified | NLP模型详情页，含N1/N2/N4三个系列，N4为718B MoE，含上下文长度和支持特性 |
 | **百川智能** | `https://platform.baichuan-ai.com/docs` | ✅ Verified | 平台文档，含M3Plus、医疗大模型 |
 | **科大讯飞星火** | `https://www.xfyun.cn/doc/spark/Web.html` | ✅ Verified | API文档，含Spark Ultra/Max/Pro/Lite完整信息、上下文长度、domain参数 |
 | **科大讯飞星火** | `https://xinghuo.xfyun.cn/sparkapi` | ⚠️ JS渲染 | 产品页，JS动态渲染无法抓取 |
