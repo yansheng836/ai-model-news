@@ -169,7 +169,8 @@ process.stdin.on('end', () => {
 | **小米 MiMo** | `https://huggingface.co/XiaoMiMiMo` | ✅ Verified | 24个模型，含V2.5-Pro(1T)/Audio系列 |
 | **小米 MiMo** | `https://mimo.xiaomi.com` | ✅ Verified | 产品官网，含准确发布日期（如V2.5-Pro: 2026年4月27日） |
 | **DeepSeek** | `https://api-docs.deepseek.com/zh-cn/quick_start/pricing` | ✅ Verified | API定价页，含V4上下文1M/384K输出 |
-| **月之暗面 Kimi** | `https://platform.kimi.com` | ✅ Verified | 平台首页，含K2.5/K2.6/K2.7系列 |
+| **月之暗面 Kimi** | `https://platform.kimi.com` | ✅ Verified | 平台首页，含K2.5/K2.6/K2.7系列、定价、模型描述 |
+| **月之暗面 Kimi** | `https://platform.kimi.ai/docs/pricing/` | ✅ Verified | 各模型定价详情页（K2.7 Code/K2.6/K2.5/Moonshot V1） |
 | **智谱AI GLM** | `https://docs.bigmodel.cn/cn/guide/start/model-overview` | ✅ Verified | 完整模型列表含GLM-5.2/4.7/视觉/视频/音频模型 |
 | **智谱AI GLM发版日期** | `https://docs.z.ai/release-notes/new-released` | ✅ Verified | 精确发版日期（GLM-5.2:2026-06-16等） |
 | **MiniMax** | `https://platform.minimaxi.com` | ✅ Verified | 平台首页，含M3定价、Speech-2.8、music-2.6 |
