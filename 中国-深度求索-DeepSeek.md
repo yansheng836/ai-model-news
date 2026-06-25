@@ -47,8 +47,8 @@
 | DeepSeek-V4-Pro-Base | 2026年4月 | 📝 纯文本 | 1.6T MoE | 未公开 | 未公开 | V4 Pro基座模型 |
 | DeepSeek-V4-Flash | 2026年 | 📝 纯文本 | 158B MoE | 未公开 | 1M（384K输出） | V4轻量版，定价0.02/1.00/2.00元/M tokens |
 | DeepSeek-V4-Pro | 2026年 | 📝 纯文本 | 862B MoE | 未公开 | 1M（384K输出） | V4旗舰版，定价0.025/3.00/6.00元/M tokens |
-| deepseek-chat | 2024年 | 📝 纯文本 | — | — | 128K | ⏰ 2026年7月24日弃用，对应V4-Flash非思考模式 |
-| deepseek-reasoner | 2025年 | 🧠 推理 | — | — | 160K | ⏰ 2026年7月24日弃用，对应V4-Flash思考模式 |
+| deepseek-chat | 2024年 | 📝 纯文本 | — | — | 128K | ⏰ **2026年7月24日弃用 - 仅剩29天**，迁移至 deepseek-v4-flash 非思考模式 |
+| deepseek-reasoner | 2025年 | 🧠 推理 | — | — | 160K | ⏰ **2026年7月24日弃用 - 仅剩29天**，迁移至 deepseek-v4-flash 思考模式 |
 
 ## 模型详细介绍
 
