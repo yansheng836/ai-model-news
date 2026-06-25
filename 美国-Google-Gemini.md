@@ -16,58 +16,57 @@
 
 | 版本 | 发布时间 | 功能属性 | 参数规模 | 上下文长度 | 主要特点 |
 |------|----------|----------|----------|----------|----------|
-| Gemini 1.0 Ultra | 2023年12月6日 | 🌐 多模态 | 未公开 | 32K | 最大版本，原生多模态 |
-| Gemini 1.0 Pro | 2023年12月6日 | 🌐 多模态 | 未公开 | 32K | 中等规模 |
+| Antigravity Agent | 2026年5月（Preview） | 🧠💻🌐 代理 | — | — | 通用代理：规划/推理/代码/文件/浏览 |
+| Computer Use | 2025年（Preview） | 🖥️ 计算机操作 | — | — | 屏幕理解+UI操作（点击/输入/导航） |
+| Deep Research | 2026年4月（Preview） | 🧠🌐 推理+研究 | — | — | 自主多步骤研究，引用报告 |
+| Deep Research Max | 2026年4月（Preview） | 🧠🌐 推理+研究 | — | — | 最大深度研究 |
 | Gemini 1.0 Nano（Pro/Nano） | 2023年12月6日 | 📝 纯文本 | 1.8B/3.25B | 32K | 端侧模型 |
-| Gemini 1.5 Pro | 2024年2月 | 🌐 多模态 | 未公开（推测MoE） | 1M→2M | 100万token上下文 |
+| Gemini 1.0 Pro | 2023年12月6日 | 🌐 多模态 | 未公开 | 32K | 中等规模 |
+| Gemini 1.0 Ultra | 2023年12月6日 | 🌐 多模态 | 未公开 | 32K | 最大版本，原生多模态 |
 | Gemini 1.5 Flash | 2024年5月 | 🌐 多模态 | 未公开 | 1M | 轻量快速版 |
 | Gemini 1.5 Flash-8B | 2024年8-9月 | 🌐 多模态 | 8B | 1M | 更小更快变体 |
+| Gemini 1.5 Pro | 2024年2月 | 🌐 多模态 | 未公开（推测MoE） | 1M→2M | 100万token上下文 |
 | Gemini 2.0 Flash | 2024年12月 | 🌐 多模态 | 未公开 | 1M | 原生工具调用（已关闭） |
 | Gemini 2.0 Flash-Lite | 2025年 | 🌐 多模态 | 未公开 | 未公开 | 最快最便宜（已关闭） |
 | Gemini 2.0 Pro | 2025年2月 | 🌐 多模态 | 未公开 | 2M | 正式版旗舰 |
-| Gemini 2.5 Pro | 2025年3月25日 | 🧠🌐 推理+多模态 | 未公开（厂商未公开） | 1M | 推理/思维模型，最先进复杂任务模型 |
 | Gemini 2.5 Flash | 2025年4月17日 | 🧠🌐 推理+多模态 | 未公开（厂商未公开） | 1M | 最佳性价比推理模型 |
 | Gemini 2.5 Flash Image | 2025年 | 🖼️ 文生图 | 未公开 | 32K | 基于2.5 Flash的图像生成 |
-| Gemini 2.5 Flash-Lite | 2025年 | 🌐🧠 多模态+推理 | 未公开 | 未公开 | 2.5系列最快最便宜 |
 | Gemini 2.5 Flash Live | 2025年 | 🎤🌐 语音+多模态 | 未公开 | 未公开 | 实时对话，亚秒级音频流 |
 | Gemini 2.5 Flash TTS | 2025年 | 🎤 语音合成 | 未公开 | 未公开 | 可控文本转语音 |
+| Gemini 2.5 Flash-Lite | 2025年 | 🌐🧠 多模态+推理 | 未公开 | 未公开 | 2.5系列最快最便宜 |
+| Gemini 2.5 Pro | 2025年3月25日 | 🧠🌐 推理+多模态 | 未公开（厂商未公开） | 1M | 推理/思维模型，最先进复杂任务模型 |
 | Gemini 2.5 Pro TTS | 2025年 | 🎤 语音合成 | 未公开 | 未公开 | 高保真播客/有声书语音合成 |
 | Gemini 3 Flash | 2026年（Preview） | 🌐🧠 多模态+推理 | 未公开 | 未公开 | 前沿性能，成本更低 |
 | Gemini 3 Pro Image | 2026年（Preview） | 🖼️ 文生图 | 未公开 | 65K | 基于3 Pro的图像生成 |
 | Gemini 3 Pro Image Preview | 2026年（Preview） | 🖼️ 文生图 | 未公开 | 65K | 3 Pro图像生成预览版 |
-| Gemini 3.1 Flash-Lite | 2026年5月19日 | 🌐🧠 多模态+推理 | 未公开 | 未公开 | 成本优化前沿模型（已关闭Preview） |
 | Gemini 3.1 Flash Image | 2026年（Preview） | 🖼️ 文生图 | 未公开 | 131K | 基于3.1 Flash的图像生成 |
 | Gemini 3.1 Flash Image Preview | 2026年（Preview） | 🖼️ 文生图 | 未公开 | 131K | 3.1 Flash图像生成预览版 |
-| Gemini 3.1 Pro | 2026年5月19日（Preview） | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开 | 1M | 复杂问题解决、代理编程 |
-| Gemini 3.1 Pro Preview | 2026年（Preview） | 🌐🧠 多模态+推理 | 未公开 | 1M | 3.1 Pro预览版 |
 | Gemini 3.1 Flash Live | 2026年（Preview） | 🎤🌐 语音+多模态 | 未公开 | 未公开 | 实时对话和语音优先AI应用 |
 | Gemini 3.1 Flash TTS | 2026年（Preview） | 🎤 语音合成 | 未公开 | 未公开 | 低延迟语音生成 |
+| Gemini 3.1 Flash-Lite | 2026年5月19日 | 🌐🧠 多模态+推理 | 未公开 | 未公开 | 成本优化前沿模型（已关闭Preview） |
+| Gemini 3.1 Pro | 2026年5月19日（Preview） | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开 | 1M | 复杂问题解决、代理编程 |
+| Gemini 3.1 Pro Preview | 2026年（Preview） | 🌐🧠 多模态+推理 | 未公开 | 1M | 3.1 Pro预览版 |
 | Gemini 3.5 Flash | 2026年5月19日（Stable） | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开 | 未公开 | 最智能模型，代理和编程任务 |
 | Gemini 3.5 Live Translate | 2026年（Preview） | 🎤 语音翻译 | 未公开 | 未公开 | 实时语音翻译，70+语言 |
-| Nano Banana 2 | 2026年 | 🖼️ 文生图 | — | — | 基于Gemini 3.1 Flash，高速图像生成 |
-| Nano Banana Pro | 2026年 | 🖼️ 文生图 | — | — | 基于Gemini 3 Pro，高质量图像生成 |
-| Nano Banana（2.5 Flash Image） | 2025年 | 🖼️ 文生图 | — | — | 基于Gemini 2.5 Flash，快速创意图像 |
-| Veo 3.1 | 2026年（Preview） | 🎬 文生视频 | — | — | 电影级视频生成+原生音频同步 |
-| Veo 3.1 Lite | 2026年（Preview） | 🎬 文生视频 | — | — | 高效低成本视频生成 |
-| Imagen 4 | 2025-2026年 | 🖼️ 文生图 | — | — | 文生图模型（已弃用） |
-| Lyria 3 Pro | 2026年（Preview） | 🎵 音乐生成 | — | — | 全长歌曲生成 |
-| Lyria 3 Clip | 2026年（Preview） | 🎵 音乐生成 | — | — | 30秒短音乐片段 |
-| Lyria RealTime | 2026年（Experimental） | 🎵 音乐生成 | — | — | 实时流式音乐生成 |
-| Computer Use | 2025年（Preview） | 🖥️ 计算机操作 | — | — | 屏幕理解+UI操作（点击/输入/导航） |
-| Deep Research | 2026年4月（Preview） | 🧠🌐 推理+研究 | — | — | 自主多步骤研究，引用报告 |
-| Deep Research Max | 2026年4月（Preview） | 🧠🌐 推理+研究 | — | — | 最大深度研究 |
-| Antigravity Agent | 2026年5月（Preview） | 🧠💻🌐 代理 | — | — | 通用代理：规划/推理/代码/文件/浏览 |
-| Gemini Embedding 2 | 2026年 | 📝 嵌入模型 | — | — | 多模态嵌入（文本/图像/视频/音频/PDF） |
 | Gemini Embedding | 2025年 | 📝 嵌入模型 | — | — | 高维向量，语义搜索/分类/RAG |
+| Gemini Embedding 2 | 2026年 | 📝 嵌入模型 | — | — | 多模态嵌入（文本/图像/视频/音频/PDF） |
 | Gemini Robotics-ER 1.6 | 2026年（Preview） | 🤖 机器人推理 | — | — | 具身推理，物理空间理解 |
-| Gemma（2B/7B） | 2024年2月 | 📝 纯文本 | 2B/7B | 8K | 开源模型 |
 | Gemma 2（9B/27B） | 2024年6月 | 📝 纯文本 | 9B/27B | 8K | 开源模型升级 |
 | Gemma 3 | 2025年3月 | 🌐 多模态 | 1B/4B/12B/27B | 128K | 开源多模态 |
 | Gemma 3n | 2025年 | 📝 纯文本 | E4B | 32K | 端侧轻量开源模型 |
 | Gemma 4 26B-A4B | 2026年 | 📝 纯文本 | 26B MoE/4B激活 | 262K | 第四代开源MoE模型 |
 | Gemma 4 31B | 2026年 | 📝 纯文本 | 31B | 262K | 第四代开源稠密模型 |
+| Gemma（2B/7B） | 2024年2月 | 📝 纯文本 | 2B/7B | 8K | 开源模型 |
+| Imagen 4 | 2025-2026年 | 🖼️ 文生图 | — | — | 文生图模型（已弃用） |
+| Lyria 3 Clip | 2026年（Preview） | 🎵 音乐生成 | — | — | 30秒短音乐片段 |
+| Lyria 3 Pro | 2026年（Preview） | 🎵 音乐生成 | — | — | 全长歌曲生成 |
+| Lyria RealTime | 2026年（Experimental） | 🎵 音乐生成 | — | — | 实时流式音乐生成 |
+| Nano Banana 2 | 2026年 | 🖼️ 文生图 | — | — | 基于Gemini 3.1 Flash，高速图像生成 |
+| Nano Banana Pro | 2026年 | 🖼️ 文生图 | — | — | 基于Gemini 3 Pro，高质量图像生成 |
+| Nano Banana（2.5 Flash Image） | 2025年 | 🖼️ 文生图 | — | — | 基于Gemini 2.5 Flash，快速创意图像 |
 | PaLM 2 | 2023年5月 | 📝 纯文本 | 未公开 | 8K | 上一代基础模型 |
-
+| Veo 3.1 | 2026年（Preview） | 🎬 文生视频 | — | — | 电影级视频生成+原生音频同步 |
+| Veo 3.1 Lite | 2026年（Preview） | 🎬 文生视频 | — | — | 高效低成本视频生成 |
 ## 模型详细介绍
 
 ### Gemini 1.0系列

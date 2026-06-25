@@ -175,6 +175,8 @@ process.stdin.on('end', () => {
 | **智谱AI GLM** | `https://docs.bigmodel.cn/cn/guide/start/model-overview` | ✅ Verified | 完整模型列表含GLM-5.2/4.7/视觉/视频/音频模型 |
 | **智谱AI GLM发版日期** | `https://docs.z.ai/release-notes/new-released` | ✅ Verified | 精确发版日期（GLM-5.2:2026-06-16等） |
 | **MiniMax** | `https://platform.minimaxi.com` | ✅ Verified | 平台首页，含M3定价、Speech-2.8、music-2.6 |
+| **MiniMax** | `https://www.minimaxi.com/models/text/m27` | ✅ Verified | M2.7产品页，含基准分数（SWE-Pro/VIBE-Pro/Terminal Bench）、API接入方式、自动Cache说明 |
+| **MiniMax** | `https://platform.minimaxi.com/subscribe/token-plan?tab=api-enterprise` | ❌ JS渲染 | 定价页JS动态渲染+需登录，无法抓取 |
 | **百川智能** | `https://platform.baichuan-ai.com/docs` | ✅ Verified | 平台文档，含M3Plus、医疗大模型 |
 | **科大讯飞星火** | `https://www.xfyun.cn/doc/spark/Web.html` | ✅ Verified | API文档，含Spark Ultra/Max/Pro/Lite完整信息、上下文长度、domain参数 |
 | **科大讯飞星火** | `https://xinghuo.xfyun.cn/sparkapi` | ⚠️ JS渲染 | 产品页，JS动态渲染无法抓取 |
@@ -198,6 +200,16 @@ process.stdin.on('end', () => {
 | 腾讯混元 | `https://huggingface.co/Tencent-Hunyuan` | 25 | ⭐ 仅图像模型 |
 | 字节跳动 | `https://huggingface.co/bytedance` | 53 | ⭐ 无Doubao系列 |
 | 小米 | `https://huggingface.co/XiaoMi` | — | ❌ 401需认证 |
+
+### URL 管理规则
+
+当用户提供的网址经验证有有价值的内容时，必须将其添加到上方 `Official Documentation URLs` 表格中，记录：
+- **Vendor**：厂商名称
+- **URL**：完整网址
+- **Status**：✅ Verified（可抓取有效内容）/ ⚠️ 有限信息 / ❌ 无法抓取（注明原因，如JS渲染、需登录、403等）
+- **备注**：该页面包含的具体内容（模型列表、定价、基准分数等）
+
+这样后续更新数据时可以直接从已验证的URL列表中选取数据源，无需重复探索。
 
 ### Update Procedure
 
