@@ -37,10 +37,10 @@
 | Gemini 2.5 Pro | 2025年3月25日 | 🧠🌐 推理+多模态 | 未公开（厂商未公开） | 1M | 推理/思维模型，最先进复杂任务模型 |
 | Gemini 2.5 Pro TTS | 2025年 | 🎤 语音合成 | 未公开 | 未公开 | 高保真播客/有声书语音合成 |
 | Gemini 3 Flash | 2026年（Preview） | 🌐🧠 多模态+推理 | 未公开 | 1M | 前沿性能，成本更低 |
-| Gemini 3 Pro Image | 2026年（Preview） | 🖼️ 文生图 | 未公开 | 65K | 基于3 Pro的图像生成 |
-| Gemini 3 Pro Image Preview | 2026年（Preview） | 🖼️ 文生图 | 未公开 | 65K | 3 Pro图像生成预览版 |
-| Gemini 3.1 Flash Image | 2026年（Preview） | 🖼️ 文生图 | 未公开 | 131K | 基于3.1 Flash的图像生成 |
-| Gemini 3.1 Flash Image Preview | 2026年（Preview） | 🖼️ 文生图 | 未公开 | 131K | 3.1 Flash图像生成预览版 |
+| Gemini 3 Pro Image | 2026年6月18日（Preview） | 🖼️ 文生图 | 未公开 | 65K | 基于3 Pro的图像生成 |
+| Gemini 3 Pro Image Preview | 2026年6月18日（Preview） | 🖼️ 文生图 | 未公开 | 65K | 3 Pro图像生成预览版 |
+| Gemini 3.1 Flash Image | 2026年6月18日（Preview） | 🖼️ 文生图 | 未公开 | 131K | 基于3.1 Flash的图像生成 |
+| Gemini 3.1 Flash Image Preview | 2026年6月18日（Preview） | 🖼️ 文生图 | 未公开 | 131K | 3.1 Flash图像生成预览版 |
 | Gemini 3.1 Flash Live | 2026年（Preview） | 🎤🌐 语音+多模态 | 未公开 | 未公开 | 实时对话和语音优先AI应用 |
 | Gemini 3.1 Flash TTS | 2026年（Preview） | 🎤 语音合成 | 未公开 | 未公开 | 低延迟语音生成 |
 | Gemini 3.1 Flash-Lite | 2026年5月19日 | 🌐🧠 多模态+推理 | 未公开 | 1M | 成本优化前沿模型（已关闭Preview） |
@@ -54,8 +54,8 @@
 | Gemma 2（9B/27B） | 2024年6月 | 📝 纯文本 | 9B/27B | 8K | 开源模型升级 |
 | Gemma 3 | 2025年3月 | 🌐 多模态 | 1B/4B/12B/27B | 128K | 开源多模态 |
 | Gemma 3n | 2025年 | 📝 纯文本 | E4B | 32K | 端侧轻量开源模型 |
-| Gemma 4 26B-A4B | 2026年 | 📝 纯文本 | 26B MoE/4B激活 | 262K | 第四代开源MoE模型 |
-| Gemma 4 31B | 2026年 | 📝 纯文本 | 31B | 262K | 第四代开源稠密模型 |
+| Gemma 4 26B-A4B | 2026年4月3日 | 📝 纯文本 | 26B MoE/4B激活 | 262K | 第四代开源MoE模型 |
+| Gemma 4 31B | 2026年4月2日 | 📝 纯文本 | 31B | 262K | 第四代开源稠密模型 |
 | Gemma（2B/7B） | 2024年2月 | 📝 纯文本 | 2B/7B | 8K | 开源模型 |
 | Imagen 4 | 2025-2026年 | 🖼️ 文生图 | — | — | 文生图模型（已弃用） |
 | Lyria 3 Clip | 2026年（Preview） | 🎵 音乐生成 | — | — | 30秒短音乐片段 |

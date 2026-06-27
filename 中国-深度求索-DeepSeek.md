@@ -43,10 +43,10 @@
 | DeepSeek-V3.2-Exp | 2025年11月 | 📝 纯文本 | 685B MoE | 未公开 | 160K | V3.2实验版 |
 | DeepSeek-V3.2-Speciale | 2025年12月 | 📝 纯文本 | 685B MoE | 未公开 | 128K | V3.2特别版 |
 | DeepSeek-V3（671B/37B） | 2024年12月26日 | 📝 纯文本 | 671B MoE | 37B（256专家） | 128K | 训练成本仅$5.5M，FP8训练 |
-| DeepSeek-V4-Flash | 2026年 | 📝 纯文本 | 158B MoE | 未公开 | 1M（384K输出） | V4轻量版，定价0.02/1.00/2.00元/M tokens |
-| DeepSeek-V4-Flash-Base | 2026年4月 | 📝 纯文本 | 292B MoE | 未公开 | 未公开 | V4 Flash基座模型 |
-| DeepSeek-V4-Pro | 2026年 | 📝 纯文本 | 862B MoE | 未公开 | 1M（384K输出） | V4旗舰版，定价0.025/3.00/6.00元/M tokens |
-| DeepSeek-V4-Pro-Base | 2026年4月 | 📝 纯文本 | 1.6T MoE | 未公开 | 未公开 | V4 Pro基座模型 |
+| DeepSeek-V4-Flash | 2026年4月24日 | 📝 纯文本 | 158B MoE | 未公开 | 1M（384K输出） | V4轻量版，定价0.02/1.00/2.00元/M tokens |
+| DeepSeek-V4-Flash-Base | 2026年4月24日 | 📝 纯文本 | 292B MoE | 未公开 | 未公开 | V4 Flash基座模型 |
+| DeepSeek-V4-Pro | 2026年4月24日 | 📝 纯文本 | 862B MoE | 未公开 | 1M（384K输出） | V4旗舰版，定价0.025/3.00/6.00元/M tokens |
+| DeepSeek-V4-Pro-Base | 2026年4月24日 | 📝 纯文本 | 1.6T MoE | 未公开 | 未公开 | V4 Pro基座模型 |
 | DeepSeek-VL | 2024年3月 | 👁️📝 视觉+文本 | 未公开 | 未公开 | 未公开 | 首个视觉语言模型 |
 | DeepSeek-VL2 | 2024年12月13日 | 👁️📝 视觉+文本 | 未公开MoE | 未公开 | 128K | 视觉语言模型 |
 ## 模型详细介绍
