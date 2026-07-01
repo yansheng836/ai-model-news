@@ -6,7 +6,7 @@
 
 同时将所有厂家的大模型的发版时间整理到README.md文档中，一览无遗，需要包括公司所在国家、公司名、大模型名称、版本、发版时间。
 
-> ⚠️ **数据说明**：本项目数据截止至 **2026年6月25日**，通过 `WebFetch` 抓取各厂商官方文档更新。已验证更新的厂商包括：Anthropic、OpenAI、Google、xAI、Mistral、DeepSeek、阿里巴巴、Meta、NVIDIA、智谱AI、月之暗面、百度、腾讯、字节跳动、科大讯飞、华为。本次更新内容：修正 Anthropic Fable 5/Mythos 5 暂停状态（已恢复）、新增 Mistral OCR 4/Leanstral、补充阿里巴巴 Qwen3.5-LiveTranslate/Wan2.7系列/Qwen3-VL-Plus/Qwen-MT-Flash 等模型。部分厂商数据可能仍有遗漏，欢迎补充更新。
+> ⚠️ **数据说明**：本项目数据截止至 **2026年7月1日**，通过OpenRouter API和官方文档更新。本次更新内容：新增Anthropic Claude Sonnet 5（6月30日发布）、Google Gemini 3.1 Flash Lite Image（6月30日发布）、新增中国厂商阶跃星辰（StepFun）及Step 3.7 Flash模型、修正xAI Grok Build 0.1发布日期（2025年→2026年5月20日）、更新NVIDIA Nemotron 3 Ultra精确日期（2026年6月4日）、更新Google文生图模型精确发布日期。部分厂商数据可能仍有遗漏，欢迎补充更新。
 
 ## 问题
 
@@ -106,6 +106,7 @@
 | MiniMax | [中国-MiniMax-abab.md](中国-MiniMax-abab.md) | 中国 |
 | 百川智能 | [中国-百川智能-Baichuan.md](中国-百川智能-Baichuan.md) | 中国 |
 | 商汤科技 | [中国-商汤科技-日日新.md](中国-商汤科技-日日新.md) | 中国 |
+| 阶跃星辰 | [中国-阶跃星辰-Step.md](中国-阶跃星辰-Step.md) | 中国 |
 
 
 ## 大模型发版时间线总览
@@ -116,6 +117,7 @@
 
 | 国家 | 公司名 | 大模型名称 | 版本 | 功能属性 | 参数规模 | 上下文 | 发版时间 |
 |------|--------|-----------|------|----------|----------|--------|----------|
+| 美国 | Anthropic | Claude | Claude Sonnet 5（claude-sonnet-5）🆕 | 🌐🖥️🧠 | 未公开 | 1M | 2026年6月30日 |
 | 美国 | Anthropic | Claude | Claude Fable 5（claude-fable-5） | 🌐🖥️ | 未公开 | 1M | 2026年6月9日（⚠️ 6月12日曾短暂暂停，已恢复） |
 | 美国 | Anthropic | Claude | Claude Mythos Preview | 🌐🖥️ | 未公开 | 200K | 2025年（⏰ **2026年6月30日退役 - 仅剩5天**） |
 | 美国 | Anthropic | Claude | Claude Mythos 5（claude-mythos-5） | 🌐🖥️ | 未公开 | 1M | 2026年6月9日（⚠️ 6月12日曾短暂暂停，已恢复） |
@@ -130,6 +132,7 @@
 | 中国 | 商汤科技 | 日日新 | SenseNova U1 Fast | 🌐 多模态理解+生成 | 未公开 | 未公开 | 2026年 |
 | 中国 | MiniMax | M系列 | MiniMax-M3.0 | 📝🌐💻 | 427B MoE/23B激活 | 1M | 2026年5月31日 |
 | 美国 | Anthropic | Claude | Claude Opus 4.8（claude-opus-4-8） | 🌐🖥️ | 未公开 | 1M | 2026年5月28日 |
+| 美国 | Google | Gemini | Gemini 3.1 Flash Lite Image（Nano Banana 2 Lite）🆕 | 🖼️ | 未公开 | 65K | 2026年6月30日 |
 | 美国 | Google | Gemini | Gemini 3.5 Flash（Stable） | 🌐🧠💻🖥️ | 未公开 | 未公开 | 2026年5月19日 |
 | 美国 | Google | Gemini | Gemini 3.1 Pro（Preview） | 🌐🧠💻🖥️ | 未公开 | 未公开 | 2026年5月19日 |
 | 美国 | xAI | Grok | 旧版Grok模型 | 📝 | — | — | 🔄 2026年5月15日退役 |
@@ -161,7 +164,8 @@
 | 美国 | OpenAI | o系列 | o3-deep-research / o4-mini-deep-research | 🧠 | 未公开 | 200K | 2025年6月 |
 | 美国 | OpenAI | GPT-OSS | GPT-OSS-120B / GPT-OSS-20B | 📝 | 120B/20B | 131K | 2025年7月（开源） |
 | 美国 | xAI | Grok | Grok-4.3 | 🌐🧠💻 | 未公开 | 1M | 2026年4月17日 |
-| 美国 | xAI | Grok | Grok Build 0.1 | 💻🧠 | 未公开 | 256K | 2025年8月 |
+| 美国 | xAI | Grok | Grok Build 0.1 | 💻🧠 | 未公开 | 256K | 2026年5月20日 |
+| 中国 | 阶跃星辰 | Step | Step 3.7 Flash | 🌐🧠💻 | 196B MoE/11B激活 | 256K | 2026年5月28日 |
 | 美国 | NVIDIA | Nemotron | Nemotron 3 Nano Omni | 🌐🎤 | 未公开 | 1M | 2026年4月 |
 | 美国 | NVIDIA | Nemotron | Isaac GR00T N1.7 | 🤖 | 未公开 | 未公开 | 2026年4月 |
 | 法国 | Mistral AI | Mistral | Mistral Medium 3.5 | 🌐🧠💻🖥️ | 未公开 | 未公开 | 2026年4月 |
@@ -207,7 +211,7 @@
 | 美国 | Google | Veo | Veo 3.1（Preview） | 🎬 | — | — | 2026年5月 |
 | 美国 | Google | Lyria | Lyria 3 Pro（Preview） | 🎵 | — | — | 2026年5月 |
 | 美国 | xAI | Grok | grok-imagine-video-1.5 | 🎬 | — | — | 2026年1月 |
-| 美国 | NVIDIA | Nemotron | Nemotron 3 Ultra（550B/55B） | 📝🧠 | 550B MoE/55B激活 | 1M | 2026年3月 |
+| 美国 | NVIDIA | Nemotron | Nemotron 3 Ultra（550B/55B） | 📝🧠 | 550B MoE/55B激活 | 1M | 2026年6月4日 |
 | 美国 | NVIDIA | Nemotron | Nemotron 3 Super（120B/12B） | 📝🧠 | 120B MoE/12B激活 | 1M | 2026年3月 |
 | 美国 | Google | Gemini | Gemini 3 Flash（Preview） | 🌐🧠 | 未公开 | 未公开 | 2026年1月 |
 | 美国 | Google | Gemini | Gemini 3.1 Flash-Lite（Stable） | 🌐🧠 | 未公开 | 未公开 | 2026年4月 |

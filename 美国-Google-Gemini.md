@@ -37,10 +37,11 @@
 | Gemini 2.5 Pro | 2025年3月25日 | 🧠🌐 推理+多模态 | 未公开（厂商未公开） | 1M | 推理/思维模型，最先进复杂任务模型 |
 | Gemini 2.5 Pro TTS | 2025年 | 🎤 语音合成 | 未公开 | 未公开 | 高保真播客/有声书语音合成 |
 | Gemini 3 Flash | 2026年（Preview） | 🌐🧠 多模态+推理 | 未公开 | 1M | 前沿性能，成本更低 |
-| Gemini 3 Pro Image | 2026年（Preview） | 🖼️ 文生图 | 未公开 | 65K | 基于3 Pro的图像生成 |
-| Gemini 3 Pro Image Preview | 2026年（Preview） | 🖼️ 文生图 | 未公开 | 65K | 3 Pro图像生成预览版 |
-| Gemini 3.1 Flash Image | 2026年（Preview） | 🖼️ 文生图 | 未公开 | 131K | 基于3.1 Flash的图像生成 |
-| Gemini 3.1 Flash Image Preview | 2026年（Preview） | 🖼️ 文生图 | 未公开 | 131K | 3.1 Flash图像生成预览版 |
+| Gemini 3 Pro Image | 2026年5月28日（Preview） | 🖼️ 文生图 | 未公开 | 65K | 基于3 Pro的图像生成 |
+| Gemini 3 Pro Image Preview | 2026年5月28日（Preview） | 🖼️ 文生图 | 未公开 | 65K | 3 Pro图像生成预览版 |
+| Gemini 3.1 Flash Image（Nano Banana 2） | 2026年5月28日（Preview） | 🖼️ 文生图 | 未公开 | 131K | 基于3.1 Flash的图像生成 |
+| Gemini 3.1 Flash Image Preview | 2026年5月28日（Preview） | 🖼️ 文生图 | 未公开 | 131K | 3.1 Flash图像生成预览版 |
+| Gemini 3.1 Flash Lite Image（Nano Banana 2 Lite） 🆕 | 2026年6月30日 | 🖼️ 文生图 | 未公开 | 65K | 最快最便宜文生图，$0.25/$1.5 per 1M |
 | Gemini 3.1 Flash Live | 2026年（Preview） | 🎤🌐 语音+多模态 | 未公开 | 未公开 | 实时对话和语音优先AI应用 |
 | Gemini 3.1 Flash TTS | 2026年（Preview） | 🎤 语音合成 | 未公开 | 未公开 | 低延迟语音生成 |
 | Gemini 3.1 Flash-Lite | 2026年5月19日 | 🌐🧠 多模态+推理 | 未公开 | 1M | 成本优化前沿模型（已关闭Preview） |
@@ -90,11 +91,12 @@ Google的"思维模型"（Thinking Model），内置推理能力，可在回答�
 ### Gemini 3系列（2026年）
 最新一代模型家族：
 - **Gemini 3 Flash**（Preview）：前沿性能，成本更低
-- **Gemini 3 Pro Image**（Preview）：基于3 Pro的图像生成，65K上下文
+- **Gemini 3 Pro Image**（Preview）：基于3 Pro的图像生成，65K上下文，2026年5月28日发布
 - **Gemini 3.1 Pro**（Preview）：复杂问题解决、代理编程、vibe coding，1M上下文
 - **Gemini 3.1 Pro Preview**（Preview）：3.1 Pro预览版，1M上下文
 - **Gemini 3.1 Flash-Lite**（Stable）：成本优化前沿模型
-- **Gemini 3.1 Flash Image**（Preview）：基于3.1 Flash的图像生成，131K上下文
+- **Gemini 3.1 Flash Image**（Nano Banana 2，Preview）：基于3.1 Flash的图像生成，131K上下文，2026年5月28日发布
+- **Gemini 3.1 Flash Lite Image**（Nano Banana 2 Lite，2026年6月30日发布）：最快最经济的文生图模型，65K上下文，$0.25/$1.5 per 1M
 - **Gemini 3.1 Flash Live**（Preview）：实时对话和语音优先AI应用
 - **Gemini 3.1 Flash TTS**（Preview）：低延迟语音生成
 - **Gemini 3.5 Flash**（Stable）：最智能模型，代理和编程任务的持续前沿性能
@@ -102,8 +104,9 @@ Google的"思维模型"（Thinking Model），内置推理能力，可在回答�
 
 ### 图像生成系列
 Google在图像生成领域推出多个品牌：
-- **Nano Banana**：基于Gemini Flash的图像生成/编辑，强调速度
-- **Nano Banana Pro**：基于Gemini Pro的图像生成，强调质量和上下文
+- **Nano Banana 2 Lite**（Gemini 3.1 Flash Lite Image）：最快最经济的文生图，$0.25/$1.5 per 1M
+- **Nano Banana 2**（Gemini 3.1 Flash Image）：基于3.1 Flash的图像生成/编辑，强调速度
+- **Nano Banana Pro**（Gemini 3 Pro Image）：基于Gemini Pro的图像生成，强调质量和上下文
 - **Imagen 4**：文生图模型（已弃用）
 
 ### 视频生成系列
@@ -139,6 +142,7 @@ Google的开源模型系列，基于Gemini技术。Gemma 3首次在开源模型�
 | Gemini 3 Flash Preview | $0.50 | $3 | 1M |
 | Gemini 3 Pro Image Preview（Nano Banana Pro） | $2 | $12 | 65K |
 | Gemini 3.1 Flash Lite | $0.25 | $1.50 | 1M |
+| Gemini 3.1 Flash Lite Image（Nano Banana 2 Lite） | $0.25 | $1.50 | 65K |
 | Gemini 3.1 Flash Image（Nano Banana 2） | $0.50 | $3 | 131K |
 | Gemini 3.1 Pro Preview | $2 | $12 | 1M |
 | Gemini 3.5 Flash | $1.50 | $9 | 1M |

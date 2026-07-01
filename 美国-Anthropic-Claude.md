@@ -29,6 +29,7 @@
 | Claude 3.7 Sonnet（claude-3-7-sonnet-20250219） | 2025年2月19日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | ⚠️ 已停用（2026年2月19日） |
 | Claude 4 Opus（claude-opus-4-20250514） | 2025年5月14日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 最强下一代模型，⚠️ 已弃用（2026-06-15停用） |
 | Claude 4 Sonnet（claude-sonnet-4-20250514） | 2025年5月14日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 编程能力大幅提升，⚠️ 已弃用（2026-06-15停用） |
+| Claude Sonnet 5（claude-sonnet-5） | 2026年6月30日 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M | 最强Sonnet级模型，支持Adaptive Thinking（可选低/中/高/最大），$2/$10 MTok |
 | Claude Fable 5（claude-fable-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开（厂商未公开） | 1M | 最强广泛发布模型，Adaptive Thinking，$10/$50 MTok（⚠️ 6月12日曾短暂暂停，已恢复） |
 | Claude Haiku 4.5（claude-haiku-4-5-20251001） | 2025年10月1日 | 🌐🧠 多模态+推理 | 未公开 | 200K | 支持Extended Thinking，知识截止2025年2月 |
 | Claude Instant 1.2 | 2023年中 | 📝 纯文本 | 未公开 | 100K | 快速轻量版 |
@@ -76,6 +77,7 @@ Anthropic的第二代模型，支持100K（后扩展至200K）上下文窗口。
 
 ### Claude 5系列（2026年6月）
 最新一代模型：
+- **Claude Sonnet 5**（claude-sonnet-5）：2026年6月30日发布，最强Sonnet级模型，编程/Agent/专业工作前沿性能。1M上下文，128K最大输出，$2/$10 MTok。支持Adaptive Thinking，可选择性思考深度（低/中/高/最大）。Design Arena：Intelligence 53.4, Coding 71.5, Agentic 46.7。定价仅为Fable 5的1/5。
 - **Claude Fable 5**（claude-fable-5）：2026年6月9日发布，Anthropic最强大的广泛发布模型。1M上下文，128K最大输出，$10/$50 MTok。支持Adaptive Thinking（始终开启），适用于最复杂的推理和长期自主代理工作。6月12日曾因安全审查短暂暂停，已恢复。
 - **Claude Mythos 5**（claude-mythos-5）：同日发布，仅通过Project Glasswing提供给受邀客户，用于防御性网络安全工作流。6月12日曾短暂暂停，已恢复。
 
@@ -114,6 +116,7 @@ Anthropic的核心训练方法，通过一组"宪法"原则指导模型行为，
 
 | 模型 | 输入价格 ($/MTok) | 输出价格 ($/MTok) |
 |------|-------------------|-------------------|
+| Claude Sonnet 5 | $2 | $10 |
 | Claude Fable 5 | $10 | $50 |
 | Claude Opus 4.8 | $5 | $25 |
 | Claude Opus 4.5 | $5 | $25 |
