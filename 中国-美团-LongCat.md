@@ -1,4 +1,4 @@
-# 美团
+# 美团 - LongCat
 
 ## 公司简介
 
@@ -14,13 +14,6 @@
 
 ## 模型总览
 
-### 美团颜熙（MEITUAN-Yanxi）（2024年）
-
-| 版本 | 发布时间 | 功能属性 | 参数规模 | 上下文长度 | 主要特点 |
-|------|----------|----------|----------|----------|----------|
-| 美团外卖及服务业垂直大语言模型 | 2024年4月17日 | 🌐 多模态 | 未公开 | 未公开 | 首个外卖及服务业垂直LLM，服务美团全业务场景 |
-| 美团颜熙（MEITUAN-Yanxi） | 2024年9月 | 🌐 多模态 | 未公开 | 未公开 | 万亿token预训练，覆盖20+业务模块，年服务120亿订单 |
-
 ### LongCat 系列（2025年-2026年）
 
 | 版本 | 发布时间 | 功能属性 | 参数规模 | 激活参数 | 上下文长度 | 主要特点 |
@@ -34,26 +27,6 @@
 > **注**：LongCat-2.0 预览版在正式发布前已通过 OpenRouter 平台和 longcat.ai 面向全球开发者开放调用，曾跻身 OpenRouter 全球大模型调用量前三。
 
 ## 模型详细介绍
-
-### 美团外卖及服务业垂直大语言模型（2024年4月17日）
-
-美团于2024年4月17日正式发布首个外卖及服务业垂直大语言模型，这是美团在"零售+科技"战略下的重要布局。该模型专门针对外卖、酒店旅游、到店餐饮等本地生活服务场景进行深度优化，能够理解复杂的业务上下文，提供智能化的客户服务、商家赋能和运营支持。
-
-### 美团颜熙（MEITUAN-Yanxi）（2024年9月）
-
-2024年9月，美团进一步发布"美团颜熙"大模型，这是基于万亿级token预训练的大规模语言模型。2024年10月起，该模型全面接入美团各项业务，覆盖包括客服、营销、运营管理等在内的20+业务模块。
-
-**主要特点：**
-- **万亿token预训练**：基于海量本地生活服务数据进行训练
-- **全业务覆盖**：涵盖客服、营销、运营管理等20+业务模块
-- **大规模应用**：年服务订单量达120亿，已成为美团业务智能化核心引擎
-- **垂直优化**：针对本地生活服务场景深度优化，理解复杂业务上下文
-
-**应用场景：**
-- 智能客服：自动处理用户咨询、投诉和建议
-- 营销优化：个性化推荐、精准营销活动策划
-- 运营管理：商家经营分析、供应链优化
-- 内容生成：商家详情页、评价摘要、推荐文案自动生成
 
 ### LongCat-Flash-Lite-MoE（2025年）
 
@@ -89,11 +62,12 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 | OIBench EN | 47.7 | 编程能力 |
 
 **开源与部署：**
-- GitHub：https://github.com/meituan-longcat/LongCat-Flash-Thinking-2601
-- HuggingFace：https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking-2601
-- ModelScope：https://www.modelscope.cn/models/meituan-longcat/LongCat-Flash-Thinking-2601
-- 官网体验：https://longcat.ai
-- API 开放平台：https://longcat.chat/platform/usage
+
+- GitHub：<https://github.com/meituan-longcat/LongCat-Flash-Thinking-2601>
+- HuggingFace：<https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking-2601>
+- ModelScope：<https://www.modelscope.cn/models/meituan-longcat/LongCat-Flash-Thinking-2601>
+- 官网体验：<https://longcat.ai>
+- API 开放平台：<https://longcat.chat/platform/usage>
 
 ### LongCat-Next（2026年4月2日）
 
@@ -108,6 +82,7 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 3. **SAE（Semantic-and-Aligned Encoder）语义对齐完备编码器**：通过大规模视觉-语言监督学习高信息密度、多属性的表征，解决"离散化必然损失信息"的难题，在抽象语义中保留细粒度信息。
 
 **关键发现：**
+
 - 离散视觉没有天花板：OmniDocBench 超越 Qwen3-Omni 和 Qwen3-VL
 - 理解与生成可以协同：统一模型理解损失仅比纯理解模型高 0.006，生成损失比纯生成模型低 0.02
 - 统一框架不折损语言能力，在智能体与音频交互上形成跨模态协同
@@ -129,16 +104,18 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 | LongText-Bench（英文） | 93.15 | 图像生成 |
 
 **开源与部署：**
-- GitHub：https://github.com/meituan-longcat/LongCat-Next
-- HuggingFace：https://huggingface.co/meituan-longcat/LongCat-Next
-- 技术报告：https://github.com/meituan-longcat/LongCat-Next/blob/main/tech_report.pdf
-- Demo：https://longcat.chat/longcat-next
+
+- GitHub：<https://github.com/meituan-longcat/LongCat-Next>
+- HuggingFace：<https://huggingface.co/meituan-longcat/LongCat-Next>
+- 技术报告：<https://github.com/meituan-longcat/LongCat-Next/blob/main/tech_report.pdf>
+- Demo：<https://longcat.chat/longcat-next>
 
 ### LongCat-2.0（2026年6月30日）
 
 2026年6月30日，美团正式发布新一代万亿参数大模型 LongCat-2.0，并对外开源。作为**业界首个在五万卡国产算力集群上完成全流程训练与推理的万亿参数模型**，LongCat-2.0 从零开始预训练，原生支持 1M 超长上下文。
 
 **核心参数：**
+
 - 总参数：1.6T（万亿级）
 - 激活参数：平均约 48B，动态范围 33B~56B（token 级动态激活）
 - 架构：MoE（混合专家模型）
@@ -159,6 +136,7 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
    推理时由门控网络根据任务类型动态调度最擅长的专家。
 
 **国产算力突破：**
+
 - 自 2023 年起探索国产算力，从千卡起步逐步攻克算子适配、通信优化、分布式稳定性等难题
 - **稳定性**：卡间通信异常处理、弹性扩缩卡和自动故障恢复，月均日故障率降低 70% 以上
 - **正确性**：自研设计确定性算子、Bitwise 一致性验证和参数检测
@@ -166,6 +144,7 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 - **稳态日吞吐**：超过 1T tokens/day
 
 **推理优化：**
+
 - 大规模专家并行聚合访存带宽，支撑万亿参数 MoE 模型的低延迟解码
 - 零计算专家机制融入专家并行通信流程，避免不必要的传输与计算
 - 通信、Attention、GEMM 等核心算子优化调度，结合提前下发与权重预取
@@ -182,6 +161,7 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 | **BrowseComp** | 79.9 | 浏览能力评测 |
 
 **应用场景：**
+
 - **Agent 搭建**：AI SQL Agent，自然语言查询数据，自动完成全链路闭环
 - **代码库迁移**：自行分析整体架构、梳理核心逻辑，重构为符合新API的实现
 - **完整应用开发**：从一句话创意到可运行产品，包含技术选型、页面架构、游戏逻辑
@@ -189,15 +169,16 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 - **AI 小说工厂**：多 Agent 编排，从创意到自动化内容流水线
 
 **访问方式：**
-- API 开放平台：https://longcat.chat/platform/product
-- 官网：https://longcat.ai
+
+- API 开放平台：<https://longcat.chat/platform/product>
+- 官网：<https://longcat.ai>
 
 ## 访问链接
 
 | 平台 | URL |
 |------|-----|
-| 美团技术博客 | https://tech.meituan.com |
-| LongCat 官网 | https://longcat.ai |
-| LongCat API 平台 | https://longcat.chat/platform/product |
-| GitHub（LongCat 团队） | https://github.com/meituan-longcat |
-| HuggingFace（LongCat 团队） | https://huggingface.co/meituan-longcat |
+| 美团技术博客 | <https://tech.meituan.com> |
+| LongCat 官网 | <https://longcat.ai> |
+| LongCat API 平台 | <https://longcat.chat/platform/product> |
+| GitHub（LongCat 团队） | <https://github.com/meituan-longcat> |
+| HuggingFace（LongCat 团队） | <https://huggingface.co/meituan-longcat> |
