@@ -6,7 +6,7 @@
 
 同时将所有厂家的大模型的发版时间整理到README.md文档中，一览无遗，需要包括公司所在国家、公司名、大模型名称、版本、发版时间。
 
-> ⚠️ **数据说明**：本项目数据截止至 **2026年6月27日**，通过 OpenRouter API 和各厂商官方文档更新。已验证更新的厂商包括：Anthropic、OpenAI、Google、xAI、Mistral、DeepSeek、阿里巴巴、Meta、NVIDIA、智谱AI、月之暗面、百度、腾讯、字节跳动、科大讯飞、华为、MiniMax、小米。本次更新内容：修正多个模型的精确发布日期、新增 Gemini 3.1 Flash Image / Gemini 3 Pro Image 精确日期、新增 Nemotron 3 Ultra / Nemotron 3.5 系列精确日期等。部分厂商数据可能仍有遗漏，欢迎补充更新。
+> ⚠️ **数据说明**：本项目数据截止至 **2026年7月11日**，通过 OpenRouter API 和各厂商官方文档更新。已验证更新的厂商包括：Anthropic、OpenAI、Google、xAI、Mistral、DeepSeek、阿里巴巴、Meta、NVIDIA、智谱AI、月之暗面、百度、腾讯、字节跳动、科大讯飞、华为、MiniMax、小米、美团。本次更新内容：修正多个模型的精确发布日期、新增 Gemini 3.1 Flash Image / Gemini 3 Pro Image 精确日期、新增 Nemotron 3 Ultra / Nemotron 3.5 系列精确日期、新增美团 LongCat 系列模型（LongCat-2.0/LongCat-Next/LongCat-Flash-Thinking-2601）。部分厂商数据可能仍有遗漏，欢迎补充更新。
 
 ## 问题
 
@@ -106,6 +106,7 @@
 | MiniMax | [中国-MiniMax-abab.md](中国-MiniMax-abab.md) | 中国 |
 | 百川智能 | [中国-百川智能-Baichuan.md](中国-百川智能-Baichuan.md) | 中国 |
 | 商汤科技 | [中国-商汤科技-日日新.md](中国-商汤科技-日日新.md) | 中国 |
+| 美团 | [中国-美团-颜熙.md](中国-美团-颜熙.md) | 中国 |
 
 
 ## 大模型发版时间线总览
@@ -181,6 +182,14 @@
 | 法国 | Mistral AI | Voxtral | Voxtral Mini Transcribe Realtime | 🎤 | 未公开 | 未公开 | 2026年2月 |
 | 法国 | Mistral AI | Mistral | Mistral Moderation 2 | 📝 | 未公开 | 128K | 2026年3月 |
 | 中国 | MiniMax | M系列 | MiniMax-M2.7 | 📝 | 未公开 | 未公开 | 2026年3月 |
+| 美国 | OpenAI | GPT | GPT-5.6 Luna / Luna Pro / Terra / Terra Pro / Sol / Sol Pro | 🌐🧠🖥️ | 未公开 | 1050K | 2026年7月9日 |
+| 美国 | xAI | Grok | Grok-4.5 | 🌐🧠💻 | 未公开 | 500K | 2026年7月8日 |
+| 中国 | 腾讯 | 混元 | HY3（正式版） | 🌐🧠💻 | 295B MoE/21B激活 | 262K | 2026年7月6日 |
+| 美国 | Anthropic | Claude | Claude Sonnet 5（claude-sonnet-5-20260630） | 🌐🧠🖥️ | 未公开 | 1M | 2026年6月30日 |
+| 美国 | Google | Gemini | Gemini 3.1 Flash Lite Image（Preview） | 🖼️ | 未公开 | 65K | 2026年6月30日 |
+| **中国** | **美团** | **LongCat** | **LongCat-2.0** | **📝🧠💻** | **1.6T MoE/48B激活** | **1M** | **2026年6月30日** |
+| **中国** | **美团** | **LongCat** | **LongCat-Next** | **🌐👁️🎤🖼️** | **68.5B MoE/3B激活** | **未公开** | **2026年4月2日** |
+| **中国** | **美团** | **LongCat** | **LongCat-Flash-Thinking-2601** | **📝🧠💻** | **未公开** | **未公开** | **2026年1月20日** |
 | 美国 | Anthropic | Claude | Claude Sonnet 4.6（claude-sonnet-4-6） | 🌐🧠🖥️ | 未公开 | 1M | 2026年2月17日 |
 | 中国 | 字节跳动 | 豆包 | Doubao Seed 2.0 | 🌐🧠 | 未公开 | 未公开 | 2026年2月14日 |
 | 中国 | 字节跳动 | 豆包 | Doubao-Seed-2.1-pro | 🌐🧠💻 | 未公开 | 未公开 | 2026年 |
@@ -493,6 +502,7 @@
 | 美国 | Anthropic | Claude | Claude 3.5 Haiku（claude-3-5-haiku-20241022） | 🌐 | 未公开 | 200K | 2024年10月22日 |
 | 美国 | Anthropic | Claude | Claude 3.5 Sonnet v2（claude-3-5-sonnet-20241022） | 🌐🖥️ | 未公开 | 200K | 2024年10月22日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen2.5系列 | 📝 | 0.5B~72B | 128K | 2024年9月19日 |
+| 中国 | 美团 | 颜熙 | 美团颜熙（MEITUAN-Yanxi） | 🌐 | 未公开 | 未公开 | 2024年9月（10月起全面接入业务） |
 | 美国 | OpenAI | o系列 | o1-preview | 🧠 | 未公开 | 128K | 2024年9月12日 |
 | 美国 | OpenAI | o系列 | o1-mini | 🧠💻 | 未公开 | 128K | 2024年9月12日 |
 | 美国 | Meta | Llama | Llama 3.2 Vision（11B/90B） | 👁️📝 | 11B/90B | 128K | 2024年9月 |
@@ -542,6 +552,7 @@
 | 中国 | 零一万物 | Yi | Yi-Large | 📝 | 未公开 | 128K | 2024年5月 |
 | 中国 | 零一万物 | Yi | Yi-1.5系列（6B/9B/34B） | 📝 | 6B/9B/34B | 4K（200K为单独变体） | 2024年5月 |
 | 中国 | MiniMax | abab | abab 6.5系列 | 📝 | 未公开 | 128K | 2024年4月17日 |
+| 中国 | 美团 | 颜熙 | 美团外卖及服务业垂直大语言模型 | 🌐 | 未公开 | 未公开 | 2024年4月17日 |
 | 中国 | MiniMax | abab | abab 6.5 / 6.5s / 6.5t | 📝 纯文本 | 未公开 | 128K | 2024年4月17日 |
 | 美国 | xAI | Grok | Grok-1.5 Vision | 👁️📝 | 未公开 | 128K | 2024年4月12日（未公开发布） |
 | 美国 | Meta | Llama | Llama 3（8B/70B） | 📝 | 8B/70B | 8K | 2024年4月 |
