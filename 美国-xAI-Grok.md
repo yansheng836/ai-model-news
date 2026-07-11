@@ -43,19 +43,25 @@
 | Speech to Text（REST） | 2025-2026年 | 🎤 语音识别 | — | — | — | 语音转文本，$0.10/小时 |
 | Speech to Text（Streaming） | 2025-2026年 | 🎤 语音识别 | — | — | — | 流式语音转文本，$0.20/小时 |
 | Text to Speech | 2025-2026年 | 🎤 语音合成 | — | — | — | 文本转语音，$15/百万字符 |
+
 ## 模型详细介绍
 
 ### Grok-1
+
 xAI的首个大模型，314B参数MoE架构，86B激活参数。最初仅向X（Twitter）Premium+订阅用户开放。以幽默风格和实时信息获取著称（可访问X平台数据）。后开源。
 
 ### Grok-2
+
 重大升级，推理能力显著提升。集成了Aurora文生图模型，可在对话中直接生成图像。在多项基准上与GPT-4o竞争。
 
 ### Grok-3
+
 在xAI自建的Colossus超算集群上训练（100,000+ NVIDIA H100 GPU），是当时最大的AI训练集群之一。支持"Think"推理模式（"Big Brain"模式已宣布但从未公开发布），在复杂推理任务上表现出色。
 
 ### Grok 4系列（2025年7月-2026年4月）
+
 xAI最新一代模型家族：
+
 - **Grok-4**（2025年7月9日）：首个Grok 4模型，支持原生工具调用和实时搜索集成
 - **Grok-4 Heavy**（2025年7月9日）：更强大版本
 - **Grok-4 Fast**（2025年9月）：企业版，40%更少思考token，2M上下文
@@ -68,27 +74,32 @@ xAI最新一代模型家族：
 - **Grok-4.5**（2026年7月8日）：xAI最新旗舰模型，支持多模态输入（文本+图片+文件），500K上下文，强制推理模式，支持high/medium/low推理强度。支持结构化输出、工具调用、Web Search。定价$2/$6 MTok，缓存输入$0.50/MTok。Artificial Analysis Intelligence Index 53.8，Coding Index 72.4，Agentic Index 45.7。Design Arena: 3D排名第3，数据可视化排名第3。
 
 ### 图像与视频生成
+
 xAI在图像和视频生成领域布局：
+
 - **grok-imagine-image**：标准图像生成，$0.02/张
 - **grok-imagine-image-quality**：高质量图像生成，$0.05/张
 - **grok-imagine-video**：视频生成，$0.050/秒
 - **grok-imagine-video-1.5**：视频生成v1.5，$0.080/秒
 
 ### 语音模型系列
+
 - **Realtime**：实时语音交互，$0.05/分钟
 - **Text to Speech**：文本转语音，$15/百万字符
 - **Speech to Text**：语音转文本（REST $0.10/小时，Streaming $0.20/小时）
 
 ### 模型命名规则
+
 - 基础模型名（如 `grok-4.20`）指向最新稳定版本
 - 追加 `-latest` 获取最新版本
 - 追加日期（如 `-0309`）锁定特定版本
 - Grok 3和Grok 4的知识截止均为2024年11月
 
 ### ⚠️ 模型退役通知
+
 - **2026年5月15日**：xAI进行了模型退役(Model Retirement)，旧版Grok模型已停止服务
 - 用户需迁移到 Grok 4.3 或 Grok Build 0.1
-- 详见官方迁移指南：https://docs.x.ai/docs/guides/model-retirement-on-may-15
+- 详见官方迁移指南：<https://docs.x.ai/docs/guides/model-retirement-on-may-15>
 
 ### 定价体系（当前模型）
 

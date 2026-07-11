@@ -68,19 +68,25 @@
 | Lyria 3 Clip | 2026年（Preview） | 🎵 音乐生成 | — | — | 30秒短音乐片段 |
 | Lyria 3 Pro | 2026年（Preview） | 🎵 音乐生成 | — | — | 全长歌曲生成 |
 | Lyria RealTime | 2026年（Experimental） | 🎵 音乐生成 | — | — | 实时流式音乐生成 |
+
 ## 模型详细介绍
 
 ### Gemini 1.0系列
+
 Google首个原生多模态大模型家族，从发布之初就支持文本、图像、音频、视频四种模态的输入理解。Ultra为最大最强版本，Pro为中等规模，Nano为端侧部署版本（搭载于Pixel 8 Pro）。在多项基准测试中超越GPT-4。
 
 ### Gemini 1.5系列
+
 采用MoE架构，最大突破是支持100万token上下文窗口（后扩展至200万），可一次性处理长达数小时的视频或数千页文档。Flash版本专为速度和成本优化设计。
 
 ### Gemini 2.0系列
+
 下一代模型，支持原生工具调用（Function Calling）、实时多模态流式输入。Flash版本率先推出，Pro版本随后跟进。Gemini 2.0 Flash和Flash-Lite已于2026年关闭。
 
 ### Gemini 2.5系列
+
 Google的"思维模型"（Thinking Model），内置推理能力，可在回答前进行深度思考：
+
 - **Gemini 2.5 Pro**（2025年3月25日）：最先进复杂任务模型，深度推理和编程能力
 - **Gemini 2.5 Flash**（2025年4月17日）：最佳性价比推理模型，低延迟高吞吐
 - **Gemini 2.5 Flash-Lite**：2.5系列最快最便宜
@@ -89,7 +95,9 @@ Google的"思维模型"（Thinking Model），内置推理能力，可在回答�
 - **Gemini 2.5 Pro TTS**：高保真播客/有声书语音合成
 
 ### Gemini 3系列（2026年）
+
 最新一代模型家族：
+
 - **Gemini 3 Flash**（Preview）：前沿性能，成本更低
 - **Gemini 3 Pro Image**（Preview）：基于3 Pro的图像生成，65K上下文
 - **Gemini 3.1 Pro**（Preview）：复杂问题解决、代理编程、vibe coding，1M上下文
@@ -103,21 +111,26 @@ Google的"思维模型"（Thinking Model），内置推理能力，可在回答�
 - **Gemini 3.5 Live Translate**（Preview）：实时语音翻译，70+语言
 
 ### 图像生成系列
+
 Google在图像生成领域推出多个品牌：
+
 - **Nano Banana**：基于Gemini Flash的图像生成/编辑，强调速度
 - **Nano Banana Pro**：基于Gemini Pro的图像生成，强调质量和上下文
 - **Imagen 4**：文生图模型（已弃用）
 
 ### 视频生成系列
+
 - **Veo 3.1**（Preview）：电影级视频生成，高级创意控制+原生音频同步
 - **Veo 3.1 Lite**（Preview）：高效低成本视频生成/编辑
 
 ### 音乐生成系列
+
 - **Lyria 3 Pro**（Preview）：全长歌曲生成，复杂结构一致性
 - **Lyria 3 Clip**（Preview）：30秒短音乐片段
 - **Lyria RealTime**（Experimental）：实时流式音乐生成
 
 ### 代理与工具模型
+
 - **Computer Use**（Preview）：屏幕理解+UI操作模型，可点击/输入/导航
 - **Deep Research**（Preview）：自主多步骤研究，生成引用报告
 - **Deep Research Max**（Preview）：最大深度研究
@@ -125,7 +138,9 @@ Google在图像生成领域推出多个品牌：
 - **Gemini Robotics-ER 1.6**（Preview）：具身推理模型，理解物理空间
 
 ### Gemma系列
+
 Google的开源模型系列，基于Gemini技术。Gemma 3首次在开源模型中实现原生多模态支持，参数规模从1B到27B，支持128K上下文。
+
 - **Gemma 3n**：端侧轻量开源模型，E4B参数，32K上下文
 - **Gemma 4 26B-A4B**：第四代开源MoE模型，26B总参数4B激活，262K上下文
 - **Gemma 4 31B**：第四代开源稠密模型，31B参数，262K上下文
@@ -147,6 +162,7 @@ Google的开源模型系列，基于Gemini技术。Gemma 3首次在开源模型�
 | Gemini 3.5 Flash | $1.50 | $9 | 1M |
 
 ### 模型状态说明
+
 - **Stable**：稳定版，推荐生产使用
 - **Preview**：预览版，可用于生产但可能有限制
 - **Experimental**：实验版，不适合生产

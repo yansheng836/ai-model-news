@@ -7,6 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This is a documentation-only project (no code) that catalogs major AI model products from various companies. The content is written in Chinese.
 
 **Structure:**
+
 - `README.md` — master timeline table with capability annotations, plus company index
 - Per-company markdown files — one file per company, covering company background, model version history, and detailed model introductions
 
@@ -15,6 +16,7 @@ This is a documentation-only project (no code) that catalogs major AI model prod
 Files must follow the pattern: **国家-公司英文名-经典模型名.md**
 
 Examples:
+
 - `中国-深度求索-DeepSeek.md`
 - `美国-OpenAI-GPT.md`
 - `美国-Anthropic-Claude.md`
@@ -37,13 +39,13 @@ Examples:
 
 ## Content Requirements
 
-### Each company file must include:
+### Each company file must include
 
 1. **公司简介** — company overview table (country, HQ, founded, founder, positioning)
 2. **模型总览表** — summary table of all model versions with: version, release date, capability type, parameters, active parameters, context length, key features
 3. **模型详细介绍** — detailed description of each major model (architecture, training data, benchmarks, use cases, API info, etc.)
 
-### Model version entries must include:
+### Model version entries must include
 
 - **精确版本号** — e.g., `Claude 4 Opus (claude-opus-4-20250514)`, not just `Claude 4 Opus`
 - **功能属性** — use emoji annotations (see below)
@@ -53,7 +55,7 @@ Examples:
 - **精确发布时间** — 必须精确到天或月，不能只标注年份或时间范围。格式：`YYYY年MM月DD日` 或 `YYYY年MM月`。例如：`2025年8月7日`，不能写成`2025年`或`2025-2026年`
 - **状态信息** — 如有暂停、弃用、停用等状态变更，需在版本说明中注明（如 `⚠️ 2026年6月12日起暂停`）
 
-### README.md timeline table must include columns:
+### README.md timeline table must include columns
 
 国家 | 公司名 | 大模型名称 | 版本 | 功能属性 | 发版时间
 
@@ -70,6 +72,66 @@ Examples:
 | 🧠 | 推理模型（链式思维/深度推理） |
 | 💻 | 代码模型 |
 | 🖥️ | 计算机操作（Computer Use） |
+
+## Markdown Lint
+
+After modifying any `.md` file, run `markdownlint-cli` to verify format correctness.
+
+### Setup
+
+```bash
+# Install globally (one-time)
+npm install -g markdownlint-cli
+
+# Or use npx without installation
+npx markdownlint-cli --version
+```
+
+### Configuration
+
+After first lint run, create `.markdownlint.json` in the project root with these rules:
+
+```json
+{
+  "default": true,
+  "MD010": { "spaces_per_tab": 4 },
+  "MD013": false,
+  "MD025": false,
+  "MD033": false,
+  "MD041": false,
+  "MD046": false
+}
+```
+
+Rule explanations:
+
+- `MD010` — Hard tabs: enforce 4-space indentation (for tables)
+- `MD013` — Line length: disabled (table cells often exceed 80 chars)
+- `MD025` — Multiple H1: disabled (README has H1, each company file also has H1)
+- `MD033` — Inline HTML: disabled (allowed in markdown)
+- `MD041` — First line H1: disabled (README starts with H1 but not every file)
+- `MD046` — Code block style: disabled (mixed fenced and indented code blocks)
+
+### Usage
+
+```bash
+# Lint a single file
+markdownlint-cli <file.md>
+
+# Lint all markdown files in the project
+markdownlint-cli "**/*.md" --config .markdownlint.json
+
+# Fix issues (some rules are auto-fixable)
+markdownlint-cli --fix "**/*.md" --config .markdownlint.json
+```
+
+### Post-edit Checklist
+
+For every `.md` file you modify:
+
+1. Run `markdownlint-cli <file.md>` — no errors
+2. Run `markdownlint-cli --fix <file.md>` — auto-fix common issues
+3. Run `markdownlint-cli "**/*.md"` — ensure no regressions in other files
 
 ## Conventions
 
@@ -93,11 +155,13 @@ Examples:
 **不能只依赖 GitHub/HuggingFace，必须同时搜索产品官网获取准确信息。**
 
 原因：
+
 1. **HuggingFace "Updated" 时间是上传日期，不是正式发布日期**（如小米 MiMo-V2.5-Pro：HuggingFace显示2025年5月，实际发布于2026年4月27日）
 2. **GitHub README 可能不完整**，只包含部分模型或旧版本
 3. **产品官网包含最准确的发布日期、定价、功能说明**
 
 数据源优先级：
+
 1. **产品官网/API文档**（如 `mimo.xiaomi.com`、`platform.baichuan-ai.com`）→ 最准确的发布日期
 2. **OpenRouter API** → 跨厂商标准化数据（上下文长度、定价、模型ID），可用于交叉验证
 3. **GitHub 仓库** → 模型架构、训练数据、基准分数
@@ -107,6 +171,7 @@ Examples:
 ### OpenRouter API（跨厂商统一数据源）
 
 OpenRouter 聚合了所有主流厂商的模型数据，提供标准化的 API 接口，适合用于：
+
 - **交叉验证**：对比各厂商官方文档中的上下文长度、定价是否一致
 - **发现遗漏**：OpenRouter 上架的模型可能尚未在厂商文档中列出
 - **统一格式**：所有模型使用相同的数据结构（id、context_length、pricing）
@@ -118,6 +183,7 @@ OpenRouter 聚合了所有主流厂商的模型数据，提供标准化的 API �
 | 模型详情 | `https://openrouter.ai/{model-id}` | 单个模型的详细信息页 |
 
 **使用方法：**
+
 ```bash
 # 获取全部模型数据（JSON）
 curl -s "https://openrouter.ai/api/v1/models" | node -e "
@@ -133,6 +199,7 @@ process.stdin.on('end', () => {
 ```
 
 **已验证的 OpenRouter 厂商覆盖（2026年6月）：**
+
 - OpenAI: 62 模型 | Qwen: 49 | Google: 28 | Mistral: 19 | Anthropic: 15
 - 智谱AI(z-ai): 12 | Meta: 12 | NVIDIA: 11 | DeepSeek: 11 | MiniMax: 8
 - xAI: 4 | 小米: 2 | 腾讯: 2 | 月之暗面: 6
@@ -210,6 +277,7 @@ process.stdin.on('end', () => {
 ### URL 管理规则
 
 当用户提供的网址经验证有有价值的内容时，必须将其添加到上方 `Official Documentation URLs` 表格中，记录：
+
 - **Vendor**：厂商名称
 - **URL**：完整网址
 - **Status**：✅ Verified（可抓取有效内容）/ ⚠️ 有限信息 / ❌ 无法抓取（注明原因，如JS渲染、需登录、403等）
@@ -230,6 +298,7 @@ process.stdin.on('end', () => {
 ### Fallback Strategy
 
 If official docs are inaccessible:
+
 1. Try the vendor's GitHub repository (releases/README)
 2. Try HuggingFace organization page (`https://huggingface.co/{org}`)
 3. Try Wikipedia pages for the model family

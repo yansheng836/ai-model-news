@@ -44,9 +44,11 @@
 ## 模型详细介绍
 
 ### Nemotron 3 系列
+
 NVIDIA的核心大语言模型家族，采用混合架构设计：
 
 **Nemotron 3 Nano**（30B/3B激活）
+
 - 基于Mamba-2 + Transformer MoE混合架构
 - 1M token上下文窗口
 - 支持推理ON/OFF模式，可配置思考预算
@@ -54,6 +56,7 @@ NVIDIA的核心大语言模型家族，采用混合架构设计：
 - 适合端侧和边缘设备部署
 
 **Nemotron 3 Super**（120B/12B激活）
+
 - 混合Mamba-Transformer MoE架构
 - 集成LatentMoE、Multi-Token Prediction（MTP）层
 - 原生NVFP4预训练
@@ -61,37 +64,47 @@ NVIDIA的核心大语言模型家族，采用混合架构设计：
 - 比前代Super吞吐量高5倍
 
 **Nemotron 3 Ultra**（550B/55B激活）
+
 - 前沿规模大语言模型
 - 混合LatentMoE架构 + MTP层
 - 适合最复杂的工作负载
 - 强大的代理、推理和对话能力
 
 ### Nemotron 3.5 系列
+
 面向企业级安全和多模态场景：
+
 - **Content Safety**：多模态、多语言内容安全审核模型，支持标准分类和自定义策略
 - **ASR**：可定制的语音识别模型，支持多语言、多领域
 - **Nano Omni**：长上下文多模态智能模型，支持文档、音频、视频代理
 
 ### Llama Nemotron 系列
+
 基于Meta Llama模型优化的版本：
+
 - **Nano 4B**：端侧高精度推理模型
 - **Nano VLM**：视觉语言模型
 - **RAG**：检索增强生成模型
 - **Embed-8B**：多语言嵌入模型，在MTEB排行榜排名第一
 
 ### Cosmos 系列
+
 面向物理AI的世界基础模型：
+
 - **Cosmos 3**：首个开放全模态物理AI推理和行动模型
 - **Cosmos Predict/Transfer 2.5**：世界基础模型
 - **Cosmos Reason 2**：高级物理AI推理
 - **Cosmos Policy**：高级机器人控制策略
 
 ### Isaac GR00T 系列
+
 人形机器人专用模型：
+
 - **GR00T N1.7**：开放推理VLA（Vision-Language-Action）模型
 - 支持从仿真到部署的完整机器人开发流程
 
 ### 核心技术特点
+
 1. **混合架构**：Mamba-2 + Transformer MoE，兼顾效率和性能
 2. **LatentMoE**：潜在混合专家，最大化计算效率
 3. **Multi-Token Prediction**：多token预测，提升推理速度
@@ -99,7 +112,9 @@ NVIDIA的核心大语言模型家族，采用混合架构设计：
 5. **开放权重**：所有模型均提供开放权重、开放数据集和可复现训练配方
 
 ### 开源策略
+
 NVIDIA采用全面开源策略，提供：
+
 - 模型权重（HuggingFace）
 - 训练数据集
 - 训练配方和教程
