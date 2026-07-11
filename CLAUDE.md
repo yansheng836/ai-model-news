@@ -77,6 +77,8 @@ Examples:
 - When adding a new company, also add its release entries to the timeline table in `README.md`.
 - Keep data up to date — the AI model field iterates very fast.
 - Update the ⚠️ data cutoff notice in README.md when refreshing data.
+- **`README.md` 的「大模型发版时间线总览」列表**：按发版时间**倒序**排列（最新发布的在最上面，最早发布的在最下面）。
+- **各公司模型文档的「模型总览」表格**：按版本 + 发版时间**正序**排列（最早发布的版本在最上面，最新发布的在最下面）。
 
 ## Data Update Strategy (数据更新策略)
 
