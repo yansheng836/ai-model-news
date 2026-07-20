@@ -117,7 +117,9 @@ OpenRouter 聚合了所有主流厂商的模型数据，提供标准化的 API �
 
 **使用方法：**
 ```bash
+
 # 获取全部模型数据（JSON）
+
 curl -s "https://openrouter.ai/api/v1/models" | node -e "
 const chunks = [];
 process.stdin.on('data', c => chunks.push(c));

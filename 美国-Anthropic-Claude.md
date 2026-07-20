@@ -45,12 +45,15 @@
 | Claude Opus 4.8（claude-opus-4-8） | 2026年5月28日 | 🌐🖥️ 多模态+计算机操作 | 未公开（厂商未公开） | 1M | 支持Adaptive Thinking，$5/$25 MTok，知识截止2026年1月 |
 | Claude Sonnet 4.5（claude-sonnet-4-5-20250929） | 2025年9月29日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，$3/$15 MTok |
 | Claude Sonnet 4.6（claude-sonnet-4-6） | 2026年2月17日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开（厂商未公开） | 1M | 支持Extended Thinking + Adaptive Thinking，$3/$15 MTok |
+
 ## 模型详细介绍
 
 ### Claude 2系列
+
 Anthropic的第二代模型，支持100K（后扩展至200K）上下文窗口。以安全性和有用性著称，采用Constitutional AI（宪法AI）方法训练。Claude 2.1大幅减少了幻觉率，支持系统提示词。
 
 ### Claude 3系列
+
 首个原生多模态Claude家族，发布时包含三个层级：
 - **Haiku**：最快最便宜，适合高并发场景
 - **Sonnet**：速度与智能的最佳平衡
@@ -59,12 +62,15 @@ Anthropic的第二代模型，支持100K（后扩展至200K）上下文窗口。
 支持图像理解，200K上下文窗口，在多项基准上与GPT-4竞争。
 
 ### Claude 3.5 Sonnet
+
 在发布时超越了Claude 3 Opus的性能，同时成本仅为1/5。v2版本新增Computer Use能力，可以操作桌面应用程序（移动鼠标、点击按钮、输入文字等）。
 
 ### Claude 4系列（2025年5月）
+
 下一代模型家族。Sonnet 4在编程能力上大幅提升，成为编程竞赛中的顶级模型。Opus 4是最强版本，在复杂推理、多步骤任务上表现出色。两个版本均支持Computer Use。
 
 ### Claude 4.x 系列（2025年下半年 - 2026年上半年）
+
 快速迭代的模型家族：
 - **Opus 4.1**（2025年8月）：首个定价$15/$75 MTok的高端模型，支持Extended Thinking
 - **Haiku 4.5**（2025年10月）：新一代轻量模型，$1/$5 MTok，支持Extended Thinking
@@ -76,12 +82,14 @@ Anthropic的第二代模型，支持100K（后扩展至200K）上下文窗口。
 - **Opus 4.8**（2026年）：当前最强Opus模型，知识截止2026年1月，effort参数默认为high
 
 ### Claude 5系列（2026年6月）
+
 最新一代模型：
 - **Claude Sonnet 5**（claude-sonnet-5）：2026年6月30日发布，最强Sonnet级模型，编程/Agent/专业工作前沿性能。1M上下文，128K最大输出，$2/$10 MTok。支持Adaptive Thinking，可选择性思考深度（低/中/高/最大）。Design Arena：Intelligence 53.4, Coding 71.5, Agentic 46.7。定价仅为Fable 5的1/5。
 - **Claude Fable 5**（claude-fable-5）：2026年6月9日发布，Anthropic最强大的广泛发布模型。1M上下文，128K最大输出，$10/$50 MTok。支持Adaptive Thinking（始终开启），适用于最复杂的推理和长期自主代理工作。6月12日曾因安全审查短暂暂停，已恢复。
 - **Claude Mythos 5**（claude-mythos-5）：同日发布，仅通过Project Glasswing提供给受邀客户，用于防御性网络安全工作流。6月12日曾短暂暂停，已恢复。
 
 ### ⚠️ Fable 5 和 Mythos 5 暂停事件（2026年6月12日）
+
 **状态：已恢复访问**
 
 2026年6月12日，美国政府以国家安全为由，曾短暂暂停 Fable 5 和 Mythos 5 的访问。目前已恢复正常使用。
@@ -97,19 +105,23 @@ Anthropic的第二代模型，支持100K（后扩展至200K）上下文窗口。
 - 状态页面：https://status.anthropic.com/
 
 ### 模型生命周期定义
+
 - **活跃（Active）**：完全支持，推荐使用
 - **遗留（Legacy）**：不再接收更新，未来可能弃用
 - **已弃用（Deprecated）**：仍可正常使用，但不再推荐，有指定停用日期
 - **已停用（Retired）**：不再可用，请求会失败
 
 ### API 参数弃用
+
 ⚠️ `temperature`、`top_p`、`top_k` 参数在 **Claude Opus 4.7 及更高版本**（包括 Opus 4.8、Fable 5）上已弃用。设置非默认值将返回 400 错误。建议使用提示工程引导模型行为。
 
 ### Extended Thinking vs Adaptive Thinking
+
 - **Extended Thinking**（扩展思考）：Claude 4系列引入的功能，模型在回答前进行内部推理链思考。通过API参数控制是否开启。
 - **Adaptive Thinking**（自适应思考）：从Claude Opus 4.7开始引入，模型根据任务复杂度自动调整思考深度，始终开启。比Extended Thinking更高效，不需要手动控制。
 
 ### Constitutional AI（宪法AI）
+
 Anthropic的核心训练方法，通过一组"宪法"原则指导模型行为，让模型自我评估和改进回答，减少有害输出。
 
 ### 定价体系（当前模型）
@@ -131,6 +143,7 @@ Anthropic的核心训练方法，通过一组"宪法"原则指导模型行为，
 | Claude Haiku 4.5 | $1 | $5 |
 
 ### 模型命名规则
+
 - Claude 4.6代及之后：无日期格式的模型ID（如 `claude-opus-4-6`），是固定快照
 - Claude 4.6代之前：带日期的模型ID（如 `claude-3-5-sonnet-20241022`），alias指向最新版本
 - 所有模型ID都是固定快照，alias在4.6代之前是便捷指针

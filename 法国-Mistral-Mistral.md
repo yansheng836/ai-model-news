@@ -63,43 +63,53 @@
 | Voxtral Mini Transcribe Realtime | 2026年2月 | 🎤 语音识别 | 未公开 | 未公开 | 实时转录 |
 | Voxtral Small 24B | 2025年7月 | 🎤🌐 语音+多模态 | 24B | 32K | 音频输入指令模型，$0.10/$0.30 MTok |
 | Voxtral TTS | 2026年3月 | 🎤 语音合成 | 未公开 | 未公开 | 零样本语音克隆+多语言 |
+
 ## 模型详细介绍
 
 ### Mistral 7B
+
 Mistral AI的首个模型，仅7B参数但在多项基准上超越了13B的Llama 2。采用分组查询注意力（GQA）和滑动窗口注意力（SWA），效率极高。奠定了Mistral在开源AI领域的地位。
 
 ### Mixtral 8x7B/8x22B
+
 稀疏混合专家（SMoE）架构的先驱。8x7B有8个专家，每次推理仅激活2个（13B激活参数），性能接近70B稠密模型。8x22B进一步扩大规模，39B激活参数。
 
 ### Mistral Large系列
+
 - **Large 2**（123B，2024年7月）：旗舰模型，支持128K上下文，精通数十种语言
 - **Large 2.1**（2024年11月）：升级版
 - **Large 3**（2025年12月）：开放权重通用多模态模型
 
 ### Mistral Medium系列
+
 - **Medium 3**（2025年5月）：中等规模多模态模型
 - **Medium 3.1**（2025年8月）：升级版
 - **Medium 3.5**（2026年4月）：最新旗舰，多模态+代理能力
 
 ### Mistral Small系列
+
 - **Small 3**（24B，2025年1月）：轻量高效模型
 - **Small 3.1/3.2**：迭代升级
 - **Small 4**（2026年3月）：混合指令/推理/代码模型
 
 ### Ministral 3系列
+
 轻量级模型家族，3B/8B/14B三个规模，支持文本和视觉。适合端侧部署和高并发场景。
 
 ### Magistral系列（推理模型）
+
 Mistral的推理模型家族：
 - **Magistral Medium 1.0/1.1/1.2**：中等规模推理模型
 - **Magistral Small 1.0/1.1/1.2**：轻量推理模型
 
 ### Pixtral系列
+
 Mistral的多模态视觉模型：
 - **Pixtral 12B**（2024年9月）：首个支持图像理解的Mistral模型
 - **Pixtral Large**（124B，2024年11月）：大规模多模态
 
 ### Codestral系列
+
 编程专用模型：
 - **Codestral**（22B，2024年5月）：首个编程专用模型
 - **Codestral**（2025年8月）：代码补全模型
@@ -107,19 +117,23 @@ Mistral的多模态视觉模型：
 - **Devstral/Devstral 2**：软件工程任务专用
 
 ### Voxtral系列（语音模型）
+
 Mistral在语音领域的新布局：
 - **Voxtral Small**（2025年7月）：音频输入指令模型
 - **Voxtral Mini Transcribe**系列：音频转录（含实时版本）
 - **Voxtral TTS**（2026年3月）：零样本语音克隆+多语言TTS
 
 ### OCR系列（文档理解）
+
 - **OCR/OCR 2/OCR 3**：文档AI/OCR模型，用于文档理解和提取
 - **OCR 4**（2026年4月）：新一代OCR服务，支持段落级边界框和结构化标签
 
 ### MoE架构
+
 Mistral是MoE架构的主要推动者之一，通过稀疏激活大幅降低推理成本，同时保持模型容量。
 
 ### 模型生命周期管理
+
 Mistral采用版本化命名（如v26.04表示2026年4月版本），并明确标注：
 - **API Tier**：Open（开放）/ Premier（高级）/ Legacy（遗留）
 - **Deprecation date**：弃用日期
