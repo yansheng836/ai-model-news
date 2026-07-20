@@ -29,6 +29,7 @@
 | Llama 4 Scout（17B激活/109B总） | 2025年4月5日 | 🌐 多模态 | 109B（17B激活，16专家） | 10M | MoE架构，千万级上下文，$0.10/$0.30 MTok |
 | Llama Guard 4 12B | 2025年 | 📝 安全审核 | 12B | 163K | 内容安全审核模型 |
 | Muse Spark | 2026年4月 | 🌐 多模态 | 未公开 | 未公开 | Meta Superintelligence Labs发布，Llama替代品 |
+| Muse Spark 1.1 | 2026年7月16日 | 🌐📝👁️🎤 多模态推理 | 未公开 | 1M | 推理增强版，支持文本/图像/视频/音频/PDF输入 |
 
 ## 模型详细介绍
 
@@ -43,6 +44,12 @@ Meta首个MoE（混合专家）架构模型，2025年4月5日发布。Scout版�
 
 ### Muse Spark（2026年4月）
 Meta Superintelligence Labs发布的新模型，作为Llama系列的替代品。标志着Meta在大模型战略上的重大转变。
+
+### Muse Spark 1.1（2026年7月16日）
+Muse Spark的推理增强版本，面向Agent任务：
+- 多模态推理模型，接受文本、图像、视频、音频和PDF文档输入
+- 1M tokens上下文窗口，显著扩展了原始版本的能力
+- 定价：$1.25/$4.25 MTok（输入/输出）
 
 ### 开源策略
 Meta是大模型开源的主要推动者，Llama系列模型在HuggingFace等平台广泛使用，催生了大量微调版本和下游应用。
