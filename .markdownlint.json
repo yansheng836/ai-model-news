@@ -1,0 +1,13 @@
+{
+  "default": true,
+  "MD010": { "spaces_per_tab": 4 },
+  "MD012": false,
+  "MD013": false,
+  "MD022": false,
+  "MD032": false,
+  "MD034": false,
+  "MD041": false,
+  "MD046": false,
+  "MD058": false,
+  "MD060": false
+}
