@@ -6,7 +6,7 @@
 
 同时将所有厂家的大模型的发版时间整理到README.md文档中，一览无遗，需要包括公司所在国家、公司名、大模型名称、版本、发版时间。
 
-> ⚠️ **数据说明**：本项目数据截止至 **2026年7月20日**，通过OpenRouter API和官方文档更新。本次更新内容：新增OpenAI GPT-5.6系列（Sol/Terra/Luna，7月9日发布）、xAI Grok-4.5（7月8日发布）、MoonshotAI Kimi K3（7月16日发布）、Meta Muse Spark 1.1（7月16日发布）、Tencent HY3正式版（7月6日发布）、更新DeepSeek deepseek-chat/reasoner弃用日期（7月24日）等。部分厂商数据可能仍有遗漏，欢迎补充更新。
+> ⚠️ **数据说明**：本项目数据截止至 **2026年7月24日**，通过OpenRouter API和官方文档更新。本次更新内容：新增Claude Opus 5/Opus 5 Fast（7月23-24日发布）、Gemini 3.6 Flash/Gemini 3.5 Flash Lite（7月21日发布）等。部分厂商数据可能仍有遗漏，欢迎补充更新。
 
 ## 问题
 
@@ -107,6 +107,7 @@
 | 百川智能 | [中国-百川智能-Baichuan.md](中国-百川智能-Baichuan.md) | 中国 |
 | 商汤科技 | [中国-商汤科技-日日新.md](中国-商汤科技-日日新.md) | 中国 |
 | 阶跃星辰 | [中国-阶跃星辰-Step.md](中国-阶跃星辰-Step.md) | 中国 |
+| 美团 | [中国-美团-LongCat.md](中国-美团-LongCat.md) | 中国 |
 
 
 ## 大模型发版时间线总览
@@ -118,12 +119,17 @@
 | 国家 | 公司名 | 大模型名称 | 版本 | 功能属性 | 参数规模 | 上下文 | 发版时间 |
 |------|--------|-----------|------|----------|----------|--------|----------|
 | 中国 | 月之暗面 | Kimi | Kimi K3 🆕 | 🌐🧠💻 多模态+推理+代码 | 2.8T（开源权重） | 1M | 2026年7月16日 |
+| 美国 | Anthropic | Claude | Claude Opus 5 Fast（claude-opus-5-fast-20260723）🆕 | 🌐🖥️🧠 多模态+推理 | 未公开 | 1M（128K输出） | 2026年7月24日（⚠️ 2x定价版） |
+| 美国 | Anthropic | Claude | Claude Opus 5（claude-opus-5-20260723）🆕 | 🌐🖥️🧠 多模态+推理+代码 | 未公开（厂商未公开） | 1M（128K输出） | 2026年7月23日 |
+| 美国 | Google | Gemini | Gemini 3.6 Flash 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1M | 2026年7月21日 |
+| 美国 | Google | Gemini | Gemini 3.5 Flash Lite 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1M | 2026年7月21日 |
 | 美国 | Meta | Muse | Muse Spark 1.1 🆕 | 🌐📝👁️🎤 多模态推理 | 未公开 | 1M | 2026年7月16日 |
 | 美国 | OpenAI | GPT | GPT-5.6 Sol / Sol Pro 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 2026年7月9日 |
 | 美国 | OpenAI | GPT | GPT-5.6 Terra / Terra Pro 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 2026年7月9日 |
 | 美国 | OpenAI | GPT | GPT-5.6 Luna / Luna Pro 🆕 | 🌐🧠 多模态+推理 | 未公开 | 1050K | 2026年7月9日 |
 | 美国 | xAI | Grok | Grok-4.5 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开（厂商未公开） | 500K | 2026年7月8日 |
 | 中国 | 腾讯 | 混元 | HY3 🆕 | 🌐🧠💻 多模态+推理+代码 | 295B MoE/21B激活 | 262K | 2026年7月6日 |
+| 中国 | 美团 | LongCat | LongCat-2.0 🆕 | 📝🧠💻 文本+推理+代码 | 1.6T MoE/48B激活 | 1M（256K输出） | 2026年6月30日（⚠️ 2026年7月20日上线OpenRouter） |
 | 美国 | Anthropic | Claude | Claude Sonnet 5（claude-sonnet-5）🆕 | 🌐🖥️🧠 | 未公开 | 1M | 2026年6月30日 |
 | 美国 | Anthropic | Claude | Claude Fable 5（claude-fable-5） | 🌐🖥️ | 未公开 | 1M | 2026年6月9日（⚠️ 6月12日曾短暂暂停，已恢复） |
 | 美国 | Anthropic | Claude | Claude Mythos Preview | 🌐🖥️ | 未公开 | 200K | 2025年（⚠️ **2026年6月30日已退役**） |
@@ -334,7 +340,7 @@
 | 美国 | xAI | Grok | Grok Code Fast 1 | 💻🧠 | 未公开 | 未公开 | 2025年8月28日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3-4B-Instruct-2507 | 📝 纯文本（非思考） | 4B | 128K | 2025年8月6日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3-4B-Thinking-2507 | 🧠 推理（思考） | 4B | 128K | 2025年8月6日 |
-| 美国 | Anthropic | Claude | Claude Opus 4.1（claude-opus-4-1-20250805） | 🌐🧠🖥️ | 未公开 | 200K | 2025年8月5日（⏰ **2026年8月5日退役 - 仅剩16天**） |
+| 美国 | Anthropic | Claude | Claude Opus 4.1（claude-opus-4-1-20250805） | 🌐🧠🖥️ | 未公开 | 200K | 2025年8月5日（⏰ **2026年8月5日退役 - 仅剩11天**，⚠️ 已弃用） |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3-30B-A3B-Instruct-2507 / Thinking-2507 | 📝🧠 | 30B MoE/3B激活 | 256K | 2025年7月30-31日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3-30B-A3B-Thinking-2507 | 🧠 推理（思考） | 30B MoE/3B激活 | 256K（可扩展至1M） | 2025年7月31日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3-235B-A22B-Thinking-2507 | 🧠 | 235B MoE/22B激活 | 256K | 2025年7月25日 |
@@ -443,7 +449,7 @@
 | 美国 | Google | Gemini | Gemini 2.5 Flash TTS | 🎤 | 未公开 | 未公开 | 2025年8月 |
 | 美国 | Google | Gemini | Gemini 2.5 Pro TTS | 🎤 | 未公开 | 未公开 | 2025年8月 |
 | 美国 | Google | Gemini | Computer Use（Preview） | 🖥️ | 未公开 | 未公开 | 2025年12月 |
-| 中国 | DeepSeek | DeepSeek | deepseek-reasoner | 🧠 | — | — | 2025年1月（⏰ **2026年7月24日弃用 - 仅剩4天**，迁移至 deepseek-v4-flash 思考模式） |
+| 中国 | DeepSeek | DeepSeek | deepseek-reasoner | 🧠 | — | — | 🔄 2025年1月（⚠️ **2026年7月24日已弃用，迁移至 deepseek-v4-flash 思考模式**） |
 | 中国 | 百度 | 文心一言 | ERNIE-4.5-0.3B | 📝 | 0.3B | 未公开 | 2025年4月 |
 | 中国 | 百度 | 文心一言 | ERNIE Character（ernie-char-8k） | 📝 | 未公开 | 8K | 2025年6月 |
 | 中国 | 百度 | 文心一言 | ERNIE X1.1 Preview | 🧠 | 未公开 | 64K | 2025年10月 |
@@ -579,7 +585,7 @@
 | 中国 | 零一万物 | Yi | Yi-34B-Chat / Yi-6B-Chat | 📝 纯文本 | 6B/34B | 4K（200K为单独变体） | 2024年1月 |
 | 中国 | 零一万物 | Yi | Yi-VL（6B/34B） | 👁️📝 视觉+文本 | 6B/34B | 未公开 | 2024年1月 |
 | 中国 | 科大讯飞 | 星火 | 星火Max（v3.5） | 📝 | 未公开 | 未公开 | 2024年（⚠️ 2026年3月10日下线） |
-| 中国 | DeepSeek | DeepSeek | deepseek-chat | 📝 | — | — | 2024年（⏰ **2026年7月24日弃用 - 仅剩4天**，迁移至 deepseek-v4-flash 非思考模式） |
+| 中国 | DeepSeek | DeepSeek | deepseek-chat | 📝 | — | — | 2024年（⚠️ **2026年7月24日已弃用，迁移至 deepseek-v4-flash 非思考模式**） |
 | 中国 | 字节跳动 | 豆包 | Seedance 1.0 | 🎬 | — | — | 2024年 |
 | 中国 | 科大讯飞 | 星火 | 星火Pro-128K | 📝 | 未公开 | 131K | 2024年 |
 | 中国 | 腾讯 | 混元 | Hunyuan-lite | 📝 | 未公开 | 未公开 | 2024年 |

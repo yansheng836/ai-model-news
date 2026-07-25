@@ -48,6 +48,8 @@
 | Gemini 3.1 Pro | 2026年5月19日（Preview） | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开 | 1M | 复杂问题解决、代理编程 |
 | Gemini 3.1 Pro Preview | 2026年（Preview） | 🌐🧠 多模态+推理 | 未公开 | 1M | 3.1 Pro预览版 |
 | Gemini 3.5 Flash | 2026年5月19日（Stable） | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开 | 1M | 最智能模型，代理和编程任务 |
+| Gemini 3.5 Flash Lite | 2026年7月21日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1M | 高效子代理模型，多Agent工作流 |
+| Gemini 3.6 Flash 🆕 | 2026年7月21日 | 🌐🧠💻🎤👁️ 多模态+推理+代码+视频+音频 | 未公开 | 1M | 高能效旗舰模型，原生音视频/视频输入，Agent工作流，$1.50/$7.5 MTok |
 | Gemini 3.5 Live Translate | 2026年（Preview） | 🎤 语音翻译 | 未公开 | 未公开 | 实时语音翻译，70+语言 |
 | Gemini Embedding | 2025年 | 📝 嵌入模型 | — | — | 高维向量，语义搜索/分类/RAG |
 | Gemini Embedding 2 | 2026年 | 📝 嵌入模型 | — | — | 多模态嵌入（文本/图像/视频/音频/PDF） |
@@ -106,6 +108,8 @@ Google的"思维模型"（Thinking Model），内置推理能力，可在回答�
 - **Gemini 3.1 Flash Live**（Preview）：实时对话和语音优先AI应用
 - **Gemini 3.1 Flash TTS**（Preview）：低延迟语音生成
 - **Gemini 3.5 Flash**（Stable）：最智能模型，代理和编程任务的持续前沿性能
+- **Gemini 3.5 Flash Lite**（2026年7月21日）：高效子代理模型，适合复杂多Agent工作流中的聚焦任务执行。1M上下文，$0.30/$2.50 MTok
+- **Gemini 3.6 Flash**（2026年7月21日）：高能效旗舰模型，用于代码、Agent工作流、Web和App开发。原生支持文本/图像/音频/视频输入，65K最大输出。$1.50/$7.50 MTok
 - **Gemini 3.5 Live Translate**（Preview）：实时语音翻译，70+语言
 
 ### 图像生成系列
@@ -157,6 +161,8 @@ Google的开源模型系列，基于Gemini技术。Gemma 3首次在开源模型�
 | Gemini 3.1 Flash Image（Nano Banana 2） | $0.50 | $3 | 131K |
 | Gemini 3.1 Pro Preview | $2 | $12 | 1M |
 | Gemini 3.5 Flash | $1.50 | $9 | 1M |
+| Gemini 3.5 Flash Lite | $0.30 | $2.50 | 1M |
+| Gemini 3.6 Flash | $1.50 | $7.50 | 1M |
 
 ### 模型状态说明
 
