@@ -18,10 +18,11 @@
 
 | 版本 | 发布时间 | 功能属性 | 参数规模 | 激活参数 | 上下文长度 | 主要特点 |
 |------|----------|----------|----------|----------|----------|----------|
+| DeepSeek-V4-Flash-0731 | 2026年7月31日 | 📝 纯文本 | 158B MoE | 未公开 | 1M（384K输出） | V4 Flash 0731版本快照，同V4 Flash定价 |
 | DeepSeek Coder V1 | 2024年1月 | 💻 代码 | 未公开 | 未公开 | 16K | 首个代码模型 |
 | DeepSeek Coder V2 | 2024年6月 | 💻📝 代码+文本 | 236B MoE | 21B | 128K | 代码专用模型 |
 | DeepSeek LLM 67B | 2024年1月5日 | 📝 纯文本 | 67B | 67B | 4K | 首个开源模型 |
-| deepseek-chat | 2024年 | 📝 纯文本 | — | — | 128K | ⏰ **2026年7月24日弃用 - 仅剩29天**，迁移至 deepseek-v4-flash 非思考模式 |
+| deepseek-chat | 2024年 | 📝 纯文本 | — | — | 128K | ⚠️ **2026年7月24日已弃用**，迁移至 deepseek-v4-flash 非思考模式 |
 | DeepSeek-Math-V2 | 2025年11月 | 📝🧠 文本+推理 | 685B MoE | 未公开 | 128K | 数学推理专用 |
 | DeepSeek-OCR | 2025年11月 | 👁️📝 视觉+文本 | 3B | 3B | — | OCR专用模型 |
 | DeepSeek-OCR-2 | 2026年2月 | 👁️📝 视觉+文本 | 3B | 3B | — | OCR升级版，视觉因果流 |
@@ -30,7 +31,7 @@
 | DeepSeek-R1-Lite | 2024年11月20日 | 🧠 推理 | 未公开 | 未公开 | 128K | 推理模型预览版 |
 | DeepSeek-R1-Zero | 2025年1月28日 | 🧠 推理 | 671B MoE | 37B | 160K | 纯强化学习训练 |
 | DeepSeek-R1蒸馏（1.5B~70B） | 2025年1月28日 | 🧠 推理 | 1.5B~70B | — | 160K | 多规模蒸馏版 |
-| deepseek-reasoner | 2025年 | 🧠 推理 | — | — | 160K | ⏰ **2026年7月24日弃用 - 仅剩29天**，迁移至 deepseek-v4-flash 思考模式 |
+| deepseek-reasoner | 2025年 | 🧠 推理 | — | — | 160K | ⚠️ **2026年7月24日已弃用**，迁移至 deepseek-v4-flash 思考模式 |
 | DeepSeek-V2-Lite | 2024年5月 | 📝 纯文本 | 15.7B MoE | 2.4B | 32K | V2轻量版 |
 | DeepSeek-V2.5 | 2024年9月 | 📝💻 文本+代码 | 236B MoE | 21B | 128K | 融合Chat和Coder |
 | DeepSeek-V2.5-0905 | 2024年9月 | 📝💻 文本+代码 | 236B MoE | 21B | 128K | V2到V3过渡版 |
@@ -92,7 +93,7 @@ V3的重大升级版本，685B参数MoE架构。2025年12月发布，包含标�
 
 最新一代模型家族：
 - **DeepSeek-V4-Pro**：862B参数MoE架构旗舰模型，最强能力。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中3.00元/M tokens，输出6.00元/M tokens
-- **DeepSeek-V4-Flash**：158B参数MoE架构，高性能低成本。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中1.00元/M tokens，输出2.00元/M tokens
+- **DeepSeek-V4-Flash**：158B参数MoE架构，高性能低成本。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中1.00元/M tokens，输出2.00元/M tokens。后续推出 **DeepSeek-V4-Flash-0731**（2026年7月31日）版本快照，OpenRouter 模型 ID 为 `deepseek/deepseek-v4-flash-0731`
 - **DeepSeek-V4-Pro-Base**：1.6T参数MoE基座模型
 - **DeepSeek-V4-Flash-Base**：292B参数MoE基座模型
 

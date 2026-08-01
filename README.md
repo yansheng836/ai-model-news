@@ -6,7 +6,7 @@
 
 同时将所有厂家的大模型的发版时间整理到README.md文档中，一览无遗，需要包括公司所在国家、公司名、大模型名称、版本、发版时间。
 
-> ⚠️ **数据说明**：本项目数据截止至 **2026年7月24日**，通过OpenRouter API和官方文档更新。本次更新内容：新增Claude Opus 5/Opus 5 Fast（7月23-24日发布）、Gemini 3.6 Flash/Gemini 3.5 Flash Lite（7月21日发布）等。部分厂商数据可能仍有遗漏，欢迎补充更新。
+> ⚠️ **数据说明**：本项目数据截止至 **2026年8月1日**，通过OpenRouter API和官方文档更新。本次更新内容：新增Anthropic Claude Opus 5（7月24日发布）、Google Gemini 3.6 Flash和3.5 Flash Lite（7月）、Qwen 3.7 Flash（7月）、DeepSeek V4 Flash 0731（7月31日）等。部分厂商数据可能仍有遗漏，欢迎补充更新。
 
 ## 问题
 
@@ -118,6 +118,11 @@
 
 | 国家 | 公司名 | 大模型名称 | 版本 | 功能属性 | 参数规模 | 上下文 | 发版时间 |
 |------|--------|-----------|------|----------|----------|--------|----------|
+| 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Flash-0731 🆕 | 📝 纯文本 | 158B MoE | 1M（384K输出） | 2026年7月31日 |
+| 美国 | Anthropic | Claude | Claude Opus 5（claude-opus-5）🆕 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M | 2026年7月24日 |
+| 美国 | Google | Gemini | Gemini 3.6 Flash 🆕 | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开（厂商未公开） | 1M | 2026年7月 |
+| 美国 | Google | Gemini | Gemini 3.5 Flash Lite 🆕 | 🌐🧠 多模态+推理 | 未公开（厂商未公开） | 1M | 2026年7月 |
+| 中国 | 阿里巴巴 | 通义千问 | Qwen 3.7 Flash 🆕 | 👁️🌐 视觉理解+多模态 | 未公开 | 1M | 2026年7月 |
 | 中国 | 月之暗面 | Kimi | Kimi K3 🆕 | 🌐🧠💻 多模态+推理+代码 | 2.8T（开源权重） | 1M | 2026年7月16日 |
 | 美国 | Anthropic | Claude | Claude Opus 5 Fast（claude-opus-5-fast-20260723）🆕 | 🌐🖥️🧠 多模态+推理 | 未公开 | 1M（128K输出） | 2026年7月24日（⚠️ 2x定价版） |
 | 美国 | Anthropic | Claude | Claude Opus 5（claude-opus-5-20260723）🆕 | 🌐🖥️🧠 多模态+推理+代码 | 未公开（厂商未公开） | 1M（128K输出） | 2026年7月23日 |

@@ -16,6 +16,8 @@
 
 | 版本 | 发布时间 | 功能属性 | 参数规模 | 上下文长度 | 主要特点 |
 |------|----------|----------|----------|----------|----------|
+| Claude Opus 5（claude-opus-5） | 2026年7月24日 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M | 支持Adaptive Thinking（effort默认high），适用于复杂智能体编码和企业工作，$5/$25 MTok |
+| Claude Opus 5 Fast（claude-opus-5-fast） | 2026年7月24日 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M | Fast模式，2x定价$10/$50 MTok，相对延迟中等 |
 | Claude 1.3 | 2023年中 | 📝 纯文本 | 未公开 | 100K | 上下文扩展 |
 | Claude 1（claude-1.0） | 2023年3月 | 📝 纯文本 | 未公开 | 9K | 首个版本 |
 | Claude 2.1（claude-2.1） | 2023年11月 | 📝 纯文本 | 未公开 | 200K | 幻觉减少，上下文翻倍 |
@@ -37,7 +39,7 @@
 | Claude Instant 1.2 | 2023年中 | 📝 纯文本 | 未公开 | 100K | 快速轻量版 |
 | Claude Mythos 5（claude-mythos-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 仅限Project Glasswing邀请用户（⚠️ 6月12日曾短暂暂停，已恢复） |
 | Claude Mythos Preview（claude-mythos-preview） | 2025年 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 研究预览模型，⚠️ **已停用（2026年6月30日）**，迁移至claude-mythos-5 |
-| Claude Opus 4.1（claude-opus-4-1-20250805） | 2025年8月5日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，$15/$75 MTok，⚠️ 已弃用（2026-06-05），⏰ **2026年8月5日停用 - 仅剩11天** |
+| Claude Opus 4.1（claude-opus-4-1-20250805） | 2025年8月5日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，$15/$75 MTok，⚠️ 已弃用（2026-06-05），⏰ **2026年8月5日停用 - 仅剩4天** |
 | Claude Opus 4.5（claude-opus-4-5-20251101） | 2025年11月1日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，知识截止2025年5月 |
 | Claude Opus 4.6 Fast（claude-opus-4-6-fast） | 2025年底 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | Opus 4.6快速推理版，$30/$150 MTok |
 | Claude Opus 4.6（claude-opus-4-6） | 2025年底 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Extended Thinking，上下文提升至1M |
@@ -92,9 +94,15 @@ Anthropic的第二代模型，支持100K（后扩展至200K）上下文窗口。
 - **Claude Mythos 5**（claude-mythos-5）：同日发布，仅通过Project Glasswing提供给受邀客户，用于防御性网络安全工作流。6月12日曾短暂暂停，已恢复。
 - **Claude Opus 5**（claude-opus-5-20260723）：2026年7月23日发布，最新旗舰模型。最强推理/代码/代理任务模型。1M上下文，128K最大输出，$5/$25 MTok。Fast版$10/$50 MTok。知识截止2026年4月。
 
+### Claude Opus 5（2026年7月）
+
+新一代旗舰Opus模型：
+- **Claude Opus 5**（claude-opus-5）：2026年7月24日发布，Anthropic当前最强大的模型。1M上下文，128K最大输出，$5/$25 MTok。支持Adaptive Thinking（effort参数默认high），适用于复杂智能体编码、企业级工作负载和深度推理任务。知识截止2026年5月，相对延迟中等。
+- **Claude Opus 5 Fast**（claude-opus-5-fast）：Opus 5的快速推理版，2x定价$10/$50 MTok，相同规格。
+
 ### Claude Opus 4.1 停用倒计时
 
-**状态：已恢复访问**
+#### 状态：已恢复访问
 
 2026年6月12日，美国政府以国家安全为由，曾短暂暂停 Fable 5 和 Mythos 5 的访问。目前已恢复正常使用。
 
