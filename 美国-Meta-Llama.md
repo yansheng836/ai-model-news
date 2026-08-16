@@ -30,6 +30,8 @@
 | Llama Guard 4 12B | 2025年 | 📝 安全审核 | 12B | 163K | 内容安全审核模型 |
 | Muse Spark | 2026年4月 | 🌐 多模态 | 未公开 | 未公开 | Meta Superintelligence Labs发布，Llama替代品 |
 | Muse Spark 1.1 | 2026年7月16日 | 🌐📝👁️🎤 多模态推理 | 未公开 | 1M | 推理增强版，支持文本/图像/视频/音频/PDF输入 |
+| Muse Spark 1.2 🆕 | 2026年8月6日 | 🌐📝👁️🎤 多模态推理 | 未公开 | 1M | 推理模型，Agent任务优化，$1.25/$4.25 MTok |
+| Muse Glimmer 30B 🆕 | 2026年8月10日 | 🌐 多模态 | 30B | 131K | 稠密模型，从Muse Spark蒸馏，消费者硬件Agent优化 |
 
 ## 模型详细介绍
 
@@ -55,6 +57,20 @@ Muse Spark的推理增强版本，面向Agent任务：
 - 多模态推理模型，接受文本、图像、视频、音频和PDF文档输入
 - 1M tokens上下文窗口，显著扩展了原始版本的能力
 - 定价：$1.25/$4.25 MTok（输入/输出）
+
+### Muse Spark 1.2（2026年8月6日）
+
+Muse Spark系列的最新推理模型，面向复杂Agent任务：
+- 推理模型，接受文本、图像、视频、音频和PDF文档输入，返回文本
+- 1M tokens上下文窗口
+- 定价：$1.25/$4.25 MTok（输入/输出）
+
+### Muse Glimmer 30B（2026年8月10日）
+
+Muse Spark的蒸馏版稠密模型，Meta Superintelligence Labs发布：
+- 30B参数开源稠密多模态模型
+- 从Muse Spark蒸馏，针对消费者硬件上的自主Agent和长程任务优化
+- 131K上下文窗口
 
 ### 开源策略
 

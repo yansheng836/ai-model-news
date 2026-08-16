@@ -18,7 +18,8 @@
 
 | 版本 | 发布时间 | 功能属性 | 参数规模 | 激活参数 | 上下文长度 | 主要特点 |
 |------|----------|----------|----------|----------|----------|----------|
-| DeepSeek-V4-Flash-0731 | 2026年7月31日 | 📝 纯文本 | 158B MoE | 未公开 | 1M（384K输出） | V4 Flash 0731版本快照，同V4 Flash定价 |
+| DeepSeek-V4-Flash-0731 | 2026年7月31日 | 📝 纯文本 | 158B MoE | 13B | 1M（384K输出） | V4 Flash 0731版本快照，同V4 Flash定价 |
+| DeepSeek-V4-Pro-0813 🆕 | 2026年8月12日 | 📝 纯文本 | 862B MoE | 未公开 | 1M（384K输出） | V4 Pro 0813 GA版本，最新旗舰 |
 | DeepSeek Coder V1 | 2024年1月 | 💻 代码 | 未公开 | 未公开 | 16K | 首个代码模型 |
 | DeepSeek Coder V2 | 2024年6月 | 💻📝 代码+文本 | 236B MoE | 21B | 128K | 代码专用模型 |
 | DeepSeek LLM 67B | 2024年1月5日 | 📝 纯文本 | 67B | 67B | 4K | 首个开源模型 |
@@ -92,7 +93,7 @@ V3的重大升级版本，685B参数MoE架构。2025年12月发布，包含标�
 ### DeepSeek-V4系列（2026年）
 
 最新一代模型家族：
-- **DeepSeek-V4-Pro**：862B参数MoE架构旗舰模型，最强能力。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中3.00元/M tokens，输出6.00元/M tokens
+- **DeepSeek-V4-Pro**：862B参数MoE架构旗舰模型，最强能力。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中3.00元/M tokens，输出6.00元/M tokens。后续推出 **DeepSeek-V4-Pro-0813**（2026年8月12日）GA版本，OpenRouter 模型 ID 为 `deepseek/deepseek-v4-pro-0813`
 - **DeepSeek-V4-Flash**：158B参数MoE架构，高性能低成本。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中1.00元/M tokens，输出2.00元/M tokens。后续推出 **DeepSeek-V4-Flash-0731**（2026年7月31日）版本快照，OpenRouter 模型 ID 为 `deepseek/deepseek-v4-flash-0731`
 - **DeepSeek-V4-Pro-Base**：1.6T参数MoE基座模型
 - **DeepSeek-V4-Flash-Base**：292B参数MoE基座模型
