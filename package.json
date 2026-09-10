@@ -1,0 +1,10 @@
+{
+  "name": "ai-model-news-tools",
+  "version": "1.0.0",
+  "description": "ai-model-news 项目维护脚本（时间线排序、校验等）",
+  "private": true,
+  "scripts": {
+    "sort:timeline": "node scripts/sort_timeline.js",
+    "check:timeline": "node scripts/sort_timeline.js --check"
+  }
+}

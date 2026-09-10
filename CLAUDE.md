@@ -9,6 +9,34 @@ This is a documentation-only project (no code) that catalogs major AI model prod
 **Structure:**
 - `README.md` — master timeline table with capability annotations, plus company index
 - Per-company markdown files — one file per company, covering company background, model version history, and detailed model introductions
+- `scripts/` — 维护脚本（见下方说明）
+
+## 维护脚本 (Maintenance Scripts)
+
+`scripts/` 目录下存放用于维护本项目的 Node.js 脚本，通过 `package.json` 中的 npm scripts 调用。
+
+### `scripts/sort_timeline.js` — README 时间线排序
+
+将 `README.md` 中「大模型发版时间线总览」表格的数据行按**发版时间倒序**重新排列（最新在上、最旧在下）。
+
+**用法：**
+```bash
+node scripts/sort_timeline.js              # 原地排序 README.md
+node scripts/sort_timeline.js <file>       # 排序指定文件
+node scripts/sort_timeline.js --check      # 仅校验顺序（不修改），CI 可用
+
+# 或等价地通过 npm scripts：
+npm run sort:timeline                      # 排序
+npm run check:timeline                     # 仅校验
+```
+
+**行为说明：**
+- 自动定位表格数据行（以 `| 中国 |` / `| 美国 |` / `| 法国 |` 开头），无需硬编码行号
+- 支持混合日期格式：精确日期（`2026年9月7日`）、年月（`2026年9月`）、仅年份（`2026年`）、年份区间（`2025-2026年`）、`2026年初`、`未公开` / `待确认`
+- 排序规则：年→月→日倒序；同日期时精确日期优先于模糊日期；模糊日期排在同年的精确日期之后；`未公开` / `待确认` 排在最后
+- 幂等：已排序的表格再次运行不会改动
+
+**何时使用：** 每次向 README 时间线表新增/更新模型条目后，运行一次以保持倒序。
 
 ## File Naming Convention
 
