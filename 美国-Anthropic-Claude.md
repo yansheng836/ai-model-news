@@ -35,6 +35,7 @@
 | Claude Opus 5（claude-opus-5-20260723）🆕 | 2026年7月23日 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M | 最新旗舰Opus模型，最强推理/编程/Agent能力，$5/$25 MTok |
 | Claude Opus 5 Fast（claude-opus-5-fast-20260723）🆕 | 2026年7月23日 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M | Opus 5快速推理版，2x定价，$10/$50 MTok |
 | Claude Fable 5（claude-fable-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开（厂商未公开） | 1M | 最强广泛发布模型，Adaptive Thinking，$10/$50 MTok（⚠️ 6月12日曾短暂暂停，已恢复） |
+| Claude Fable 5.1（claude-fable-5.1）🆕 | 2026年8月31日 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M（128K输出） | Fable 5全面升级版，agent编码/长时程Agent工作流/知识工作显著提升，$10/$50 MTok（缓存读$0.25/写$12.5） |
 | Claude Haiku 4.5（claude-haiku-4-5-20251001） | 2025年10月1日 | 🌐🧠 多模态+推理 | 未公开 | 200K | 支持Extended Thinking，知识截止2025年2月 |
 | Claude Instant 1.2 | 2023年中 | 📝 纯文本 | 未公开 | 100K | 快速轻量版 |
 | Claude Mythos 5（claude-mythos-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 仅限Project Glasswing邀请用户（⚠️ 6月12日曾短暂暂停，已恢复） |
@@ -91,6 +92,7 @@ Anthropic的第二代模型，支持100K（后扩展至200K）上下文窗口。
 最新一代模型：
 - **Claude Sonnet 5**（claude-sonnet-5）：2026年6月30日发布，最强Sonnet级模型，编程/Agent/专业工作前沿性能。1M上下文，128K最大输出，$2/$10 MTok。支持Adaptive Thinking，可选择性思考深度（低/中/高/最大）。Design Arena：Intelligence 53.4, Coding 71.5, Agentic 46.7。定价仅为Fable 5的1/5。
 - **Claude Fable 5**（claude-fable-5）：2026年6月9日发布，Anthropic最强大的广泛发布模型。1M上下文，128K最大输出，$10/$50 MTok。支持Adaptive Thinking（始终开启），适用于最复杂的推理和长期自主代理工作。6月12日曾因安全审查短暂暂停，已恢复。
+- **Claude Fable 5.1**（claude-fable-5.1）：2026年8月31日发布，Fable 5的全面升级版。最大增益在agent编码、长时程agent工作流与知识工作（长代码重构、前端与视觉工作等）。1M上下文，128K最大输出，$10/$50 MTok（缓存读$0.25/写$12.5）。由Anthropic、Azure、Amazon Bedrock、Google等多端点提供。
 - **Claude Mythos 5**（claude-mythos-5）：同日发布，仅通过Project Glasswing提供给受邀客户，用于防御性网络安全工作流。6月12日曾短暂暂停，已恢复。
 - **Claude Opus 5**（claude-opus-5-20260723）：2026年7月23日发布，最新旗舰模型。最强推理/代码/代理任务模型。1M上下文，128K最大输出，$5/$25 MTok。Fast版$10/$50 MTok。知识截止2026年4月。
 

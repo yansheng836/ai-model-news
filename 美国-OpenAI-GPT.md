@@ -69,6 +69,8 @@
 | GPT-5.6 Terra Pro（gpt-5.6-terra-pro） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | Terra的Pro推理模式版本，$2.5/$15 MTok |
 | GPT-5.6 Luna（gpt-5.6-luna） | 2026年7月9日 | 🌐🧠 多模态+推理 | 未公开 | 1050K | 高性价比，高速轻量任务，$1/$6 MTok |
 | GPT-5.6 Luna Pro（gpt-5.6-luna-pro） | 2026年7月9日 | 🌐🧠 多模态+推理 | 未公开 | 1050K | Luna的Pro推理模式版本，$1/$6 MTok |
+| GPT-6 Astra（gpt-6-astra） | 2026年9月3日 | 🌐 多模态 | 未公开（厂商未公开） | 1050K | GPT-6系列首作，旗舰模型，长时程任务突出，$10/$50 MTok（>272K输入 $20/$75） |
+| GPT-6 Astra Pro（gpt-6-astra-pro） | 2026年9月3日 | 🌐🧠 多模态+推理 | 未公开（厂商未公开） | 1050K（128K输出） | Astra的Pro推理模式版本（reasoning.mode=pro），$10/$50 MTok |
 | GPT-Audio-mini（gpt-audio-mini） | 2026年 | 🎤🌐 语音+多模态 | 未公开 | 128K | 语音交互轻量版 |
 | GPT-Audio（gpt-audio） | 2026年 | 🎤🌐 语音+多模态 | 未公开 | 128K | 语音交互模型 |
 | GPT-Chat-Latest（gpt-chat-latest） | 2026年 | 📝 纯文本 | 未公开 | 400K | 聊天优化版，$5/$30 MTok |
@@ -134,6 +136,8 @@ GPT-5系列标志着OpenAI进入新一代模型：
 - **GPT-5.6 Terra Pro**：Terra的推理增强版，同价$2.5/$15 MTok
 - **GPT-5.6 Luna（2026年7月9日）**：高性价比模型，适合高吞吐、低延迟场景（聊天、分类、轻量Agent）。1050K上下文，$1/$6 MTok
 - **GPT-5.6 Luna Pro**：Luna的推理增强版，同价$1/$6 MTok
+- **GPT-6 Astra（2026年9月3日）**：GPT-6系列首作，OpenAI新一代旗舰模型，面向高级分析、软件工程、深度研究、科学工作与文档创建，尤其在长时程（long-horizon）任务上突出。1050K上下文，128K最大输出，$10/$50 MTok（>272K输入 $20/$75）
+- **GPT-6 Astra Pro（2026年9月3日）**：Astra的Pro推理模式版本（reasoning.mode=pro），同模型更高质量，1050K上下文，$10/$50 MTok
 - **GPT-5-pro**：GPT-5增强版，400K上下文，$15/$120 MTok
 - **GPT-5.1**：400K上下文，$1.25/$10 MTok
 - **GPT-5.1-chat**：128K上下文，聊天优化版，$1.25/$10 MTok

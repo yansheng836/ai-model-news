@@ -6,7 +6,7 @@
 
 同时将所有厂家的大模型的发版时间整理到README.md文档中，一览无遗，需要包括公司所在国家、公司名、大模型名称、版本、发版时间。
 
-> ⚠️ **数据说明**：本项目数据截止至 **2026年8月14日**，通过OpenRouter API和官方文档更新。本次更新内容：新增DeepSeek V4 Pro 0813（8月12日）、xAI Grok-4.6（8月12日）、NVIDIA Nemotron 3.5 Lightning（8月11日）、Meta Muse Spark 1.2（8月6日）/Muse Glimmer 30B（8月10日）、Google Gemini 3.7 Flash（8月14日）、Qwen 3.8 Max/27B/2.4T A95B（8月3-14日）等。部分厂商数据可能仍有遗漏，欢迎补充更新。
+> ⚠️ **数据说明**：本项目数据截止至 **2026年9月10日**，通过OpenRouter API和官方文档更新。本次更新内容：新增OpenAI GPT-6 Astra/Astra Pro（9月3日）、Claude Fable 5.1（8月31日）、Gemini 3.8 Flash（9月2日）、Meta Muse Spark 1.3（9月2日）、Qwen3.8-Max-0902（9月2日）/Qwen3.8-Flash（8月26日）、智谱GLM-5.3（8月18日）/GLM-5.3-Flash（8月26日）、腾讯混元HY4 Preview（8月28日）、DeepSeek V4.1-Flash（9月，未公布日期）、科大讯飞星火X2.5系列（9月4-7日）、SenseNova 6.8（公测期）等，并更新DeepSeek V4-Pro/V4-Flash退役状态。部分厂商数据可能仍有遗漏，欢迎补充更新。
 
 ## 问题
 
@@ -118,10 +118,26 @@
 
 | 国家 | 公司名 | 大模型名称 | 版本 | 功能属性 | 参数规模 | 上下文 | 发版时间 |
 |------|--------|-----------|------|----------|----------|--------|----------|
+| 中国 | 科大讯飞 | 星火 | Spark-X2.5 🆕 | 📝🧠💻 文本+推理+代码 | 293B MoE/30B激活 | 256K | 2026年9月7日 |
+| 中国 | 科大讯飞 | 星火 | Spark-X2.5-4B 🆕 | 📝 纯文本 | 4B（Dense） | 1M | 2026年9月7日 |
+| 中国 | 科大讯飞 | 星火 | Spark-X2.5-1.7B 🆕 | 📝 纯文本 | 1.7B（Dense） | 1M | 2026年9月4日 |
+| 中国 | 科大讯飞 | 星火 | Spark-X2-Flash 🆕 | 📝🧠💻 文本+推理+代码 | 30B | 256K | 2026年9月4日 |
+| 美国 | OpenAI | GPT | GPT-6 Astra（gpt-6-astra）🆕 | 🌐 多模态 | 未公开（厂商未公开） | 1050K | 2026年9月3日 |
+| 美国 | OpenAI | GPT | GPT-6 Astra Pro（gpt-6-astra-pro）🆕 | 🌐🧠 多模态+推理 | 未公开（厂商未公开） | 1050K | 2026年9月3日 |
+| 美国 | Google | Gemini | Gemini 3.8 Flash（gemini-3.8-flash）🆕 | 🌐👁️🎤 多模态 | 未公开（厂商未公开） | 1M | 2026年9月2日 |
+| 美国 | Meta | Muse | Muse Spark 1.3（muse-spark-1.3）🆕 | 🌐👁️🎤🧠 多模态推理 | 未公开 | 1M | 2026年9月2日 |
+| 中国 | 阿里巴巴 | 通义千问 | Qwen3.8-Max-0902（qwen3.8-max-0902）🆕 | 🌐🧠 多模态+推理 | 2.4T MoE/95B激活 | 1M | 2026年9月2日 |
+| 美国 | Anthropic | Claude | Claude Fable 5.1（claude-fable-5.1）🆕 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M | 2026年8月31日 |
+| 中国 | 腾讯 | 混元 | 混元 HY4 Preview（hy4-preview）🆕 | 📝💻🖥️ 文本+代码+工具调用 | 770B MoE/49B激活 | 1M | 2026年8月28日 |
+| 中国 | 智谱AI | GLM | GLM-5.3-Flash 🆕 | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 320B MoE/18B激活 | 1M | 2026年8月26日 |
+| 中国 | 阿里巴巴 | 通义千问 | Qwen3.8-Flash（qwen3.8-flash）🆕 | 🌐🧠💻🖥️ 多模态+推理+代码 | 未公开 | 1M | 2026年8月26日 |
+| 中国 | 智谱AI | GLM | GLM-5.3 🆕 | 🧠💻 推理+代码 | 未公开 | 1M | 2026年8月18日 |
+| 中国 | DeepSeek | DeepSeek | DeepSeek-V4.1-Flash（deepseek-flash）🆕 | 🌐🧠 多模态（图像理解）+推理 | 官方未公开 | 1M（384K输出） | 2026年9月（精确日期未公布） |
+| 中国 | 商汤科技 | 日日新 | SenseNova 6.8 Flash-Lite 🆕 | 🌐 多模态智能体 | 未公开 | 未公开 | 2026年（公测期，日期未公布） |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3.8-27B 🆕 | 👁️🌐 视觉+多模态 | 27B | 262K | 2026年8月14日 |
 | 美国 | Google | Gemini | Gemini 3.7 Flash 🆕 | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开（厂商未公开） | 1M | 2026年8月14日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3.8-2.4T-A95B 🆕 | 🌐🧠💻 多模态+推理+代码 | 2.4T MoE/95B激活 | 1M | 2026年8月13日 |
-| 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro-0813 🆕 | 📝 纯文本 | 862B MoE | 1M（384K输出） | 2026年8月12日 |
+| 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro-0813 🆕 | 📝 纯文本 | 862B MoE | 1M（384K输出） | 2026年8月12日（⚠️ 2026年9月14日起退役，路由至V4.1-Flash） |
 | 美国 | xAI | Grok | Grok-4.6 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开（厂商未公开） | 500K | 2026年8月12日 |
 | 美国 | NVIDIA | Nemotron | Nemotron 3.5 Lightning 🆕 | 📝🧠 纯文本+推理 | 30B MoE/3B激活 | 1M | 2026年8月11日 |
 | 美国 | Meta | Muse | Muse Glimmer 30B 🆕 | 🌐 多模态 | 30B | 131K | 2026年8月10日 |

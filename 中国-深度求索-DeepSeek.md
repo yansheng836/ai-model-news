@@ -18,8 +18,9 @@
 
 | 版本 | 发布时间 | 功能属性 | 参数规模 | 激活参数 | 上下文长度 | 主要特点 |
 |------|----------|----------|----------|----------|----------|----------|
-| DeepSeek-V4-Flash-0731 | 2026年7月31日 | 📝 纯文本 | 158B MoE | 13B | 1M（384K输出） | V4 Flash 0731版本快照，同V4 Flash定价 |
-| DeepSeek-V4-Pro-0813 🆕 | 2026年8月12日 | 📝 纯文本 | 862B MoE | 未公开 | 1M（384K输出） | V4 Pro 0813 GA版本，最新旗舰 |
+| DeepSeek-V4.1-Flash 🆕 | 2026年9月（精确日期未公布） | 🌐🧠 多模态（支持图像理解）+推理 | 官方未公开 | 未公开 | 1M（384K输出） | V4 Flash新一代版本，全面超越V4 Pro（性能/费用/速度），支持思考/非思考切换，JSON Output/Tool Calls/Responses API |
+| DeepSeek-V4-Flash-0731 | 2026年7月31日 | 📝 纯文本 | 158B MoE | 13B | 1M（384K输出） | V4 Flash 0731版本快照，⚠️ 2026年9月已退役（路由至V4.1-Flash） |
+| DeepSeek-V4-Pro-0813 🆕 | 2026年8月12日 | 📝 纯文本 | 862B MoE | 未公开 | 1M（384K输出） | V4 Pro 0813 GA版本，⚠️ 2026年9月14日12:00（北京时间）起退役，路由至V4.1-Flash |
 | DeepSeek Coder V1 | 2024年1月 | 💻 代码 | 未公开 | 未公开 | 16K | 首个代码模型 |
 | DeepSeek Coder V2 | 2024年6月 | 💻📝 代码+文本 | 236B MoE | 21B | 128K | 代码专用模型 |
 | DeepSeek LLM 67B | 2024年1月5日 | 📝 纯文本 | 67B | 67B | 4K | 首个开源模型 |
@@ -93,6 +94,7 @@ V3的重大升级版本，685B参数MoE架构。2025年12月发布，包含标�
 ### DeepSeek-V4系列（2026年）
 
 最新一代模型家族：
+- **DeepSeek-V4.1-Flash**（2026年9月，精确发布日期官方未公布）：V4 Flash 系列的新一代版本，全面超越 V4 Pro（性能、费用、速度、总用时）。支持图像理解，支持思考/非思考切换（默认思考）。上下文1M，最大输出384K。支持 JSON Output、Tool Calls、Responses API、Anthropic API、前缀续写（Beta）、FIM（Beta）。参数规模官方未披露。OpenRouter 模型 ID 为 `deepseek/deepseek-flash`
 - **DeepSeek-V4-Pro**：862B参数MoE架构旗舰模型，最强能力。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中3.00元/M tokens，输出6.00元/M tokens。后续推出 **DeepSeek-V4-Pro-0813**（2026年8月12日）GA版本，OpenRouter 模型 ID 为 `deepseek/deepseek-v4-pro-0813`
 - **DeepSeek-V4-Flash**：158B参数MoE架构，高性能低成本。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中1.00元/M tokens，输出2.00元/M tokens。后续推出 **DeepSeek-V4-Flash-0731**（2026年7月31日）版本快照，OpenRouter 模型 ID 为 `deepseek/deepseek-v4-flash-0731`
 - **DeepSeek-V4-Pro-Base**：1.6T参数MoE基座模型
@@ -104,6 +106,8 @@ V3的重大升级版本，685B参数MoE架构。2025年12月发布，包含标�
 - 弃用后，`deepseek-chat` 对应 `deepseek-v4-flash` 的非思考模式
 - 弃用后，`deepseek-reasoner` 对应 `deepseek-v4-flash` 的思考模式
 - 建议用户尽快迁移到新的模型名称
+- **deepseek-v4-flash** 与 **deepseek-v4-flash-vision-exp** 已退役（下线）：旧模型名仍可调用，但请求实际由 **DeepSeek-V4.1-Flash** 提供服务，按 Flash 价格计费
+- **deepseek-v4-pro（V4-Pro-0813）计划有序退役**：自 **2026年9月14日 12:00（北京时间）**起，至未来 V4.1 Pro 上线前，请求全部路由到 V4.1 Flash，按 V4.1 Flash 价格计费
 
 ### DeepSeek-OCR系列
 
