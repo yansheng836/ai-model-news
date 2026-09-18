@@ -56,6 +56,7 @@
 ## 一、编码 / 终端 Agent（Coding Agents）
 
 ### Claude Code — Anthropic
+
 - **厂商**：Anthropic（美国，由 Dario Amodei 创立，前 OpenAI 高管）
 - **开源**：❌ 闭源；但底层开发工具链 **Claude Agent SDK** 已开源
 - **基于某开源工具修改**：否（原创）
@@ -65,6 +66,7 @@
 - **说明**：当前主流的终端编码 Agent 之一，可读写代码库、执行命令、调用 MCP 工具；支持远程控制、团队协作、Claude Tag 等。数据源：详细模型与版本见 `美国-Anthropic-Claude.md`。
 
 ### Codex — OpenAI
+
 - **厂商**：OpenAI（美国，由 Sam Altman 等创立）
 - **开源**：✅ **本体开源**（Rust，Apache-2.0）
 - **仓库**：<https://github.com/openai/codex>　⭐12.5万
@@ -75,6 +77,7 @@
 - **说明**：名称沿用 OpenAI 2021 年旧开源模型 Codex（现已弃用），2025 年起指代新的 coding agent。本地 CLI 版开源，Work/云版为闭源 SaaS。
 
 ### Gemini CLI — Google
+
 - **厂商**：Google（美国）
 - **开源**：✅ TypeScript 开源（Apache-2.0）
 - **仓库**：<https://github.com/google-gemini/gemini-cli>　⭐10.7万
@@ -84,18 +87,21 @@
 - **说明**：Google 的终端 Agent，功能对标 Claude Code / Codex。
 
 ### Jules — Google
+
 - **厂商**：Google
 - **开源**：❌ 闭源
 - **形态**：**Web**（GitHub 集成，异步跑任务）
 - **说明**：Google 的异步编码 Agent，关联 GitHub repo 后台执行 PR 任务，与 gemini-cli 互补（CLI 实时 vs Jules 后台异步）。
 
 ### Kiro — Amazon
+
 - **厂商**：Amazon（美国）
 - **开源**：❌ 闭源
 - **形态**：多形态 — **Web、桌面、CLI、IDE 插件、移动端**
 - **说明**：Amazon 的通用 AI Agent（2025 年推出），定位终端/桌面的个人助手，可处理编码以外的日常任务。
 
 ### Aider — Paul Gauthier（个人/开源）
+
 - **厂商**：个人开发者 Paul Gauthier（加拿大）
 - **开源**：✅ Python 开源（Apache-2.0）
 - **仓库**：<https://github.com/paul-gauthier/aider>　⭐4.9万
@@ -105,6 +111,7 @@
 - **说明**：开源终端 AI 结对编程工具，支持多种后端模型（Claude/GPT/Gemini/Llama 等），是 Cline/Goose 等之后大量工具的灵感来源。
 
 ### Cline — Cline 团队
+
 - **厂商**：开源社区 + Cline 商业团队（美国）
 - **开源**：✅ TypeScript 开源（Apache-2.0）
 - **仓库**：<https://github.com/cline/cline>　⭐6.9万
@@ -114,6 +121,7 @@
 - **说明**：蚂蚁集团早期核心成员之一（其创始人曾主导 Cline），目前是最大的开源编码 Agent 之一；支持任意模型 + MCP。
 
 ### Roo-Code — RooCode Inc
+
 - **厂商**：开源（社区维护商业化）
 - **开源**：✅ TypeScript 开源（Apache-2.0）
 - **仓库**：<https://github.com/RooCodeInc/Roo-Code>　⭐2.4万
@@ -123,27 +131,29 @@
 - **说明**：曾是 Cline 最大 fork，多实验性功能；2026 年 5 月后主仓库归档，用户迁移回 Cline 或 fork 分支。
 
 ### Goose — Block（Square）
+
 - **厂商**：Block, Inc.（美国，Jack Dorsey 创立的支付公司）
 - **开源**：✅ Rust 开源（Apache-2.0）
 - **仓库**：<https://github.com/block/goose>　⭐5.4万
 - **最早发版/创建**：2024年8月23日
 - **最近发版/更新**：2026年9月17日（v1.51.0）
 - **形态**：CLI + 桌面
-- **说明**：可扩展终端 Agent，支持任意外部工具和任意 LLM，MCQ/MCP 生态。
+- **说明**：可扩展终端 Agent，支持任意外部工具和任意 LLM，MCP 生态。
 
 ### OpenHands — All Hands AI
+
 - **厂商**：开源 + All Hands AI 公司（前 OpenDevin 项目）
 - **开源**：✅ TypeScript 开源（MIT，核心含 CLI）
 - **仓库**：<https://github.com/All-Hands-AI/OpenHands>　⭐5.5万（含建模历史）
-
-> 注：上估计星数为仓库元数据，实际以 GitHub 页面为准。
-
 - **最早发版/创建**：2024年3月13日（OpenDevin）
 - **最近发版/更新**：2026年9月17日（v1.20.0）
 - **形态**：CLI + Web（云端沙盒环境）
 - **说明**：研究出身（伊利诺伊大学/勒穆瓦纳大学合作开源），可在 Docker 容器中自主完成任务。
 
+> 注：上述星数为仓库元数据，实际以 GitHub 页面为准。
+
 ### AutoGPT — Significant Gravitas
+
 - **厂商**：开源社区（Significant Gravitas）
 - **开源**：✅ Python 开源（MIT）
 - **仓库**：<https://github.com/Significant-Gravitas/AutoGPT>　⭐18.7万（已迁移到平台化仓库）
@@ -153,6 +163,7 @@
 - **说明**：2023 年引领「自主 Agent」热潮的开源项目，后演变为 Agent 平台（AutoGPT Platform）。
 
 ### Devika — stitionai
+
 - **厂商**：独立开源项目（巴基斯坦开发者）
 - **开源**：✅ Python 开源
 - **仓库**：<https://github.com/stitionai/devika>　⭐2万
@@ -161,6 +172,7 @@
 - **说明**：Devin 的开源替代尝试，热度高峰后维护放缓。
 
 ### Qwen Code — 阿里巴巴 / 通义千问
+
 - **厂商**：阿里巴巴 / Qwen（中国，通义千问团队）
 - **开源**：✅ TypeScript 开源（Apache-2.0）
 - **仓库**：<https://github.com/QwenLM/qwen-code>　⭐2.8万
@@ -172,6 +184,7 @@
 - **数据来源**：GitHub API（`QwenLM/qwen-code`）、`qwenlm.github.io/qwen-code-docs`
 
 ### Bolt.diy — StackBlitz 社区版
+
 - **厂商**：StackBlitz（美国）+ 社区维护
 - **开源**：✅ TypeScript 开源（MIT）
 - **仓库**：<https://github.com/stackblitz-labs/bolt.diy>　⭐2万
@@ -186,6 +199,7 @@
 ## 二、编码 IDE Agent（闭源商业）
 
 ### Cursor — Anysphere
+
 - **厂商**：Anysphere, Inc.（美国，2023 年成立）
 - **开源**：❌ 闭源
 - **基于某开源工具修改**：✅ **基于 VSCode 二次开发（fork）**，深度集成 AI 到编辑器
@@ -195,6 +209,7 @@
 - **说明**：最主流的 AI 原生 IDE 之一；2026 年 9 月上线「Projects」在云上管理长期任务上下文，协调器代理规划、委派子代理并行执行。
 
 ### Windsurf — 原 Codeium（现并入 Cognition）
+
 - **厂商**：原 Codeium（美国，2023 年成立）→ **已被 Cognition AI（Devin 团队）收购整合**
   - 证据：`windsurf.com/changelog` 现已重定向到 Devin 官方文档（docs.devin.ai），版本列表为 Devin Desktop 的版本号
 - **开源**：❌ 闭源
@@ -205,6 +220,7 @@
 - **说明**：曾是可对标 Cursor 的 AI 编辑器，2025 年被 Cognition 收购后融入 Devin 产品线，形成「一个地方管理本地与云端所有 Agent」。
 
 ### Devin — Cognition AI
+
 - **厂商**：Cognition AI（美国，2023 年成立）
 - **开源**：❌ 闭源
 - **最早发版**：2024年3月12日（「首位 AI 软件工程师」发布）
@@ -213,6 +229,7 @@
 - **说明**：真正的通用「软件工程师」Agent，具备 shell/编辑器/浏览器、长时推理规划、自主完成任务；2026 年收购 Windsurf/Cascade 后扩展为本地 + 云端统一 Agent 管理（Devin Agent Client Protocol, ACP）。
 
 ### GitHub Copilot — GitHub / Microsoft
+
 - **厂商**：GitHub（微软，美国）
 - **开源**：❌ 闭源（Copilot App 部分 CLI/工具链有开源组件）
 - **最早发版**：2021年6月（代码补全插件，与 OpenAI Codex 合作）
@@ -221,6 +238,7 @@
 - **说明**：最早大规模商用的 AI 编程助手，现已从「补全」演进为「Agent」——Copilot 编码代理、CLI 终端 agent、代码评审代理。
 
 ### Trae — ByteDance（字节跳动）
+
 - **厂商**：字节跳动（中国，北京）/ 海外 Blackbird（深圳，原字节 AI 编程团队）
 - **开源**：❌ 闭源（有部分组件开源）
 - **基于某开源工具修改**：✅ 基于 VSCode 二次开发
@@ -234,6 +252,7 @@
 ## 三、无代码 / 应用生成 Agent
 
 ### v0 — Vercel
+
 - **厂商**：Vercel（美国）
 - **开源**：❌ 闭源
 - **最早发版**：2025年（公开）
@@ -241,6 +260,7 @@
 - **说明**：面向前端/全栈的 prompt-to-app 生成 Agent，深度绑定 Vercel 部署生态。
 
 ### Lovable — Lovable（原 GPT Engineer 商业化演进）
+
 - **厂商**：Lovable（瑞典，2024 年成立）
 - **开源**：❌ 闭源（早期 GPT Engineer 为开源）
 - **最早发版**：2024年（Lovable 品牌；前身开源项目更早）
@@ -248,6 +268,7 @@
 - **说明**：无代码的 Web 应用生成 Agent，主打「自然语言建 Full-stack 应用」，欧洲市场增长快。
 
 ### Replit Agent — Replit
+
 - **厂商**：Replit（美国，2016 年成立）
 - **开源**：❌ 闭源（Replit 平台部分开源）
 - **最早发版**：2024年（Replit Agent）
@@ -283,6 +304,7 @@
 > 以下是 2025-2026 年快速冒头、但未收入前文主表的新一代 Agent 工具。多为开源 CLI 或软硬件一体项目，发版节奏快，数据抓取于 **2026年9月19日**。
 
 ### Pi — pi.dev（终端编码 Agent）
+
 - **厂商**：Pi（`pi.dev`，独立团队；社区称之为「Pi Coding Agent」）
 - **开源**：❌ 本体闭源（官方 GitHub 无开源仓库；但有大量社区扩展/集成项目，如 `shaftoe/pi-coding-agent-action`、`zgs225/pi2.nvim`、`Firstp1ck/pi-coding-agent-forge`）
 - **基于某开源工具修改**：否（自研）
@@ -293,6 +315,7 @@
 - **数据来源**：GitHub 搜索结果（`pi.dev` 相关社区项目）
 
 ### Grok Build（grok build）— xAI
+
 - **厂商**：xAI（美国，由 Elon Musk 创立）
 - **开源**：✅ **Rust 开源（Apache-2.0）**、仓库 <https://github.com/xai-org/grok-build>　⭐2.6万+；另有官方插件 <https://github.com/xai-org/grok-build-plugin-cc>（Claude Code 委托代理插件）
 - **基于某开源工具修改**：否（自研；但与 Claude Code 可通过官方插件联动，Claude Code 插件可将审查/救援任务委托给 Grok Build）
@@ -303,6 +326,7 @@
 - **数据来源**：GitHub API（`xai-org/grok-build`、`xai-org/grok-build-plugin-cc`）
 
 ### OpenCode — SST
+
 - **厂商**：SST（美国，`opencode.ai`；SST 团队负责维护）
 - **开源**：✅ **开源**（TypeScript 为主）、仓库 <https://github.com/sst/opencode>，是新一代终端编码 Agent 的代表
 - **基于某开源工具修改**：否（自研）
@@ -313,6 +337,7 @@
 - **数据来源**：GitHub 搜索结果（sst/opencode 相关）、`opencode.ai`
 
 ### OpenClaw — OpenClaw（原 ODIN）
+
 - **厂商**：OpenClaw（全球开源社区项目）
 - **开源**：✅ **开源**、仓库 <https://github.com/openclaw/openclaw>　⭐约39万（含社区 fork 助推）；License 为 NOASSERTION/自定义
 - **基于某开源工具修改**：基于早期 **ODIN（open source Claude OS）/ "Claw"** 概念演进而来；定位「为任何语言模型构建的应用运行时/agent OS」
@@ -323,6 +348,7 @@
 - **数据来源**：GitHub API（`openclaw/openclaw`）、`awesome-openclaw-skills` 等社区项目
 
 ### Hermes Agent — Nous Research
+
 - **厂商**：Nous Research（美国，开源研究实验室）
 - **开源**：✅ **开源**、仓库 <https://github.com/NousResearch/hermes-agent>；另有自进化扩展 <https://github.com/NousResearch/hermes-agent-self-evolution>
 - **基于某开源工具修改**：否（自研；基于 Nous 自研 Hermes 模型家族）
@@ -333,6 +359,7 @@
 - **数据来源**：GitHub 搜索结果（NousResearch hermes-agent 相关）、Nous Research 官方
 
 ### DeepSeek Harness — 深度求索（DeepSeek）
+
 - **厂商**：深度求索（DeepSeek，中国，杭州；幻方量化孵化的大模型独角兽）
 - **开源**：✅ **TypeScript 开源（MIT）**、仓库 <https://github.com/deepseek-ai/deepseek-harness>　⭐22.9万+
 - **基于某开源工具修改**：否（自研；定位插拔式 agent 运行时，口号「Everything is a Plugin」）
@@ -343,6 +370,7 @@
 - **数据来源**：GitHub API（`deepseek-ai/deepseek-harness`）、官网 `deepseek.com/harness`
 
 ### AtomCode — AtomGit / AtomCode 团队
+
 - **厂商**：AtomGit（中国，AtomCode 团队维护）
 - **开源**：✅ **Rust 开源（MIT）**、仓库 <https://github.com/atomgit-atomcode/atomcode>　⭐195
 - **基于某开源工具修改**：否（自研；完全由 AI 生成的开源项目，人类仅担任产品决策者）
@@ -361,6 +389,7 @@
 > 以下为国内主流的编码/通用 Agent 工具，多为闭源商业产品（部分本体或工具链开源）；因官方开源数据有限，未列入上方主表，单独列出以便对照。抓取日期 **2026年9月19日**。
 
 ### Kimi（Kimi for Coding / Kimi CLI）— 月之暗面
+
 - **厂商**：月之暗面（Moonshot AI，中国，北京，杨植麟创立）
 - **开源**：❌ 闭源（模型与服务均闭源；无对应官方开源代码仓库）
 - **基于某开源工具修改**：否（自研）
@@ -375,6 +404,7 @@
 - **数据来源**：`platform.kimi.com`（模型列表与定价）、`kimi.com`（产品入口）、`platform.kimi.ai/docs/pricing/`（各模型定价详情）
 
 ### 通义灵码（Tongyi Lingma）— 阿里巴巴 / 阿里云
+
 - **厂商**：阿里巴巴集团 / 阿里云（中国，杭州）
 - **开源**：❌ 闭源（底层通义千问模型与灵码服务均闭源）
 - **基于某开源工具修改**：否（自研；**Lingma IDE** 为独立 AI IDE，非 VSCode fork）
@@ -388,6 +418,7 @@
 - **数据来源**：`tongyi.aliyun.com/lingma`（产品官网，含能力介绍与 IDE 公测信息）
 
 ### 腾讯 CodeBuddy — 腾讯云
+
 - **厂商**：腾讯云（中国，深圳）
 - **开源**：❌ 闭源（服务闭源；GitHub 上无官方开源仓库，仅有同名无关第三方项目）
 - **基于某开源工具修改**：否（自研）
@@ -401,6 +432,7 @@
 - **数据来源**：`codebuddy.tencent.com`（产品官网，JS 渲染，文本信息有限）
 
 ### ZCode（Z.AI Coding）— 智谱 AI / Z.AI
+
 - **厂商**：智谱 AI / Z.AI（中国，北京，Z.ai 为智谱海外品牌）
 - **开源**：❌ 闭源（ZCode CLI/客户端闭源；底层调用 GLM-5.3 / GLM-5.3-Flash / GLM-5.2 等智谱自研模型）
 - **基于某开源工具修改**：否（自研；部分社区生态已有 JetBrains 插件、ACP 适配器等衍生）
@@ -414,6 +446,7 @@
 - **数据来源**：GitHub 搜索（`csuftt/zcode-jetbrains-plugin`、`william0wang/zcode-acp` 等社区项目揭示 ZCode 与 GLM 系列的绑定关系）、Z.AI 官方文档
 
 ### 腾讯 WorkBuddy — 腾讯（CSIG）
+
 - **厂商**：腾讯 CSIG（云与智慧产业事业群，中国，深圳）
 - **开源**：❌ 闭源（服务闭源；GitHub 上无官方开源仓库，仅有第三方代理/插件项目）
 - **基于某开源工具修改**：否（自研；与 CodeBuddy 并列为腾讯两条编码 Agent 产品线）
@@ -427,6 +460,7 @@
 - **数据来源**：GitHub 搜索（`Sliverkiss/workbuddy2api`、`changexbc/workbuddy-switch`、`AlephAITech/WorkBuddyGuide` 等社区项目）
 
 ### Comate（文心快码）— 百度
+
 - **厂商**：百度（中国，北京）
 - **开源**：❌ 闭源（服务闭源；无官方开源仓库，社区有逆向/衍生项目）
 - **基于某开源工具修改**：否（自研）
@@ -440,6 +474,7 @@
 - **数据来源**：`comate.baidu.com`、社区派生项目（`vibe-coding-labs/ComateReverseEngineer` 等）
 
 ### DuMate（杜搭子）— 百度
+
 - **厂商**：百度（中国，北京）
 - **开源**：❌ 闭源（服务闭源；无官方开源仓库，有官方基准 `baidubce/dumate-bench`）
 - **基于某开源工具修改**：否（自研）
@@ -452,6 +487,7 @@
 - **数据来源**：`dumate.baidu.com`、`baidubce/dumate-bench`（官方基准仓库）
 
 ### Qoder — 阿里巴巴（海外）
+
 - **厂商**：阿里巴巴（国际团队，运营主体 BRIGHT ZENITH PTE. LTD.）
 - **开源**：❌ 闭源（Qoder IDE/云端闭源；提供 **Qoder Agent SDK**（npm `@qoder-ai/qoder-agent-sdk`）供开发者集成）
 - **基于某开源工具修改**：否（自研；非 VSCode fork，独立 agentic IDE）
@@ -468,6 +504,7 @@
 - **数据来源**：`qoder.com`、`docs.qoder.com`（含各产品 Release Notes）
 
 ### QwenWork（千问办公）— 阿里巴巴
+
 - **厂商**：阿里巴巴 / 通义千问（中国，杭州）
 - **开源**：❌ 闭源（办公 Agent 服务闭源；底层 Qwen 模型部分开源）
 - **基于某开源工具修改**：否（自研）
@@ -480,6 +517,7 @@
 - **数据来源**：GitHub 搜索（`wangxiaoshuai1998/QwenWorkGuide`、`wpy030414/xrl-router-plugin-qwenwork` 等）、通义官网
 
 ### DoubaoWork（豆包工作）— 字节跳动
+
 - **厂商**：字节跳动（中国，北京）
 - **开源**：❌ 闭源（工作 Agent 服务闭源；底层豆包/Seed 模型部分开源）
 - **基于某开源工具修改**：否（自研）
@@ -492,6 +530,7 @@
 - **数据来源**：GitHub 搜索（`AlephAITech/DoubaoWorkGuide`、`zjp1997720/zhijian-ai-bluebook-doubaowork-harness` 等）、豆包官网
 
 ### MiniMax Code — MiniMax
+
 - **厂商**：MiniMax（中国，上海，2022 年成立，「与所有人共创智能」）
 - **开源**：❌ 闭源（Coding Agent 服务闭源；底层 MiniMax-M3/C M 系列模型部分开源）
 - **基于某开源工具修改**：否（自研）
@@ -504,6 +543,7 @@
 - **数据来源**：`minimaxi.com/coding`、`minimaxi.com/models`
 
 ### AutoClaw — 社区 / 开源
+
 - **厂商**：开源社区（无大厂官方背景；`autoclaw-cc` 组织 + 多个个人仓库）
 - **开源**：✅ **开源**（核心 `tsingliuwin/autoclaw`，MIT 等）
 - **基于某开源工具修改**：部分基于 Claude Code 生态扩展（延伸 agent 技能、Docker/无头并发运行）
@@ -514,6 +554,7 @@
 - **数据来源**：GitHub 搜索（`tsingliuwin/autoclaw`、`autoclaw-cc/xiaohongshu-skills` 等）
 
 ### CodeArts Snap — 华为云
+
 - **厂商**：华为云（华为，中国，深圳）
 - **开源**：❌ 闭源（华为云服务闭源；无官方开源仓库）
 - **基于某开源工具修改**：否（自研，基于盘古大模型 + 华为 CodeArts 研发平台）
@@ -550,12 +591,14 @@
 ## 七、常见关系梳理 FAQ
 
 ### Q1：哪些是「根据某开源工具修改 / fork」的？
+
 - **Roo-Code** ✅ 分叉自 **Cline**
 - **Bolt.diy** ✅ 分叉自 **Bolt.new**（官方闭源后社区 fork）
 - **Cursor / Windsurf / Trae** ✅ 均为**基于 VSCode 的二次开发**（IDE fork，非开源）
 - 其余为原创工具；「Codex」开源模型与「Codex」agent 是不同产品，agent 本体原创。
 
 ### Q2：Codex 到底有哪些版本/形态？
+
 OpenAI **Codex** 有 4 类形态：
 1. **CLI（本地版）** — Rust 开源，可打断审计式地在本地仓库干活
 2. **Web（云版）** — 浏览器里用云端容器跑
@@ -564,9 +607,11 @@ OpenAI **Codex** 有 4 类形态：
 其中仅本地 CLI 版开源；Work/云版为闭源收费服务。
 
 ### Q3：Claude Code 有多少形态？
+
 Anthropic **Claude Code** 覆盖最全：**终端 CLI、IDE 插件（VSCode/JetBrains/VS Server 版）、桌面应用、Web、移动端、Chrome 扩展、Slack（Claude Tag）、云远程控制**。底层可用开源 Claude Agent SDK 二次开发。
 
 ### Q4：还有哪些同类工具值得注意？
+
 - **OpenAI Cline 生态、Gemini、Cursor CLI**（Cursor 也提供独立 CLI agent）
 - **MCP（Model Context Protocol，Anthropic 开源）**：agent 工具互通标准，几乎被上述工具普遍采用
 - **ACP（Agent Client Protocol，Cognition 基于 MCP 扩展）**：Devin 生态的 agent 协作协议
@@ -574,6 +619,7 @@ Anthropic **Claude Code** 覆盖最全：**终端 CLI、IDE 插件（VSCode/JetB
 - 新一代高速迭代的开源工具（**Grok Build**、**OpenCode**、**OpenClaw**、**Hermes Agent**、**Pi**）详见「**五、新兴开源 CLI / 通用 Agent 补充**」一节。
 
 ### Q5：「是否基于某开源工具修改」为什么有的标「—」、有的标「是」？
+
 - 标「—」表示**原创/非 fork**、且无法确认基于现有开源产品二次开发（如 Claude Code、Codex agent、Gemini CLI、Aider 等均为各自团队的原创实现）。
 - 标「是」的分为两类：**代码 fork**（Roo-Code 之于 Cline、Bolt.diy 之于 Bolt.new），与 **IDE 二次开发**（Cursor/Windsurf/Trae 基于 VSCode）。
 - 部分仅受他人启发的项目（如 OpenClaw 之于 ODIN、OpenManus 之于 Manus）在「说明」中注明灵感来源，不算严格 fork。
