@@ -6,7 +6,7 @@
 
 同时将所有厂家的大模型的发版时间整理到README.md文档中，一览无遗，需要包括公司所在国家、公司名、大模型名称、版本、发版时间。
 
-> ⚠️ **数据说明**：本项目数据截止至 **2026年9月18日**，通过OpenRouter API和官方文档更新。本次更新内容：新增 **智谱GLM-5.4（9月16日，开源旗舰，744B MoE/40B激活，MIT许可，SWE-Lancer 57.21% SOTA）**；DeepSeek V4-Pro-0813 已于2026年9月14日完成退役（请求路由至V4.1-Flash），并将DeepSeek V4.1-Flash标注OpenRouter上线日期（9月10日）；补充字节豆包遗漏模型（Seed-2.0-code、Seed-1.6系列、UI-TARS 1.5等）。此前（9月10日截止）已新增OpenAI GPT-6 Astra/Astra Pro（9月3日）、Claude Fable 5.1（8月31日）、Gemini 3.8 Flash（9月2日）、Meta Muse Spark 1.3（9月2日）、Qwen3.8-Max-0902（9月2日）/Qwen3.8-Flash（8月26日）、智谱GLM-5.3（8月18日）/GLM-5.3-Flash（8月26日）、腾讯混元HY4 Preview（8月28日）、DeepSeek V4.1-Flash（9月）、科大讯飞星火X2.5系列（9月4-7日）、SenseNova 6.8（公测期）等。自9月10日以来，OpenAI/Anthropic/Google/Meta/NVIDIA/xAI/Mistral/MiniMax、月之暗面、小米、华为、百川、讯飞、百度等厂商均无非路由别名的新模型发布，相关文件无实质更新。部分厂商数据可能仍有遗漏，欢迎补充更新。
+> ⚠️ **数据说明**：本项目数据截止至 **2026年9月18日**，通过OpenRouter API和官方文档更新。本次更新内容：新增 **蚂蚁集团（Ant Group）inclusionAI 开源 Ling（百灵）系列大模型厂商条目**（Ling 1.x/2.0/2.5-1T/3.0，MIT许可MoE开源模型，1T旗舰/124B 3.0主模型）；新增 **智谱GLM-5.4（9月16日，开源旗舰，744B MoE/40B激活，MIT许可，SWE-Lancer 57.21% SOTA）**；DeepSeek V4-Pro-0813 已于2026年9月14日完成退役（请求路由至V4.1-Flash），并将DeepSeek V4.1-Flash标注OpenRouter上线日期（9月10日）；补充字节豆包遗漏模型（Seed-2.0-code、Seed-1.6系列、UI-TARS 1.5等）。此前（9月10日截止）已新增OpenAI GPT-6 Astra/Astra Pro（9月3日）、Claude Fable 5.1（8月31日）、Gemini 3.8 Flash（9月2日）、Meta Muse Spark 1.3（9月2日）、Qwen3.8-Max-0902（9月2日）/Qwen3.8-Flash（8月26日）、智谱GLM-5.3（8月18日）/GLM-5.3-Flash（8月26日）、腾讯混元HY4 Preview（8月28日）、DeepSeek V4.1-Flash（9月）、科大讯飞星火X2.5系列（9月4-7日）、SenseNova 6.8（公测期）等。自9月10日以来，OpenAI/Anthropic/Google/Meta/NVIDIA/xAI/Mistral/MiniMax、月之暗面、小米、华为、百川、讯飞、百度等厂商均无非路由别名的新模型发布，相关文件无实质更新。部分厂商数据可能仍有遗漏，欢迎补充更新。
 
 ## 问题
 
@@ -152,6 +152,7 @@
 | 中国 | 月之暗面 | Kimi | Kimi K3 🆕 | 🌐🧠💻 多模态+推理+代码 | 2.8T（开源权重） | 1M | 2026年7月16日 |
 | 美国 | Meta | Muse | Muse Spark 1.1 🆕 | 🌐📝👁️🎤 多模态推理 | 未公开 | 1M | 2026年7月16日 |
 | 美国 | Google | Gemini | Gemini 3.6 Flash 🆕 | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开（厂商未公开） | 1M | 2026年7月 |
+| 中国 | 蚂蚁集团 | Ling | Ling 3.0 Flash（inclusionai/ling-3.0-flash）🆕 | 📝 纯文本MoE | 124B MoE/5.1B激活 | 262K | 2026年7月（待确认） |
 | 美国 | Google | Gemini | Gemini 3.5 Flash Lite 🆕 | 🌐🧠 多模态+推理 | 未公开（厂商未公开） | 1M | 2026年7月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen 3.7 Flash 🆕 | 👁️🌐 视觉理解+多模态 | 未公开 | 1M | 2026年7月 |
 | 美国 | OpenAI | GPT | GPT-5.6 Sol / Sol Pro 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 2026年7月9日 |
@@ -264,6 +265,7 @@
 | 法国 | Mistral AI | Voxtral | Voxtral Mini Transcribe 2 | 🎤 | 未公开 | 未公开 | 2026年2月 |
 | 法国 | Mistral AI | Voxtral | Voxtral Mini Transcribe Realtime | 🎤 | 未公开 | 未公开 | 2026年2月 |
 | 美国 | xAI | Grok | Grok-4.20 Beta | 🌐🧠💻 | 未公开 | 2M | 2026年2月 |
+| 中国 | 蚂蚁集团 | Ling | Ling-2.5-1T 🆕 | 📝🧠💻 文本+推理+代码MoE | 1T MoE/63B激活 | 256K→1M | 2026年2月（待确认） |
 | 美国 | xAI | Grok | Grok-4.20 Multi-Agent | 🌐🧠💻🖥️ | 未公开 | 2M | 2026年2月 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-OCR-2 | 👁️📝 | 3B | — | 2026年2月 |
 | 中国 | MiniMax | M系列 | MiniMax-M2.5 / M2.5-Lightning | 📝 | 未公开 | 未公开 | 2026年2月 |
