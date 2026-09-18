@@ -415,15 +415,111 @@
 - **说明**：腾讯 2026 年新推出的工作/编码 Agent，采用积分制与任务中心模式；与 CodeBuddy 并行定位。社区已出现 OpenAI 兼容反向代理（`workbuddy2api`）、账号切换桌面 App（`workbuddy-switch`，Tauri 实现）等衍生工具。
 - **数据来源**：GitHub 搜索（`Sliverkiss/workbuddy2api`、`changexbc/workbuddy-switch`、`AlephAITech/WorkBuddyGuide` 等社区项目）
 
+### Comate（文心快码）— 百度
+- **厂商**：百度（中国，北京）
+- **开源**：❌ 闭源（服务闭源；无官方开源仓库，社区有逆向/衍生项目）
+- **基于某开源工具修改**：否（自研）
+- **最早发版/创建**：2023年（文心快码 Comate 公测）/ 底层文心大模型更早
+- **最近发版/更新**：2026年（持续迭代）
+- **形态**：
+  - **IDE 插件** — VSCode / JetBrains（IntelliJ 系）等
+  - **Web 版 / 云端** — 代码补全、生成、问答
+  - 以「AI Coding Assistant」定位，可选边「文心 + 第三方」多种模型
+- **说明**：百度官方智能编码助手（文心快码），是百度对标 Copilot / 通义灵码的编程助手产品；官网 `comate.baidu.com`（JS 渲染，需浏览器查看完整形态）。
+- **数据来源**：`comate.baidu.com`、社区派生项目（`vibe-coding-labs/ComateReverseEngineer` 等）
+
+### DuMate（杜搭子）— 百度
+- **厂商**：百度（中国，北京）
+- **开源**：❌ 闭源（服务闭源；无官方开源仓库，有官方基准 `baidubce/dumate-bench`）
+- **基于某开源工具修改**：否（自研）
+- **最早发版/创建**：2026年（杜搭子 DuMate 推出）
+- **最近发版/更新**：2026年（活跃；社区有自动签到、skill 等衍生工具）
+- **形态**：
+  - **桌面 Agent / Web** — 通用办公 + 编码 Agent（对标 Kimi Work / WorkBuddy）
+  - **Skills / 连接器生态** — 可通过配置技能完成多步任务
+- **说明**：百度新推出的通用 AI Agent 产品（「杜搭子」），定位个人助手/工作 Agent，可执行日常与编码任务；官方在 GitHub 发布 **Dumate 评测基准**（`baidubce/dumate-bench`）用于衡量其能力。
+- **数据来源**：`dumate.baidu.com`、`baidubce/dumate-bench`（官方基准仓库）
+
+### Qoder — 阿里巴巴（海外）
+- **厂商**：阿里巴巴（国际团队，运营主体 BRIGHT ZENITH PTE. LTD.）
+- **开源**：❌ 闭源（Qoder IDE/云端闭源；提供 **Qoder Agent SDK**（npm `@qoder-ai/qoder-agent-sdk`）供开发者集成）
+- **基于某开源工具修改**：否（自研；非 VSCode fork，独立 agentic IDE）
+- **最早发版/创建**：2025年（Qoder 推出，1st Anniversary 2026 年）
+- **最近发版/更新**：2026年9月（活跃；Quest Mode、Cloud Agents 等密集发布）
+- **形态**（产品家族最全）：
+  - **Qoder IDE** — 独立 agentic 开发工作台（「an agentic platform for real work」）
+  - **JetBrains Plugin** — IDE 插件
+  - **Qoder CLI** — 终端编码 Agent + AI 代码评审工具
+  - **Qoder Agent SDK** — Agent 能力集成 SDK
+  - **Qoder Cloud Agents** — 云端全托管 agent 平台
+  - **Qoder Mobile** / Enterprise 版
+- **说明**：阿里面向全球推出的 agentic 编程平台（海外主体运营），产品形态覆盖 IDE/CLI/插件/云 agent/SDK/移动端，比通义灵码更国际化；其「Quest Mode」允许 agent 长时间自主跑任务。
+- **数据来源**：`qoder.com`、`docs.qoder.com`（含各产品 Release Notes）
+
+### QwenWork（千问办公）— 阿里巴巴
+- **厂商**：阿里巴巴 / 通义千问（中国，杭州）
+- **开源**：❌ 闭源（办公 Agent 服务闭源；底层 Qwen 模型部分开源）
+- **基于某开源工具修改**：否（自研）
+- **最早发版/创建**：2025-2026年（千问办公模式推出）
+- **最近发版/更新**：2026年（活跃；社区有模型穿透、指南等衍生）
+- **形态**：
+  - **桌面 / Web Agent** — 通义千问的办公 Agent（对标 Kimi Work / QwenWork 类）
+  - **Skills / 专家团** — 可加载技能与专家预设完成办公与编码任务
+- **说明**：阿里通义千问的「办公」形态 Agent（与编码形态 Qwen Code 互补）；社区称「千问办公/悟空」，有对应模型穿透服务与中文实践指南。
+- **数据来源**：GitHub 搜索（`wangxiaoshuai1998/QwenWorkGuide`、`wpy030414/xrl-router-plugin-qwenwork` 等）、通义官网
+
+### DoubaoWork（豆包工作）— 字节跳动
+- **厂商**：字节跳动（中国，北京）
+- **开源**：❌ 闭源（工作 Agent 服务闭源；底层豆包/Seed 模型部分开源）
+- **基于某开源工具修改**：否（自研）
+- **最早发版/创建**：2026年（豆包办公模式推出）
+- **最近发版/更新**：2026年（活跃；社区有 Harness 拆解蓝皮书、Guide 等）
+- **形态**：
+  - **桌面 / Web Agent** — 豆包「工作」形态（对标 Kimi Work / 通义办公）
+  - **Skills / 连接器 / 自动化** — 多 Agent 工作流
+- **说明**：字节豆包的「办公模式」Agent（与编码形态 Trae 互补），支持 Skills、连接器与多 Agent 工作流；社区围绕其产出系统化中文实践指南与 Harness 拆解。
+- **数据来源**：GitHub 搜索（`AlephAITech/DoubaoWorkGuide`、`zjp1997720/zhijian-ai-bluebook-doubaowork-harness` 等）、豆包官网
+
+### MiniMax Code — MiniMax
+- **厂商**：MiniMax（中国，上海，2022 年成立，「与所有人共创智能」）
+- **开源**：❌ 闭源（Coding Agent 服务闭源；底层 MiniMax-M3/C M 系列模型部分开源）
+- **基于某开源工具修改**：否（自研）
+- **最早发版/创建**：2025-2026年（MiniMax Code 推出；配 M3 模型 2026-06-01 发布）
+- **最近发版/更新**：2026年（活跃）
+- **形态**：
+  - **IDE 版**（`minimaxi.com/coding`）— Coding Agent，可「自主组建 Agent 小队」，根据任务复杂度召集子代理
+  - 底层 **MiniMax M3** — 1M 超长上下文、Coding/Agentic 前沿模型（MSA 注意力架构）
+- **说明**：MiniMax 的 Coding Agent，深度绑定自家 M3 前沿编码/agentic 模型；特色是支持多 Agent 团队协作（Agent 小队）模式。
+- **数据来源**：`minimaxi.com/coding`、`minimaxi.com/models`
+
+### AutoClaw — 社区 / 开源
+- **厂商**：开源社区（无大厂官方背景；`autoclaw-cc` 组织 + 多个个人仓库）
+- **开源**：✅ **开源**（核心 `tsingliuwin/autoclaw`，MIT 等）
+- **基于某开源工具修改**：部分基于 Claude Code 生态扩展（延伸 agent 技能、Docker/无头并发运行）
+- **最早发版/创建**：2025-2026年（AutoClaw 出现）
+- **最近发版/更新**：2026年（社区活跃，含小红书 skills 等）
+- **形态**：**Docker / 无头并发**轻量 agent（`autoclaw-cc` 组织提供 xiaohongshu-skills 等技能包），面向大规模并行 agent 任务
+- **说明**：AutoClaw 是一个超轻量、面向 Docker/无头并发场景的开源 AI agent，被 `agent-skill-manager` 等国产工具生态归入「国内 AI Agent 产品」之列；因其轻量可并行，常用于接入小红书/自动流程等场景。归属与产品边界较为社区化，信息有限。
+- **数据来源**：GitHub 搜索（`tsingliuwin/autoclaw`、`autoclaw-cc/xiaohongshu-skills` 等）
+
 ### 国产工具横向对照
 
 | 厂商 | 工具 | 是否开源 | 基于开源工具 | 最早 | 最近 | 形态 |
 |------|------|:------:|:------:|------|------|------|
 | 月之暗面 | Kimi（Code/Work/Claw） | ❌ | 否 | 2023年10月（Kimi）/ 2025年（编程形态） | 2026年（K3） | CLI / 桌面 / Web / 移动 / Computer Use |
 | 阿里巴巴 | 通义灵码（Lingma） | ❌ | 否（IDE 自研） | 2023年（通义）/ 2024年（灵码） | 2026年（Lingma IDE 公测） | IDE 插件 / 独立 IDE / 编程智能体 |
+| 阿里巴巴 | Qoder | ❌（Agent SDK 开源） | 否 | 2025年 | 2026年9月 | IDE / 插件 / CLI / Cloud Agents / SDK / 移动 |
+| 阿里巴巴 | QwenWork（千问办公） | ❌ | 否 | 2025-2026年 | 2026年 | 桌面 / Web Agent / Skills |
+| 阿里（海外） | Qwen Code | ✅ TS 开源 (Apache-2.0) | 否 | 2025年6月 | 2026年9月18日 | 终端 CLI |
 | 腾讯 | CodeBuddy | ❌ | 否 | 2024年 | 2026年 | IDE 插件 / 云端助手 |
 | 腾讯 | WorkBuddy | ❌ | 否 | 2026年 | 2026年9月 | CLI / 桌面 / Web 任务中心 |
+| 字节跳动 | Trae（TraeCode + TraeWork） | ❌ | VSCode 二次开发 | 2024年（海外） | 2026年 | 桌面 IDE / CLI |
+| 字节跳动 | DoubaoWork（豆包工作） | ❌ | 否 | 2026年 | 2026年 | 桌面 / Web Agent / Skills |
+| 百度 | Comate（文心快码） | ❌ | 否 | 2023年 | 2026年 | IDE 插件 / Web |
+| 百度 | DuMate（杜搭子） | ❌ | 否 | 2026年 | 2026年 | 桌面 Agent / Web / Skills |
 | 智谱 AI | ZCode（Z.AI Coding） | ❌ | 否 | 2026年 | 2026年9月 | CLI / IDE 插件 / Coding Plan |
+| MiniMax | MiniMax Code | ❌ | 否 | 2025-2026年 | 2026年 | IDE Coding Agent / Agent 小队 |
+| 开源社区 | AutoClaw | ✅ | 部分基于 Claude Code 生态 | 2025-2026年 | 2026年 | Docker / 无头并发 agent |
 
 ---
 
@@ -450,7 +546,7 @@ Anthropic **Claude Code** 覆盖最全：**终端 CLI、IDE 插件（VSCode/JetB
 - **OpenAI Cline 生态、Gemini、Cursor CLI**（Cursor 也提供独立 CLI agent）
 - **MCP（Model Context Protocol，Anthropic 开源）**：agent 工具互通标准，几乎被上述工具普遍采用
 - **ACP（Agent Client Protocol，Cognition 基于 MCP 扩展）**：Devin 生态的 agent 协作协议
-- 国产工具（**Kimi Code/Work/Claw**、**通义灵码**、**腾讯 CodeBuddy / WorkBuddy**、**智谱 ZCode**）详见上方「**六、国产 Agent 工具补充**」一节。
+- 国产工具（**Kimi、通义灵码、Qoder、QwenWork、Qwen Code、腾讯 CodeBuddy / WorkBuddy、Trae、DoubaoWork、百度 Comate / DuMate、智谱 ZCode、MiniMax Code、AutoClaw**）详见「**六、国产 Agent 工具补充**」一节。
 - 新一代高速迭代的开源工具（**Grok Build**、**OpenCode**、**OpenClaw**、**Hermes Agent**、**Pi**）详见「**五、新兴开源 CLI / 通用 Agent 补充**」一节。
 
 ### Q5：「是否基于某开源工具修改」为什么有的标「—」、有的标「是」？
