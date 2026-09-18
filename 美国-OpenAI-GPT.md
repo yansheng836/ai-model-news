@@ -63,13 +63,13 @@
 | GPT-5.4-pro（gpt-5.4-pro） | 2026年 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1050K | 5.4增强版，$30/$180 MTok |
 | GPT-5.5-pro（gpt-5.5-pro） | 2026年 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1050K | GPT-5.5增强版，$30/$180 MTok |
 | GPT-5.5（gpt-5.5） | 2026年4月23日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开（厂商未公开） | 1050K | 最新旗舰，知识截止2025年12月，$5/$30 MTok |
-| GPT-5.6 Sol（gpt-5.6-sol） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 旗舰级，复杂推理/编程/Agent，$5/$30 MTok |
-| GPT-5.6 Sol Pro（gpt-5.6-sol-pro） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | Sol的Pro推理模式版本，$5/$30 MTok |
-| GPT-5.6 Terra（gpt-5.6-terra） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 中端，日常编码/推理/Agent，$2.5/$15 MTok |
-| GPT-5.6 Terra Pro（gpt-5.6-terra-pro） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | Terra的Pro推理模式版本，$2.5/$15 MTok |
-| GPT-5.6 Luna（gpt-5.6-luna） | 2026年7月9日 | 🌐🧠 多模态+推理 | 未公开 | 1050K | 高性价比，高速轻量任务，$1/$6 MTok |
-| GPT-5.6 Luna Pro（gpt-5.6-luna-pro） | 2026年7月9日 | 🌐🧠 多模态+推理 | 未公开 | 1050K | Luna的Pro推理模式版本，$1/$6 MTok |
-| GPT-6 Astra（gpt-6-astra） | 2026年9月3日 | 🌐 多模态 | 未公开（厂商未公开） | 1050K | GPT-6系列首作，旗舰模型，长时程任务突出，$10/$50 MTok（>272K输入 $20/$75） |
+| GPT-5.6 Sol（gpt-5.6-sol） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 旗舰级，复杂推理/编程/Agent，$2/$10 MTok（Fast mode 2x价格） |
+| GPT-5.6 Sol Pro（gpt-5.6-sol-pro） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | Sol的Pro推理模式版本，$2/$10 MTok |
+| GPT-5.6 Terra（gpt-5.6-terra） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 中端，日常编码/推理/Agent，$2/$12 MTok（2026年7月30日降价20%） |
+| GPT-5.6 Terra Pro（gpt-5.6-terra-pro） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | Terra的Pro推理模式版本，$2/$12 MTok |
+| GPT-5.6 Luna（gpt-5.6-luna） | 2026年7月9日 | 🌐🧠 多模态+推理 | 未公开 | 1050K | 高性价比，高速轻量任务，$0.20/$1.20 MTok（2026年7月30日降价80%） |
+| GPT-5.6 Luna Pro（gpt-5.6-luna-pro） | 2026年7月9日 | 🌐🧠 多模态+推理 | 未公开 | 1050K | Luna的Pro推理模式版本，$0.20/$1.20 MTok |
+| GPT-6 Astra（gpt-6-astra） | 2026年9月3日 | 🌐 多模态 | 未公开（厂商未公开） | 1050K | GPT-6系列首作，旗舰模型，长时程任务突出，$10/$50 MTok（>272K输入 $20/$75）；⚠️ 2026年9月11日起 OpenRouter 上线 `gpt-astra-latest` 路由别名 |
 | GPT-6 Astra Pro（gpt-6-astra-pro） | 2026年9月3日 | 🌐🧠 多模态+推理 | 未公开（厂商未公开） | 1050K（128K输出） | Astra的Pro推理模式版本（reasoning.mode=pro），$10/$50 MTok |
 | GPT-Audio-mini（gpt-audio-mini） | 2026年 | 🎤🌐 语音+多模态 | 未公开 | 128K | 语音交互轻量版 |
 | GPT-Audio（gpt-audio） | 2026年 | 🎤🌐 语音+多模态 | 未公开 | 128K | 语音交互模型 |
@@ -130,13 +130,13 @@ GPT-5系列标志着OpenAI进入新一代模型：
 - **GPT-5.4-image-2**：272K上下文，图像生成版，$8/$15 MTok
 - **GPT-5.5**：最新旗舰模型，1050K上下文，128K最大输出，知识截止2025年12月。$5/$30 MTok。支持所有工具（Functions、Web search、File search、Computer use）
 - **GPT-5.5-pro**：GPT-5.5增强版，1050K上下文，$30/$180 MTok
-- **GPT-5.6 Sol（2026年7月9日）**：GPT-5.6系列旗舰，面向复杂推理、编程和Agent工作流，尤其在命令行和多步编程任务上表现突出。1050K上下文，$5/$30 MTok
-- **GPT-5.6 Sol Pro**：Sol的推理增强版（reasoning.mode=pro），处理复杂任务时质量更高，同价$5/$30 MTok
-- **GPT-5.6 Terra（2026年7月9日）**：中端定位，介于Sol和Luna之间，适合日常编码、推理和Agent任务。1050K上下文，$2.5/$15 MTok
-- **GPT-5.6 Terra Pro**：Terra的推理增强版，同价$2.5/$15 MTok
-- **GPT-5.6 Luna（2026年7月9日）**：高性价比模型，适合高吞吐、低延迟场景（聊天、分类、轻量Agent）。1050K上下文，$1/$6 MTok
-- **GPT-5.6 Luna Pro**：Luna的推理增强版，同价$1/$6 MTok
-- **GPT-6 Astra（2026年9月3日）**：GPT-6系列首作，OpenAI新一代旗舰模型，面向高级分析、软件工程、深度研究、科学工作与文档创建，尤其在长时程（long-horizon）任务上突出。1050K上下文，128K最大输出，$10/$50 MTok（>272K输入 $20/$75）
+- **GPT-5.6 Sol（2026年7月9日）**：GPT-5.6系列旗舰，面向复杂推理、编程和Agent工作流，尤其在命令行和多步编程任务上表现突出。1050K上下文，$2/$10 MTok（Fast mode 2x价格）
+- **GPT-5.6 Sol Pro**：Sol的推理增强版（reasoning.mode=pro），处理复杂任务时质量更高，同价$2/$10 MTok
+- **GPT-5.6 Terra（2026年7月9日）**：中端定位，介于Sol和Luna之间，适合日常编码、推理和Agent任务。1050K上下文，$2/$12 MTok（2026年7月30日降价20%）
+- **GPT-5.6 Terra Pro**：Terra的推理增强版，同价$2/$12 MTok
+- **GPT-5.6 Luna（2026年7月9日）**：高性价比模型，适合高吞吐、低延迟场景（聊天、分类、轻量Agent）。1050K上下文，$0.20/$1.20 MTok（2026年7月30日降价80%）
+- **GPT-5.6 Luna Pro**：Luna的推理增强版，同价$0.20/$1.20 MTok
+- **GPT-6 Astra（2026年9月3日）**：GPT-6系列首作，OpenAI新一代旗舰模型，面向高级分析、软件工程、深度研究、科学工作与文档创建，尤其在长时程（long-horizon）任务上突出。1050K上下文，128K最大输出，$10/$50 MTok（>272K输入 $20/$75）。⚠️ 2026年9月11日 OpenRouter 为 GPT-6 Astra/Sol/Terra/Luna 全家上线 `gpt-astra-latest`/`gpt-sol-latest`/`gpt-terra-latest`/`gpt-luna-latest` 路由别名（始终指向各自家族最新模型）
 - **GPT-6 Astra Pro（2026年9月3日）**：Astra的Pro推理模式版本（reasoning.mode=pro），同模型更高质量，1050K上下文，$10/$50 MTok
 - **GPT-5-pro**：GPT-5增强版，400K上下文，$15/$120 MTok
 - **GPT-5.1**：400K上下文，$1.25/$10 MTok
@@ -196,9 +196,9 @@ OpenAI在语音领域布局广泛：
 
 | 模型 | 输入价格 ($/MTok) | 输出价格 ($/MTok) | 上下文 |
 |------|-------------------|-------------------|--------|
-| GPT-5.6 Sol / Sol Pro | $5 | $30 | 1050K |
-| GPT-5.6 Terra / Terra Pro | $2.50 | $15 | 1050K |
-| GPT-5.6 Luna / Luna Pro | $1 | $6 | 1050K |
+| GPT-5.6 Sol / Sol Pro | $2 | $10 | 1050K |
+| GPT-5.6 Terra / Terra Pro | $2 | $12 | 1050K |
+| GPT-5.6 Luna / Luna Pro | $0.20 | $1.20 | 1050K |
 | GPT-5.5-pro | $30 | $180 | 1050K |
 | GPT-5-pro | $15 | $120 | 400K |
 | GPT-5.5 | $5 | $30 | 1050K |

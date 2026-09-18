@@ -14,7 +14,7 @@
 
 ## 模型总览
 
-> 数据来源：[BigModel 开放平台](https://open.bigmodel.cn/pricing) + [Z.AI 发版记录](https://docs.z.ai/release-notes/new-released)，更新于 2026年8月
+> 数据来源：[BigModel 开放平台](https://open.bigmodel.cn/pricing) + [Z.AI 发版记录](https://docs.z.ai/release-notes/new-released)，更新于 2026年9月
 
 ### 旗舰模型（GLM-5系列）
 
@@ -26,6 +26,7 @@
 | GLM-5.2 🆕 | 2026年6月16日 | 📝 纯文本 | 未公开 | 1M（128K输出） | 面向长任务时代的旗舰模型，开源SOTA代码模型 |
 | GLM-5.3 🆕 | 2026年8月18日 | 🧠💻 推理+代码（强制思考） | 未公开 | 1M（128K输出） | 最新旗舰，编程/Agent比肩Claude Fable 5，Z.ai Code Bench较5.2提升50%，开源模型SOTA，涌现网络安全能力 |
 | GLM-5.3-Flash 🆕 | 2026年8月26日 | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 320B MoE/18B激活 | 1M（128K输出） | 原生多模态，代码-浏览器-GUI闭环，混合稀疏+线性注意力架构，降低算力与KV-cache需求 |
+| GLM-5.4 🆕 | 2026年9月16日 | 🧠💻🖥️ 推理+代码+智能体 | 744B MoE/40B激活 | 1M | 面向编码/智能体/知识工作的开源旗舰（MIT 许可），SWE-Lancer 57.21%（开源/闭源 SOTA，较 5.2 领先约15pp），Terminal-Bench 2.0 83.3%，τ²-Bench 89.7%，支持 7 小时级长时程编码任务 |
 
 ### 第四代模型（GLM-4系列）
 
@@ -132,6 +133,7 @@
 
 智谱AI第五代旗舰模型，面向长任务时代设计。
 
+- **GLM-5.4**（2026年9月16日）：GLM 系列最新开源旗舰（MIT 许可），744B MoE/40B激活（延续 GLM-5.2/5.3 的 744B-A40B 基座），1M token 上下文。面向编码、智能体与知识工作优化：SWE-Lancer 57.21%，为当前所有开源/闭源模型 SOTA，较 GLM-5.2 领先约 15 个百分点（SWE-Lancer 基于 Upwork 真实商业开发数据构建）；Terminal-Bench 2.0 达 83.3%（与 Claude Opus 4.5 持平）、τ²-Bench 89.7%；可一次完成长达 7 小时的长时程编码任务。API ID：`zai/glm-5.4`
 - **GLM-5.3-Flash**（2026年8月26日）：320B MoE/18B激活，原生多模态（文本+图像+视频输入），可观察界面、渲染结果与交互反馈，形成代码-浏览器-GUI闭环。采用混合稀疏+线性注意力架构，大幅降低算力与KV-cache需求。除编程外支持办公文档与金融研究流程。Artificial Analysis：Intelligence 41.9 / Coding 71.5 / Agentic 51.2
 - **GLM-5.3**（2026年8月18日）：最新旗舰模型，编程与智能体能力比肩Claude Fable 5，Z.ai Code Bench较GLM-5.2提升50%，开源模型SOTA。涌现网络安全能力（白盒代码审查与漏洞挖掘比肩Mythos 5，实测发现2,436个漏洞，含1,097个中高危）。基准：Terminal-Bench 3.0 4.6→28.3，DeepSWE v1.1 46.2→66.9，Agents' Last Exam 23.8→28.5，CyberGym 77.2%→84.5%（超Mythos 5 83.8%），ExploitBench 24.4%→54.4%。Artificial Analysis：Intelligence 44.9 / Coding 74.8 / Agentic 53.4
 - **GLM-5.2**（2026年6月16日）：最新旗舰模型，支持真正可用的1M上下文，可承载项目级工程上下文，长程任务执行更稳定、工程规范遵循更可靠，一次任务即可完成从需求到多端部署的完整开发链路。定价：输入8元/百万tokens，输出28元/百万tokens
