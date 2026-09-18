@@ -31,11 +31,13 @@
 | StackBlitz | [Bolt.diy](https://github.com/stackblitz-labs/bolt.diy) | 全栈应用生成 | ✅ TypeScript 开源 (MIT) | ✅ Fork 自 Bolt.new 社区版 | 2024年10月 | 2025年5月 (v1.0) | Web |
 | Significant Gravitas | [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | 通用 Agent | ✅ Python 开源 (MIT) | — | 2023年3月 | 2026年（活跃） | CLI |
 | stitionai | [Devika](https://github.com/stitionai/devika) | 通用 Agent | ✅ Python 开源 | — | 2024年3月 | 2025年9月（停更） | CLI |
+| Qwen（阿里） | [Qwen Code](https://github.com/QwenLM/qwen-code) | 终端编码 Agent | ✅ TypeScript 开源 (Apache-2.0) | — | 2025年6月 | 2026年9月18日 | CLI |
 | xAI | [Grok Build](https://github.com/xai-org/grok-build) | 终端编码 Agent | ✅ Rust 开源 (Apache-2.0) | — | 2026年7月 | 2026年9月17日 | CLI / TUI |
 | SST | [OpenCode](https://github.com/sst/opencode) | 终端编码 Agent | ✅ 开源 (TypeScript) | — | 2025年 | 2026年9月 | CLI（TUI） |
 | Nous Research | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 通用/编码 Agent | ✅ 开源 | — | 2025-2026年 | 2026年 | CLI / 生态插件 |
 | OpenClaw | [OpenClaw](https://github.com/openclaw/openclaw) | 通用 Agent（agent OS 型） | ✅ 开源 (TypeScript) | 基于 ODIN/Claw 演进 | 2025年11月 | 2026年9月18日 | 跨 OS/平台运行时 / 可扩硬件 |
 | Pi | Pi（[pi.dev](https://pi.dev)） | 终端编码 Agent | ❌ 闭源（社区生态开源） | — | 2026年 | 2026年9月 | CLI / CI/CD 集成 / Neovim |
+| 深度求索 | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 终端编码 Agent / Agent 运行时 | ✅ TypeScript 开源 (MIT) | — | 2026年8月 | 2026年9月17日 | CLI / 插件运行时 |
 | 月之暗面等（OpenManus） | [OpenManus](https://github.com/OpenManus/OpenManus) | 通用 Agent | ✅ Python 开源 (Apache-2.0) | 灵感源自 Manus | 2025年3月 | 2025年5月 | CLI |
 | Anthropic | [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-typescript) | Agent 框架 | ✅ 开源 (极简许可证) | — | 2025年6月 | 2026年9月 | Python/TS 库 |
 | OpenAI | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Agent 框架 | ✅ Python 开源 (MIT) | — | 2025年3月 | 2026年9月17日 (v0.22.3) | Python 库 |
@@ -156,6 +158,17 @@
 - **最早发版/创建**：2024年3月21日（对标 Devin 的开源实现）
 - **最近发版/更新**：2025年9月后基本停更
 - **说明**：Devin 的开源替代尝试，热度高峰后维护放缓。
+
+### Qwen Code — 阿里巴巴 / 通义千问
+- **厂商**：阿里巴巴 / Qwen（中国，通义千问团队）
+- **开源**：✅ TypeScript 开源（Apache-2.0）
+- **仓库**：<https://github.com/QwenLM/qwen-code>　⭐2.8万
+- **基于某开源工具修改**：否（自研）
+- **最早发版/创建**：2025年6月26日
+- **最近发版/更新**：2026年9月18日（活跃）
+- **形态**：终端 CLI（TUI）；支持 MCP client/server、多模型（Qwen3 系列为主 + 第三方）
+- **说明**：阿里通义千问的官方开源终端编码 Agent（官网「qcode」即指该项目，`qwenlm.github.io/qwen-code-docs`），对标 Claude Code / Codex / Gemini CLI；愿与 Qwen 模型深度绑定，也支持接入其他模型。与国产闭源的通义灵码（IDE）互补，Qwen Code 是**开源终端形态**。
+- **数据来源**：GitHub API（`QwenLM/qwen-code`）、`qwenlm.github.io/qwen-code-docs`
 
 ### Bolt.diy — StackBlitz 社区版
 - **厂商**：StackBlitz（美国）+ 社区维护
@@ -318,7 +331,17 @@
 - **说明**：Nous Research 的开源通用/编码 Agent；与 Hermes 开源模型（Hermes 4 等）配套。社区涌现 `mvdbastos/hermes-acp-agents`（ACP agent 后端插件）、`Lazio-Partners/hermes-skill`（Claude Code skill）等衍生，说明其正接入 MCP/ACP 生态。
 - **数据来源**：GitHub 搜索结果（NousResearch hermes-agent 相关）、Nous Research 官方
 
-> 补充说明：上述工具中 **Grok Build、OpenCode、OpenClaw、Hermes** 本体开源，属于新一代高速迭代的开源 Agent；**Pi** 本体闭源但社区生态开放。发版时间随项目高速演进，请以各官方 changelog 为准。
+### DeepSeek Harness — 深度求索（DeepSeek）
+- **厂商**：深度求索（DeepSeek，中国，杭州；幻方量化孵化的大模型独角兽）
+- **开源**：✅ **TypeScript 开源（MIT）**、仓库 <https://github.com/deepseek-ai/deepseek-harness>　⭐22.9万+
+- **基于某开源工具修改**：否（自研；定位插拔式 agent 运行时，口号「Everything is a Plugin」）
+- **最早发版/创建**：2026年8月13日
+- **最近发版/更新**：2026年9月17日（极活跃）
+- **形态**：**CLI + 插件运行时**（hackable harness），Agent Loop、Agent preset、plugin 生态（dsh-plugin），可对接多种模型
+- **说明**：DeepSeek 官方推出的开源 Agent 工具链，对标 Claude Code / Codex CLI，但以「插件化运行时」为核心——一切功能皆插件，支持 DeepSeek 及第三方模型。官网 `deepseek.com/harness`。是国产厂商中少见的**本体开源**编码 Agent（区别于 DeepSeek 模型本身的开源玩法，这是工程工具层的开源）。
+- **数据来源**：GitHub API（`deepseek-ai/deepseek-harness`）、官网 `deepseek.com/harness`
+
+> 补充说明：上述工具中 **Grok Build、OpenCode、OpenClaw、Hermes、DeepSeek Harness** 本体开源，属于新一代高速迭代的开源 Agent；**Pi** 本体闭源但社区生态开放。发版时间随项目高速演进，请以各官方 changelog 为准。
 
 ---
 
