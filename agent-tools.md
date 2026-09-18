@@ -38,6 +38,7 @@
 | OpenClaw | [OpenClaw](https://github.com/openclaw/openclaw) | 通用 Agent（agent OS 型） | ✅ 开源 (TypeScript) | 基于 ODIN/Claw 演进 | 2025年11月 | 2026年9月18日 | 跨 OS/平台运行时 / 可扩硬件 |
 | Pi | Pi（[pi.dev](https://pi.dev)） | 终端编码 Agent | ❌ 闭源（社区生态开源） | — | 2026年 | 2026年9月 | CLI / CI/CD 集成 / Neovim |
 | 深度求索 | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 终端编码 Agent / Agent 运行时 | ✅ TypeScript 开源 (MIT) | — | 2026年8月 | 2026年9月17日 | CLI / 插件运行时 |
+| AtomGit / AtomCode | [AtomCode](https://github.com/atomgit-atomcode/atomcode) | 终端编码 Agent | ✅ Rust 开源 (MIT) | — | 2026年4月 | 2026年9月18日 | TUI / Web UI / App 远程 / Headless / Daemon |
 | 月之暗面等（OpenManus） | [OpenManus](https://github.com/OpenManus/OpenManus) | 通用 Agent | ✅ Python 开源 (Apache-2.0) | 灵感源自 Manus | 2025年3月 | 2025年5月 | CLI |
 | Anthropic | [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-typescript) | Agent 框架 | ✅ 开源 (极简许可证) | — | 2025年6月 | 2026年9月 | Python/TS 库 |
 | OpenAI | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Agent 框架 | ✅ Python 开源 (MIT) | — | 2025年3月 | 2026年9月17日 (v0.22.3) | Python 库 |
@@ -341,7 +342,17 @@
 - **说明**：DeepSeek 官方推出的开源 Agent 工具链，对标 Claude Code / Codex CLI，但以「插件化运行时」为核心——一切功能皆插件，支持 DeepSeek 及第三方模型。官网 `deepseek.com/harness`。是国产厂商中少见的**本体开源**编码 Agent（区别于 DeepSeek 模型本身的开源玩法，这是工程工具层的开源）。
 - **数据来源**：GitHub API（`deepseek-ai/deepseek-harness`）、官网 `deepseek.com/harness`
 
-> 补充说明：上述工具中 **Grok Build、OpenCode、OpenClaw、Hermes、DeepSeek Harness** 本体开源，属于新一代高速迭代的开源 Agent；**Pi** 本体闭源但社区生态开放。发版时间随项目高速演进，请以各官方 changelog 为准。
+### AtomCode — AtomGit / AtomCode 团队
+- **厂商**：AtomGit（中国，AtomCode 团队维护）
+- **开源**：✅ **Rust 开源（MIT）**、仓库 <https://github.com/atomgit-atomcode/atomcode>　⭐195
+- **基于某开源工具修改**：否（自研；完全由 AI 生成的开源项目，人类仅担任产品决策者）
+- **最早发版/创建**：2026年4月18日（GitHub 创建时间）
+- **最近发版/更新**：2026年9月18日（活跃；最新提交同步 v5.1.0）
+- **形态**：**终端 TUI（Rust 原生）**、**Web UI**（本地浏览器界面，`/webui`）、**App 远程访问**（移动端 QR 码连接，反向 WSS 隧道）、**Headless / Daemon 模式**（HTTP API + SSE）、**Plan / Build / Goal / Review / Background** 多模式
+- **说明**：号称「Open-source terminal AI coding agent written in Rust」，定位 Claude Code / Codex 的开源替代品。核心特性：多提供商支持（Claude、OpenAI、DeepSeek、GLM、Qwen、Ollama 等任意 OpenAI 兼容 API）、验证闭环（语法检查自动修复）、Loop 检测、多层 JSON 修复、转级日志、技能系统、权限模型（敏感路径/破坏性命令需确认）、撤销回滚。人类不写代码、仅做决策的「AI 写代码」实验项目。
+- **数据来源**：GitHub API（`atomgit-atomcode/atomcode`）、GitHub raw README、AtomGit 官网
+
+> 补充说明：上述工具中 **Grok Build、OpenCode、OpenClaw、Hermes、DeepSeek Harness、AtomCode** 本体开源，属于新一代高速迭代的开源 Agent；**Pi** 本体闭源但社区生态开放。发版时间随项目高速演进，请以各官方 changelog 为准.
 
 ---
 
