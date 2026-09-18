@@ -502,6 +502,18 @@
 - **说明**：AutoClaw 是一个超轻量、面向 Docker/无头并发场景的开源 AI agent，被 `agent-skill-manager` 等国产工具生态归入「国内 AI Agent 产品」之列；因其轻量可并行，常用于接入小红书/自动流程等场景。归属与产品边界较为社区化，信息有限。
 - **数据来源**：GitHub 搜索（`tsingliuwin/autoclaw`、`autoclaw-cc/xiaohongshu-skills` 等）
 
+### CodeArts Snap — 华为云
+- **厂商**：华为云（华为，中国，深圳）
+- **开源**：❌ 闭源（华为云服务闭源；无官方开源仓库）
+- **基于某开源工具修改**：否（自研，基于盘古大模型 + 华为 CodeArts 研发平台）
+- **最早发版/创建**：2023年（CodeArts Snap 随华为云 CodeArts 推出）
+- **最近发版/更新**：2026年（持续迭代）
+- **形态**：
+  - **IDE 插件** — 华为云 CodeArts 智能编程助手（代码生成、补全、单元测试、注释、调优）
+  - **CodeArts 研发平台** — 与华为云 DevOps 深度集成
+- **说明**：华为云面向开发者的 AI 编程助手，与盘古代码大模型 + CodeArts 研发工具链绑定；区别于终端 agent，是**云 DevOps + IDE 插件**形态的国内编码助手。官方产品页 `huaweicloud.com/product/codearts-snap.html`（已实测可达）。
+- **数据来源**：`huaweicloud.com/product/codearts-snap.html`
+
 ### 国产工具横向对照
 
 | 厂商 | 工具 | 是否开源 | 基于开源工具 | 最早 | 最近 | 形态 |
@@ -519,6 +531,7 @@
 | 百度 | DuMate（杜搭子） | ❌ | 否 | 2026年 | 2026年 | 桌面 Agent / Web / Skills |
 | 智谱 AI | ZCode（Z.AI Coding） | ❌ | 否 | 2026年 | 2026年9月 | CLI / IDE 插件 / Coding Plan |
 | MiniMax | MiniMax Code | ❌ | 否 | 2025-2026年 | 2026年 | IDE Coding Agent / Agent 小队 |
+| 华为云 | CodeArts Snap | ❌ | 否 | 2023年 | 2026年 | IDE 插件 / 云 DevOps |
 | 开源社区 | AutoClaw | ✅ | 部分基于 Claude Code 生态 | 2025-2026年 | 2026年 | Docker / 无头并发 agent |
 
 ---
