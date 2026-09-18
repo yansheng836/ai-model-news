@@ -8,12 +8,12 @@
 
 | 厂商 | 工具 | 类型 | 是否开源 | 基于某开源工具修改 | 最早发版/创建 | 最近发版/更新 | 形态 |
 |------|------|------|:------:|:------:|------|------|------|
-| Anthropic | Claude Code | 编码 Agent | ❌ 闭源（SDK 开源） | — | 2025年 | 2026年9月（v2.1.x） | CLI / IDE / 桌面 / Web / 移动 / Chrome 扩展 |
-| OpenAI | Codex | 编码 Agent | ✅ Rust 开源 (Apache-2.0) | — | 2025年4月 | 2026年9月18日 | CLI / Web / 桌面 / Work |
-| Google | Gemini CLI | 终端 Agent | ✅ TypeScript 开源 (Apache-2.0) | — | 2025年4月 | 2026年9月18日 | CLI |
+| Anthropic | [Claude Code](https://github.com/anthropics/claude-code) | 编码 Agent | ❌ 闭源（SDK 开源） | — | 2025年 | 2026年9月（v2.1.x） | CLI / IDE / 桌面 / Web / 移动 / Chrome 扩展 |
+| OpenAI | [Codex](https://github.com/openai/codex) | 编码 Agent | ✅ Rust 开源 (Apache-2.0) | — | 2025年4月 | 2026年9月18日 | CLI / Web / 桌面 / Work |
+| Google | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | 终端 Agent | ✅ TypeScript 开源 (Apache-2.0) | — | 2025年4月 | 2026年9月18日 | CLI |
 | Google | Jules | 编码 Agent（异步云） | ❌ 闭源 | — | 2025年5月 | 2026年 | Web |
-| Google | ADK (Agent Dev Kit) | Agent 框架 | ✅ Python 开源 (Apache-2.0) | — | 2025年4月 | 2026年9月15日 (v2.9.1) | Python 库 |
-| Microsoft | AutoGen | Agent 框架 | ✅ Python 开源 (CC-BY-4.0) | — | 2023年8月 | 2026年9月 | Python 库 |
+| Google | [ADK (Agent Dev Kit)](https://github.com/google/adk-python) | Agent 框架 | ✅ Python 开源 (Apache-2.0) | — | 2025年4月 | 2026年9月15日 (v2.9.1) | Python 库 |
+| Microsoft | [AutoGen](https://github.com/microsoft/autogen) | Agent 框架 | ✅ Python 开源 (CC-BY-4.0) | — | 2023年8月 | 2026年9月 | Python 库 |
 | Microsoft/GitHub | GitHub Copilot | 编码 Agent | ❌ 闭源 | — | 2021年6月 | 2026年 | IDE / CLI / Web |
 | Anysphere | Cursor | 编码 IDE Agent | ❌ 闭源 | 基于 VSCode 二次开发 | 2024年3月 | 2026年9月 | 桌面 IDE / CLI / 移动 |
 | Cognition | Devin | 通用软件工程师 Agent | ❌ 闭源 | — | 2024年3月12日 | 2026年 | Web / CLI / Desktop |
@@ -23,25 +23,30 @@
 | Vercel | v0 | 前端生成 Agent | ❌ 闭源 | — | 2025年 | 2026年 | Web |
 | Lovable | Lovable | 无代码 Web 应用生成 | ❌ 闭源 | — | 2024年 | 2026年 | Web |
 | Replit | Replit Agent | 无代码应用生成 | ❌ 闭源 | — | 2024年 | 2026年 | Web |
-| Paul Gauthier | Aider | 终端编码 Agent | ✅ Python 开源 (Apache-2.0) | — | 2023年5月 | 2026年5月 (v0.86) | CLI |
-| Cline 团队 | Cline | 编码 IDE Agent | ✅ TypeScript 开源 (Apache-2.0) | — | 2024年7月 | 2026年9月18日 | IDE / CLI / SDK / 桌面 |
-| RooCodeInc | Roo-Code | 编码 IDE Agent | ✅ TypeScript 开源 (Apache-2.0) | 分叉自 Cline | 2024年10月 | 已归档（2026年5月最后发布 v3.54） | IDE |
-| Block (Square) | Goose | 终端 Agent | ✅ Rust 开源 (Apache-2.0) | — | 2024年8月 | 2026年9月17日 (v1.51) | CLI / 桌面 |
-| All Hands AI | OpenHands | 自研编码 Agent | ✅ TypeScript 开源 (MIT) | — | 2024年3月 | 2026年9月17日 (v1.20) | CLI / Web |
-| StackBlitz | Bolt.diy | 全栈应用生成 | ✅ TypeScript 开源 (MIT) | ✅ Fork 自 Bolt.new 社区版 | 2024年10月 | 2025年5月 (v1.0) | Web |
-| Significant Gravitas | AutoGPT | 通用 Agent | ✅ Python 开源 (MIT) | — | 2023年3月 | 2026年（活跃） | CLI |
-| stitionai | Devika | 通用 Agent | ✅ Python 开源 | — | 2024年3月 | 2025年9月（停更） | CLI |
-| 月之暗面等（OpenManus） | OpenManus | 通用 Agent | ✅ Python 开源 (Apache-2.0) | 灵感源自 Manus | 2025年3月 | 2025年5月 | CLI |
-| Anthropic | Claude Agent SDK | Agent 框架 | ✅ 开源 (极简许可证) | — | 2025年6月 | 2026年9月 | Python/TS 库 |
-| OpenAI | OpenAI Agents SDK | Agent 框架 | ✅ Python 开源 (MIT) | — | 2025年3月 | 2026年9月17日 (v0.22.3) | Python 库 |
-| LangChain | LangGraph / LangChain | Agent 框架 | ✅ Python 开源 (MIT) | — | 2022-2023年 | 2026年9月 | Python/TS 库 |
-| CrewAI | CrewAI | Agent 框架 | ✅ Python 开源 (MIT) | — | 2023年10月 | 2026年9月16日 | Python 库 + 平台 |
-| DeepWisdom | MetaGPT | 多 Agent 框架 | ✅ Python 开源 (MIT) | — | 2023年6月 | 2026年2月 | Python 库 |
-| CAMEL-AI | CAMEL | 多 Agent 框架 | ✅ Python 开源 (Apache-2.0) | — | 2023年3月 | 2026年9月 | Python 库 |
-| Agno | Agno | Agent 框架 | ✅ Python 开源 (Apache-2.0) | — | 2022年5月 | 2026年9月16日 (v3.0.10) | Python 库 |
-| Letta | Letta (MemGPT) | 有状态 Agent 平台 | ✅ Python 开源 (Apache-2.0) | — | 2023年10月 | 2026年5月 | 平台 / Docker |
-| Langgenius | Dify | Agent 可视化编排平台 | ✅ TypeScript 开源 | — | 2023年4月 | 2026年9月10日 (v1.17.1) | 自托管 / Web |
-| Langflow | Langflow | 低代码 Agent / 工作流 | ✅ Python 开源 (MIT) | — | 2023年2月 | 2026年9月16日 (v1.12.2) | 自托管 / Web |
+| Paul Gauthier | [Aider](https://github.com/paul-gauthier/aider) | 终端编码 Agent | ✅ Python 开源 (Apache-2.0) | — | 2023年5月 | 2026年5月 (v0.86) | CLI |
+| Cline 团队 | [Cline](https://github.com/cline/cline) | 编码 IDE Agent | ✅ TypeScript 开源 (Apache-2.0) | — | 2024年7月 | 2026年9月18日 | IDE / CLI / SDK / 桌面 |
+| RooCodeInc | [Roo-Code](https://github.com/RooCodeInc/Roo-Code) | 编码 IDE Agent | ✅ TypeScript 开源 (Apache-2.0) | 分叉自 Cline | 2024年10月 | 已归档（2026年5月最后发布 v3.54） | IDE |
+| Block (Square) | [Goose](https://github.com/block/goose) | 终端 Agent | ✅ Rust 开源 (Apache-2.0) | — | 2024年8月 | 2026年9月17日 (v1.51) | CLI / 桌面 |
+| All Hands AI | [OpenHands](https://github.com/All-Hands-AI/OpenHands) | 自研编码 Agent | ✅ TypeScript 开源 (MIT) | — | 2024年3月 | 2026年9月17日 (v1.20) | CLI / Web |
+| StackBlitz | [Bolt.diy](https://github.com/stackblitz-labs/bolt.diy) | 全栈应用生成 | ✅ TypeScript 开源 (MIT) | ✅ Fork 自 Bolt.new 社区版 | 2024年10月 | 2025年5月 (v1.0) | Web |
+| Significant Gravitas | [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | 通用 Agent | ✅ Python 开源 (MIT) | — | 2023年3月 | 2026年（活跃） | CLI |
+| stitionai | [Devika](https://github.com/stitionai/devika) | 通用 Agent | ✅ Python 开源 | — | 2024年3月 | 2025年9月（停更） | CLI |
+| xAI | [Grok Build](https://github.com/xai-org/grok-build) | 终端编码 Agent | ✅ Rust 开源 (Apache-2.0) | — | 2026年7月 | 2026年9月17日 | CLI / TUI |
+| SST | [OpenCode](https://github.com/sst/opencode) | 终端编码 Agent | ✅ 开源 (TypeScript) | — | 2025年 | 2026年9月 | CLI（TUI） |
+| Nous Research | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 通用/编码 Agent | ✅ 开源 | — | 2025-2026年 | 2026年 | CLI / 生态插件 |
+| OpenClaw | [OpenClaw](https://github.com/openclaw/openclaw) | 通用 Agent（agent OS 型） | ✅ 开源 (TypeScript) | 基于 ODIN/Claw 演进 | 2025年11月 | 2026年9月18日 | 跨 OS/平台运行时 / 可扩硬件 |
+| Pi | Pi（[pi.dev](https://pi.dev)） | 终端编码 Agent | ❌ 闭源（社区生态开源） | — | 2026年 | 2026年9月 | CLI / CI/CD 集成 / Neovim |
+| 月之暗面等（OpenManus） | [OpenManus](https://github.com/OpenManus/OpenManus) | 通用 Agent | ✅ Python 开源 (Apache-2.0) | 灵感源自 Manus | 2025年3月 | 2025年5月 | CLI |
+| Anthropic | [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-typescript) | Agent 框架 | ✅ 开源 (极简许可证) | — | 2025年6月 | 2026年9月 | Python/TS 库 |
+| OpenAI | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Agent 框架 | ✅ Python 开源 (MIT) | — | 2025年3月 | 2026年9月17日 (v0.22.3) | Python 库 |
+| LangChain | [LangGraph / LangChain](https://github.com/langchain-ai/langgraph) | Agent 框架 | ✅ Python 开源 (MIT) | — | 2022-2023年 | 2026年9月 | Python/TS 库 |
+| CrewAI | [CrewAI](https://github.com/crewAIInc/crewAI) | Agent 框架 | ✅ Python 开源 (MIT) | — | 2023年10月 | 2026年9月16日 | Python 库 + 平台 |
+| DeepWisdom | [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | 多 Agent 框架 | ✅ Python 开源 (MIT) | — | 2023年6月 | 2026年2月 | Python 库 |
+| CAMEL-AI | [CAMEL](https://github.com/camel-ai/camel) | 多 Agent 框架 | ✅ Python 开源 (Apache-2.0) | — | 2023年3月 | 2026年9月 | Python 库 |
+| Agno | [Agno](https://github.com/agno-agi/agno) | Agent 框架 | ✅ Python 开源 (Apache-2.0) | — | 2022年5月 | 2026年9月16日 (v3.0.10) | Python 库 |
+| Letta | [Letta (MemGPT)](https://github.com/Letta-ai/letta) | 有状态 Agent 平台 | ✅ Python 开源 (Apache-2.0) | — | 2023年10月 | 2026年5月 | 平台 / Docker |
+| Langgenius | [Dify](https://github.com/langgenius/dify) | Agent 可视化编排平台 | ✅ TypeScript 开源 | — | 2023年4月 | 2026年9月10日 (v1.17.1) | 自托管 / Web |
+| Langflow | [Langflow](https://github.com/langflow-ai/langflow) | 低代码 Agent / 工作流 | ✅ Python 开源 (MIT) | — | 2023年2月 | 2026年9月16日 (v1.12.2) | 自托管 / Web |
 
 ---
 
@@ -58,7 +63,8 @@
 
 ### Codex — OpenAI
 - **厂商**：OpenAI（美国，由 Sam Altman 等创立）
-- **开源**：✅ **本体开源**（Rust，Apache-2.0），仓库 `openai/codex`，⭐12.5万
+- **开源**：✅ **本体开源**（Rust，Apache-2.0）
+- **仓库**：<https://github.com/openai/codex>　⭐12.5万
 - **基于某开源工具修改**：否
 - **最早发版/创建**：2025年4月13日（GitHub 创建时间）
 - **最近发版/更新**：2026年9月18日（最新 push；发布 tag 至 v0.156.0-alpha 系列）
@@ -67,7 +73,8 @@
 
 ### Gemini CLI — Google
 - **厂商**：Google（美国）
-- **开源**：✅ TypeScript 开源（Apache-2.0），仓库 `google-gemini/gemini-cli`，⭐10.7万
+- **开源**：✅ TypeScript 开源（Apache-2.0）
+- **仓库**：<https://github.com/google-gemini/gemini-cli>　⭐10.7万
 - **最早发版/创建**：2025年4月17日
 - **最近发版/更新**：2026年9月18日（nightly 构建 v0.62.0-nightly）
 - **形态**：命令行 CLI；支持 MCP client/server、多模型（Gemini 系列 + 其他）
@@ -87,7 +94,8 @@
 
 ### Aider — Paul Gauthier（个人/开源）
 - **厂商**：个人开发者 Paul Gauthier（加拿大）
-- **开源**：✅ Python 开源（Apache-2.0），仓库 `paul-gauthier/aider`，⭐4.9万
+- **开源**：✅ Python 开源（Apache-2.0）
+- **仓库**：<https://github.com/paul-gauthier/aider>　⭐4.9万
 - **最早发版/创建**：2023年5月9日（最早的终端编码 Agent 之一）
 - **最近发版/更新**：2026年5月（v0.86.0）
 - **形态**：单文件 CLI
@@ -95,7 +103,8 @@
 
 ### Cline — Cline 团队
 - **厂商**：开源社区 + Cline 商业团队（美国）
-- **开源**：✅ TypeScript 开源（Apache-2.0），⭐6.9万
+- **开源**：✅ TypeScript 开源（Apache-2.0）
+- **仓库**：<https://github.com/cline/cline>　⭐6.9万
 - **最早发版/创建**：2024年7月6日
 - **最近发版/更新**：2026年9月18日（desktop-v0.0.32 等）
 - **形态**：**IDE 扩展（VSCode 为主）、CLI、SDK、桌面应用**
@@ -103,7 +112,8 @@
 
 ### Roo-Code — RooCode Inc
 - **厂商**：开源（社区维护商业化）
-- **开源**：✅ TypeScript 开源（Apache-2.0），⭐2.4万
+- **开源**：✅ TypeScript 开源（Apache-2.0）
+- **仓库**：<https://github.com/RooCodeInc/Roo-Code>　⭐2.4万
 - **基于某开源工具修改**：✅ **分叉自 Cline**（原有独立维护，定位于「整个 AI 开发团队」的多角色模式）
 - **最早发版/创建**：2024年10月31日
 - **最近发版/更新**：已 **归档（archived）**，最后发布 v3.54.0（2026年5月15日）；仓库 archived=true
@@ -111,7 +121,8 @@
 
 ### Goose — Block（Square）
 - **厂商**：Block, Inc.（美国，Jack Dorsey 创立的支付公司）
-- **开源**：✅ Rust 开源（Apache-2.0），⭐5.4万
+- **开源**：✅ Rust 开源（Apache-2.0）
+- **仓库**：<https://github.com/block/goose>　⭐5.4万
 - **最早发版/创建**：2024年8月23日
 - **最近发版/更新**：2026年9月17日（v1.51.0）
 - **形态**：CLI + 桌面
@@ -119,7 +130,8 @@
 
 ### OpenHands — All Hands AI
 - **厂商**：开源 + All Hands AI 公司（前 OpenDevin 项目）
-- **开源**：✅ TypeScript 开源（MIT，核心含 CLI），⭐5.5万（仓库含建模历史）
+- **开源**：✅ TypeScript 开源（MIT，核心含 CLI）
+- **仓库**：<https://github.com/All-Hands-AI/OpenHands>　⭐5.5万（含建模历史）
 
 > 注：上估计星数为仓库元数据，实际以 GitHub 页面为准。
 
@@ -130,7 +142,8 @@
 
 ### AutoGPT — Significant Gravitas
 - **厂商**：开源社区（Significant Gravitas）
-- **开源**：✅ Python 开源（MIT），仓库原 `Significant-Gravitas/AutoGPT`（⭐18.7万，已迁移到平台化仓库）
+- **开源**：✅ Python 开源（MIT）
+- **仓库**：<https://github.com/Significant-Gravitas/AutoGPT>　⭐18.7万（已迁移到平台化仓库）
 - **最早发版/创建**：2023年3月16日（早期 agent 爆款，GPT-4 自主 agent 的代表）
 - **最近发版/更新**：2026年仍旧活跃
 - **形态**：CLI / 平台
@@ -138,14 +151,16 @@
 
 ### Devika — stitionai
 - **厂商**：独立开源项目（巴基斯坦开发者）
-- **开源**：✅ Python 开源，仓库 `stitionai/devika`，⭐2万
+- **开源**：✅ Python 开源
+- **仓库**：<https://github.com/stitionai/devika>　⭐2万
 - **最早发版/创建**：2024年3月21日（对标 Devin 的开源实现）
 - **最近发版/更新**：2025年9月后基本停更
 - **说明**：Devin 的开源替代尝试，热度高峰后维护放缓。
 
 ### Bolt.diy — StackBlitz 社区版
 - **厂商**：StackBlitz（美国）+ 社区维护
-- **开源**：✅ TypeScript 开源（MIT），`stackblitz-labs/bolt.diy`，⭐2万
+- **开源**：✅ TypeScript 开源（MIT）
+- **仓库**：<https://github.com/stackblitz-labs/bolt.diy>　⭐2万
 - **基于某开源工具修改**：✅ **Fork 自官方 Bolt.new**（原官方源码移除/闭源后，社区 fork 出 bolt.diy 支持任意 LLM）
 - **最早发版/创建**：2024年10月13日
 - **最近发版/更新**：2025年5月（v1.0.0）
@@ -233,25 +248,83 @@
 
 | 框架 | 厂商 | 语言 | License | GitHub 创建 | 最近更新 | 定位 |
 |------|------|------|---------|-----------|---------|------|
-| Claude Agent SDK | Anthropic | Python / TS | 开源（极简许可） | 2025年6月 | 2026年9月 | 构建基于 Claude 的编码/通用 agent（支持 sandbox、subagent、hook）。Claude Code 底层 |
-| OpenAI Agents SDK | OpenAI | Python / TS | MIT | 2025年3月 | 2026年9月 (v0.22.3) | 多 Agent 工作流轻量框架 |
-| ADK (Agent Development Kit) | Google | Python | Apache-2.0 | 2025年4月1日 | 2026年9月15日 (v2.9.1) | 构建/评估/部署 agent，可绑定 Gemini |
-| AutoGen | Microsoft | Python | CC-BY-4.0 | 2023年8月18日 | 2026年9月 | 多 Agent 对话编排框架（最早火的项目） |
-| CrewAI | CrewAI Inc | Python | MIT | 2023年10月27日 | 2026年9月16日 (1.15.22) | 「角色扮演团队」协作式多 Agent 框架 |
-| MetaGPT | DeepWisdom | Python | MIT | 2023年6月30日 | 2026年2月 | 多 Agent 软件开发流程（产品/架构/编码角色） |
-| LangGraph / LangChain | LangChain Inc | Python / TS | MIT | 2023年8月 (LangGraph) | 2026年9月 | 图状态机的 agent 编排，企业级，生态最大 |
-| CAMEL | CAMEL-AI | Python | Apache-2.0 | 2023年3月17日 | 2026年9月 | 多 Agent 协作研究框架 |
-| Agno | Agno | Python | Apache-2.0 | 2022年5月4日 | 2026年9月16日 (v3.0.10) | 构建/托管 Agent 平台的库 |
-| Letta (MemGPT) | Letta Inc | Python | Apache-2.0 | 2023年10月11日 | 2026年5月 | 有状态、可长期记忆的 Agent 平台 |
-| Dify | Langgenius | TypeScript | 开源（商业条款） | 2023年4月12日 | 2026年9月10日 (v1.17.1) | 可视化 Agent/RAG 工作流平台，可自托管 |
-| Langflow | Langflow | Python | MIT | 2023年2月8日 | 2026年9月16日 (v1.12.2) | 拖拽式低代码 Agent / 工作流 |
-| OpenManus | OpenManus 社区 | Python | Apache-2.0 | 2025年3月6日 | 2025年5月 | Manus 的轻量开源实现（通用 Agent） |
+| [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-typescript) | Anthropic | Python / TS | 开源（极简许可） | 2025年6月 | 2026年9月 | 构建基于 Claude 的编码/通用 agent（支持 sandbox、subagent、hook）。Claude Code 底层 |
+| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | OpenAI | Python / TS | MIT | 2025年3月 | 2026年9月 (v0.22.3) | 多 Agent 工作流轻量框架 |
+| [ADK (Agent Development Kit)](https://github.com/google/adk-python) | Google | Python | Apache-2.0 | 2025年4月1日 | 2026年9月15日 (v2.9.1) | 构建/评估/部署 agent，可绑定 Gemini |
+| [AutoGen](https://github.com/microsoft/autogen) | Microsoft | Python | CC-BY-4.0 | 2023年8月18日 | 2026年9月 | 多 Agent 对话编排框架（最早火的项目） |
+| [CrewAI](https://github.com/crewAIInc/crewAI) | CrewAI Inc | Python | MIT | 2023年10月27日 | 2026年9月16日 (1.15.22) | 「角色扮演团队」协作式多 Agent 框架 |
+| [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | DeepWisdom | Python | MIT | 2023年6月30日 | 2026年2月 | 多 Agent 软件开发流程（产品/架构/编码角色） |
+| [LangGraph / LangChain](https://github.com/langchain-ai/langgraph) | LangChain Inc | Python / TS | MIT | 2023年8月 (LangGraph) | 2026年9月 | 图状态机的 agent 编排，企业级，生态最大 |
+| [CAMEL](https://github.com/camel-ai/camel) | CAMEL-AI | Python | Apache-2.0 | 2023年3月17日 | 2026年9月 | 多 Agent 协作研究框架 |
+| [Agno](https://github.com/agno-agi/agno) | Agno | Python | Apache-2.0 | 2022年5月4日 | 2026年9月16日 (v3.0.10) | 构建/托管 Agent 平台的库 |
+| [Letta (MemGPT)](https://github.com/Letta-ai/letta) | Letta Inc | Python | Apache-2.0 | 2023年10月11日 | 2026年5月 | 有状态、可长期记忆的 Agent 平台 |
+| [Dify](https://github.com/langgenius/dify) | Langgenius | TypeScript | 开源（商业条款） | 2023年4月12日 | 2026年9月10日 (v1.17.1) | 可视化 Agent/RAG 工作流平台，可自托管 |
+| [Langflow](https://github.com/langflow-ai/langflow) | Langflow | Python | MIT | 2023年2月8日 | 2026年9月16日 (v1.12.2) | 拖拽式低代码 Agent / 工作流 |
+| [OpenManus](https://github.com/OpenManus/OpenManus) | OpenManus 社区 | Python | Apache-2.0 | 2025年3月6日 | 2025年5月 | Manus 的轻量开源实现（通用 Agent） |
 
 ---
 
-## 五、国产 Agent 工具补充
+## 五、新兴开源 CLI / 通用 Agent 补充
 
-> 以下三家为国内主流编码/通用 Agent 工具，均为闭源商业产品；因官方开源数据有限，未列入上方主表，单独列出以便对照。抓取日期 **2026年9月19日**。
+> 以下是 2025-2026 年快速冒头、但未收入前文主表的新一代 Agent 工具。多为开源 CLI 或软硬件一体项目，发版节奏快，数据抓取于 **2026年9月19日**。
+
+### Pi — pi.dev（终端编码 Agent）
+- **厂商**：Pi（`pi.dev`，独立团队；社区称之为「Pi Coding Agent」）
+- **开源**：❌ 本体闭源（官方 GitHub 无开源仓库；但有大量社区扩展/集成项目，如 `shaftoe/pi-coding-agent-action`、`zgs225/pi2.nvim`、`Firstp1ck/pi-coding-agent-forge`）
+- **基于某开源工具修改**：否（自研）
+- **最早发版/创建**：2026年（pi.dev 推出）
+- **最近发版/更新**：2026年9月（活跃，社区扩展持续更新）
+- **形态**：终端 CLI；可通过 GitHub Action 接入 CI/CD、Neovim 插件（pi2.nvim）在编辑器内使用
+- **说明**：新一代终端编码 Agent 之一；社区生态已有 `awesome-pi-coding-agent` 资源目录、Docker 容器、GitHub Action 等，说明其已成为可深度集成的开发工具。非其它工具的 fork。
+- **数据来源**：GitHub 搜索结果（`pi.dev` 相关社区项目）
+
+### Grok Build（grok build）— xAI
+- **厂商**：xAI（美国，由 Elon Musk 创立）
+- **开源**：✅ **Rust 开源（Apache-2.0）**、仓库 <https://github.com/xai-org/grok-build>　⭐2.6万+；另有官方插件 <https://github.com/xai-org/grok-build-plugin-cc>（Claude Code 委托代理插件）
+- **基于某开源工具修改**：否（自研；但与 Claude Code 可通过官方插件联动，Claude Code 插件可将审查/救援任务委托给 Grok Build）
+- **最早发版/创建**：2026年7月14日
+- **最近发版/更新**：2026年9月17日（活跃）
+- **形态**：终端 TUI（全屏、鼠标交互、可扩展）+ CLI；社区有桌面 GUI（`phuryn/grok-build-vscode`）、模型切换器（`1parado/grok-build-switch`）等衍生
+- **说明**：xAI 打造的编码 Agent 工具链（官方描述为「SpaceXAI's coding agent harness and TUI」），对标 Claude Code / Codex，基于 Grok 模型；本体开源是其区别于 Codex/Claude Code 闭源主干的显著特点。
+- **数据来源**：GitHub API（`xai-org/grok-build`、`xai-org/grok-build-plugin-cc`）
+
+### OpenCode — SST
+- **厂商**：SST（美国，`opencode.ai`；SST 团队负责维护）
+- **开源**：✅ **开源**（TypeScript 为主）、仓库 <https://github.com/sst/opencode>，是新一代终端编码 Agent 的代表
+- **基于某开源工具修改**：否（自研）
+- **最早发版/创建**：2025年（opencode 公开）
+- **最近发版/更新**：2026年9月（活跃；被 `farion1231/cc-switch` 等跨端管理工具收录）
+- **形态**：终端 CLI（TUI），多模型接入、MCP 插件、子代理/微代理架构
+- **说明**：与 Claude Code、Codex、OpenClaw 等并列的新一代开源终端 Agent；社区生态成熟（MCP 服务器、多 Agent 协作插件 `opencode-plugin-coding-agent-arena` 等）。同名的 `network-tocoder/OpenCode-...` 等社区指南本质上都在介绍此工具。
+- **数据来源**：GitHub 搜索结果（sst/opencode 相关）、`opencode.ai`
+
+### OpenClaw — OpenClaw（原 ODIN）
+- **厂商**：OpenClaw（全球开源社区项目）
+- **开源**：✅ **开源**、仓库 <https://github.com/openclaw/openclaw>　⭐约39万（含社区 fork 助推）；License 为 NOASSERTION/自定义
+- **基于某开源工具修改**：基于早期 **ODIN（open source Claude OS）/ "Claw"** 概念演进而来；定位「为任何语言模型构建的应用运行时/agent OS」
+- **最早发版/创建**：2025年11月24日（openclaw 仓库创建）
+- **最近发版/更新**：2026年9月18日（极活跃；社区 `awesome-openclaw-skills` 收录 5400+ skills）
+- **形态**：**任何操作系统 / 任何平台**的 agent 运行时（软硬件无关），支持通过 USB 扩硬件（host devices）、多 agent 编排
+- **说明**：社区热度极高的开源「agent 操作系统」，口号「The AI that really does things. Any OS. Any Platform.（龙虾方式 🦞）」。非商业闭源工具，是当前快速生长的开放 agent 运行时代表；与编码类 agent 不同，定位更接近可操控真实设备/系统的通用 agent 平台。
+- **数据来源**：GitHub API（`openclaw/openclaw`）、`awesome-openclaw-skills` 等社区项目
+
+### Hermes Agent — Nous Research
+- **厂商**：Nous Research（美国，开源研究实验室）
+- **开源**：✅ **开源**、仓库 <https://github.com/NousResearch/hermes-agent>；另有自进化扩展 <https://github.com/NousResearch/hermes-agent-self-evolution>
+- **基于某开源工具修改**：否（自研；基于 Nous 自研 Hermes 模型家族）
+- **最早发版/创建**：2025-2026年（Hermes 模型家族 2023 年起，Hermes Agent 形态近年推出）
+- **最近发版/更新**：2026年（`hermes-agent-self-evolution` 2026年6月更新）
+- **形态**：终端 Agent（可对接 Claude Code / Desktop 等；社区已有 ACP 后端插件、Claude Code skill 捆绑包）
+- **说明**：Nous Research 的开源通用/编码 Agent；与 Hermes 开源模型（Hermes 4 等）配套。社区涌现 `mvdbastos/hermes-acp-agents`（ACP agent 后端插件）、`Lazio-Partners/hermes-skill`（Claude Code skill）等衍生，说明其正接入 MCP/ACP 生态。
+- **数据来源**：GitHub 搜索结果（NousResearch hermes-agent 相关）、Nous Research 官方
+
+> 补充说明：上述工具中 **Grok Build、OpenCode、OpenClaw、Hermes** 本体开源，属于新一代高速迭代的开源 Agent；**Pi** 本体闭源但社区生态开放。发版时间随项目高速演进，请以各官方 changelog 为准。
+
+---
+
+## 六、国产 Agent 工具补充
+
+> 以下为国内主流的编码/通用 Agent 工具，多为闭源商业产品（部分本体或工具链开源）；因官方开源数据有限，未列入上方主表，单独列出以便对照。抓取日期 **2026年9月19日**。
 
 ### Kimi（Kimi for Coding / Kimi CLI）— 月之暗面
 - **厂商**：月之暗面（Moonshot AI，中国，北京，杨植麟创立）
@@ -293,6 +366,32 @@
 - **说明**：腾讯云推出的智能编码助手，深度绑定腾讯云生态；官方页面为 JS 动态渲染，详细版本号与形态信息有限，以官方 `codebuddy.tencent.com` 为准。
 - **数据来源**：`codebuddy.tencent.com`（产品官网，JS 渲染，文本信息有限）
 
+### ZCode（Z.AI Coding）— 智谱 AI / Z.AI
+- **厂商**：智谱 AI / Z.AI（中国，北京，Z.ai 为智谱海外品牌）
+- **开源**：❌ 闭源（ZCode CLI/客户端闭源；底层调用 GLM-5.3 / GLM-5.3-Flash / GLM-5.2 等智谱自研模型）
+- **基于某开源工具修改**：否（自研；部分社区生态已有 JetBrains 插件、ACP 适配器等衍生）
+- **最早发版/创建**：2026 年（Z.AI Coding Plan 推出）
+- **最近发版/更新**：2026年9月（活跃迭代；社区有 `zcode-jetbrains-plugin`、`zcode-acp` 等适配项目）
+- **形态**：
+  - **ZCode CLI** — 终端编码 Agent（对标 Claude Code / Codex CLI，可通过 OAuth 登录调用 GLM 系列）
+  - **JetBrains 插件 / VS Code 插件** — IDE 集成（多标签对话、流式输出、任务/子代理可视化）
+  - **GLM Coding Plan** — 与 ZCode 绑定的智谱编程套餐（含配额、活动领取）
+- **说明**：智谱以 GLM 模型为底座推出的编程 Agent 形态，ZCode CLI 是国产 CLI 编码 Agent 的代表之一；社区围绕其衍生出 ACP 适配器（可在 IDEA/VS Code 中驱动 GLM-5.3）、多账号代理等工具。
+- **数据来源**：GitHub 搜索（`csuftt/zcode-jetbrains-plugin`、`william0wang/zcode-acp` 等社区项目揭示 ZCode 与 GLM 系列的绑定关系）、Z.AI 官方文档
+
+### 腾讯 WorkBuddy — 腾讯（CSIG）
+- **厂商**：腾讯 CSIG（云与智慧产业事业群，中国，深圳）
+- **开源**：❌ 闭源（服务闭源；GitHub 上无官方开源仓库，仅有第三方代理/插件项目）
+- **基于某开源工具修改**：否（自研；与 CodeBuddy 并列为腾讯两条编码 Agent 产品线）
+- **最早发版/创建**：2026年（WorkBuddy 公测）
+- **最近发版/更新**：2026年9月（活跃；社区有 `workbuddy2api`、`workbuddy-switch` 等代理项目）
+- **形态**：
+  - **WorkBuddy CLI / 桌面 App** — 编码 Agent（含任务中心、积分体系）
+  - **Web 任务中心** — 云端任务调度与积分管理
+  - 与 **CodeBuddy** 形成「编码助手 + 工作助手」双产品线
+- **说明**：腾讯 2026 年新推出的工作/编码 Agent，采用积分制与任务中心模式；与 CodeBuddy 并行定位。社区已出现 OpenAI 兼容反向代理（`workbuddy2api`）、账号切换桌面 App（`workbuddy-switch`，Tauri 实现）等衍生工具。
+- **数据来源**：GitHub 搜索（`Sliverkiss/workbuddy2api`、`changexbc/workbuddy-switch`、`AlephAITech/WorkBuddyGuide` 等社区项目）
+
 ### 国产工具横向对照
 
 | 厂商 | 工具 | 是否开源 | 基于开源工具 | 最早 | 最近 | 形态 |
@@ -300,10 +399,12 @@
 | 月之暗面 | Kimi（Code/Work/Claw） | ❌ | 否 | 2023年10月（Kimi）/ 2025年（编程形态） | 2026年（K3） | CLI / 桌面 / Web / 移动 / Computer Use |
 | 阿里巴巴 | 通义灵码（Lingma） | ❌ | 否（IDE 自研） | 2023年（通义）/ 2024年（灵码） | 2026年（Lingma IDE 公测） | IDE 插件 / 独立 IDE / 编程智能体 |
 | 腾讯 | CodeBuddy | ❌ | 否 | 2024年 | 2026年 | IDE 插件 / 云端助手 |
+| 腾讯 | WorkBuddy | ❌ | 否 | 2026年 | 2026年9月 | CLI / 桌面 / Web 任务中心 |
+| 智谱 AI | ZCode（Z.AI Coding） | ❌ | 否 | 2026年 | 2026年9月 | CLI / IDE 插件 / Coding Plan |
 
 ---
 
-## 六、常见关系梳理 FAQ
+## 七、常见关系梳理 FAQ
 
 ### Q1：哪些是「根据某开源工具修改 / fork」的？
 - **Roo-Code** ✅ 分叉自 **Cline**
@@ -326,7 +427,13 @@ Anthropic **Claude Code** 覆盖最全：**终端 CLI、IDE 插件（VSCode/JetB
 - **OpenAI Cline 生态、Gemini、Cursor CLI**（Cursor 也提供独立 CLI agent）
 - **MCP（Model Context Protocol，Anthropic 开源）**：agent 工具互通标准，几乎被上述工具普遍采用
 - **ACP（Agent Client Protocol，Cognition 基于 MCP 扩展）**：Devin 生态的 agent 协作协议
-- 国产工具（**Kimi Code/Work/Claw**、**通义灵码**、**腾讯 CodeBuddy**）详见上方「**五、国产 Agent 工具补充**」一节。
+- 国产工具（**Kimi Code/Work/Claw**、**通义灵码**、**腾讯 CodeBuddy / WorkBuddy**、**智谱 ZCode**）详见上方「**六、国产 Agent 工具补充**」一节。
+- 新一代高速迭代的开源工具（**Grok Build**、**OpenCode**、**OpenClaw**、**Hermes Agent**、**Pi**）详见「**五、新兴开源 CLI / 通用 Agent 补充**」一节。
+
+### Q5：「是否基于某开源工具修改」为什么有的标「—」、有的标「是」？
+- 标「—」表示**原创/非 fork**、且无法确认基于现有开源产品二次开发（如 Claude Code、Codex agent、Gemini CLI、Aider 等均为各自团队的原创实现）。
+- 标「是」的分为两类：**代码 fork**（Roo-Code 之于 Cline、Bolt.diy 之于 Bolt.new），与 **IDE 二次开发**（Cursor/Windsurf/Trae 基于 VSCode）。
+- 部分仅受他人启发的项目（如 OpenClaw 之于 ODIN、OpenManus 之于 Manus）在「说明」中注明灵感来源，不算严格 fork。
 
 ---
 
