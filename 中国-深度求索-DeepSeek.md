@@ -20,7 +20,7 @@
 |------|----------|----------|----------|----------|----------|----------|
 | DeepSeek-V4.1-Flash 🆕 | 2026年9月（OpenRouter 上线2026年9月10日） | 🌐🧠 多模态（支持图像理解）+推理 | 官方未公开 | 未公开 | 1M（384K输出） | V4 Flash新一代版本，全面超越V4 Pro（性能/费用/速度），支持思考/非思考切换，JSON Output/Tool Calls/Responses API |
 | DeepSeek-V4-Flash-0731 | 2026年7月31日 | 📝 纯文本 | 158B MoE | 13B | 1M（384K输出） | V4 Flash 0731版本快照，⚠️ 2026年9月已退役（路由至V4.1-Flash） |
-| DeepSeek-V4-Pro-0813 🆕 | 2026年8月12日 | 📝 纯文本 | 862B MoE | 未公开 | 1M（384K输出） | V4 Pro 0813 GA版本，⚠️ 2026年9月14日12:00（北京时间）起已退役，请求路由至V4.1-Flash；OpenRouter Pro 家族 `~deepseek/deepseek-pro-latest` 别名始终指向 Pro 家族最新模型 |
+| DeepSeek-V4-Pro-0813 🆕 | 2026年8月12日 | 📝 纯文本 | 862B MoE | 未公开 | 1M（384K输出） | V4 Pro 0813 GA版本；DeepSeek 于 2026年9月10日公告：应广大用户需求，2026年9月14日之后继续提供 V4 Pro API 服务（计费方式不变，原退役并路由至 V4.1-Flash 的计划已撤销）；OpenRouter Pro 家族 `~deepseek/deepseek-pro-latest` 别名始终指向 Pro 家族最新模型 |
 | DeepSeek Coder V1 | 2024年1月 | 💻 代码 | 未公开 | 未公开 | 16K | 首个代码模型 |
 | DeepSeek Coder V2 | 2024年6月 | 💻📝 代码+文本 | 236B MoE | 21B | 128K | 代码专用模型 |
 | DeepSeek LLM 67B | 2024年1月5日 | 📝 纯文本 | 67B | 67B | 4K | 首个开源模型 |
@@ -95,7 +95,7 @@ V3的重大升级版本，685B参数MoE架构。2025年12月发布，包含标�
 
 最新一代模型家族：
 - **DeepSeek-V4.1-Flash**（2026年9月，OpenRouter 上线2026年9月10日）：V4 Flash 系列的新一代版本，全面超越 V4 Pro（性能、费用、速度、总用时）。支持图像理解，支持思考/非思考切换（默认思考）。上下文1M，最大输出384K。支持 JSON Output、Tool Calls、Responses API、Anthropic API、前缀续写（Beta）、FIM（Beta）。参数规模官方未披露。OpenRouter 模型 ID 为 `deepseek/deepseek-v4.1-flash`
-- **DeepSeek-V4-Pro**：862B参数MoE架构旗舰模型，最强能力。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中3.00元/M tokens，输出6.00元/M tokens。后续推出 **DeepSeek-V4-Pro-0813**（2026年8月12日）GA版本，OpenRouter 模型 ID 为 `deepseek/deepseek-v4-pro-0813`；⚠️ 2026年9月14日起已退役，请求路由至 V4.1-Flash。OpenRouter Pro 家族的 `~deepseek/deepseek-pro-latest` 别名始终指向 Pro 家族最新模型
+- **DeepSeek-V4-Pro**：862B参数MoE架构旗舰模型，最强能力。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中3.00元/M tokens，输出6.00元/M tokens。后续推出 **DeepSeek-V4-Pro-0813**（2026年8月12日）GA版本，OpenRouter 模型 ID 为 `deepseek/deepseek-v4-pro-0813`。DeepSeek 于 2026年9月10日公告：应广大用户需求，2026年9月14日之后继续提供 V4 Pro 的 API 调用服务，计费方式保持不变（原计划的退役并路由至 V4.1-Flash 已撤销），API 定价页当前仍列有 `deepseek-v4-pro`。OpenRouter Pro 家族的 `~deepseek/deepseek-pro-latest` 别名始终指向 Pro 家族最新模型
 - **DeepSeek-V4-Flash**：158B参数MoE架构，高性能低成本。上下文1M，最大输出384K。定价：缓存命中0.02元/M tokens，缓存未命中1.00元/M tokens，输出2.00元/M tokens。后续推出 **DeepSeek-V4-Flash-0731**（2026年7月31日）版本快照，OpenRouter 模型 ID 为 `deepseek/deepseek-v4-flash-0731`
 - **DeepSeek-V4-Pro-Base**：1.6T参数MoE基座模型
 - **DeepSeek-V4-Flash-Base**：292B参数MoE基座模型
@@ -107,7 +107,7 @@ V3的重大升级版本，685B参数MoE架构。2025年12月发布，包含标�
 - 弃用后，`deepseek-reasoner` 对应 `deepseek-v4-flash` 的思考模式
 - 建议用户尽快迁移到新的模型名称
 - **deepseek-v4-flash** 与 **deepseek-v4-flash-vision-exp** 已退役（下线）：旧模型名仍可调用，但请求实际由 **DeepSeek-V4.1-Flash** 提供服务，按 Flash 价格计费
-- **deepseek-v4-pro（V4-Pro-0813）已于 2026年9月14日 12:00（北京时间）完成退役**：退役后请求路由至 DeepSeek-V4.1-Flash，按 V4.1 Flash 价格计费；OpenRouter 的 Pro 家族 `~deepseek/deepseek-pro-latest` 别名始终指向 Pro 家族最新模型
+- **deepseek-v4-pro（V4-Pro-0813）未退役**：DeepSeek 于 2026年9月10日公告，应广大用户需求，2026年9月14日之后继续提供 DeepSeek V4 Pro 的 API 调用服务，计费方式保持不变（原计划的退役并路由至 V4.1-Flash 已撤销）；当前 API 定价页仍列有 `deepseek-v4-pro`（DeepSeek-V4-Pro-0813）；OpenRouter 的 Pro 家族 `~deepseek/deepseek-pro-latest` 别名始终指向 Pro 家族最新模型
 
 ### DeepSeek-OCR系列
 

@@ -69,6 +69,7 @@
 | Lyria 3 Pro | 2026年（Preview） | 🎵 音乐生成 | — | — | 全长歌曲生成 |
 | Lyria RealTime | 2026年（Experimental） | 🎵 音乐生成 | — | — | 实时流式音乐生成 |
 | Nano Banana 2 | 2026年 | 🖼️ 文生图 | — | — | 基于Gemini 3.1 Flash，高速图像生成 |
+| Nano Banana 2.1 🆕 | 2026年10月6日 | 🖼️ 文生图 | 未公开 | 65K | Flash层级高效图像生成与编辑，改进视觉质量/排版/多轮一致性，$1.5/$7.5 MTok |
 | Nano Banana Pro | 2026年 | 🖼️ 文生图 | — | — | 基于Gemini 3 Pro，高质量图像生成 |
 | Nano Banana（2.5 Flash Image） | 2025年 | 🖼️ 文生图 | — | — | 基于Gemini 2.5 Flash，快速创意图像 |
 | PaLM 2 | 2023年5月 | 📝 纯文本 | 未公开 | 8K | 上一代基础模型 |
@@ -123,6 +124,7 @@ Google的"思维模型"（Thinking Model），内置推理能力，可在回答�
 Google在图像生成领域推出多个品牌：
 - **Nano Banana 2 Lite**（Gemini 3.1 Flash Lite Image）：最快最经济的文生图，$0.25/$1.5 per 1M
 - **Nano Banana 2**（Gemini 3.1 Flash Image）：基于3.1 Flash的图像生成/编辑，强调速度
+- **Nano Banana 2.1**（gemini-nano-banana-2.1，2026年10月6日）：Flash层级高效图像生成与编辑模型，接替Nano Banana 2和Nano Banana Pro，改进产品重新语境化、视觉质量、排版和多轮一致性，65K上下文，$1.5/$7.5 MTok
 - **Nano Banana Pro**（Gemini 3 Pro Image）：基于Gemini Pro的图像生成，强调质量和上下文
 - **Imagen 4**：文生图模型（已弃用）
 
@@ -165,6 +167,7 @@ Google的开源模型系列，基于Gemini技术。Gemma 3首次在开源模型�
 | Gemini 3.1 Flash Lite | $0.25 | $1.50 | 1M |
 | Gemini 3.1 Flash Lite Image（Nano Banana 2 Lite） | $0.25 | $1.50 | 65K |
 | Gemini 3.1 Flash Image（Nano Banana 2） | $0.50 | $3 | 131K |
+| Nano Banana 2.1 | $1.5 | $7.5 | 65K |
 | Gemini 3.1 Pro Preview | $2 | $12 | 1M |
 | Gemini 3.5 Flash Lite | $0.30 | $2.50 | 1M |
 | Gemini 3.5 Flash | $1.50 | $9 | 1M |

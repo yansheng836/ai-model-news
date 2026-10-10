@@ -23,6 +23,7 @@
 | LongCat-Flash-Thinking-2601 | 2026年1月20日 | 📝🧠💻 | 未公开 | 未公开 | 未公开 | 工具调用能力登顶开源SOTA，"重思考"模式 |
 | LongCat-Next | 2026年4月2日 | 🌐👁️🎤🖼️ | 68.5B（基于Flash-Lite MoE） | 3B | 未公开 | 原生多模态（视觉+语音+文本），DiNA架构，全开源 |
 | LongCat-2.0 | 2026年6月30日 | 📝🧠💻 | 1.6T | 平均48B（动态33B~56B） | 1M | 万亿参数MoE，五万卡国产算力训练，MOPD架构，开源 |
+| LongCat-DeepResearch 🆕 | 2026年9月28日 | 🧠💻 | 未公开（增强版LongCat-2.0） | 未公开 | 未公开 | 深度研究智能体系统，多智能体工作流，DeepResearchBench得分领先，开源研究框架 |
 
 > **注**：LongCat-2.0 预览版在正式发布前已通过 OpenRouter 平台和 longcat.ai 面向全球开发者开放调用，曾跻身 OpenRouter 全球大模型调用量前三。
 
@@ -172,6 +173,33 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 
 - API 开放平台：<https://longcat.chat/platform/product>
 - 官网：<https://longcat.ai>
+
+### LongCat-DeepResearch 🆕（2026年9月28日技术报告 / 2026年2月11日产品上线）
+
+美团 LongCat 团队的原生"深度研究"（Deep Research）智能体系统，将增强版 LongCat 模型与多智能体工作流结合，用于生成全面、有证据支撑的研究报告。产品于 2026年2月11日 在 LongCat 网页免费上线；其 arXiv 技术报告（arXiv:2609.36071）于 2026年9月28日 提交，开源研究框架（harness）于 2026年10月初 在 GitHub 开放。
+
+**核心架构（三层智能体闭环）：**
+
+1. **探索与规划**：多个规划 Agent 检查问题与早期来源，由裁判合并提案、批评者识别缺口、修订者生成可执行的 ResearchSpec（研究规格）
+2. **分节调研**：独立的调研 Agent 在各自上下文中并行调研并撰写所负责的章节，同时保留完整规格
+3. **组装与编辑**：章节直接组装，全局编辑器识别归属与一致性问题，局部编辑器应用章节级修订，避免反复全文重写
+
+**基准测试成绩（完整系统对比，含原生工具与预算）：**
+
+| 评测集 | LongCat-DeepResearch | ChatGPT-DeepResearch | Claude-DeepResearch | Gemini-DeepResearch |
+|--------|---------------------|---------------------|--------------------|--------------------|
+| DeepResearchBench | 55.25 | 54.95 | 53.43 | 50.21 |
+| DeepResearchBench II | 51.35 | 47.16 | 48.18 | 46.72 |
+| ResearchRubrics | 79.83 | 74.21 | 72.91 | 64.92 |
+
+在三项评测中均为四个对比系统中综合总分最高；内部基准得分为 76.04。产品上线时用户盲测显示攻略"整体可用率"达 61.1%，优于 ChatGPT 的 42.8%。
+
+**开源与部署：**
+
+- GitHub（研究框架）：<https://github.com/meituan-longcat/LongCat-DeepResearch>
+- 技术报告：arXiv:2609.36071（<https://arxiv.org/abs/2609.36071>）
+- 官网体验：<https://longcat.ai>
+- 框架仅依赖 Python 标准库（Python 3.10+），用户需自行实现 llm、web_search、web_fetch 三个后端方法接入自有模型与工具服务
 
 ## 访问链接
 

@@ -214,6 +214,25 @@ process.stdin.on('end', () => {
 | **百川智能** | `https://platform.baichuan-ai.com/docs` | ✅ Verified | 平台文档，含M3Plus、医疗大模型 |
 | **科大讯飞星火** | `https://www.xfyun.cn/doc/spark/Web.html` | ✅ Verified | API文档，含Spark Ultra/Max/Pro/Lite完整信息、上下文长度、domain参数 |
 | **科大讯飞星火** | `https://xinghuo.xfyun.cn/sparkapi` | ⚠️ JS渲染 | 产品页，JS动态渲染无法抓取 |
+| **科大讯飞星火** | `https://training.xfyun.cn/modelSquare` | ✅ Verified（浏览器） | 星辰MaaS模型广场，含定价/更新时间（2026年10月核查可用） |
+| **OpenRouter详情页** | `https://openrouter.ai/{vendor}/{model-id}` | ✅ Verified | 单模型详情页HTML内嵌完整description JSON（API的description截断200字符，页面版完整），可获取RELEASED日期/模态/参数 |
+| **HuggingFace org API** | `https://huggingface.co/api/models?author={org}&sort=createdAt&direction=-1` | ✅ Verified | 比org网页准确，含createdAt/lastModified精确时间；WebFetch被拦时可用 |
+| **GitHub org API** | `https://api.github.com/orgs/{org}/repos?sort=created&direction=desc` | ✅ Verified | 仓库创建/推送时间，未被robots拦截 |
+| **MiniMax发版日志** | `https://platform.minimaxi.com/docs/release-notes/models.md` | ✅ Verified | 精确发版日期（M2.7:2026-03-18、M3:2026-06-01、H3:2026-07-31） |
+| **MiniMax文档索引** | `https://platform.minimaxi.com/docs/llms.txt` | ✅ Verified | 完整文档索引，含.md直链 |
+| **智谱AI GLM定价** | `https://docs.z.ai/guides/overview/pricing.md` | ✅ Verified | 美元定价（GLM-5.3-FlashX $0.37/$1.25） |
+| **智谱AI Flash指南** | `https://docs.z.ai/guides/vlm/glm-5.3-flash.md` | ✅ Verified | Flash/FlashX共用文档，确认320B/18B、200 tokens/s |
+| **智谱BigModel定价** | `https://docs.bigmodel.cn/cn/guide/start/pricing.md` | ✅ Verified | 人民币定价，含GLM-5.3/Flash/FlashX（2元/7元） |
+| **Mistral官方博客** | `https://mistral.ai/news/` | ✅ Verified | 含精确发布日期（Large 4: 2026-10-06、OCR 4: 2026-06-23、Shieldstral: 2026-08-04） |
+| **腾讯TokenHub模型列表** | `https://cloud.tencent.com/document/product/1823/130051` | ✅ Verified | TokenHub收录Hy-Image-3.5-preview/Hy-ASR-3.0-Preview/HY-3D-3.1（无发布日） |
+| **腾讯TokenHub定价** | `https://cloud.tencent.com/document/product/1823/130055` | ✅ Verified | TokenHub模型价格页（2026-09-24更新） |
+| **字节火山方舟模型列表** | `https://www.volcengine.com/docs/82379` | ✅ Verified | SSR后含模型列表/公告导航（2026-10-09更新） |
+| **字节模型发布公告** | `https://www.volcengine.com/docs/82379/1159178` | ✅ Verified | 新模型发布公告，含精确日期（Seed-2.1: 260915即9月15日） |
+| **字节模型下线公告** | `https://www.volcengine.com/docs/82379/1350667` | ✅ Verified | 模型下线公告（第九/十批EOS时间表） |
+| **百度千帆模型列表** | `https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j` | ✅ Verified | 千帆模型列表（2026-10-08更新），含ERNIE 5.1旗舰信息 |
+| **百度千帆模型更新记录** | `https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp` | ✅ Verified | 模型更新记录（2026-09-16更新） |
+| **百度千帆退役机制** | `https://cloud.baidu.com/doc/qianfan/s/zmh4stou3` | ✅ Verified | 模型版本升级及退役机制（ERNIE全系退役时间表） |
+| **华为盘古（复核）** | `https://www.huaweicloud.com/product/pangu/nlp.html` | ❌ 混淆JS+EdgeOne | 2026年10月复核：raw HTML为混淆JS，浏览器被安全验证拦截，无法抓取 |
 
 ### 备用数据源（当官方文档不可用时）
 

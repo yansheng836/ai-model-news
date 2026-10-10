@@ -71,6 +71,13 @@
 | GPT-5.6 Luna Pro（gpt-5.6-luna-pro） | 2026年7月9日 | 🌐🧠 多模态+推理 | 未公开 | 1050K | Luna的Pro推理模式版本，$0.20/$1.20 MTok |
 | GPT-6 Astra（gpt-6-astra） | 2026年9月3日 | 🌐 多模态 | 未公开（厂商未公开） | 1050K | GPT-6系列首作，旗舰模型，长时程任务突出，$10/$50 MTok（>272K输入 $20/$75）；⚠️ 2026年9月11日起 OpenRouter 上线 `gpt-astra-latest` 路由别名 |
 | GPT-6 Astra Pro（gpt-6-astra-pro） | 2026年9月3日 | 🌐🧠 多模态+推理 | 未公开（厂商未公开） | 1050K（128K输出） | Astra的Pro推理模式版本（reasoning.mode=pro），$10/$50 MTok |
+| GPT-6 Luna（gpt-6-luna）🆕 | 2026年9月22日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开（厂商未公开） | 1050K（128K输出） | GPT-6系列高速低成本型号，高并发/低延迟场景，$0.10/$0.50 MTok（>272K输入 $0.20/$0.75） |
+| GPT-6 Luna Decisions（gpt-6-luna-decisions）🆕 | 2026年10月6日 | 🌐 多模态（结构化判定输出） | 未公开（厂商未公开） | 1050K | GPT-6 Luna 经 Decisions API 提供，不生成文本而返回类型化概率答案（noul/choice/score），输入 $0.10/MTok、输出不计费 |
+| GPT-6 Luna Pro（gpt-6-luna-pro）🆕 | 2026年9月22日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开（厂商未公开） | 1050K（128K输出） | Luna的Pro推理模式版本（reasoning.mode=pro），$0.10/$0.50 MTok |
+| GPT-6 Sol（gpt-6-sol）🆕 | 2026年9月22日 | 🌐🧠💻🖥️ 多模态+推理+代码+计算机操作 | 未公开（厂商未公开） | 1050K（128K输出） | GPT-6系列高性价比高端型号，Agent化编程/长时程软件工程，$2/$10 MTok（>272K输入 $4/$15） |
+| GPT-6 Sol Pro（gpt-6-sol-pro）🆕 | 2026年9月22日 | 🌐🧠💻🖥️ 多模态+推理+代码+计算机操作 | 未公开（厂商未公开） | 1050K（128K输出） | Sol的Pro推理模式版本（reasoning.mode=pro），$2/$10 MTok |
+| GPT-6.1 Sol（gpt-6.1-sol）🆕 | 2026年9月29日 | 🌐🧠💻🖥️ 多模态+推理+代码+计算机操作 | 未公开（厂商未公开） | 1050K（128K输出） | GPT-6 Sol升级版，事实错误更少、更遵守明确限制与用户意图，$2/$10 MTok（>272K输入 $4/$15） |
+| GPT-6.1 Sol Pro（gpt-6.1-sol-pro）🆕 | 2026年9月29日 | 🌐🧠💻🖥️ 多模态+推理+代码+计算机操作 | 未公开（厂商未公开） | 1050K（128K输出） | GPT-6.1 Sol的Pro推理模式版本（reasoning.mode=pro），$2/$10 MTok |
 | GPT-Audio-mini（gpt-audio-mini） | 2026年 | 🎤🌐 语音+多模态 | 未公开 | 128K | 语音交互轻量版 |
 | GPT-Audio（gpt-audio） | 2026年 | 🎤🌐 语音+多模态 | 未公开 | 128K | 语音交互模型 |
 | GPT-Chat-Latest（gpt-chat-latest） | 2026年 | 📝 纯文本 | 未公开 | 400K | 聊天优化版，$5/$30 MTok |
@@ -138,6 +145,14 @@ GPT-5系列标志着OpenAI进入新一代模型：
 - **GPT-5.6 Luna Pro**：Luna的推理增强版，同价$0.20/$1.20 MTok
 - **GPT-6 Astra（2026年9月3日）**：GPT-6系列首作，OpenAI新一代旗舰模型，面向高级分析、软件工程、深度研究、科学工作与文档创建，尤其在长时程（long-horizon）任务上突出。1050K上下文，128K最大输出，$10/$50 MTok（>272K输入 $20/$75）。⚠️ 2026年9月11日 OpenRouter 为 GPT-6 Astra/Sol/Terra/Luna 全家上线 `gpt-astra-latest`/`gpt-sol-latest`/`gpt-terra-latest`/`gpt-luna-latest` 路由别名（始终指向各自家族最新模型）
 - **GPT-6 Astra Pro（2026年9月3日）**：Astra的Pro推理模式版本（reasoning.mode=pro），同模型更高质量，1050K上下文，$10/$50 MTok
+- **GPT-6 Sol（2026年9月22日）** 🆕：GPT-6系列的高性价比高端型号，定位低于旗舰 Astra、高于高速型 Luna。面向专业工作、Agent化编程、业务流程自动化和 Computer Use，在真实代码库的长时程（long-horizon）软件工程任务上尤为突出；以远低于 Astra 的成本接近 Astra 级的事实可靠性，并沿用 Astra 更清晰简洁的技术沟通风格。精确模型ID `gpt-6-sol`（快照 `gpt-6-sol-20260922`），1050K上下文、128K最大输出，输入模态为文本/图像/文件、输出为文本；支持 reasoning（`reasoning_effort`/`reasoning.mode`）、工具调用、结构化输出、`response_format`、`seed`。定价 $2/$10 MTok（>272K输入 $4/$15，即长上下文附加费约2倍）
+- **GPT-6 Sol Pro（2026年9月22日）** 🆕：与 GPT-6 Sol 同一底层模型，以 `reasoning.mode=pro` 提供服务，复杂任务上质量更高但消耗更多推理预算。精确模型ID `gpt-6-sol-pro`（快照 `gpt-6-sol-pro-20260922`），1050K上下文、128K输出，$2/$10 MTok（>272K输入 $4/$15）
+- **GPT-6 Luna（2026年9月22日）** 🆕：GPT-6系列中高速、低成本的型号，定位低于 GPT-6 Sol。面向高并发、低延迟场景（聊天、分类、轻量Agent任务）；在较高推理强度下可承担此前需 Sol 级别模型的复杂软件工程与 Computer Use 任务，并继承 GPT-6 家族在事实可靠性和简洁表达上的改进。精确模型ID `gpt-6-luna`（快照 `gpt-6-luna-20260922`），1050K上下文、128K最大输出，$0.10/$0.50 MTok（>272K输入 $0.20/$0.75）
+- **GPT-6 Luna Pro（2026年9月22日）** 🆕：与 GPT-6 Luna 同一底层模型，以 `reasoning.mode=pro` 提供服务，复杂任务质量更高。精确模型ID `gpt-6-luna-pro`（快照 `gpt-6-luna-pro-20260922`），1050K上下文、128K输出，$0.10/$0.50 MTok
+- **GPT-6 Luna Decisions（2026年10月6日）** 🆕：GPT-6 Luna 通过 OpenAI **Decisions API** 提供，是一类专门的输出模式而非独立训练的模型。它不生成文本，而是读取以 `state` 传入的内容（文本、JSON 或图像），在单次请求中返回对具名问题的**类型化概率答案**：`noul`（是/否问题的"是"概率）、`choice`（每个选项的概率及最可能选项）、`score`（有序评分每一等级的概率及期望分）。面向分类、路由、内容审核和按评分标准打分等场景，由应用代码直接对返回数值取阈值，而无需解析聊天回复；单个请求最多可携带 200 个关于同一内容的问题。精确模型ID `gpt-6-luna-decisions`（快照 `gpt-6-luna-decisions-20261006`），1050K上下文，输入 $0.10/MTok、输出不计费（$0）
+- **GPT-6.1 Sol（2026年9月29日）** 🆕：GPT-6 Sol 的升级版，在 GPT-6 系列中定位仍低于旗舰 Astra。面向 Agent化编程、Computer Use、文档密集型专业工作和多步业务流程自动化，能以远低于 Astra 的成本接近 Astra 级结果；相比 GPT-6 Sol，事实性错误更少，且在Agent任务中更可靠地遵守明确限制和用户意图。精确模型ID `gpt-6.1-sol`（快照 `gpt-6.1-sol-20260929`），1050K上下文、128K最大输出，$2/$10 MTok（>272K输入 $4/$15）
+- **GPT-6.1 Sol Pro（2026年9月29日）** 🆕：与 GPT-6.1 Sol 同一底层模型，以 `reasoning.mode=pro` 提供服务。精确模型ID `gpt-6.1-sol-pro`（快照 `gpt-6.1-sol-pro-20260929`），1050K上下文、128K输出，$2/$10 MTok（>272K输入 $4/$15）
+- **GPT-6 家族层级说明**：GPT-6 系列沿用 GPT-5.6 的三档命名（Astra 旗舰 / Sol 高端高性价比 / Luna 高速低成本），首发为 Astra、Astra Pro（2026年9月3日），随后补齐 Sol、Luna 两档（2026年9月22日），并推出 GPT-6.1 Sol（2026年9月29日）作为 Sol 档的迭代。**GPT-6 Sol/Luna 是 GPT-6 家族的新成员，与 2026年7月9日发布的 GPT-5.6 Sol/Terra/Luna 是不同代际的独立模型，非同一模型的重命名或补充。** 截至 2026年10月10日，上述 GPT-6 系列模型的参数规模、知识截止时间均未公开
 - **GPT-5-pro**：GPT-5增强版，400K上下文，$15/$120 MTok
 - **GPT-5.1**：400K上下文，$1.25/$10 MTok
 - **GPT-5.1-chat**：128K上下文，聊天优化版，$1.25/$10 MTok
@@ -196,6 +211,11 @@ OpenAI在语音领域布局广泛：
 
 | 模型 | 输入价格 ($/MTok) | 输出价格 ($/MTok) | 上下文 |
 |------|-------------------|-------------------|--------|
+| GPT-6 Astra / Astra Pro | $10 | $50 | 1050K |
+| GPT-6.1 Sol / Sol Pro | $2 | $10 | 1050K |
+| GPT-6 Sol / Sol Pro | $2 | $10 | 1050K |
+| GPT-6 Luna / Luna Pro | $0.10 | $0.50 | 1050K |
+| GPT-6 Luna Decisions | $0.10 | 不计费（$0） | 1050K |
 | GPT-5.6 Sol / Sol Pro | $2 | $10 | 1050K |
 | GPT-5.6 Terra / Terra Pro | $2 | $12 | 1050K |
 | GPT-5.6 Luna / Luna Pro | $0.20 | $1.20 | 1050K |
@@ -223,3 +243,8 @@ OpenAI在语音领域布局广泛：
 | GPT-4.1 nano | $0.10 | $0.40 | 1M |
 | o1-pro | $150 | $600 | 200K |
 | GPT-Chat-Latest | $5 | $30 | 400K |
+
+> **长上下文附加费**：GPT-6 系列（Astra / Sol / GPT-6.1 Sol）在单次请求输入超过 272K tokens 时进入长上下文计费档，输入/输出单价上浮。例：GPT-6 Astra $20/$75、GPT-6 Sol 与 GPT-6.1 Sol $4/$15、GPT-6 Luna $0.20/$0.75（单位 $/MTok）。
+>
+> **未公开信息**：GPT-6 系列（含 Astra、Sol、Luna、GPT-6.1 Sol）的参数规模、激活参数、知识截止时间均未公开（厂商未公开）。以上模型均支持文本/图像/文件输入与文本输出，并支持工具调用、结构化输出与推理强度（`reasoning_effort`）配置。
+

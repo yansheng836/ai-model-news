@@ -6,7 +6,42 @@
 
 同时将所有厂家的大模型的发版时间整理到README.md文档中，一览无遗，需要包括公司所在国家、公司名、大模型名称、版本、发版时间。
 
-> ⚠️ **数据说明**：本项目数据截止至 **2026年9月19日**，通过OpenRouter API和官方文档更新。本次更新内容：新增 **快手 Kwaipilot 的 KAT / KwaiCoder 系列厂商条目**（KAT-Coder-Pro V2.5/V2、KAT-Coder-V2.5-Dev、KAT-Dev 32B/72B-Exp、KAT-V1-40B 等 Agentic 编程模型，256K/128K 上下文）与 **小红书 hi lab 的 dots 系列厂商条目**（dots.llm1 142B MoE/14B、dots.ocr 1.7B、dots.vlm1、dots.mocr、dots3-note-preview 280B MoE/16B/512K 等，开源）。此前已新增 **蚂蚁集团（Ant Group）inclusionAI 开源 Ling（百灵）系列大模型厂商条目**（Ling 1.x/2.0/2.5-1T/3.0，MIT许可MoE开源模型，1T旗舰/124B 3.0主模型）；新增 **智谱GLM-5.4（9月16日，开源旗舰，744B MoE/40B激活，MIT许可，SWE-Lancer 57.21% SOTA）**；DeepSeek V4-Pro-0813 已于2026年9月14日完成退役（请求路由至V4.1-Flash），并将DeepSeek V4.1-Flash标注OpenRouter上线日期（9月10日）；补充字节豆包遗漏模型（Seed-2.0-code、Seed-1.6系列、UI-TARS 1.5等）。此前（9月10日截止）已新增OpenAI GPT-6 Astra/Astra Pro（9月3日）、Claude Fable 5.1（8月31日）、Gemini 3.8 Flash（9月2日）、Meta Muse Spark 1.3（9月2日）、Qwen3.8-Max-0902（9月2日）/Qwen3.8-Flash（8月26日）、智谱GLM-5.3（8月18日）/GLM-5.3-Flash（8月26日）、腾讯混元HY4 Preview（8月28日）、DeepSeek V4.1-Flash（9月）、科大讯飞星火X2.5系列（9月4-7日）、SenseNova 6.8（公测期）等。自9月10日以来，OpenAI/Anthropic/Google/Meta/NVIDIA/xAI/Mistral/MiniMax、月之暗面、小米、华为、百川、讯飞、百度等厂商均无非路由别名的新模型发布，相关文件无实质更新。部分厂商数据可能仍有遗漏，欢迎补充更新。
+> ⚠️ **数据说明**：本项目数据截止至 **2026年10月10日**，通过OpenRouter API和官方文档更新。
+>
+> **本次更新（9月19日 → 10月10日）新增模型**：
+> - **Anthropic**：Claude Opus 5.5（9月22日，$4/$20）、Claude Sonnet 5.5（9月28日，$2/$10）、Claude Haiku 5.5（10月7日，$0.1/$0.5）、Claude Mythos 5.1（9月1日），均 1M 上下文 / 128K 输出
+> - **OpenAI**：GPT-6 Sol / Sol Pro 与 GPT-6 Luna / Luna Pro（均 9月22日，1050K）、GPT-6.1 Sol / Sol Pro（9月29日）、GPT-6 Luna Decisions（10月6日，Decisions API 决策输出，单请求最多200题）
+> - **xAI**：Grok-4.7（9月21日，500K，知识截止2026年5月）
+> - **Google**：Nano Banana 2.1（10月6日，65K，$1.5/$7.5）；Gemini 3.x 文本模型无更新
+> - **Mistral**：Mistral Large 4（10月6日，1M/256K输出，开放权重）、OCR 4.1（9月）、Shieldstral 1.0（8月4日，3B）、Leanstral 1.5（7月2日）
+> - **小米**：MiMo-V2.6 系列（9月21日，Pro/Flash/Pro-UltraSpeed + 开源RL权重，原生文本+图像+视频+音频四模态）
+> - **阶跃星辰**：Step 5 Preview（10月8日，600B/~27B MoE，1M）
+> - **蚂蚁集团**：Ling 3.1 Flash（10月2日，560B/25B MoE，免费）；补录遗漏的 Ling-2.6 系列（4月28-29日）
+> - **智谱AI**：GLM-5.3-Prime（9月23日，⚠️ 仅OpenRouter收录）、GLM-5.3-FlashX（9月18日，320B/18B，官方确认）
+> - **阿里通义千问**：Qwen3.8-Max-Prime（9月23日）、Qwen3.8-Omni-Flash（9月21日，首个Agent全模态推理模型）
+> - **商汤**：Looped-DiT-B16/B32（9月30日）、SenseNova-U1.5-8B-MoT（9月10日）
+> - **腾讯混元**：AuK / AuK-Flash（9月9日，1.5B开源语音生成与编辑）、HunyuanOCR-1.5（7月7日）、Hy-Image-3.5-preview / Hy-ASR-3.0-Preview / HY-3D-3.1（TokenHub收录，官方未公布日期）
+> - **字节豆包**：Doubao-Seed-2.1-pro / 2.1-lite（9月15日）、Seedream 5.0-pro（6月28日）/ 5.0-flash（9月15日）、Seedance 2.5（6月28日）
+> - **MiniMax**：MiniMax-M3.1-Flash-Preview（9月27日，1M）、H3（7月31日，33B全模态视频）、Music3（7月16日，2B）
+> - **美团**：LongCat-DeepResearch（技术报告9月28日提交）
+> - **百川智能**：M3Plus 日期补全为 1月22日（循证医疗大模型）
+>
+> **本次更正的重要错误**：
+> - DeepSeek-V4-Pro-0813 的"9月14日已完成退役"**有误** —— 官方9月10日更新日志声明撤销该退役计划，继续按原计费提供服务
+> - Claude Fable 5.1 发布日期 8月31日 → **9月1日**；Claude Sonnet 4.5 已弃用（11月30日退役）；Claude Opus 4.1 已退役
+> - Mistral OCR 4 发布日期 4月 → **6月23日**（已退役→OCR 4.1）；Mistral Saba 发布日期改为 2025年2月
+> - Doubao-Seed-2.1-turbo 发布日期 → **6月28日**（模型ID后缀260628）
+> - 蚂蚁 Ling 3.0 Flash 日期 7月（待确认）→ **7月23日**；多个 Ling 3.0 版本的上下文与定价错误已更正
+> - NVIDIA `nvidia/switchyard` 经核实为**开源模型路由器**（NeMo Switchyard）而非大模型，不计入模型目录
+> - Meta（Muse Spark 1.3 仍最新）、月之暗面（Kimi K3 仍最新）、DeepSeek（V4.1-Flash 仍最新）、讯飞星火、华为盘古、零一万物、快手KAT、小红书dots 经核查**无新模型发布**
+>
+> **经官方渠道确认的重大退役通知**：
+> - 百度千帆：ERNIE-X1.1 / X1.1-Preview 已于 **2026年9月29日退役**（替换 ERNIE 5.1）；ERNIE 3.5 / 4.0 / 4.5-Turbo / 5.0 全系预置服务将于 **2026年10月29日退役**（推荐替换 DeepSeek-V4.1-Flash）；千帆 v1 接口已于 8月31日下线
+> - 字节火山方舟：第九批模型已于 9月21日 EOS（Seed 1.6/1.6-flash、Doubao-1.5-lite/pro、Seedance 1.5-pro 直接关停）；第十批 EOM 2026-09-24 / EOS 2026-11-24（Seed 2.0 系列，迁移至 2.1-lite）；Seedream 4.0/4.5 迁移至 5.0-pro
+> - 腾讯：hy-image-v3.0 / hy-image-lite 于 9月15日停止调用；hy-video-1.5 于 9月21日停止调用
+> - xAI：grok-imagine-image-quality 将于 2026年11月2日退役
+>
+> 部分厂商数据可能仍有遗漏，欢迎补充更新。
 
 ## 问题
 
@@ -121,8 +156,36 @@
 
 | 国家 | 公司名 | 大模型名称 | 版本 | 功能属性 | 参数规模 | 上下文 | 发版时间 |
 |------|--------|-----------|------|----------|----------|--------|----------|
+| 中国 | 阶跃星辰 | Step | Step 5 Preview（stepfun/step-5-preview）🆕 | 🌐🧠💻 多模态+推理+代码 | 600B MoE/27B激活 | 1M（64K输出） | 2026年10月8日 |
+| 美国 | Anthropic | Claude | Claude Haiku 5.5（claude-haiku-5-5）🆕 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M（128K输出） | 2026年10月7日 |
+| 美国 | Google | Gemini | Nano Banana 2.1（gemini-nano-banana-2.1）🆕 | 🖼️ 文生图 | 未公开（厂商未公开） | 65K | 2026年10月6日 |
+| 法国 | Mistral AI | Mistral | Mistral Large 4（mistral-large-4-0）🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开（开放权重） | 1M（256K输出） | 2026年10月6日 |
+| 美国 | OpenAI | GPT | GPT-6 Luna Decisions（gpt-6-luna-decisions）🆕 | 🌐 多模态（输出为决策概率） | 未公开（厂商未公开） | 1050K | 2026年10月6日 |
+| 中国 | 蚂蚁集团 | Ling | Ling 3.1 Flash（inclusionai/ling-3.1-flash）🆕 | 📝🧠 文本+推理MoE | 560B MoE/25B激活 | 262K | 2026年10月2日 |
+| 中国 | 商汤科技 | 日日新 | Looped-DiT-B16 / B32 🆕 | 🖼️ 文生图 | 260M 去噪骨干 | 未公开 | 2026年9月30日 |
+| 美国 | OpenAI | GPT | GPT-6.1 Sol / Sol Pro（gpt-6.1-sol / gpt-6.1-sol-pro）🆕 | 🌐🧠💻🖥️ 多模态+推理+代码 | 未公开（厂商未公开） | 1050K（128K输出） | 2026年9月29日 |
+| 中国 | 美团 | LongCat | LongCat-DeepResearch 🆕 | 🧠💻 深度研究智能体 | 未公开 | 未公开 | 2026年9月28日（技术报告提交） |
+| 中国 | MiniMax | M系列 | MiniMax-M3.1-Flash-Preview 🆕 | 📝🌐💻 文本+多模态+代码 | 未公开 | 1M | 2026年9月27日 |
+| 中国 | 智谱AI | GLM | GLM-5.3-Prime（z-ai/glm-5.3-prime）🆕 | 🧠💻 推理+代码 | 未公开 | 1M（128K输出） | 2026年9月23日（⚠️ 仅OpenRouter收录，官方页未列出） |
+| 中国 | 阿里巴巴 | 通义千问 | Qwen3.8-Max-Prime（qwen3.8-max-prime）🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1M | 2026年9月23日 |
+| 美国 | Anthropic | Claude | Claude Opus 5.5（claude-opus-5-5）🆕 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M（128K输出） | 2026年9月22日 |
+| 美国 | OpenAI | GPT | GPT-6 Sol / Sol Pro（gpt-6-sol / gpt-6-sol-pro）🆕 | 🌐🧠💻🖥️ 多模态+推理+代码 | 未公开（厂商未公开） | 1050K（128K输出） | 2026年9月22日 |
+| 美国 | OpenAI | GPT | GPT-6 Luna / Luna Pro（gpt-6-luna / gpt-6-luna-pro）🆕 | 🌐🧠🖥️ 多模态+推理 | 未公开（厂商未公开） | 1050K（128K输出） | 2026年9月22日 |
+| 中国 | 阿里巴巴 | 通义千问 | Qwen3.8-Omni-Flash（qwen3.8-omni-flash）🆕 | 🌐🎤🧠 全模态+推理 | 未公开 | 1M | 2026年9月21日 |
+| 中国 | 小米 | MiMo | MiMo-V2.6-Pro（xiaomi/mimo-v2.6-pro）🆕 | 🌐🧠💻 多模态+推理+代码 | 1.02T MoE/42B激活 | 1M | 2026年9月21日 |
+| 中国 | 小米 | MiMo | MiMo-V2.6-Flash（xiaomi/mimo-v2.6-flash）🆕 | 🌐🧠💻 多模态+推理+代码 | 309B MoE/15B激活 | 1M | 2026年9月21日 |
+| 中国 | 小米 | MiMo | MiMo-V2.6-Pro-UltraSpeed（xiaomi/mimo-v2.6-pro-ultraspeed）🆕 | 🌐🧠💻 多模态+推理+代码 | 1T | 1M | 2026年9月21日 |
+| 美国 | xAI | Grok | Grok-4.7（grok-4.7）🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开（厂商未公开） | 500K | 2026年9月21日 |
+| 中国 | 智谱AI | GLM | GLM-5.3-FlashX（z-ai/glm-5.3-flashx）🆕 | 🌐🧠💻🖥️ 多模态+推理+代码 | 320B MoE/18B激活 | 1M（128K输出） | 2026年9月18日 |
 | 中国 | 智谱AI | GLM | GLM-5.4（zai/glm-5.4）🆕 | 🧠💻🖥️ 推理+代码+智能体 | 744B MoE/40B激活 | 1M | 2026年9月16日 |
+| 中国 | 字节跳动 | 豆包 | Doubao-Seed-2.1-pro（doubao-seed-2-1-pro-260915）🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1M | 2026年9月15日 |
+| 中国 | 字节跳动 | 豆包 | Doubao-Seed-2.1-lite（doubao-seed-2-1-lite-260915）🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1M | 2026年9月15日 |
+| 中国 | 字节跳动 | 豆包 | Seedream 5.0-flash（doubao-seedream-5-0-flash-260915）🆕 | 🖼️ 文生图 | — | — | 2026年9月15日 |
+| 中国 | 字节跳动 | 豆包 | Doubao-Seed-2.1-pro（doubao-seed-2-1-pro-260915）🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1M | 2026年9月15日 |
+| 法国 | Mistral AI | OCR | OCR 4.1（v4.1）🆕 | 👁️ 文档OCR | 未公开 | 未公开 | 2026年9月 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4.1-Flash（deepseek-v4.1-flash）🆕 | 🌐🧠 多模态（图像理解）+推理 | 官方未公开 | 1M（384K输出） | 2026年9月（OpenRouter上线9月10日） |
+| 中国 | 商汤科技 | 日日新 | SenseNova-U1.5-8B-MoT 🆕 | 🌐 多模态 | 18B MoE | 4K（原生） | 2026年9月10日（arXiv提交） |
+| 中国 | 腾讯 | 混元 | AuK / AuK-Flash 🆕 | 🎤 语音生成与编辑 | 1.5B | — | 2026年9月9日 |
 | 中国 | 科大讯飞 | 星火 | Spark-X2.5 🆕 | 📝🧠💻 文本+推理+代码 | 293B MoE/30B激活 | 256K | 2026年9月7日 |
 | 中国 | 科大讯飞 | 星火 | Spark-X2.5-4B 🆕 | 📝 纯文本 | 4B（Dense） | 1M | 2026年9月7日 |
 | 中国 | 科大讯飞 | 星火 | Spark-X2.5-1.7B 🆕 | 📝 纯文本 | 1.7B（Dense） | 1M | 2026年9月4日 |
@@ -132,7 +195,8 @@
 | 美国 | Google | Gemini | Gemini 3.8 Flash（gemini-3.8-flash）🆕 | 🌐👁️🎤 多模态 | 未公开（厂商未公开） | 1M | 2026年9月2日 |
 | 美国 | Meta | Muse | Muse Spark 1.3（muse-spark-1.3）🆕 | 🌐👁️🎤🧠 多模态推理 | 未公开 | 1M | 2026年9月2日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3.8-Max-0902（qwen3.8-max-0902）🆕 | 🌐🧠 多模态+推理 | 2.4T MoE/95B激活 | 1M | 2026年9月2日 |
-| 美国 | Anthropic | Claude | Claude Fable 5.1（claude-fable-5.1）🆕 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M | 2026年8月31日 |
+| 美国 | Anthropic | Claude | Claude Mythos 5.1（claude-mythos-5-1）🆕 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M（128K输出） | 2026年9月1日 |
+| 美国 | Anthropic | Claude | Claude Fable 5.1（claude-fable-5.1）🆕 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M（128K输出） | 2026年9月1日 |
 | 中国 | 腾讯 | 混元 | 混元 HY4 Preview（hy4-preview）🆕 | 📝💻🖥️ 文本+代码+工具调用 | 770B MoE/49B激活 | 1M | 2026年8月28日 |
 | 中国 | 智谱AI | GLM | GLM-5.3-Flash 🆕 | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 320B MoE/18B激活 | 1M | 2026年8月26日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3.8-Flash（qwen3.8-flash）🆕 | 🌐🧠💻🖥️ 多模态+推理+代码 | 未公开 | 1M | 2026年8月26日 |
@@ -140,24 +204,27 @@
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3.8-27B 🆕 | 👁️🌐 视觉+多模态 | 27B | 262K | 2026年8月14日 |
 | 美国 | Google | Gemini | Gemini 3.7 Flash 🆕 | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开（厂商未公开） | 1M | 2026年8月14日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3.8-2.4T-A95B 🆕 | 🌐🧠💻 多模态+推理+代码 | 2.4T MoE/95B激活 | 1M | 2026年8月13日 |
-| 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro-0813（deepseek-v4-pro-0813）🆕 | 📝 纯文本 | 862B MoE | 1M（384K输出） | 2026年8月12日（⚠️ 2026年9月14日已完成退役，路由至V4.1-Flash） |
+| 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Pro-0813（deepseek-v4-pro-0813）🆕 | 📝 纯文本 | 862B MoE | 1M（384K输出） | 2026年8月12日（⚠️ 9月14日退役计划已被官方撤回，继续提供服务） |
 | 美国 | xAI | Grok | Grok-4.6 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开（厂商未公开） | 500K | 2026年8月12日 |
 | 美国 | NVIDIA | Nemotron | Nemotron 3.5 Lightning 🆕 | 📝🧠 纯文本+推理 | 30B MoE/3B激活 | 1M | 2026年8月11日 |
 | 美国 | Meta | Muse | Muse Glimmer 30B 🆕 | 🌐 多模态 | 30B | 131K | 2026年8月10日 |
 | 中国 | 小红书 | dots | dots3-note-preview 🆕 | 📝🧠 文本+推理MoE | 280B MoE/16B激活 | 512K | 2026年8月9日 |
 | 美国 | Meta | Muse | Muse Spark 1.2 🆕 | 🌐📝👁️🎤 多模态推理 | 未公开 | 1M | 2026年8月6日 |
+| 法国 | Mistral AI | Mistral | Shieldstral 1.0 🆕 | 👁️📝 内容安全+文本 | 3B | 未公开 | 2026年8月4日 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3.8-Max 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1M | 2026年8月3日 |
+| 中国 | MiniMax | M系列 | MiniMax H3 🆕 | 🎬🌐 全模态视频 | 33B | — | 2026年7月31日 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V4-Flash-0731 🆕 | 📝 纯文本 | 158B MoE | 1M（384K输出） | 2026年7月31日 |
 | 美国 | Anthropic | Claude | Claude Opus 5（claude-opus-5）🆕 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M | 2026年7月24日 |
 | 美国 | Anthropic | Claude | Claude Opus 5 Fast（claude-opus-5-fast-20260723）🆕 | 🌐🖥️🧠 多模态+推理 | 未公开 | 1M（128K输出） | 2026年7月24日（⚠️ 2x定价版） |
 | 中国 | 快手 | KAT | KAT-Coder-V2.5-Dev 🆕 | 💻🧠 代码+推理MoE | MoE（开源版） | 256K | 2026年7月23日 |
 | 美国 | Anthropic | Claude | Claude Opus 5（claude-opus-5-20260723）🆕 | 🌐🖥️🧠 多模态+推理+代码 | 未公开（厂商未公开） | 1M（128K输出） | 2026年7月23日 |
+| 中国 | 蚂蚁集团 | Ling | Ling 3.0 Flash（inclusionai/ling-3.0-flash）🆕 | 📝 纯文本MoE | 124B MoE/5.1B激活 | 262K | 2026年7月23日 |
 | 美国 | Google | Gemini | Gemini 3.6 Flash 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1M | 2026年7月21日 |
 | 美国 | Google | Gemini | Gemini 3.5 Flash Lite 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1M | 2026年7月21日 |
+| 中国 | MiniMax | music | MiniMax-Music3 🆕 | 🎵 音乐生成 | 2B | — | 2026年7月16日 |
 | 中国 | 月之暗面 | Kimi | Kimi K3 🆕 | 🌐🧠💻 多模态+推理+代码 | 2.8T（开源权重） | 1M | 2026年7月16日 |
 | 美国 | Meta | Muse | Muse Spark 1.1 🆕 | 🌐📝👁️🎤 多模态推理 | 未公开 | 1M | 2026年7月16日 |
 | 美国 | Google | Gemini | Gemini 3.6 Flash 🆕 | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开（厂商未公开） | 1M | 2026年7月 |
-| 中国 | 蚂蚁集团 | Ling | Ling 3.0 Flash（inclusionai/ling-3.0-flash）🆕 | 📝 纯文本MoE | 124B MoE/5.1B激活 | 262K | 2026年7月（待确认） |
 | 美国 | Google | Gemini | Gemini 3.5 Flash Lite 🆕 | 🌐🧠 多模态+推理 | 未公开（厂商未公开） | 1M | 2026年7月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen 3.7 Flash 🆕 | 👁️🌐 视觉理解+多模态 | 未公开 | 1M | 2026年7月 |
 | 中国 | 快手 | KAT | KAT-Coder-Pro V2.5 🆕 | 💻🧠🖥️ 代码+推理+智能体 | 未公开（MoE） | 256K | 2026年7月10日 |
@@ -165,10 +232,16 @@
 | 美国 | OpenAI | GPT | GPT-5.6 Terra / Terra Pro 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 2026年7月9日 |
 | 美国 | OpenAI | GPT | GPT-5.6 Luna / Luna Pro 🆕 | 🌐🧠 多模态+推理 | 未公开 | 1050K | 2026年7月9日 |
 | 美国 | xAI | Grok | Grok-4.5 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开（厂商未公开） | 500K | 2026年7月8日 |
+| 中国 | 腾讯 | 混元 | HunyuanOCR-1.5 🆕 | 👁️ 文档OCR | 未公开 | 128K | 2026年7月7日 |
 | 中国 | 腾讯 | 混元 | HY3 🆕 | 🌐🧠💻 多模态+推理+代码 | 295B MoE/21B激活 | 262K | 2026年7月6日 |
+| 法国 | Mistral AI | Leanstral | Leanstral 1.5（labs-leanstral-1-5）🆕 | 📝 文本 | 未公开 | 未公开 | 2026年7月2日 |
 | 中国 | 美团 | LongCat | LongCat-2.0 🆕 | 📝🧠💻 文本+推理+代码 | 1.6T MoE/48B激活 | 1M（256K输出） | 2026年6月30日（⚠️ 2026年7月20日上线OpenRouter） |
 | 美国 | Anthropic | Claude | Claude Sonnet 5（claude-sonnet-5）🆕 | 🌐🖥️🧠 | 未公开 | 1M | 2026年6月30日 |
 | 美国 | Google | Gemini | Gemini 3.1 Flash Lite Image（Nano Banana 2 Lite）🆕 | 🖼️ | 未公开 | 65K | 2026年6月30日 |
+| 中国 | 字节跳动 | 豆包 | Seedance 2.5（doubao-seedance-2-5-260628）🆕 | 🎬 文生视频 | — | — | 2026年6月28日 |
+| 中国 | 字节跳动 | 豆包 | Seedream 5.0-pro（doubao-seedream-5-0-pro-260628）🆕 | 🖼️ 文生图 | — | — | 2026年6月28日 |
+| 中国 | 字节跳动 | 豆包 | Doubao-Seed-2.1-turbo（doubao-seed-2-1-turbo-260628） | 🌐🧠💻 多模态+推理+代码 | 未公开 | 未公开 | 2026年6月28日（模型ID后缀260628） |
+| 法国 | Mistral AI | OCR | OCR 4 | 👁️ | — | — | 2026年6月23日（⚠️ 2026年9月30日已退役，替代为OCR 4.1） |
 | 中国 | 智谱AI | GLM | GLM-5.2 | 📝 | 未公开 | 1M（128K输出） | 2026年6月16日 |
 | 中国 | 月之暗面 | Kimi | Kimi K2.7 Code HighSpeed | 💻🧠 | 未公开 | 256K | 2026年6月16日 |
 | 中国 | 月之暗面 | Kimi | Kimi K2.7 Code | 💻🧠 | 未公开 | 256K | 2026年6月16日 |
@@ -205,7 +278,9 @@
 | 中国 | MiniMax | Speech | Speech-2.8-HD | 🎤 | — | — | 2026年5月 |
 | 中国 | MiniMax | Speech | Speech-2.8-Turbo | 🎤 | — | — | 2026年5月 |
 | 中国 | 腾讯 | 混元 | Hy-MT2-30B-A3B | 📝 翻译 | 30B MoE/3B激活 | 4K | 2026年5月14日 |
+| 中国 | 蚂蚁集团 | Ling | Ling-2.6-1T（inclusionAI/Ling-2.6-1T）🆕 | 📝🧠 文本+推理MoE | 1T MoE | 262K | 2026年4月29日 |
 | 中国 | 腾讯 | 混元 | HY Image 3.0 Plus | 🖼️ | — | — | 2026年4月29日 |
+| 中国 | 蚂蚁集团 | Ling | Ling-2.6-flash（inclusionAI/Ling-2.6-flash）🆕 | 📝🧠 文本+推理MoE | 104B MoE/7.4B激活 | 262K | 2026年4月28日 |
 | 中国 | 小米 | MiMo | MiMo-V2.5-Pro | 📝🧠 | 1.02T MoE/42B激活 | 1M | 2026年4月27日 |
 | 中国 | 小米 | MiMo | MiMo-V2.5-Pro-Base | 📝 | 1.02T MoE | 256K | 2026年4月27日 |
 | 中国 | 小米 | MiMo | MiMo-V2.5-Base | 📝 | 310B MoE | 1M | 2026年4月27日 |
@@ -219,7 +294,6 @@
 | 美国 | NVIDIA | Nemotron | Nemotron 3 Nano Omni | 🌐🎤 | 未公开 | 1M | 2026年4月 |
 | 美国 | NVIDIA | Nemotron | Isaac GR00T N1.7 | 🤖 | 未公开 | 未公开 | 2026年4月 |
 | 法国 | Mistral AI | Mistral | Mistral Medium 3.5 | 🌐🧠💻🖥️ | 未公开 | 未公开 | 2026年4月 |
-| 法国 | Mistral AI | OCR | OCR 4 | 👁️ | — | — | 2026年4月 |
 | 美国 | Google | Gemini | Deep Research（Preview） | 🧠🌐 | 未公开 | 未公开 | 2026年4月 |
 | 美国 | Google | Gemini | Deep Research Max（Preview） | 🧠🌐 | — | — | 2026年4月 |
 | 美国 | Meta | Muse | Muse Spark | 🌐 | 未公开 | 未公开 | 2026年4月 |
@@ -289,6 +363,8 @@
 | 中国 | 百川智能 | Baichuan | Baichuan-M3-235B | 📝 | 235B | 32K | 2026年2月9日 |
 | 中国 | 智谱AI | GLM | GLM-OCR | 👁️ | 未公开 | — | 2026年2月3日 |
 | 中国 | 腾讯 | 混元 | HY Image 3.0 Instruct | 🖼️ | — | — | 2026年1月26日 |
+| 中国 | 百川智能 | Baichuan | M3Plus 🆕 | 📝 循证医疗 | 未公开 | 未公开 | 2026年1月22日 |
+| 中国 | 百川智能 | Baichuan | M3Plus | 📝 | 未公开 | 未公开 | 2026年1月22日 |
 | 中国 | 智谱AI | GLM | GLM-4.7-Flash | 📝 | 未公开 | 200K（128K输出） | 2026年1月19日 |
 | 美国 | OpenAI | GPT | GPT-5.1 / GPT-5.1-codex / GPT-5.1-codex-max | 🌐🧠🖥️ | 未公开 | 400K | 2026年1月 |
 | 美国 | NVIDIA | Nemotron | Cosmos Reason 2 | 🧠🤖 | 未公开 | 未公开 | 2026年1月 |
@@ -303,11 +379,12 @@
 | 中国 | 月之暗面 | Kimi | Kimi K2.5 | 📝🧠👁️ | 1T MoE/32B激活 | 256K | 2026年1月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-2B | 📝 纯文本 | 2B | 262K | 2026年1月 |
 | 中国 | 智谱AI | GLM | GLM-Image | 🖼️ | — | — | 2026年1月14日 |
+| 中国 | 腾讯 | 混元 | Hy-Image-3.5-preview（hy-image-v3.5-preview）🆕 | 🖼️ 文生图 | — | — | 2026年（TokenHub 2026-09-28收录，官方未公布日期） |
+| 中国 | 腾讯 | 混元 | Hy-ASR-3.0-Preview（hy-asr-3.0-preview）🆕 | 🎤 语音识别 | — | — | 2026年（TokenHub 2026-09-28收录，官方未公布日期） |
+| 中国 | 腾讯 | 混元 | HY-3D-3.1 🆕 | 🧊 3D生成 | — | — | 2026年（TokenHub 2026-09-28收录，官方未公布日期） |
 | 中国 | 商汤科技 | 日日新 | SenseNova 6.8 Flash-Lite 🆕 | 🌐 多模态智能体 | 未公开 | 未公开 | 2026年（公测期，日期未公布） |
 | 中国 | 商汤科技 | 日日新 | SenseNova 6.7 Flash-Lite | 🌐 智能体 | 未公开 | 未公开 | 2026年 |
 | 中国 | 商汤科技 | 日日新 | SenseNova U1 Fast | 🌐 多模态理解+生成 | 未公开 | 未公开 | 2026年 |
-| 中国 | 字节跳动 | 豆包 | Doubao-Seed-2.1-pro | 🌐🧠💻 | 未公开 | 未公开 | 2026年 |
-| 中国 | 字节跳动 | 豆包 | Doubao-Seed-2.1-turbo | 🌐🧠💻 | 未公开 | 未公开 | 2026年 |
 | 中国 | 字节跳动 | 豆包 | Doubao-Seed-Evolving | 🧠💻 | 未公开 | 未公开 | 2026年 |
 | 中国 | 字节跳动 | 豆包 | Doubao-Seed-Character | 📝 | 未公开 | 未公开 | 2026年 |
 | 中国 | 字节跳动 | 豆包 | Seedream 5.0-lite | 🖼️ | — | — | 2026年 |
@@ -706,5 +783,4 @@
 | 中国 | 华为 | 盘古 | 盘古大模型1.0 | 📝👁️ | 未公开 | — | 2021年4月 |
 | 美国 | OpenAI | GPT | GPT-3（davinci-003等） | 📝 | 175B | 4K | 2020年6月 |
 | 中国 | 华为 | 盘古NLP | 盘古NLP-N4（718B MoE） | 📝🧠 | 718B MoE | 4K/32K/128K | 未公开 |
-| 中国 | 百川智能 | Baichuan | M3Plus | 📝 | 未公开 | 未公开 | 待确认 |
 
