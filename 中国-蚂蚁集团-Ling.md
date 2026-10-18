@@ -20,7 +20,7 @@
 
 | 版本 | 发布时间 | 功能属性 | 参数规模 | 激活参数 | 上下文长度 | 主要特点 |
 |------|----------|----------|----------|----------|----------|----------|
-| Ling 3.1 Flash（inclusionai/ling-3.1-flash）🆕 | 2026年10月2日（待确认） | 📝🧠 纯文本+推理 MoE | 560B | 25B | 262K | 混合推理MoE，OpenRouter免费上架 |
+| Ling 3.1 Flash（inclusionai/ling-3.1-flash）🆕 | 2026年10月2日（API/OpenRouter）；开源权重10月13日 | 📝🧠 纯文本+推理 MoE | 560B | 25B | 1M | 原生混合推理MoE，MIT许可开源；面向通用Agent、搜索、办公与软件工程，OpenRouter免费上架 |
 | Ling 3.0 Flash（inclusionai/ling-3.0-flash）🆕 | 2026年7月23日 | 📝 纯文本 MoE | 124B | ~5.1B | 262K | 3.0旗舰主模型，token高效，生产级agent推理；MIT许可，多量化版本；OpenRouter上架7月23日，HF权重8月2日上传 |
 | Ling 3.0 Flash VL（inclusionai/ling-3.0-flash-vl）🆕 | 2026年9月4日 | 👁️🌐 多模态视觉 | 124B | ~5.5B | 256K | 在Flash基础上加入原生视觉感知（图像+视频），多模态；日期为HuggingFace上传时间 |
 | Ling 3.0 Flash Fin（inclusionai/ling-3.0-flash-fin）🆕 | 2026年9月3日 | 📝 金融 | 124B | 5.1B | 256K | 金融/投资专用，开源FinFIRST评测集；日期为HuggingFace上传时间 |
@@ -78,9 +78,9 @@ inclusionAI 发布 Ling 3.0 系列（`vllm-ling-v3` 定制版仓库2026年7月13
 
 > ⚠️ Ling 3.0 系列各版本精确发布日期依据 HuggingFace 权重上传时间与 OpenRouter 上架时间交叉确认，官方公告未逐项核实，可能晚于所标日期。
 
-### Ling 3.1（2026年10月，待确认）🆕
+### Ling 3.1（2026年10月）🆕
 
-- **Ling 3.1 Flash**：混合推理（hybrid reasoning）MoE 模型，560B总参数 / 25B激活，262K上下文，OpenRouter 免费上架（$0/$0 per MTok）。在 Artificial Analysis 评测中：Intelligence Index 41.1、HLE 39.4%、AA-LCR 83.0%、GDPval-AA 56.1%、SciCode 54.1%、Terminal-Bench 4.0 33.3%。HuggingFace 未见公开权重（组织搜索无结果），开源许可与权重状态待确认。
+- **Ling 3.1 Flash**：原生混合推理（hybrid reasoning）MoE 模型，560B总参数 / 25B激活，**1M上下文**。API/OpenRouter 于 2026年10月2日上线（免费，$0/$0 per MTok），MIT 许可开源权重于 2026年10月13日上传 HuggingFace。相较 Ling 3.0 Flash 在通用Agent、搜索、办公生产力与软件工程等真实任务上提升。在 Artificial Analysis 评测中：Intelligence Index 41.1、HLE 39.4%、AA-LCR 83.0%、GDPval-AA 56.1%、SciCode 54.1%、Terminal-Bench 4.0 33.3%。模型卡另提及正在考虑开源更大规模的版本。
 
 ### 姊妹模型与其他开源项目
 
