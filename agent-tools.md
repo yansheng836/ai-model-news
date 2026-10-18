@@ -1,7 +1,7 @@
 # AI Agent 工具总览
 
-> 本文档整理当前主流 AI Agent（智能体）工具的横向对比，覆盖**编码/终端 Agent**、**无代码/平台型 Agent**、**Agent 开发框架**三类。
-> 数据主要来自 GitHub API、各产品官网及官方 changelog，抓取日期 **2026年9月19日**。
+> 本文档整理当前主流 AI Agent（智能体）工具的横向对比，覆盖**编码/终端 Agent**、**无代码/平台型 Agent**、**Agent 开发框架**、**通用/个人 Agent** 四类。
+> 数据主要来自 GitHub API、各产品官网及官方 changelog，抓取日期 **2026年10月18日**。
 > 注：本文档为工具横评（相对独立文件），未纳入 README 的模型发版时间线表。
 
 ## 总览表格
@@ -19,6 +19,15 @@
 | Cognition | Devin | 通用软件工程师 Agent | ❌ 闭源 | — | 2024年3月12日 | 2026年 | Web / CLI / Desktop |
 | Cognition | Windsurf（原 Codeium） | 编码 IDE Agent | ❌ 闭源 | 基于 VSCode 二次开发 | 2023年（Codeium）/ 2024年（Windsurf） | 已并入 Devin | 桌面 IDE / CLI |
 | Amazon | Kiro | 通用 Agent | ❌ 闭源 | — | 2025年 | 2026年 | Web / 桌面 / CLI / IDE / 移动 |
+| Meta | Muse | 个人通用 Agent | ❌ 闭源 | — | 2026年9月8日 | 2026年10月 | App / WhatsApp |
+| JetBrains | JetBrains Air | Agentic 开发产品体系 | ❌ 闭源 | — | 2026年9月22日 | 2026年9月22日 | IDE / CLI / 云 Agent / 治理 |
+| Google | [AX](https://github.com/google/ax) | Agent 编排运行时 | ✅ Go 开源 (Apache-2.0) | —（依赖 Agent Substrate） | 2026年3月30日 | 2026年9月25日 (v0.3.1) | CLI / 集群编排 |
+| browser-use | [JEV Ultrafast](https://github.com/browser-use/jev-ultrafast) | Web Agent | ✅ Python 开源 (MIT) | — | 2026年9月16日 | 2026年9月30日 | Python 库 / API |
+| CopilotKit | [OpenBot](https://github.com/CopilotKit/OpenBot) | 开源 AI 同事 | ✅ TypeScript 开源 (MIT) | — | 2026年8月17日 | 2026年10月12日 (v0.2.0) | Web / 桌面 |
+| CopilotKit | [OpenMuse](https://github.com/CopilotKit/openmuse) | 个人 Agent | ✅ TypeScript 开源 (MIT) | — | 2026年9月15日 | 2026年10月15日 | Web / 本地 |
+| 社区 | [Talorys](https://github.com/rociiu/talorys) | 自托管个人 Agent | ✅ TypeScript 开源 (MIT) | — | 2026年10月10日 | 2026年10月18日 | Cloudflare / CLI |
+| yetone | [magpie](https://github.com/yetone/magpie) | Agent 模型路由 | ✅ Go 开源 (MIT) | — | 2026年9月23日 | 2026年10月17日 (v0.1.1285) | 菜单栏应用 |
+| Monid | [monid](https://github.com/monid-ai/monid) | Agent 工具目录/路由 | ✅ TypeScript 开源 (MIT) | — | 2026年8月26日 | 2026年9月30日 (catalog-v0.0.4) | Web / API |
 | 字节跳动 | Trae（TraeCode + TraeWork） | 编码 IDE Agent | ❌ 闭源 | 基于 VSCode 二次开发 | 2024年（海外） | 2026年 | 桌面 IDE / CLI |
 | Vercel | v0 | 前端生成 Agent | ❌ 闭源 | — | 2025年 | 2026年 | Web |
 | Lovable | Lovable | 无代码 Web 应用生成 | ❌ 闭源 | — | 2024年 | 2026年 | Web |
@@ -588,7 +597,112 @@
 
 ---
 
-## 七、常见关系梳理 FAQ
+## 七、通用 / 个人 Agent 与 Agent 基础设施（2026年10月新增）
+
+> 以下为 2026年9-10月讨论度快速上升、但未收入前文分类的工具，涵盖个人 Agent、Agent 编排运行时与配套路由/目录服务。数据抓取于 **2026年10月18日**。
+
+### AX — Google（Agent 编排运行时）
+
+- **厂商**：Google（开源项目 `google/ax`）
+- **开源**：✅ **Go 开源（Apache-2.0）**，仓库 <https://github.com/google/ax>　⭐1.39万
+- **基于某开源工具修改**：否（自研；沙箱执行层依赖同生态的 [Agent Substrate](https://github.com/agent-substrate/substrate)，Apache-2.0）
+- **最早发版/创建**：2026年3月30日（仓库创建）
+- **最近发版/更新**：2026年9月25日（v0.3.1）；2026年9月20日登上 Hacker News 首页（666 分）
+- **形态**：声明式 CLI + 集群编排；使用 YAML 定义 Workspace / Task，`ax apply`、`ax watch`、`ax ssh` 管理任务
+- **说明**：定位为「高吞吐、声明式的 Agent 编排器」，目标是在单集群运行数十亿级自主 Agent 任务；概念上类似 Kubernetes，为 Agent 提供沙箱、工作区、模型与网络边界。官方标注仍处于 heavy development，稳定版前会有破坏性变更
+- **数据来源**：`github.com/google/ax`、`agentexecutor.io`
+
+### Muse — Meta（个人 AI Agent）
+
+- **厂商**：Meta（美国）
+- **开源**：❌ 闭源
+- **基于某开源工具修改**：否（自研；由 Muse Spark 模型驱动）
+- **最早发版/创建**：2026年9月8日（官方发布，9月30日更新）
+- **最近发版/更新**：2026年10月（Muse Wonder / Muse Wonder Full 模型接入）
+- **形态**：Muse App + WhatsApp；运行在独立的 **Muse Secure VM**（自带浏览器与用户数据）
+- **说明**：Meta 面向大众推出的个人 AI Agent，可代用户发邮件、订旅行、填表、议价与购物；支持任务在 App 关闭后继续执行，并在发送邮件/付款前请求确认。支付通过 Stripe Link 的一次性虚拟卡完成，官方称是首个获得 Link 购买保护的 AI Agent。上线后因权限边界与隐私问题引发争议（Amazon 曾阻止其购物、媒体测试称其读取私信）
+- **数据来源**：`about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/`
+
+### JetBrains Air — JetBrains（Agentic 开发产品体系）
+
+- **厂商**：JetBrains（捷克/全球）
+- **开源**：❌ 闭源商业产品（JetBrains Central 为开放控制/执行系统，但未提供完整开源仓库）
+- **基于某开源工具修改**：否（自研；整合 JetBrains 既有 IDE 与 AI 能力）
+- **最早发版/创建**：2026年9月22日（官方发布）
+- **最近发版/更新**：2026年9月22日
+- **形态**：多端、多服务组合 — IDE 内与 IDE 外、JetBrains Central CLI、共享上下文、云 Agent、自动化、治理与 AI 成本控制
+- **说明**：JetBrains 将此前半年的 agentic 开发实验（Central CLI、cloud agents、automations 等）整合为统一产品体系，定位从「个人开发工作台」扩展到「Agentic 工作的发起、执行、协调、审查与治理」。IDE 仍是体系的一部分，但不再是唯一入口
+- **数据来源**：`blog.jetbrains.com/blog/2026/09/22/introducing-jetbrains-air/`
+
+### JEV Ultrafast — browser-use（Web Agent）
+
+- **厂商**：browser-use（美国）
+- **开源**：✅ **Python 开源（MIT）**，仓库 <https://github.com/browser-use/jev-ultrafast>　⭐2.32万
+- **基于某开源工具修改**：否（browser-use 团队自研，面向速度与成本优化）
+- **最早发版/创建**：2026年9月16日
+- **最近发版/更新**：2026年9月30日
+- **形态**：Python 库 / API；配套 Browser Use Cloud（隐身浏览器与托管 Agent API）
+- **说明**：官方定位「最快、最便宜的 Web Agent」，两周内获得 2.3 万星，是 browser-use 从通用浏览器 Agent 库向低成本高频 Web 自动化延伸的产品
+- **数据来源**：`github.com/browser-use/jev-ultrafast`、`github.com/browser-use/browser-use`
+
+### OpenBot — CopilotKit（开源 AI 同事）
+
+- **厂商**：CopilotKit（美国）
+- **开源**：✅ **TypeScript 开源（MIT）**，仓库 <https://github.com/CopilotKit/OpenBot>　⭐6,600+
+- **基于某开源工具修改**：否（基于 CopilotKit / AG-UI 协议构建，可接入任意 AG-UI Agent）
+- **最早发版/创建**：2026年8月17日
+- **最近发版/更新**：2026年10月12日（v0.2.0）
+- **形态**：Web / 桌面；每个 Agent 拥有独立浏览器、文件与工具
+- **说明**：定位「开源 AI 同事」：每个 Agent 获得一台自己的计算机，所有动作在执行前确定、执行后记录，强调可审计与可控
+- **数据来源**：`github.com/CopilotKit/OpenBot`
+
+### OpenMuse — CopilotKit（个人 Agent）
+
+- **厂商**：CopilotKit（美国）
+- **开源**：✅ **TypeScript 开源（MIT）**，仓库 <https://github.com/CopilotKit/openmuse>　⭐5,200+
+- **基于某开源工具修改**：否（使用 CopilotKit + AG-UI 构建）
+- **最早发版/创建**：2026年9月15日
+- **最近发版/更新**：2026年10月15日
+- **形态**：Web / 本地运行
+- **说明**：带浏览器、终端、文件系统的个人 Agent，强调「工作可以持续进行」；与 OpenBot 同属 CopilotKit 的开放 Agent 实验线
+- **数据来源**：`github.com/CopilotKit/openmuse`
+
+### Talorys — 社区（自托管个人 Agent）
+
+- **厂商**：社区开源项目（作者 `rociiu`）
+- **开源**：✅ **TypeScript 开源（MIT）**，仓库 <https://github.com/rociiu/talorys>　⭐1,300+
+- **基于某开源工具修改**：否
+- **最早发版/创建**：2026年10月10日
+- **最近发版/更新**：2026年10月18日（活跃）
+- **形态**：部署在用户自己的 Cloudflare 账户；`npx create-talorys@latest` 一键部署
+- **说明**：单用户、免费层友好的个人 Agent，提供聊天、记忆、任务、笔记与定时提醒，无遥测。10月登上 Hacker News（329 分），代表「数据留在自己云账户」的自托管路线
+- **数据来源**：`github.com/rociiu/talorys`
+
+### magpie — yetone（Agent 模型路由）
+
+- **厂商**：yetone（开源作者）
+- **开源**：✅ **Go 开源（MIT）**，仓库 <https://github.com/yetone/magpie>　⭐1.54万
+- **基于某开源工具修改**：否
+- **最早发版/创建**：2026年9月23日
+- **最近发版/更新**：2026年10月17日（v0.1.1285，迭代极快）
+- **形态**：macOS 菜单栏应用
+- **说明**：把不同模型接到不同 Agent 上，例如让 Codex 跑 DeepSeek、Claude Code 跑 Kimi；解决「Agent 工具与模型绑定」的问题，是近期编码 Agent 生态中增长最快的配套工具之一
+- **数据来源**：`github.com/yetone/magpie`
+
+### monid — Monid（Agent 工具目录 / 路由）
+
+- **厂商**：Monid（开源项目）
+- **开源**：✅ **TypeScript 开源（MIT）**，仓库 <https://github.com/monid-ai/monid>　⭐4,900+
+- **基于某开源工具修改**：否
+- **最早发版/创建**：2026年8月26日
+- **最近发版/更新**：2026年9月30日（catalog-v0.0.4）
+- **形态**：Web / API
+- **说明**：自称「Agent 工具的 OpenRouter」，为 Agent 提供统一的工具目录与调用路由，降低多工具接入与切换成本
+- **数据来源**：`github.com/monid-ai/monid`
+
+---
+
+## 八、常见关系梳理 FAQ
 
 ### Q1：哪些是「根据某开源工具修改 / fork」的？
 
@@ -628,7 +742,7 @@ Anthropic **Claude Code** 覆盖最全：**终端 CLI、IDE 插件（VSCode/JetB
 
 ## 数据来源与日期
 
-- GitHub 仓库元数据（创建时间、star、license、fork、最新 push）：GitHub REST API，抓取于 2026年9月19日
+- GitHub 仓库元数据（创建时间、star、license、fork、最新 push）：GitHub REST API，抓取于 2026年9月19日，2026年10月18日复核并补充新增条目
 - Claude Code：`docs.anthropic.com/en/docs/claude-code/*`（changelog 记录 v2.1.2xx，2026年9月）
 - Codex：`developers.openai.com/codex`（认证墙，部分基于已知信息 + GitHub release feed）
 - Cursor：`cursor.com/changelog`（2026年9月10日 Projects 发布）
@@ -637,4 +751,4 @@ Anthropic **Claude Code** 覆盖最全：**终端 CLI、IDE 插件（VSCode/JetB
 - Trae：`trae.ai`（TraeCode / TraeWork）
 - Replit/v0/Lovable：官方首页文本
 
-> ⚠️ **数据截止为 2026年9月19日**。AI Agent 领域迭代极快，发版时间与形态请以各官方 changelog 为准。
+> ⚠️ **数据截止为 2026年10月18日**。AI Agent 领域迭代极快，发版时间与形态请以各官方 changelog 为准。
