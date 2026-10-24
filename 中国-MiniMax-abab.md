@@ -43,6 +43,7 @@
 | MiniMax-M2.7-highspeed | 2026年3月18日 | 📝 纯文本 | 未公开 | 未公开 | 200K | M2.7高速版，效果一致速度更快，全面支持自动Cache |
 | MiniMax-M3.0 | 2026年5月31日 | 📝🌐💻 纯文本+多模态+代码 | 427B MoE | ~23B | 1M（最大输出512K） | MSA架构，前沿编码，原生多模态（文本+图像+视频输入） |
 | MiniMax-M3.1-Flash-Preview 🆕 | 2026年9月27日 | 📝🌐💻 文本+多模态+代码 | 未公开 | 未公开 | 1M | 原生多模态 Frontier Coding 模型，思考深度可调，暂仅通过 M Plan 和 MiniMax Code 提供，9月28日开启公测 |
+| MiniMax-M3.1-Flash（minimax/minimax-m3.1-flash）🆕 | 2026年10月19日 | 📝🌐💻🖥️ 文本+多模态+代码+计算机操作 | 未公开 | 未公开 | 1M | M3.1 Flash 正式版，Agent/编程/Computer Use/网络安全代际提升，推理速度提升近3倍、成本降70%，100万token上下文，按量API已开放 |
 | music-2.6 | 2026年4月 | 🎵 音乐生成 | — | — | — | AI音乐生成 ⚠️ 2026年8月20日起付费音乐接口不再面向新用户开放，免费接口停止服务 |
 | music-cover | 2025年 | 🎵 音乐 | — | — | — | 基于参考音频生成翻唱 |
 | MiniMax-Music3 🆕 | 2026年7月16日 | 🎵 音乐生成 | 2B（开源） | — | — | 更懂创作意图，音质全面跃升，人声合成更自然，已开源（HuggingFace/魔搭） |
@@ -73,6 +74,17 @@ MiniMax的开源模型家族：
 - **MiniMax-M2.7**（2026年3月18日）：模型自我改进版本。基准测试表现优异：SWE-Pro 56.22%（接近Opus最好水平）、VIBE-Pro 55.6%（端到端项目交付）、Terminal Bench 2 57.0%（复杂工程系统理解）。GDPval-AA ELO得分1495，为开源最高。在40个复杂skills（>2000 Token）上保持97%遵循率，MMClaw评测接近Sonnet 4.6水平。提供M2.7和M2.7-highspeed两个API版本（结果完全一致，后者速度更快），全面支持自动Cache。
 - **MiniMax-M3.0**（2026年5月31日）：最新旗舰，427B MoE架构，约23B激活参数，1M上下文（最大输出512K），MSA架构，前沿编码能力，原生多模态（文本+图像+视频输入）。OpenRouter定价：输入$0.30/M tokens，输出$1.20/M tokens，Cache读取$0.06/M tokens。基准：Intelligence 44.4, Coding 58.6, Agentic 35.4。
 - **MiniMax-M3.1-Flash-Preview**（2026年9月27日，9月28日开启公测）：在M3.0基础上的Flash轻量版，原生多模态、1M上下文的Frontier Coding模型，思考深度可调。目前暂时仅通过 M Plan（个人订阅）和 MiniMax Code（官方Agent应用）提供，未开放按量API。（来源：MiniMax开放平台文档中心概览页；IT之家2026年9月27日报道）
+
+### MiniMax-M3.1-Flash（2026年10月19日）🆕
+
+M3.1 Flash 的正式版，从预览转为全量开放（官方发版日志与博客，2026-10-19）：
+- **定位**：「面向真实工作的日常高效主力模型」，原生多模态、1M 上下文的 Frontier Coding 模型
+- **思考深度可调**：通过 `effort` 参数控制，可取 `low` / `medium` / `high` / `xhigh` / `max`，默认 `max`
+- **基准表现**：DeepSWE v1.1 73.7%；OSWorld V2 61.7 分、Agents' Last Exam (ALE) 29.6 分（两项均为国产模型第一）；CyberGym 82%；BankerToolBench 76.2 分；AutomationBench-AA 位居最前列
+- **效率**：采用更激进的稀疏注意力架构，日常场景输出速度 200+ TPS（P50 稳定 170+ TPS），推理速度提升近 3 倍，Agentic 任务综合使用成本较前代降低 70%
+- **定价**：输入 1 元/百万 tokens，输出 4 元/百万 tokens，缓存读取 0.1 元/百万 tokens
+- **接入**：已上线 MiniMax API、M Plan 和 MiniMax Code；OpenRouter 于 2026-10-19 上架 `minimax/minimax-m3.1-flash`；官方表示将稍后开放权重
+- **承接迁移**：自 2026年10月19日起，M2.5 / M2.7 系列在 M Plan / Token Plan 中的请求统一路由至 M3.1 Flash（原模型名保留为兼容入口）
 
 ### MiniMax H3（2026年7月31日）🆕
 

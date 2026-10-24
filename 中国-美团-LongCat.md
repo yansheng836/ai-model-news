@@ -23,6 +23,7 @@
 | LongCat-Flash-Thinking-2601 | 2026年1月20日 | 📝🧠💻 | 未公开 | 未公开 | 未公开 | 工具调用能力登顶开源SOTA，"重思考"模式 |
 | LongCat-Next | 2026年4月2日 | 🌐👁️🎤🖼️ | 68.5B（基于Flash-Lite MoE） | 3B | 未公开 | 原生多模态（视觉+语音+文本），DiNA架构，全开源 |
 | LongCat-2.0 | 2026年6月30日 | 📝🧠💻 | 1.6T | 平均48B（动态33B~56B） | 1M | 万亿参数MoE，五万卡国产算力训练，MOPD架构，开源 |
+| LongCat-Flash-Lite-Sparse 🆕 | 2026年7月31日 | 📝 纯文本 | 69B MoE | ~3B | 1M | 在 Flash-Lite 基础上以 LongCat Sparse Attention（LSA）替换稠密 MLA，原生支持 1M 上下文，MIT 开源（arXiv:2608.01662） |
 | LongCat-DeepResearch 🆕 | 2026年9月28日 | 🧠💻 | 未公开（增强版LongCat-2.0） | 未公开 | 未公开 | 深度研究智能体系统，多智能体工作流，DeepResearchBench得分领先，开源研究框架 |
 
 > **注**：LongCat-2.0 预览版在正式发布前已通过 OpenRouter 平台和 longcat.ai 面向全球开发者开放调用，曾跻身 OpenRouter 全球大模型调用量前三。
@@ -32,6 +33,16 @@
 ### LongCat-Flash-Lite-MoE（2025年）
 
 LongCat-Flash-Lite-MoE 是美团 LongCat 团队的轻量级 MoE 基座模型，总参数量 68.5B，激活参数仅 3B，采用稀疏混合专家架构设计。该模型作为 LongCat-Next 原生多模态模型的基座，验证了 MoE 路由在训练中逐渐出现模态专精化的特性。
+
+### LongCat-Flash-Lite-Sparse（2026年7月31日）
+
+在 LongCat-Flash-Lite 基础上的非思考（non-thinking）MoE 升级版，HuggingFace 权重于 2026年7月31日上传（`meituan-longcat/LongCat-Flash-Lite-Sparse`，MIT 许可）。
+
+- **规模**：69B 总参数，每 token 约激活 3B
+- **核心改造**：以 **LongCat Sparse Attention（LSA）** 替换稠密 MLA。LSA 在 DeepSeek Sparse Attention（DSA）基础上扩展三种索引机制——流式感知索引（SI）把部分 token 选择预算分配给固定 sink 与本地滑窗，将碎片化 KV 访问转为可预测的连续读取，提升 HBM 利用率
+- **上下文**：长上下文扩展阶段语料增强并按渐进式调度扩展至 1,024K，原生支持最长 1M tokens
+- **收益**：相比稠密前代提升长上下文推理效率与 agentic 能力，同时保持推理与通用知识表现
+- **技术报告**：arXiv:2608.01662《LongCat Sparse Attention: Taming the Lightning via Streaming-aware Hierarchical Cross-Layer Indexing》（2026年8月3日提交）
 
 ### LongCat-Flash-Thinking（2025年）
 

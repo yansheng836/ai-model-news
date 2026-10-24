@@ -79,12 +79,14 @@
 阶跃星辰新一代旗舰模型（预览版），主打 agentic 工作负载：
 
 - **架构**：稀疏 MoE（Mixture of Experts），600B 总参数 / 约27B 激活参数
-- **上下文**：1M（1000000），最大输出 64000
+- **上下文**：1M（1048576）；最大输出官方模型卡标称最高 1M，OpenRouter 侧限制为 64000
 - **多模态**：支持文本、图像、视频输入
 - **定价**（OpenRouter）：$1.00/$2.70 per MTok
 - **能力定位**：软件工程与专业知识工作表现突出，尤其在金融领域有专长；面向跨大型代码库与文档的扩展任务，通过工具调用和多步骤迭代精化结果
 - **可用性**：已上架 OpenRouter（2026年10月8日），由单一供应商托管
-- **状态**：预览版（Preview）。NVFP4 量化权重已于 2026年10月14日上传 HuggingFace（`stepfun-ai/Step-5-Preview-NVFP4`），BF16 等完整权重与正式版计划待确认
+- **发布日期口径说明**：阶跃官网新闻稿标注 Step 5 Preview 的正式发布日为 **2026年9月20日**（同日 HuggingFace 上传 `Step-5-Preview` FP8 与 `Step-5-Preview-BF16` 权重，仓库 `stepfun-ai/Step-5-Preview` 于 2026年10月12日创建）；上表与 OpenRouter 的 10月8日 为 API 上架日期。NVFP4 量化权重于 2026年10月14日上传（`stepfun-ai/Step-5-Preview-NVFP4`）
+- **官方评测**：Artificial Analysis Intelligence Index 44 分，官方称位居全球开源模型前三；单任务成本约为 Claude Opus 5 的 1/8
+- **状态**：预览版（Preview）
 
 ### 开源策略
 
