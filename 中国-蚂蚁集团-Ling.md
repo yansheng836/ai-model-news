@@ -20,6 +20,7 @@
 
 | 版本 | 发布时间 | 功能属性 | 参数规模 | 激活参数 | 上下文长度 | 主要特点 |
 |------|----------|----------|----------|----------|----------|----------|
+| Ming-3.0-asr-tiny（inclusionAI/Ming-3.0-asr-tiny）🆕 | 2026年10月14日（HF权重上传） | 🎤 语音识别 | 未公开（Ling-tiny-v3 MoE骨干+音频编码器） | 未公开 | 未公开（长音频分块编码） | 上下文感知ASR：中英文转写+15组方言（粤语/闽南语/上海话等），支持热词与对话上文（Context ASR），MIT开源 |
 | Ling 3.1 Flash（inclusionai/ling-3.1-flash）🆕 | 2026年10月2日（API/OpenRouter）；开源权重10月13日 | 📝🧠 纯文本+推理 MoE | 560B | 25B | 1M | 原生混合推理MoE，MIT许可开源；面向通用Agent、搜索、办公与软件工程，OpenRouter免费上架 |
 | Ling 3.0 Flash（inclusionai/ling-3.0-flash）🆕 | 2026年7月23日 | 📝 纯文本 MoE | 124B | ~5.1B | 262K | 3.0旗舰主模型，token高效，生产级agent推理；MIT许可，多量化版本；OpenRouter上架7月23日，HF权重8月2日上传 |
 | Ling 3.0 Flash VL（inclusionai/ling-3.0-flash-vl）🆕 | 2026年9月4日 | 👁️🌐 多模态视觉 | 124B | ~5.5B | 256K | 在Flash基础上加入原生视觉感知（图像+视频），多模态；日期为HuggingFace上传时间 |
@@ -81,6 +82,17 @@ inclusionAI 发布 Ling 3.0 系列（`vllm-ling-v3` 定制版仓库2026年7月13
 
 > ⚠️ Ling 3.0 系列各版本精确发布日期依据 HuggingFace 权重上传时间与 OpenRouter 上架时间交叉确认，官方公告未逐项核实，可能晚于所标日期。
 
+### Ming 3.0 系列（全模态/语音，2026年8-10月）🆕
+
+Ming（鸣）是蚂蚁 Ling 家族之外的全模态模型系列（官网定位：统一支持文本、图像、音频、视频的跨模态理解与生成），权重均在 HuggingFace `inclusionAI` 组织以 MIT 许可开源：
+
+- **Ming-3.0-asr-tiny**（2026年10月14日 HuggingFace 上传）：上下文感知语音识别模型，基于 Ling-tiny-v3 语言骨干（24层、128路由专家）+ 音频编码器构建。支持单轮中英文转写、15组地区方言（粤语、闽南语、上海话等）、Context ASR（热词/对话上文提升领域术语识别），覆盖高噪语音与五类应用领域。长音频可分块编码。GitHub 代码与教程 `inclusionAI/Ming-3.0-asr`（2026年10月19日创建）。
+- **Ming-3.0-audio-flash**（126B MoE / 6.5B激活；HF权重2026年9月3日上传，GitHub 仓库2026年10月15日创建）：原生音频大模型，覆盖复杂语音识别（方言/口音/噪声/多人会议）、长音频理解、细粒度声音/音乐感知、音频推理与端到端语音交互（可选合成语音输出）。支持 vLLM-Omni / SGLang / Transformers 三路推理。
+- **Ming-3.0-audio-tiny**（9.3B MoE / 2.7B激活，与 flash 同批）：音频紧凑版。
+- **Ming-3.0-tts-0.5B / tts-tiny**（HF权重2026年9月22日上传，GitHub 仓库2026年10月19日创建）：多语言语音合成，基于 Qwen2.5-0.5B 稠密骨干 + DiT 头 + 音频 tokenizer + 说话人编码器，支持副语言与自由形式控制、音色克隆，覆盖中英德西法韩日。
+
+> ⚠️ Ming 系列精确发布日期依据 HuggingFace 权重上传时间与 GitHub 仓库创建时间交叉确认；官方新闻稿未逐项核实。相关 OCR 基础模型 PolyOCR-Venus（2B/9B，基于Qwen3.5-VL，技术报告2026-09-21）由蚂蚁 GuangJian 团队发布于 `venus-guangjian` 组织，未归入 inclusionAI。
+
 ### Ling 3.1（2026年10月）🆕
 
 - **Ling 3.1 Flash**：原生混合推理（hybrid reasoning）MoE 模型，560B总参数 / 25B激活，**1M上下文**。API/OpenRouter 于 2026年10月2日上线（免费，$0/$0 per MTok），MIT 许可开源权重于 2026年10月13日上传 HuggingFace。相较 Ling 3.0 Flash 在通用Agent、搜索、办公生产力与软件工程等真实任务上提升。在 Artificial Analysis 评测中：Intelligence Index 41.1、HLE 39.4%、AA-LCR 83.0%、GDPval-AA 56.1%、SciCode 54.1%、Terminal-Bench 4.0 33.3%。模型卡另提及正在考虑开源更大规模的版本。
@@ -99,6 +111,7 @@ inclusionAI 发布 Ling 3.0 系列（`vllm-ling-v3` 定制版仓库2026年7月13
 
 ### 姊妹模型与其他开源项目
 
+- **Ming / Ming-3.0**：全模态模型系列（见上文「Ming 3.0 系列」），统一支持文本、图像、音频、视频的理解与生成。
 - **Ring / Ring-V2 / Ring-V2.5**：源自 Ling 的推理（reasoning）MoE 模型，专注深度推理。
 - **LLaDA2.X / LLaDA2.0-Uni**：扩散语言模型（Diffusion Language Model）系列，由 inclusionAI 团队、蚂蚁集团开发。
 - **linghe**：面向 LLM 训练的高性能 kernel 库。

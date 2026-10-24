@@ -84,7 +84,7 @@
 - **定价**（OpenRouter）：$1.00/$2.70 per MTok
 - **能力定位**：软件工程与专业知识工作表现突出，尤其在金融领域有专长；面向跨大型代码库与文档的扩展任务，通过工具调用和多步骤迭代精化结果
 - **可用性**：已上架 OpenRouter（2026年10月8日），由单一供应商托管
-- **发布日期口径说明**：阶跃官网新闻稿标注 Step 5 Preview 的正式发布日为 **2026年9月20日**（同日 HuggingFace 上传 `Step-5-Preview` FP8 与 `Step-5-Preview-BF16` 权重，仓库 `stepfun-ai/Step-5-Preview` 于 2026年10月12日创建）；上表与 OpenRouter 的 10月8日 为 API 上架日期。NVFP4 量化权重于 2026年10月14日上传（`stepfun-ai/Step-5-Preview-NVFP4`）
+- **发布日期口径说明**：阶跃官网新闻稿标注 Step 5 Preview 的正式发布日为 **2026年9月20日**（同日 HuggingFace 上传 `Step-5-Preview` FP8 与 `Step-5-Preview-BF16` 权重，HF API 证实两仓库创建于 2026-09-20）；上表与 OpenRouter 的 10月8日 为 API 上架日期。NVFP4 量化权重于 2026年10月14日上传（`stepfun-ai/Step-5-Preview-NVFP4`）
 - **官方评测**：Artificial Analysis Intelligence Index 44 分，官方称位居全球开源模型前三；单任务成本约为 Claude Opus 5 的 1/8
 - **状态**：预览版（Preview）
 

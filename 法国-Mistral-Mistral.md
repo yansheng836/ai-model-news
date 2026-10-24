@@ -61,10 +61,15 @@
 | Pixtral 12B | 2024年9月 | 👁️📝 视觉+文本 | 12B | 128K | 多模态视觉模型 |
 | Pixtral Large（124B） | 2024年11月 | 👁️📝 视觉+文本 | 124B | 128K | 大规模多模态 |
 | Shieldstral 1.0 🆕 | 2026年8月4日 | 👁️📝 多模态安全审核 | 3B | 未公开 | 文本+图像安全分类，Apache 2.0 开放权重，支持12种语言，单卡16GB可运行 |
-| Voxtral Mini | 2025年7月 | 🎤 语音 | 未公开 | 未公开 | 轻量语音模型 |
+| Timestral 1.0 🆕 | 2026年10月15日 | 📝 时序预测（TSFM） | 5M/28M/123M/209M | 32,768时间步 | 首个时间序列基础模型家族，零样本概率预测，209M旗舰登顶GIFT-Eval/TIME/fev-bench，Modified MIT |
+| Voxtral Mini | 2025年7月 | 🎤 语音 | 未公开 | 未公开 | 轻量语音模型，⏰ 2026年5月31日退役，替代 Voxtral Mini Transcribe 2 |
 | Voxtral Mini Transcribe | 2025年7月 | 🎤 语音识别 | 未公开 | 未公开 | 音频转录 |
 | Voxtral Mini Transcribe 2 | 2026年2月 | 🎤 语音识别 | 未公开 | 未公开 | 音频转录升级版 |
+| Voxtral Mini Transcribe 3 🆕 | 2026年10月20日 | 🎤 语音识别 | 4B | 未公开 | 批量转录，50+语言（含24种欧盟官方语言），$0.0035/分钟 |
+| Voxtral Small Transcribe 3 🆕 | 2026年10月20日 | 🎤 语音识别 | 未公开 | 未公开 | 旗舰转录+说话人分离（diarization），FLEURS 45 4.0-4.1% WER，$0.0040/分钟 |
 | Voxtral Mini Transcribe Realtime | 2026年2月 | 🎤 语音识别 | 未公开 | 未公开 | 实时转录 |
+| Voxtral Mini Transcribe Realtime 3 🆕 | 2026年10月20日 | 🎤 实时语音识别 | 未公开 | 未公开 | 流式实时转录，延迟<500ms，40+语言，$0.008/分钟 |
+| Voxtral Mini TTS 3 🆕 | 2026年10月20日 | 🎤 语音合成 | 未公开 | 未公开 | 文本转语音（批量+实时），35+语言50+方言，情感/语速/重音控制，约30分钟音频即可专业声音克隆（Pro Voice），$13/百万字符 |
 | Voxtral Small 24B | 2025年7月 | 🎤🌐 语音+多模态 | 24B | 32K | 音频输入指令模型，$0.10/$0.30 MTok |
 | Voxtral TTS | 2026年3月 | 🎤 语音合成 | 未公开 | 未公开 | 零样本语音克隆+多语言 |
 
@@ -128,6 +133,25 @@ Mistral在语音领域的新布局：
 - **Voxtral Mini Transcribe**系列：音频转录（含实时版本）
 - **Voxtral TTS**（2026年3月）：零样本语音克隆+多语言TTS
 
+### Voxtral 3系列（2026年10月20日）
+
+语音模型家族的全面升级，覆盖识别与合成全链路，配合基于 LiveKit 的语音 Agent SDK（听感、推理、工具调用与语音合一的流式管线）：
+- **Voxtral Small Transcribe 3**：旗舰转录+说话人分离（diarization），FLEURS 45 语言 4.1%（强制）/4.0%（推断）WER，cpWER 18.4%，超越 Whisper、Scribe v2 与 Gemini 3.5 Transcribe；$0.0040/分钟
+- **Voxtral Mini Transcribe 3**（4B）：批量转录，50+ 语言（含 24 种欧盟官方语言），支持上下文偏置（Earnings 22 关键词召回 94.6%）与原生结束检测；$0.0035/分钟
+- **Voxtral Mini Transcribe Realtime 3**：流式实时转录，延迟低于 500ms，40+ 语言，可配置延迟与轮次检测；$0.008/分钟
+- **Voxtral Mini TTS 3**：文本转语音（批量+实时），35+ 语言、50+ 方言，支持情感、语速与重音控制；Pro Voice 约需 30 分钟音频即可专业声音克隆；$13/百万字符
+- 语音 Agent API：Mistral Small 4 推理 $0.04/分钟，更大模型 $0.08/分钟
+- 提供 API（欧洲/美国/全球端点）与本地/私有云部署；未开放权重
+
+### Timestral 1.0（2026年10月15日）
+
+Mistral首个时间序列基础模型（TSFM）家族，四个规模：5M/28M/123M/209M参数：
+- 概率式多变量预测，32,768时间步上下文，21分位数输出，零样本预测未见数据
+- 支持 past-only、known-future 与分类协变量输入；核心技术包括 Decoupled Horizon Forecasting（DHF）、协变量感知注意力（防目标-未来泄漏）、多数合成数据预训练与两阶段训练
+- 209M 旗舰以三分之二的参数量登顶 GIFT-Eval、TIME、fev-bench（此前SOTA），单检查点无集成
+- CPU 即可推理：5M 约 10ms，209M 约 140ms（提前一天预测）
+- Modified MIT 许可，GitHub/HuggingFace 开放，Mistral Forge 零样本开箱推理，支持本地/VPC/气隙部署
+
 ### OCR系列（文档理解）
 
 - **OCR/OCR 2/OCR 3**：文档AI/OCR模型，用于文档理解和提取
@@ -154,6 +178,7 @@ Mistral采用版本化命名（如v26.04表示2026年4月版本），并明确�
 
 | 模型 | 弃用日期 | 退役日期 | 替代模型 |
 |------|----------|----------|----------|
+| Z.ai GLM 5.2（Mistral托管） 🆕 | 2026/9/29 | 2026/10/31 | Z.ai GLM 5.3 |
 | OCR 4.0 (v4.0) 🆕 | 2026/9/29 | 2026/9/30 ✅已退役 | OCR 4.1 |
 | Leanstral 1.5 (v1.5) 🆕 | 2026/9/29 | 2026/9/30 ✅已退役 | — |
 | Leanstral (v26.03) | 2026/5/22 | 2026/6/30 | Leanstral 1.5 |

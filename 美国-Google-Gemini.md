@@ -17,7 +17,14 @@
 | 版本 | 发布时间 | 功能属性 | 参数规模 | 上下文长度 | 主要特点 |
 |------|----------|----------|----------|----------|----------|
 | Gemini 4 Argon 🆕 | 2026年10月13日 | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开（厂商未公开） | 1,048,576（默认65,536输出，长解码可至1M） | Google 新一代旗舰推理模型，面向复杂软件工程、数学/科学与自主多步 Agent；输入支持文本/图像/视频/音频/PDF，$2/$10 MTok（优惠至2026-11-30，之后$4/$20） |
-| Gemini 3.8 Flash 🆕 | 2026年9月2日 | 🌐👁️🎤 多模态（文本+图像+音频+视频） | 未公开（厂商未公开） | 1M（65K输出） | Google最智能的Flash模型，较3.7 Flash在软件工程/Agent/多步推理显著提升，$0.75/$3.75 MTok（AI Studio折扣后$0.375/$1.875） |
+| Gemini 3.8 Flash 🆕 | 2026年9月2日 | 🌐👁️🎤 多模态（文本+图像+音频+视频） | 未公开（厂商未公开） | 1M（65K输出） | Google最智能的Flash模型，较3.7 Flash在软件工程/Agent/多步推理显著提升，$0.75/$3.75 MTok（优惠至2026-12-31，之后$1.50/$7.50） |
+| Gemini 3.8 Live 🆕 | 2026年9月15日 | 🎤🌐 语音+多模态（音频到音频） | 未公开（厂商未公开） | 未公开 | Live API 默认低延迟语音Agent模型（无推理延迟），交错推理+默认异步函数调用+全会话客户端内容更新 |
+| Gemini 3.8 Live Extended Thinking 🆕 | 2026年9月15日 | 🎤🧠 语音+推理（音频到音频） | 未公开（厂商未公开） | 未公开 | 高推理Live API模型，语音交互中支持后台推理 |
+| Gemini 3.8 Flash TTS 🆕 | 2026年9月22日 | 🎤 语音合成 | 未公开（厂商未公开） | 未公开 | 旗舰创意TTS（`/v1beta/voices`），录音棚级音质/细腻演绎/方言/长篇多轮稳定，支持Voice design与Voice replication |
+| Gemini 3.8 Flash-Lite TTS 🆕 | 2026年9月22日 | 🎤 语音合成 | 未公开（厂商未公开） | 未公开 | 快速低成本TTS，接替gemini-3.1-flash-tts-preview，面向高吞吐生产与实时语音Agent级联 |
+| Gemini 3.5 Transcribe 🆕 | 2026年8月26日 | 🎤 语音识别 | 未公开（厂商未公开） | 未公开 | 高精度低延迟非流式转写，85+语言话语级语言检测/说话人分离/词级时间戳/自定义词汇偏置（至1000条） |
+| Gemini 3.5 Transcribe Live 🆕 | 2026年8月26日 | 🎤 语音识别（流式） | 未公开（厂商未公开） | 未公开 | WebSocket双向流式转写（Live API），支持中间+最终转写事件/Smart转写模式/多种VAD策略 |
+| Gemini Omni Flash 🆕 | 2026年8月27日（GA） | 🎬🌐 文生视频+多模态 | 未公开（厂商未公开） | 未公开 | 高速对话式视频生成与编辑（`gemini-omni-1.1-flash`），视频扩展/首尾帧插值/360p-4K分辨率；⚠️ preview端点2026年9月30日弃用 |
 | Gemini 3.7 Flash | 2026年8月14日 | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开（厂商未公开） | 1M | 快速Agent工作流、编码、多步推理，$0.375/$1.875 MTok |
 | Gemini 3.6 Flash | 2026年7月（Stable） | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开（厂商未公开） | 1M | 速度与智能平衡，适合广泛任务 |
 | Gemini 3.5 Flash Lite | 2026年7月（Stable） | 🌐🧠 多模态+推理 | 未公开（厂商未公开） | 1M | 最快最经济的3.5系列模型，成本优化前沿性能 |
@@ -54,7 +61,7 @@
 | Gemini 3.1 Pro Preview | 2026年（Preview） | 🌐🧠 多模态+推理 | 未公开 | 1M | 3.1 Pro预览版 |
 | Gemini 3.5 Flash | 2026年5月19日（Stable） | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开 | 1M | 最智能模型，代理和编程任务 |
 | Gemini 3.5 Flash Lite | 2026年7月21日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1M | 高效子代理模型，多Agent工作流 |
-| Gemini 3.6 Flash 🆕 | 2026年7月21日 | 🌐🧠💻🎤👁️ 多模态+推理+代码+视频+音频 | 未公开 | 1M | 高能效旗舰模型，原生音视频/视频输入，Agent工作流，$1.50/$7.5 MTok |
+| Gemini 3.6 Flash 🆕 | 2026年7月21日 | 🌐🧠💻🎤👁️ 多模态+推理+代码+视频+音频 | 未公开 | 1M | 高能效旗舰模型，原生音视频/视频输入，Agent工作流，$0.75/$3.75 MTok（优惠至2026-12-31，之后$1.50/$7.50） |
 | Gemini 3.5 Live Translate | 2026年（Preview） | 🎤 语音翻译 | 未公开 | 未公开 | 实时语音翻译，70+语言 |
 | Gemini Embedding | 2025年 | 📝 嵌入模型 | — | — | 高维向量，语义搜索/分类/RAG |
 | Gemini Embedding 2 | 2026年 | 📝 嵌入模型 | — | — | 多模态嵌入（文本/图像/视频/音频/PDF） |
@@ -117,9 +124,12 @@ Google的"思维模型"（Thinking Model），内置推理能力，可在回答�
 - **Gemini 3.1 Flash Lite Image**（Nano Banana 2 Lite，2026年6月30日发布）：最快最经济的文生图模型，65K上下文，$0.25/$1.5 per 1M
 - **Gemini 3.1 Flash Live**（Preview）：实时对话和语音优先AI应用
 - **Gemini 3.1 Flash TTS**（Preview）：低延迟语音生成
-- **Gemini 3.8 Flash**（2026年9月2日）：Google最新、最智能的Flash系列模型，相较3.7 Flash在软件工程、Agent任务与多步推理上有显著提升。1M上下文，65K最大输出，定价 $0.75/$3.75 MTok（AI Studio折扣后 $0.375/$1.875）
-- **Gemini 3.7 Flash**（2026年8月14日）：Google最新Flash系列模型，专为快速Agent工作流、编码和多步推理设计，1M上下文，定价 $0.375/$1.875 MTok
-- **Gemini 3.6 Flash**（2026年7月，Stable）：速度与智能平衡，适合广泛任务，1M上下文，定价 $1.50/$7.50 MTok
+- **Gemini 3.8 Flash**（2026年9月2日）：Google最新、最智能的Flash系列模型，相较3.7 Flash在软件工程、Agent任务与多步推理上有显著提升。1M上下文，65K最大输出，定价 $0.75/$3.75 MTok（优惠价至2026年12月31日，2027年1月1日起 $1.50/$7.50）
+- **Gemini 3.8 Live / Live Extended Thinking**（2026年9月15日 GA）：两款音频到音频实时模型。`gemini-3.8-live` 为多数低延迟语音Agent场景默认选择（交错推理、默认异步函数调用、全会话客户端内容更新）；`gemini-3.8-live-extended-thinking` 支持语音交互中的后台推理，适合需更高背景推理的场景
+- **Gemini 3.8 Flash TTS / Flash-Lite TTS**（2026年9月22日 GA）：下一代TTS双模型，同时推出 Gemini API Voices 端点（`/v1beta/voices`）与 Voice design/Voice replication/Extended Voice Library（150+预置与自定义音色）。Flash TTS 面向录音棚级创意TTS；Flash-Lite TTS 替代 `gemini-3.1-flash-tts-preview`，面向高吞吐生产
+- **Gemini 3.5 Transcribe / Transcribe Live**（2026年8月26日 GA）：基于 Gemini 音频理解的专用语音转写双模型。Transcribe 非流式高精度（85+语言、话语级语言检测、说话人分离、词级时间戳、自定义词汇偏置至1000条）；Transcribe Live 经 Live API WebSocket 双向流式转写，支持 Smart 转写与多种 VAD 策略
+- **Gemini 3.7 Flash**（2026年8月14日）：Google最新Flash系列模型，专为快速Agent工作流、编码和多步推理设计，1M上下文，定价 $0.375/$1.875 MTok（2026年10月8日起弃用，请求自动路由至 gemini-3.8-flash）
+- **Gemini 3.6 Flash**（2026年7月，Stable）：速度与智能平衡，适合广泛任务，1M上下文，定价 $0.75/$3.75 MTok（优惠价至2026年12月31日，2027年1月1日起 $1.50/$7.50）
 - **Gemini 3.5 Flash Lite**（2026年7月，Stable）：最快最经济的3.5系列模型，成本优化前沿性能，1M上下文，定价 $0.30/$2.50 MTok
 - **Gemini 3.5 Flash**（2026年5月19日，Stable）：最智能模型，代理和编程任务的持续前沿性能，1M上下文，定价 $1.50/$9 MTok
 - **Gemini 3.5 Live Translate**（Preview）：实时语音翻译，70+语言
@@ -135,11 +145,13 @@ Google在图像生成领域推出多个品牌：
 
 ### 视频生成系列
 
+- **Gemini Omni Flash**（`gemini-omni-1.1-flash`，2026年8月27日 GA）：高速对话式视频生成与编辑模型，经 Interactions API 提供，支持视频扩展（延续片尾）、首尾帧插值（image_to_video，最多2张图）、360p/720p/1080p/4K 分辨率（1080p/4K 为超分生成）
 - **Veo 3.1**（Preview）：电影级视频生成，高级创意控制+原生音频同步
 - **Veo 3.1 Lite**（Preview）：高效低成本视频生成/编辑
 
 ### 音乐生成系列
 
+- **Lyria 3.5**（`lyria-3.5`，2026年9月3日 GA）：下一代音乐生成模型，全长歌曲生成，旋律连贯性/自然人声/时长与结构精细控制更佳，支持文本+图像输入，44.1kHz 立体声高质量输出
 - **Lyria 3 Pro**（Preview）：全长歌曲生成，复杂结构一致性
 - **Lyria 3 Clip**（Preview）：30秒短音乐片段
 - **Lyria RealTime**（Experimental）：实时流式音乐生成
@@ -149,8 +161,9 @@ Google在图像生成领域推出多个品牌：
 - **Computer Use**（Preview）：屏幕理解+UI操作模型，可点击/输入/导航
 - **Deep Research**（Preview）：自主多步骤研究，生成引用报告
 - **Deep Research Max**（Preview）：最大深度研究
-- **Antigravity Agent**（Preview）：通用代理，自主规划/推理/运行代码/管理文件/浏览网页
-- **Gemini Robotics-ER 1.6**（Preview）：具身推理模型，理解物理空间
+- **Antigravity Agent**（Preview）：通用代理，自主规划/推理/运行代码/管理文件/浏览网页；2026年9月17日发布 09-2026 版（`antigravity-preview-09-2026`），替换并弃用 05-2026 版
+- **Gemini Robotics ER 2**（Preview，2026年7月30日）：具身推理双端点 `gemini-robotics-er-2-preview` / `-streaming-preview`，高级空间推理、Agent化代码执行、多工具编排、视频时刻查找、多机器人协调；⚠️ 旧版 `gemini-robotics-er-1.6-preview` 于2026年8月31日关停
+- **Gemini Robotics-ER 1.6**（Preview）：具身推理模型，理解物理空间，⚠️ 2026年8月31日已关停
 
 ### Gemma系列
 
@@ -178,7 +191,7 @@ Google的开源模型系列，基于Gemini技术。Gemma 3首次在开源模型�
 | Gemini 3.5 Flash Lite | $0.30 | $2.50 | 1M |
 | Gemini 3.5 Flash | $1.50 | $9 | 1M |
 | Gemini 3.7 Flash | $0.375 | $1.875 | 1M |
-| Gemini 3.6 Flash | $1.50 | $7.50 | 1M |
+| Gemini 3.6 Flash | $0.75（至2026-12-31，之后$1.50） | $3.75（至2026-12-31，之后$7.50） | 1M |
 
 ### 模型状态说明
 
@@ -193,3 +206,9 @@ Google的开源模型系列，基于Gemini技术。Gemma 3首次在开源模型�
 - `gemini-3.1-flash-image` 于 2026年10月6日弃用，由 Nano Banana 2.1 接替
 - `gemini-3.7-flash` 于 2026年10月8日弃用，迁移至 `gemini-3.8-flash`；`gemini-3.5-flash` 迁移至 `gemini-3.6-flash`
 - `deep-research-pro-preview-12-2025` 于 2026年10月23日关停
+- `antigravity-preview-05-2026` 于 2026年10月5日关停（由 09-2026 版接替）
+- `gemini-robotics-er-1.6-preview` 于 2026年8月31日关停（由 Robotics ER 2 接替）
+- `gemini-omni-flash-preview` 于 2026年9月30日弃用（由 `gemini-omni-1.1-flash` 接替）
+- `gemini-3.1-flash-tts-preview` 于 2026年9月30日仍可用但推荐迁移至 3.8 Flash TTS / Flash-Lite TTS
+- Imagen 4、Gemini 3 系列图像模型（`imagen-4.0-*-generate-001`）于 2026年8月17日关停；Veo 旧版（veo-2.0 等）于 2026年6月30日关停
+- 2026年9月18日起 Gemini 2.5 系列限制为仅历史活跃用户可访问（未弃用，新项目请使用 3.5 Flash-Lite / 3.8 Flash）

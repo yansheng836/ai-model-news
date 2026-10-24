@@ -63,12 +63,13 @@
 | GPT-5.4-pro（gpt-5.4-pro） | 2026年 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1050K | 5.4增强版，$30/$180 MTok |
 | GPT-5.5-pro（gpt-5.5-pro） | 2026年 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1050K | GPT-5.5增强版，$30/$180 MTok |
 | GPT-5.5（gpt-5.5） | 2026年4月23日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开（厂商未公开） | 1050K | 最新旗舰，知识截止2025年12月，$5/$30 MTok |
-| GPT-5.6 Sol（gpt-5.6-sol） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 旗舰级，复杂推理/编程/Agent，$2/$10 MTok（Fast mode 2x价格） |
-| GPT-5.6 Sol Pro（gpt-5.6-sol-pro） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | Sol的Pro推理模式版本，$2/$10 MTok |
+| GPT-5.6 Sol（gpt-5.6-sol） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 旗舰级，复杂推理/编程/Agent，2026年8月21日降价至 $4/$20 MTok（促销价至少至11月21日） |
+| GPT-5.6 Sol Pro（gpt-5.6-sol-pro） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | Sol的Pro推理模式版本，$4/$20 MTok |
 | GPT-5.6 Terra（gpt-5.6-terra） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 中端，日常编码/推理/Agent，$2/$12 MTok（2026年7月30日降价20%） |
 | GPT-5.6 Terra Pro（gpt-5.6-terra-pro） | 2026年7月9日 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | Terra的Pro推理模式版本，$2/$12 MTok |
 | GPT-5.6 Luna（gpt-5.6-luna） | 2026年7月9日 | 🌐🧠 多模态+推理 | 未公开 | 1050K | 高性价比，高速轻量任务，$0.20/$1.20 MTok（2026年7月30日降价80%） |
 | GPT-5.6 Luna Pro（gpt-5.6-luna-pro） | 2026年7月9日 | 🌐🧠 多模态+推理 | 未公开 | 1050K | Luna的Pro推理模式版本，$0.20/$1.20 MTok |
+| GPT-5.6 Cyber（gpt-5.6-cyber）🆕 | 2026年8月7日 | 🧠 推理（网络安全） | 未公开（厂商未公开） | 未公开 | Daybreak Red 专用安全模型，授权漏洞复现/利用验证/渗透测试/红队，$12.5/$75 MTok |
 | GPT-6 Astra（gpt-6-astra） | 2026年9月3日 | 🌐 多模态 | 未公开（厂商未公开） | 1050K | GPT-6系列首作，旗舰模型，长时程任务突出，$10/$50 MTok（>272K输入 $20/$75）；⚠️ 2026年9月11日起 OpenRouter 上线 `gpt-astra-latest` 路由别名 |
 | GPT-6 Astra Pro（gpt-6-astra-pro） | 2026年9月3日 | 🌐🧠 多模态+推理 | 未公开（厂商未公开） | 1050K（128K输出） | Astra的Pro推理模式版本（reasoning.mode=pro），$10/$50 MTok |
 | GPT-6 Luna（gpt-6-luna）🆕 | 2026年9月22日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开（厂商未公开） | 1050K（128K输出） | GPT-6系列高速低成本型号，高并发/低延迟场景，$0.10/$0.50 MTok（>272K输入 $0.20/$0.75） |
@@ -78,6 +79,14 @@
 | GPT-6 Sol Pro（gpt-6-sol-pro）🆕 | 2026年9月22日 | 🌐🧠💻🖥️ 多模态+推理+代码+计算机操作 | 未公开（厂商未公开） | 1050K（128K输出） | Sol的Pro推理模式版本（reasoning.mode=pro），$2/$10 MTok |
 | GPT-6.1 Sol（gpt-6.1-sol）🆕 | 2026年9月29日 | 🌐🧠💻🖥️ 多模态+推理+代码+计算机操作 | 未公开（厂商未公开） | 1050K（128K输出） | GPT-6 Sol升级版，事实错误更少、更遵守明确限制与用户意图，$2/$10 MTok（>272K输入 $4/$15） |
 | GPT-6.1 Sol Pro（gpt-6.1-sol-pro）🆕 | 2026年9月29日 | 🌐🧠💻🖥️ 多模态+推理+代码+计算机操作 | 未公开（厂商未公开） | 1050K（128K输出） | GPT-6.1 Sol的Pro推理模式版本（reasoning.mode=pro），$2/$10 MTok |
+| GPT-Transcribe（gpt-transcribe）🆕 | 2026年7月28日 | 🎤 语音识别 | — | — | 高精度文件转写+Realtime最终转写，支持转写上下文/关键词提示/多语言，$0.0045/分钟 |
+| GPT-Live-Transcribe（gpt-live-transcribe）🆕 | 2026年7月28日 | 🎤 语音识别（流式） | — | — | 低延迟实时流式转写，$0.017/分钟；whisper-1/gpt-4o-transcribe系列替代品（⚠️ 旧模型2027年2月26日关停） |
+| GPT-Live 1（gpt-live-1）🆕 | 2026年9月10日 | 🎤 语音交互 | — | — | 全双工自然语音对话（平滑打断处理），支持Responses委托后端模型；2026年10月16日新增prompt-to-voice自定义音色与9种自然音色，$0.05/分钟 |
+| GPT-Realtime-2.1（gpt-realtime-2.1）🆕 | 2026年7月6日 | 🎤🧠 语音+推理 | — | — | 实时推理语音模型，改进字母数字识别/静音噪声处理/打断行为，$4/$24 MTok；⚠️ 替代gpt-realtime（2027年1月20日关停） |
+| GPT-Realtime-2.1 Mini（gpt-realtime-2.1-mini）🆕 | 2026年7月6日 | 🎤🧠 语音+推理 | — | — | 更快更低成本蒸馏版实时推理语音模型，$0.6/$2.4 MTok；TTS系列关停的官方替代品 |
+| GPT-Image-2.5 Sunburst（gpt-image-2.5-sunburst）🆕 | 2026年9月8日 | 🖼️ 文生图/图像编辑 | 未公开（厂商未公开） | 未公开 | 最强图像生成+编辑（编辑精度优先），支持xhigh/max质量档，沿用GPT Image 2 token计价，$5/$30 MTok |
+| GPT-Image-2.5 Flare（gpt-image-2.5-flare）🆕 | 2026年9月8日 | 🖼️ 文生图/图像编辑 | 未公开（厂商未公开） | 未公开 | 快速高质量日常图像生成，支持xhigh/max质量档，$5/$30 MTok |
+| GPT-Rosalind（gpt-rosalind-research）🆕 | 2026年9月8日 | 🧠 推理（生命科学） | 未公开（厂商未公开） | 未公开 | 生命科学推理模型，经trusted-access计划向获批机构开放，$5/$25 MTok（缓存输入$0.50，2026年10月5日起计费） |
 | GPT-Audio-mini（gpt-audio-mini） | 2026年 | 🎤🌐 语音+多模态 | 未公开 | 128K | 语音交互轻量版 |
 | GPT-Audio（gpt-audio） | 2026年 | 🎤🌐 语音+多模态 | 未公开 | 128K | 语音交互模型 |
 | GPT-Chat-Latest（gpt-chat-latest） | 2026年 | 📝 纯文本 | 未公开 | 400K | 聊天优化版，$5/$30 MTok |
@@ -137,8 +146,8 @@ GPT-5系列标志着OpenAI进入新一代模型：
 - **GPT-5.4-image-2**：272K上下文，图像生成版，$8/$15 MTok
 - **GPT-5.5**：最新旗舰模型，1050K上下文，128K最大输出，知识截止2025年12月。$5/$30 MTok。支持所有工具（Functions、Web search、File search、Computer use）
 - **GPT-5.5-pro**：GPT-5.5增强版，1050K上下文，$30/$180 MTok
-- **GPT-5.6 Sol（2026年7月9日）**：GPT-5.6系列旗舰，面向复杂推理、编程和Agent工作流，尤其在命令行和多步编程任务上表现突出。1050K上下文，$2/$10 MTok（Fast mode 2x价格）
-- **GPT-5.6 Sol Pro**：Sol的推理增强版（reasoning.mode=pro），处理复杂任务时质量更高，同价$2/$10 MTok
+- **GPT-5.6 Sol（2026年7月9日）**：GPT-5.6系列旗舰，面向复杂推理、编程和Agent工作流，尤其在命令行和多步编程任务上表现突出。1050K上下文，2026年8月21日起 $4/$20 MTok（促销价至少至11月21日）
+- **GPT-5.6 Sol Pro**：Sol的推理增强版（reasoning.mode=pro），处理复杂任务时质量更高，同价$4/$20 MTok
 - **GPT-5.6 Terra（2026年7月9日）**：中端定位，介于Sol和Luna之间，适合日常编码、推理和Agent任务。1050K上下文，$2/$12 MTok（2026年7月30日降价20%）
 - **GPT-5.6 Terra Pro**：Terra的推理增强版，同价$2/$12 MTok
 - **GPT-5.6 Luna（2026年7月9日）**：高性价比模型，适合高吞吐、低延迟场景（聊天、分类、轻量Agent）。1050K上下文，$0.20/$1.20 MTok（2026年7月30日降价80%）
@@ -152,6 +161,14 @@ GPT-5系列标志着OpenAI进入新一代模型：
 - **GPT-6 Luna Decisions（2026年10月6日）** 🆕：GPT-6 Luna 通过 OpenAI **Decisions API** 提供，是一类专门的输出模式而非独立训练的模型。它不生成文本，而是读取以 `state` 传入的内容（文本、JSON 或图像），在单次请求中返回对具名问题的**类型化概率答案**：`noul`（是/否问题的"是"概率）、`choice`（每个选项的概率及最可能选项）、`score`（有序评分每一等级的概率及期望分）。面向分类、路由、内容审核和按评分标准打分等场景，由应用代码直接对返回数值取阈值，而无需解析聊天回复；单个请求最多可携带 200 个关于同一内容的问题。精确模型ID `gpt-6-luna-decisions`（快照 `gpt-6-luna-decisions-20261006`），1050K上下文，输入 $0.10/MTok、输出不计费（$0）
 - **GPT-6.1 Sol（2026年9月29日）** 🆕：GPT-6 Sol 的升级版，在 GPT-6 系列中定位仍低于旗舰 Astra。面向 Agent化编程、Computer Use、文档密集型专业工作和多步业务流程自动化，能以远低于 Astra 的成本接近 Astra 级结果；相比 GPT-6 Sol，事实性错误更少，且在Agent任务中更可靠地遵守明确限制和用户意图。精确模型ID `gpt-6.1-sol`（快照 `gpt-6.1-sol-20260929`），1050K上下文、128K最大输出，$2/$10 MTok（>272K输入 $4/$15）
 - **GPT-6.1 Sol Pro（2026年9月29日）** 🆕：与 GPT-6.1 Sol 同一底层模型，以 `reasoning.mode=pro` 提供服务。精确模型ID `gpt-6.1-sol-pro`（快照 `gpt-6.1-sol-pro-20260929`），1050K上下文、128K输出，$2/$10 MTok（>272K输入 $4/$15）
+- **GPT-Live 1（2026年9月10日 GA）** 🆕：OpenAI 旗舰实时语音对话模型（`v1/live/sessions`），全双工语音会话可在后端模型/Agent 处理推理与工具时持续进行，支持 Responses 委托（OpenAI 模型）或客户端委托（自有后端）。语音会话 $0.05/分钟（按秒计费），后端模型与工具用量另计。2026年10月15日新增 GPT-Live 内原生 Decisions 集成；2026年10月16日向全部 API 客户开放 prompt-to-voice（文本描述创建自定义音色，音色创建免费）并新增 9 种自然音色（德/法/印地/日/韩语）
+- **GPT-Transcribe / GPT-Live-Transcribe（2026年7月28日）** 🆕：新一代语音转写双模型。GPT-Transcribe 面向文件转写与 Realtime 已提交轮次的最终转写（高精度，$0.0045/分钟）；GPT-Live-Transcribe 面向低延迟流式实时转写（$0.017/分钟）。两者均支持自由格式转写上下文、关键词提示与多语言。⚠️ 2026年8月26日官方宣布 `whisper-1`、`gpt-4o-transcribe`、`gpt-4o-mini-transcribe`、`gpt-4o-transcribe-diarize` 弃用，2027年2月26日关停，迁移至这两个模型
+- **GPT-Realtime-2.1 / 2.1 Mini（2026年7月6日）** 🆕：更新版实时推理语音模型，改进字母数字识别、静音与噪声处理及打断行为；Mini 为更快更低成本的蒸馏版。定价 $4/$24 与 $0.6/$2.4 MTok。⚠️ 2026年7月20日官方宣布旧 `gpt-realtime`/`gpt-4o-realtime`/`gpt-realtime-mini` 等家族 2027年1月20日关停，推荐迁移至 GPT-Realtime-2.1/2.1 Mini；TTS 系列（tts-1/tts-1-hd/gpt-4o-mini-tts）2026年10月1日弃用、2027年1月6日关停，官方替代品为 `gpt-realtime-2.1-mini`
+- **GPT-Image-2.5 Sunburst / Flare（2026年9月8日）** 🆕：新一代图像生成与编辑双模型，经 Image API 与 Responses API 图像生成工具提供。Sunburst 面向编辑精度优先的工作流（最强编辑能力），Flare 面向快速高质量日常图像生成；两者均支持 `xhigh`/`max` 质量档，沿用 GPT Image 2 token 计价（$5/$30 MTok）。⚠️ 2026年6月2日官方宣布 `gpt-image-1-mini`、`gpt-image-1.5`、`chatgpt-image-latest` 2026年12月1日关停，替代品即这两款模型
+- **GPT-5.6 Cyber（2026年8月7日）** 🆕：Daybreak 安全计划 Red 层专用网络安全模型，面向授权漏洞复现、利用验证、渗透测试、红队与复杂系统分析（Blue 层使用 GPT-5.6 Sol 等通用模型）。需单独审批与配置，$12.5/$75 MTok。⚠️ 前代 `gpt-5.4-cyber` 已于 2026年10月1日关停
+- **GPT-Rosalind（2026年9月8日 GA）** 🆕：生命科学推理模型，经 trusted-access 计划向获批机构的内部生命科学研究开放，标准定价 $5/$25 MTok（缓存输入 $0.50），2026年10月5日起计费
+- **GPT-6 Luna Decisions GA（2026年10月22日）** 🆕：Decisions API 携手 `gpt-6-luna` 正式版（GA），支持跨请求共享输入缓存（享 prompt-cache 折扣）、单问题内嵌图像、`input_json` 直接传结构化数据，单请求问题数上限由公开测试的 200 提升至 400
+- **GPT-5.6 Sol 降价（2026年8月21日）**：GPT-5.6 Sol 降至 $4/$20 MTok（输入降20%、输出降33%），促销价至少维持至2026年11月21日
 - **GPT-6 家族层级说明**：GPT-6 系列沿用 GPT-5.6 的三档命名（Astra 旗舰 / Sol 高端高性价比 / Luna 高速低成本），首发为 Astra、Astra Pro（2026年9月3日），随后补齐 Sol、Luna 两档（2026年9月22日），并推出 GPT-6.1 Sol（2026年9月29日）作为 Sol 档的迭代。**GPT-6 Sol/Luna 是 GPT-6 家族的新成员，与 2026年7月9日发布的 GPT-5.6 Sol/Terra/Luna 是不同代际的独立模型，非同一模型的重命名或补充。** 截至 2026年10月10日，上述 GPT-6 系列模型的参数规模、知识截止时间均未公开
 - **GPT-5-pro**：GPT-5增强版，400K上下文，$15/$120 MTok
 - **GPT-5.1**：400K上下文，$1.25/$10 MTok
@@ -216,7 +233,7 @@ OpenAI在语音领域布局广泛：
 | GPT-6 Sol / Sol Pro | $2 | $10 | 1050K |
 | GPT-6 Luna / Luna Pro | $0.10 | $0.50 | 1050K |
 | GPT-6 Luna Decisions | $0.10 | 不计费（$0） | 1050K |
-| GPT-5.6 Sol / Sol Pro | $2 | $10 | 1050K |
+| GPT-5.6 Sol / Sol Pro | $4（促销，至2026-11-21） | $20（促销） | 1050K |
 | GPT-5.6 Terra / Terra Pro | $2 | $12 | 1050K |
 | GPT-5.6 Luna / Luna Pro | $0.20 | $1.20 | 1050K |
 | GPT-5.5-pro | $30 | $180 | 1050K |
@@ -254,5 +271,10 @@ OpenAI在语音领域布局广泛：
 |----------|------|----------|----------|
 | 2026年10月14日 | GPT-4o / 4o mini / 4.1 / 4.1 mini | 2027年1月14日 | `gpt-6-luna` |
 | 2026年10月1日 | GPT-5.3-Codex、GPT-5.1、GPT-5.4-Nano | 2027年4月1日 | GPT-6 系列 |
-| 2026年10月1日 | TTS 系列 | 2027年1月6日 | 新版 TTS 模型 |
+| 2026年10月1日 | TTS 系列（tts-1/tts-1-hd/gpt-4o-mini-tts） | 2027年1月6日 | `gpt-realtime-2.1-mini` |
+| 2026年8月26日 | 转写系列（whisper-1/gpt-4o-transcribe/gpt-4o-mini-transcribe/gpt-4o-transcribe-diarize） | 2027年2月26日 | `gpt-transcribe` / `gpt-live-transcribe` |
+| 2026年7月20日 | 旧 Realtime/Audio 家族（gpt-realtime、gpt-audio、gpt-4o-realtime、gpt-realtime-mini、gpt-audio-mini 等） | 2027年1月20日 | `gpt-realtime-2.1` / `gpt-audio-1.5` |
+| 2026年6月2日 | GPT Image 旧款（gpt-image-1-mini/gpt-image-1.5/chatgpt-image-latest） | 2026年12月1日 | `gpt-image-2.5-sunburst` / `gpt-image-2.5-flare` |
+| 2026年4月22日 | 遗留 GPT 快照（gpt-3.5-turbo-0125/gpt-4-0613/gpt-4-turbo/gpt-4.1-nano/o1/o3-mini/o4-mini 等） | 2026年10月23日（已关停） | `gpt-5.6-sol` / `gpt-5.6-terra` / `gpt-5.6-luna` |
+| 2026年9月11日 | `gpt-5.4-cyber` | 2026年10月1日（已关停） | 最强可用 cyber 模型（`gpt-5.6-cyber`） |
 

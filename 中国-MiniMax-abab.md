@@ -43,7 +43,7 @@
 | MiniMax-M2.7-highspeed | 2026年3月18日 | 📝 纯文本 | 未公开 | 未公开 | 200K | M2.7高速版，效果一致速度更快，全面支持自动Cache |
 | MiniMax-M3.0 | 2026年5月31日 | 📝🌐💻 纯文本+多模态+代码 | 427B MoE | ~23B | 1M（最大输出512K） | MSA架构，前沿编码，原生多模态（文本+图像+视频输入） |
 | MiniMax-M3.1-Flash-Preview 🆕 | 2026年9月27日 | 📝🌐💻 文本+多模态+代码 | 未公开 | 未公开 | 1M | 原生多模态 Frontier Coding 模型，思考深度可调，暂仅通过 M Plan 和 MiniMax Code 提供，9月28日开启公测 |
-| MiniMax-M3.1-Flash（minimax/minimax-m3.1-flash）🆕 | 2026年10月19日 | 📝🌐💻🖥️ 文本+多模态+代码+计算机操作 | 未公开 | 未公开 | 1M | M3.1 Flash 正式版，Agent/编程/Computer Use/网络安全代际提升，推理速度提升近3倍、成本降70%，100万token上下文，按量API已开放 |
+| MiniMax-M3.1-Flash（minimax/minimax-m3.1-flash）🆕 | 2026年10月19日 | 📝🌐💻🖥️ 文本+多模态+代码+计算机操作 | 428B MoE | 23B | 1M | M3.1 Flash 正式版，Agent/编程/Computer Use/网络安全代际提升，推理速度提升近3倍、成本降70%，100万token上下文，按量API已开放；开源权重已于2026年10月17日上传HuggingFace |
 | music-2.6 | 2026年4月 | 🎵 音乐生成 | — | — | — | AI音乐生成 ⚠️ 2026年8月20日起付费音乐接口不再面向新用户开放，免费接口停止服务 |
 | music-cover | 2025年 | 🎵 音乐 | — | — | — | 基于参考音频生成翻唱 |
 | MiniMax-Music3 🆕 | 2026年7月16日 | 🎵 音乐生成 | 2B（开源） | — | — | 更懂创作意图，音质全面跃升，人声合成更自然，已开源（HuggingFace/魔搭） |
@@ -83,7 +83,7 @@ M3.1 Flash 的正式版，从预览转为全量开放（官方发版日志与博
 - **基准表现**：DeepSWE v1.1 73.7%；OSWorld V2 61.7 分、Agents' Last Exam (ALE) 29.6 分（两项均为国产模型第一）；CyberGym 82%；BankerToolBench 76.2 分；AutomationBench-AA 位居最前列
 - **效率**：采用更激进的稀疏注意力架构，日常场景输出速度 200+ TPS（P50 稳定 170+ TPS），推理速度提升近 3 倍，Agentic 任务综合使用成本较前代降低 70%
 - **定价**：输入 1 元/百万 tokens，输出 4 元/百万 tokens，缓存读取 0.1 元/百万 tokens
-- **接入**：已上线 MiniMax API、M Plan 和 MiniMax Code；OpenRouter 于 2026-10-19 上架 `minimax/minimax-m3.1-flash`；官方表示将稍后开放权重
+- **接入**：已上线 MiniMax API、M Plan 和 MiniMax Code；OpenRouter 于 2026-10-19 上架 `minimax/minimax-m3.1-flash`；**开源权重已于 2026年10月17日 上传 HuggingFace（`MiniMaxAI/MiniMax-M3.1-Flash`，428B 总参数 / 23B 激活，含 DSpark 投机解码草稿头，官方名称 MiniMax-M3.1-Flash，采用 quantization-aware 训练与全模型稀疏注意力）**
 - **承接迁移**：自 2026年10月19日起，M2.5 / M2.7 系列在 M Plan / Token Plan 中的请求统一路由至 M3.1 Flash（原模型名保留为兼容入口）
 
 ### MiniMax H3（2026年7月31日）🆕
