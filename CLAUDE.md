@@ -38,6 +38,38 @@ npm run check:timeline                     # 仅校验
 
 **何时使用：** 每次向 README 时间线表新增/更新模型条目后，运行一次以保持倒序。
 
+### `scripts/pick_vendors.js` — 定时更新的厂商分组
+
+按「北京时间年积日 % 分组数」选择当天要更新的厂商，供 GitHub Actions 自动更新使用。
+
+**用法：**
+
+```bash
+npm run check:vendors                      # 校验分组覆盖（所有厂商文件被且仅被覆盖一次）
+npm run pick:vendors                       # 查看今天选中的分组
+node scripts/pick_vendors.js --date 2026-10-30
+node scripts/pick_vendors.js --group all   # 全量
+```
+
+分组配置在 `scripts/vendors.json`，新增厂商文件时必须同步加入其中一个分组，否则 `check:vendors` 会失败。
+
+### 自动更新 Workflow
+
+`.github/workflows/auto-update.yml` 每天北京时间 06:17 运行，按分组调用 Claude Code 检索并更新模型数据，校验通过后在 `auto-update` 分支创建/更新 PR。
+
+配套文件：
+- `.github/auto-update.config.json` — 非敏感参数（模型、重试次数、预算、上限）
+- `.github/prompts/auto-update.md` — 给 Claude 的任务提示词
+- `scripts/ci/setup-ccswitch.sh` — 配置 OpenAI Chat 格式 Provider 与 failover
+- `scripts/ci/start-proxy.sh` — 启动 cc-switch 本地协议转换代理
+- `scripts/ci/run-claude.sh` — 带退避重试的 Claude 调用
+- `scripts/ci/validate_run.js` — 校验运行报告与变更范围
+- `scripts/ci/build_pr_body.js` — 生成 PR 描述
+
+**手动触发：** Actions → 「自动更新模型数据」→ Run workflow，可指定 `group=0..3/all` 与 `dry_run`。
+
+**必需配置：** 仓库 Secrets/Variables 中设置 `RELAY_BASE_URL`、`RELAY_API_KEY`、`RELAY_MODEL`、`RELAY_HAIKU_MODEL`，可选 `RELAY_FALLBACK_*`；并在仓库 Settings → Actions → General 中允许 GitHub Actions 创建 PR。
+
 ## File Naming Convention
 
 Files must follow the pattern: **国家-公司英文名-经典模型名.md**

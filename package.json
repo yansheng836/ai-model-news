@@ -5,6 +5,9 @@
   "private": true,
   "scripts": {
     "sort:timeline": "node scripts/sort_timeline.js",
-    "check:timeline": "node scripts/sort_timeline.js --check"
+    "check:timeline": "node scripts/sort_timeline.js --check",
+    "pick:vendors": "node scripts/pick_vendors.js",
+    "check:vendors": "node scripts/pick_vendors.js --check",
+    "validate:run": "node scripts/ci/validate_run.js"
   }
 }

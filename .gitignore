@@ -12,3 +12,6 @@
 
 # OpenRouter temp data
 or_models.json
+
+# Auto-update runtime data
+.auto-update/

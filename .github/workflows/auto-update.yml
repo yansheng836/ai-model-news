@@ -1,0 +1,187 @@
+name: 自动更新模型数据
+
+on:
+  schedule:
+    # 北京时间每天 06:17（UTC 22:17）
+    - cron: '17 22 * * *'
+  workflow_dispatch:
+    inputs:
+      group:
+        description: '分组索引（0-3）、auto 或 all'
+        required: false
+        default: 'auto'
+        type: string
+      dry_run:
+        description: '只运行，不创建 PR'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: auto-update
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Shanghai
+  ANTHROPIC_BASE_URL: http://127.0.0.1:15721
+  ANTHROPIC_AUTH_TOKEN: PROXY_MANAGED
+  API_TIMEOUT_MS: '600000'
+  CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC: '1'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: 准备滚动分支
+        run: |
+          set -Eeuo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin auto-update >/dev/null 2>&1; then
+            echo "检测到已有 auto-update 分支，在其基础上累积变更"
+            git fetch origin auto-update
+            git checkout -B auto-update origin/auto-update
+            if ! git merge --no-edit origin/main; then
+              echo "auto-update 分支与 main 冲突，请先手动处理" >&2
+              exit 1
+            fi
+          else
+            echo "创建新的 auto-update 分支"
+            git checkout -B auto-update
+          fi
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
+
+      - name: 读取项目配置
+        run: |
+          echo "CCSWITCH_VERSION=$(node -p 'require("./.github/auto-update.config.json").ccswitch.version')" >> "$GITHUB_ENV"
+          echo "CCSWITCH_PORT=$(node -p 'require("./.github/auto-update.config.json").ccswitch.listen_port')" >> "$GITHUB_ENV"
+          echo "CLAUDE_CODE_VERSION=$(node -p 'require("./.github/auto-update.config.json").claude_code_version')" >> "$GITHUB_ENV"
+
+      - name: 安装 Claude Code CLI
+        run: npm install --global "@anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}"
+
+      - name: 安装 cc-switch-cli
+        run: |
+          set -Eeuo pipefail
+          ASSET="cc-switch-cli-${CCSWITCH_VERSION}-linux-x64-musl.tar.gz"
+          BASE="https://github.com/SaladDay/cc-switch-cli/releases/download/${CCSWITCH_VERSION}"
+          curl -fsSL --retry 3 --retry-delay 5 -o "/tmp/${ASSET}" "${BASE}/${ASSET}"
+          curl -fsSL --retry 3 --retry-delay 5 -o /tmp/ccsw-checksums.txt "${BASE}/checksums.txt"
+          cd /tmp
+          grep -E "[ *]${ASSET}\$" ccsw-checksums.txt | sha256sum -c -
+          mkdir -p /tmp/ccsw
+          tar -xzf "/tmp/${ASSET}" -C /tmp/ccsw
+          BIN="$(find /tmp/ccsw -type f -name cc-switch | head -n 1)"
+          test -n "$BIN"
+          sudo install -m 0755 "$BIN" /usr/local/bin/cc-switch
+          cc-switch --version
+
+      - name: 配置 Provider 与 failover
+        env:
+          RELAY_BASE_URL: ${{ vars.RELAY_BASE_URL }}
+          RELAY_API_KEY: ${{ secrets.RELAY_API_KEY }}
+          RELAY_MODEL: ${{ vars.RELAY_MODEL }}
+          RELAY_HAIKU_MODEL: ${{ vars.RELAY_HAIKU_MODEL }}
+          RELAY_FALLBACK_BASE_URL: ${{ vars.RELAY_FALLBACK_BASE_URL }}
+          RELAY_FALLBACK_API_KEY: ${{ secrets.RELAY_FALLBACK_API_KEY }}
+          RELAY_FALLBACK_MODEL: ${{ vars.RELAY_FALLBACK_MODEL }}
+        run: bash scripts/ci/setup-ccswitch.sh
+
+      - name: 选择当天厂商分组
+        id: pick
+        env:
+          INPUT_GROUP: ${{ inputs.group }}
+        run: |
+          set -Eeuo pipefail
+          GROUP="${INPUT_GROUP:-auto}"
+          node scripts/pick_vendors.js \
+            --group "$GROUP" \
+            --context .auto-update/context.json \
+            --github-output
+
+      - name: 运行 Claude Code
+        id: run-claude
+        run: bash scripts/ci/run-claude.sh
+
+      - name: 排序 README 时间线
+        run: node scripts/sort_timeline.js
+
+      - name: 校验运行结果
+        run: |
+          node scripts/ci/validate_run.js \
+            --report .auto-update/report.json \
+            --context .auto-update/context.json \
+            --config .github/auto-update.config.json
+
+      - name: 生成 PR 描述
+        if: ${{ steps.run-claude.outcome == 'success' }}
+        run: |
+          node scripts/ci/build_pr_body.js \
+            --report .auto-update/report.json \
+            --context .auto-update/context.json \
+            --output "$RUNNER_TEMP/pr-body.md"
+
+      - name: 确保 PR 标签存在
+        if: ${{ steps.run-claude.outcome == 'success' && (github.event_name != 'workflow_dispatch' || inputs.dry_run == false) }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh label create auto-update --color 0e8a16 --description "自动更新 PR" --force
+
+      - name: 创建或更新 PR
+        if: ${{ steps.run-claude.outcome == 'success' && (github.event_name != 'workflow_dispatch' || inputs.dry_run == false) }}
+        uses: peter-evans/create-pull-request@v8.1.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: main
+          branch: auto-update
+          delete-branch: true
+          title: 'docs: 自动更新模型数据（${{ steps.pick.outputs.date }}，组 ${{ steps.pick.outputs.group_id }}）'
+          commit-message: 'docs: 自动更新模型数据（${{ steps.pick.outputs.date }}，组 ${{ steps.pick.outputs.group_id }}）'
+          body-path: ${{ runner.temp }}/pr-body.md
+          labels: auto-update
+          add-paths: |
+            README.md
+            中国-*.md
+            美国-*.md
+            法国-*.md
+
+      - name: 上传运行日志
+        if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: auto-update-${{ github.run_id }}
+          if-no-files-found: ignore
+          retention-days: 14
+          path: |
+            .auto-update/
+            ${{ runner.temp }}/claude-run.jsonl
+            ${{ runner.temp }}/ccswitch-proxy.log
+            ${{ runner.temp }}/auto-update-prompt.md
+            ${{ runner.temp }}/pr-body.md
+
+      - name: 输出运行摘要
+        if: always()
+        run: |
+          {
+            echo "## 自动更新运行结果"
+            echo ""
+            echo "- 日期：${{ steps.pick.outputs.date }}"
+            echo "- 分组：${{ steps.pick.outputs.group_name }}"
+            echo "- Claude 步骤：${{ steps.run-claude.outcome || 'skipped' }}"
+          } >> "$GITHUB_STEP_SUMMARY"

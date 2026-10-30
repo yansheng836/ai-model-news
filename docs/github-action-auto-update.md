@@ -9,7 +9,7 @@
 当前维护方式是人工隔几天查看各厂商是否发布新模型，再手动更新公司文档与 README 时间线。目标是把这套流程自动化：
 
 - **定时**：每天由 GitHub Actions 触发
-- **轮换**：每天只处理 4～6 家厂商，约 4 天覆盖一轮全量
+- **轮换**：每天只处理 6～7 家厂商，约 4 天覆盖一轮全量
 - **自动检索**：按 CLAUDE.md 的数据源优先级抓取官方文档与 OpenRouter API
 - **自动更新**：修改对应厂商 md 与 README 时间线表
 - **人工把关**：只开 PR，不直接改 `main`
@@ -98,10 +98,12 @@ flowchart TD
 
 scripts/
 ├── vendors.json                 # 厂商分组
-├── pick_vendors.js              # 计算当天分组
+├── pick_vendors.js              # 计算当天分组 / 校验覆盖
 ├── sort_timeline.js             # 已有：时间线排序
 └── ci/
-    ├── run-claude.sh            # 带退避重试的调用包装
+    ├── setup-ccswitch.sh        # 配置 Provider、failover、上游冒烟测试
+    ├── start-proxy.sh           # 启动本地代理并等待端口就绪
+    ├── run-claude.sh            # 带退避重试的 Claude 调用
     ├── validate_run.js          # 运行结果校验
     └── build_pr_body.js         # 由报告生成 PR 描述
 ```
@@ -110,23 +112,33 @@ scripts/
 
 | 组件 | 输入 | 输出 |
 | ---- | ---- | ---- |
-| `pick_vendors.js` | 日期、`vendors.json` | 当天厂商文件列表 |
-| `run-claude.sh` | 提示词、环境变量 | Claude 运行日志、退出码 |
-| `validate_run.js` | git diff、运行报告 | 通过/失败 + 原因 |
-| `build_pr_body.js` | 运行报告、diff 统计 | PR 描述 Markdown |
+| `pick_vendors.js` | 日期、`vendors.json` | 当天厂商文件列表、`context.json` |
+| `setup-ccswitch.sh` | Provider 环境变量 | 已就绪的 Provider 与 failover 队列 |
+| `start-proxy.sh` | 端口配置 | 可用的 `127.0.0.1:15721` |
+| `run-claude.sh` | 提示词、运行上下文 | Claude 运行日志、`report.json` |
+| `validate_run.js` | `report.json`、`context.json`、git diff | 通过/失败 + 原因 |
+| `build_pr_body.js` | `report.json`、`context.json` | PR 描述 Markdown |
+
+本地可单独验证的脚本：
+
+```bash
+npm run check:vendors                              # 分组覆盖校验
+node scripts/pick_vendors.js --date 2026-10-30     # 查看指定日期选中的分组
+node scripts/ci/validate_run.js                    # 用默认路径校验最近一次运行
+```
 
 ## 6. 关键设计
 
 ### 6.1 厂商分组
 
-把 23 个厂商文件分为 4 组，按「北京时间年积日 % 4」轮换，每家约 4 天检查一次：
+把 26 个厂商文件分为 4 组，按「北京时间年积日 % 4」轮换，每家约 4 天检查一次：
 
 | 组 | 厂商 |
 | -- | ---- |
 | 0 | OpenAI、Anthropic、Google、Meta、xAI、NVIDIA |
 | 1 | DeepSeek、阿里巴巴(Qwen)、腾讯、百度、字节跳动(豆包)、华为 |
-| 2 | 智谱AI、月之暗面(Kimi)、MiniMax、小米、科大讯飞、百川 |
-| 3 | 零一万物、商汤、美团、阶跃星辰、Mistral |
+| 2 | 智谱AI、月之暗面(Kimi)、MiniMax、小米、科大讯飞、百川、小红书 |
+| 3 | 零一万物、商汤、美团、阶跃星辰、快手、蚂蚁集团、Mistral |
 
 `vendors.json` 是唯一事实来源。`pick_vendors.js --check` 会校验：
 
@@ -153,10 +165,15 @@ scripts/
     "api_key_secret": "RELAY_FALLBACK_API_KEY",
     "model_var": "RELAY_FALLBACK_MODEL"
   },
+  "ccswitch": {
+    "version": "v5.11.3",
+    "listen_port": 15721
+  },
+  "claude_code_version": "2.1.305",
   "claude": {
     "max_turns": 60,
     "max_budget_usd": 3,
-    "timeout_minutes": 20
+    "timeout_minutes": 12
   },
   "retry": {
     "attempts": 3,
@@ -169,30 +186,18 @@ scripts/
 }
 ```
 
-`.claude/settings.json` 只放工具权限与行为开关，**不放端点地址**，避免影响本地开发：
+`.claude/settings.json` 只放行为开关，**不放端点地址，也不放禁用 git 的规则**，避免影响本地开发：
 
 ```json
 {
   "env": {
     "DISABLE_TELEMETRY": "1",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
-  },
-  "permissions": {
-    "allow": [
-      "Read", "Edit", "Write", "Grep", "Glob", "WebFetch",
-      "Bash(curl:*)",
-      "Bash(node scripts/sort_timeline.js)"
-    ],
-    "deny": [
-      "WebSearch",
-      "Bash(git:*)",
-      "Bash(rm:*)"
-    ]
   }
 }
 ```
 
-> 禁止 `Bash(git:*)` 是有意的：提交、推送、建 PR 全部由 workflow 完成，模型只负责改文档。
+工具权限通过 CI 调用参数控制，见 6.4。这样本地用 Claude Code 提交代码不会受到影响，而 CI 中的模型无法执行 `git`、`rm` 等命令。
 
 ### 6.3 Provider 配置与代理启动
 
@@ -248,14 +253,16 @@ export API_TIMEOUT_MS="600000"
 ### 6.4 Claude 调用
 
 ```bash
-claude -p "$(cat .github/prompts/auto-update.md)" \
+claude -p "$(cat "$RUNNER_TEMP/auto-update-prompt.md")" \
   --model sonnet \
   --fallback-model haiku \
+  --permission-mode acceptEdits \
   --max-turns 60 \
   --max-budget-usd 3 \
   --allowedTools "Read" "Edit" "Write" "Grep" "Glob" "WebFetch" \
-                 "Bash(curl:*)" "Bash(node scripts/sort_timeline.js)" \
-  --disallowedTools "WebSearch" "Bash(git:*)" "Bash(rm:*)" \
+                 "Bash(curl:*)" "Bash(jq:*)" "Bash(node -e:*)" \
+                 "Bash(node scripts/sort_timeline.js)" \
+  --disallowedTools "WebSearch" "Bash(git:*)" "Bash(rm:*)" "Bash(sudo:*)" \
   --output-format stream-json --verbose \
   > "$RUNNER_TEMP/claude-run.jsonl" 2>&1
 ```
@@ -268,7 +275,8 @@ claude -p "$(cat .github/prompts/auto-update.md)" \
 4. 每条新增/变更必须给出 `source` URL，写进运行报告
 5. 日期必须精确到日或月；无法确认时写 `未公开` 或 `待确认`，禁止编造
 6. 结束时运行 `node scripts/sort_timeline.js`
-7. 把变更摘要写入 `.auto-update/report.json`（已 gitignore）
+7. 有更新时同步更新 README 顶部的 ⚠️ 数据说明
+8. 把变更摘要写入 `.auto-update/report.json`（已 gitignore）
 
 ### 6.5 运行报告
 
@@ -299,20 +307,24 @@ claude -p "$(cat .github/prompts/auto-update.md)" \
 
 ### 6.6 PR 策略
 
-采用**单滚动分支 + 单个 PR**，避免每天堆积一个 PR：
+采用**单滚动分支 + 单个 PR，变更逐次累积**，避免每天堆积一个 PR，也避免后一轮覆盖前一轮未合并的成果：
 
 - 分支：`auto-update`
-- 使用 `peter-evans/create-pull-request@v8`
-- 若已有同名 PR 则更新；合并后删除分支，下一轮重新创建
+- 每次运行先检查远端是否已有 `auto-update` 分支：
+  - 有：checkout 该分支并 `git merge origin/main`，在已有变更上继续累积
+  - 无：从 `main` 创建
+- 合并 `origin/main` 发生冲突时，直接失败并提示人工处理，不强行覆盖
+- 使用 `peter-evans/create-pull-request@v8` 提交并创建/更新 PR
+- 合并 PR 后删除分支，下一轮重新从 `main` 创建
 - PR 标题：`docs: 自动更新模型数据（2026-10-31，组 2）`
 - PR 标签：`auto-update`
-- PR 描述由 `build_pr_body.js` 生成：变更列表、来源链接、失败厂商、diff 统计
+- PR 描述由 `build_pr_body.js` 生成：本次运行变更、失败厂商、本次 diff、PR 累计 diff
 
 ## 7. 429 与故障容错
 
 | 层级 | 机制 | 失败后的行为 |
 | ---- | ---- | ------------ |
-| L1 分组隔离 | 每天只处理 4～6 家 | 单厂商失败不影响同组其他厂商 |
+| L1 分组隔离 | 每天只处理 6～7 家 | 单厂商失败不影响同组其他厂商 |
 | L2 Provider failover | cc-switch failover 队列 | 主通道 429/5xx 自动切备用 |
 | L3 CLI 内置重试 | Claude Code 对 429/529/5xx 指数退避 | 自动重试，`retry-after` 生效 |
 | L4 模型降级 | `--fallback-model haiku` | 主模型不可用时降级 |
@@ -324,7 +336,7 @@ claude -p "$(cat .github/prompts/auto-update.md)" \
 
 - **幂等续跑**，不重置工作区：提示词要求「只补缺失/过时条目」，第二次运行会在第一次的成果上继续
 - 每次重试前检查代理是否存活，挂掉则重启
-- 每次重试前打印 `cc-switch failover show`，全部 Provider 不可用时立即失败
+- 每次重试前打印 `cc-switch failover show`，便于确认当前生效的 Provider 与队列状态
 - 最终只要有合法报告且校验通过，即使部分厂商失败也照常开 PR，并在 PR 描述里列出失败项
 
 ## 8. 数据质量校验
@@ -340,7 +352,8 @@ claude -p "$(cat .github/prompts/auto-update.md)" \
 | 变更规模 | 新增时间线行数 ≤ 30，变更文件数 ≤ 8 |
 | 来源 | 每条 change 必须有 `http(s)://` 来源 |
 | 报告结构 | `report.json` 必须符合约定 schema |
-| Markdown | `markdownlint-cli` 通过（可配置为警告） |
+| 重复检测 | README 新增行不得与已有条目或本次其他新增行重复 |
+| Markdown | `markdownlint-cli` 目前作为可选项，不在 v1 中强制 |
 
 ## 9. 需要配置的 Secrets / Variables
 
@@ -368,15 +381,16 @@ claude -p "$(cat .github/prompts/auto-update.md)" \
 | 模型幻觉 | 编造版本号/日期 | 来源必填 + 自动校验 + PR 人工审核 |
 | Actions 定时延迟 | 高峰期可能晚几分钟到几十分钟 | 分组按日期计算，不依赖精确触发时刻 |
 | 公开仓库 60 天无活动会停用定时任务 | 自动化静默停止 | PR 本身算仓库活动；另可每月手动触发一次 |
-| Actions 单 job 上限 6 小时 | 长任务被强杀 | 分组 + `timeout-minutes: 45` |
+| Actions 单 job 上限 6 小时 | 长任务被强杀 | 分组 + `timeout-minutes: 60` |
+| 默认 `GITHUB_TOKEN` 可能无权建 PR | PR 步骤 403 | 仓库 Settings → Actions → General 勾选「Allow GitHub Actions to create and approve pull requests」，或改用 PAT |
 
 ## 11. 落地步骤
 
 1. 在第三方中转创建 Key，配置上表中的 Secrets / Variables
-2. 新增 `scripts/vendors.json`、`scripts/pick_vendors.js`，运行 `--check` 确认分组完整
+2. 新增 `scripts/vendors.json`、`scripts/pick_vendors.js`，运行 `npm run check:vendors` 确认分组完整
 3. 新增 `.github/auto-update.config.json`、`.github/prompts/auto-update.md`
-4. 新增 `.claude/settings.json`（权限白名单）
-5. 新增 `scripts/ci/` 下三个脚本
+4. 新增 `.claude/settings.json`（仅关闭遥测，不放权限规则）
+5. 新增 `scripts/ci/` 下五个脚本，并把 `pick:vendors` / `check:vendors` / `validate:run` 加入 `package.json`
 6. 新增 `.github/workflows/auto-update.yml`
 7. 用 `workflow_dispatch` 指定 `group=0`、`dry_run=true` 手动跑一次
 8. 检查日志、报告、PR 内容；确认无误后启用 `on.schedule`
@@ -387,7 +401,7 @@ claude -p "$(cat .github/prompts/auto-update.md)" \
 - 无更新时正常退出，不产生空 PR
 - 故意配置错误 Key 时：快速失败、上传日志、不开 PR
 - 排序校验失败时：不开 PR，日志能看到具体文件与行
-- 分组覆盖检查通过（23 个厂商文件全覆盖、无重复）
+- 分组覆盖检查通过（26 个厂商文件全覆盖、无重复）
 - PR 描述包含来源链接与失败厂商列表
 
 ## 12. 后续可选增强
@@ -396,4 +410,4 @@ claude -p "$(cat .github/prompts/auto-update.md)" \
 - 用 OpenRouter `/models` 做确定性 diff，只把有变化的厂商交给 LLM，降低 token 成本
 - 失败时自动开 Issue 并 `@` 维护者
 - 引入第二个中转做 A/B，对比数据完整率
-- 对 `README.md` 增加自动去重与冲突检测
+- 把 README 去重校验扩展到全表历史数据
