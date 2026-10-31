@@ -114,8 +114,11 @@ for ((attempt = 1; attempt <= ATTEMPTS; attempt++)); do
   fi
   cc-switch --app claude failover show || true
 
-  # 上一轮留下的报告可能不完整，避免误判为成功
-  rm -f "$REPORT"
+  # 保留重试前的报告：模型会读它跳过已完成的厂商（见提示词「增量落盘」）。
+  # 仅第一次尝试前清空，避免上一轮运行的残留被误当成进度。
+  if [[ $attempt -eq 1 ]]; then
+    rm -f "$REPORT"
+  fi
   printf '\n===== attempt %d =====\n' "$attempt" >>"$LOG_FILE"
 
   set +e
