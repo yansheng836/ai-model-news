@@ -58,17 +58,28 @@ node scripts/pick_vendors.js --group all   # 全量
 `.github/workflows/auto-update.yml` 每天北京时间 06:17 运行，按分组调用 Claude Code 检索并更新模型数据，校验通过后在 `auto-update` 分支创建/更新 PR。
 
 配套文件：
-- `.github/auto-update.config.json` — 非敏感参数（模型、重试次数、预算、上限）
+- `.github/auto-update.config.json` — 非敏感参数（中转数量 `relays.max`、重试次数、预算、上限）
 - `.github/prompts/auto-update.md` — 给 Claude 的任务提示词
-- `scripts/ci/setup-ccswitch.sh` — 配置 OpenAI Chat 格式 Provider 与 failover
+- `scripts/ci/setup-ccswitch.sh` — 按 `RELAY_1_*`~`RELAY_<max>_*` 注册多个 Provider 并填充 failover 队列
 - `scripts/ci/start-proxy.sh` — 启动 cc-switch 本地协议转换代理
-- `scripts/ci/run-claude.sh` — 带退避重试的 Claude 调用
+- `scripts/ci/run-claude.sh` — 带退避重试的 Claude 调用（代理启动后启用 failover，并打印每次尝试的用量）
 - `scripts/ci/validate_run.js` — 校验运行报告与变更范围
 - `scripts/ci/build_pr_body.js` — 生成 PR 描述
 
 **手动触发：** Actions → 「自动更新模型数据」→ Run workflow，可指定 `group=0..3/all` 与 `dry_run`。
 
-**必需配置：** 仓库 Secrets/Variables 中设置 `RELAY_BASE_URL`、`RELAY_API_KEY`、`RELAY_MODEL`、`RELAY_HAIKU_MODEL`，可选 `RELAY_FALLBACK_*`；并在仓库 Settings → Actions → General 中允许 GitHub Actions 创建 PR。
+**中转配置（多中转 failover）：** 按编号顺序支持最多 `relays.max` 个中转，编号越小优先级越高，请求失败（含 `403 额度不足`）时自动切换到下一个。第 `i` 号需要：
+
+| 名称 | 类型 | 必填 | 说明 |
+|------|------|------|------|
+| `RELAY_${i}_BASE_URL` | Variable | ✅ | 中转地址，如 `https://api.example.com/v1` |
+| `RELAY_${i}_API_KEY` | Secret | ✅ | 中转密钥 |
+| `RELAY_${i}_MODEL` | Variable | ✅ | 主模型名 |
+| `RELAY_${i}_HAIKU_MODEL` | Variable | 可选 | 轻量模型名，默认同主模型 |
+
+至少配置 1 号，其余编号可缺省（缺省的编号会被跳过）；若某编号只配了部分变量则报错终止。此外需在仓库 Settings → Actions → General 中允许 GitHub Actions 创建 PR。
+
+> 说明：`claude.max_budget_usd` 默认 1000（视为不设上限）。每次尝试的用量会打印在日志与运行摘要中，据此再收敛该值。
 
 ## File Naming Convention
 

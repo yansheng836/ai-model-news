@@ -50,6 +50,46 @@ DISALLOWED_TOOLS=(
   "Bash(sudo:*)"
 )
 
+# 从流式日志的最后一条 result 事件提取用量并打印，便于后续调整预算上限。
+print_usage() {
+  local log="$1"
+  local out
+  if ! out="$(node -e '
+    const fs = require("fs");
+    const raw = fs.readFileSync(process.argv[1], "utf8");
+    let result = null;
+    for (const line of raw.split("\n")) {
+      const t = line.trim();
+      if (!t) continue;
+      try { const o = JSON.parse(t); if (o.type === "result") result = o; } catch {}
+    }
+    if (!result) { console.log("（本次未产生用量统计）"); process.exit(0); }
+    const u = result.usage || {};
+    const cacheRead = u.cache_read_input_tokens || 0;
+    const cacheWrite = u.cache_creation_input_tokens || 0;
+    const totalIn = (u.input_tokens || 0) + cacheRead + cacheWrite;
+    console.log(`花费：$${(result.total_cost_usd ?? 0).toFixed(4)}`);
+    console.log(`输入 tokens：${totalIn}（缓存读 ${cacheRead} / 缓存写 ${cacheWrite}）`);
+    console.log(`输出 tokens：${u.output_tokens || 0}`);
+    console.log(`轮次：${result.num_turns ?? "-"}｜耗时：${((result.duration_ms || 0) / 1000).toFixed(1)}s`);
+    console.log(`终止原因：${result.terminal_reason || result.subtype || "-"}｜错误：${result.is_error ? "是" : "否"}`);
+  ' "$log" 2>/dev/null)"; then
+    return 0
+  fi
+  echo "── 本次尝试用量 ──"
+  echo "$out"
+  if [[ -n "${GITHUB_STEP_SUMMARY:-}" ]]; then
+    {
+      echo "### 本次尝试用量"
+      echo ""
+      echo '```'
+      echo "$out"
+      echo '```'
+      echo ""
+    } >>"$GITHUB_STEP_SUMMARY"
+  fi
+}
+
 mkdir -p "$ROOT/.auto-update"
 
 # 把静态提示词与本次运行上下文拼成完整提示词
@@ -65,8 +105,13 @@ cd "$ROOT"
 
 for ((attempt = 1; attempt <= ATTEMPTS; attempt++)); do
   echo "==> Claude 第 ${attempt}/${ATTEMPTS} 次尝试"
-  cc-switch --app claude failover show || true
   bash "$ROOT/scripts/ci/start-proxy.sh"
+
+  # 自动 failover 要求代理已在接管运行；否则 cc-switch 会弹交互确认，CI 非 TTY 下会被取消。
+  if ! cc-switch --app claude failover enable; then
+    echo "⚠ 启用自动 failover 失败，将以主通道单独运行" >&2
+  fi
+  cc-switch --app claude failover show || true
 
   # 上一轮留下的报告可能不完整，避免误判为成功
   rm -f "$REPORT"
@@ -85,6 +130,8 @@ for ((attempt = 1; attempt <= ATTEMPTS; attempt++)); do
     >>"$LOG_FILE" 2>&1
   code=$?
   set -e
+
+  print_usage "$LOG_FILE"
 
   if [[ $code -eq 0 && -s "$REPORT" ]] && node -e 'JSON.parse(require("fs").readFileSync(process.argv[1], "utf8"))' "$REPORT" 2>/dev/null; then
     echo "Claude 运行成功，报告：$REPORT"

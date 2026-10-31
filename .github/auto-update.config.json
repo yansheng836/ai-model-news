@@ -1,15 +1,6 @@
 {
-  "primary": {
-    "base_url_var": "RELAY_BASE_URL",
-    "api_key_secret": "RELAY_API_KEY",
-    "model_var": "RELAY_MODEL",
-    "haiku_model_var": "RELAY_HAIKU_MODEL"
-  },
-  "fallback": {
-    "enabled": true,
-    "base_url_var": "RELAY_FALLBACK_BASE_URL",
-    "api_key_secret": "RELAY_FALLBACK_API_KEY",
-    "model_var": "RELAY_FALLBACK_MODEL"
+  "relays": {
+    "max": 4
   },
   "ccswitch": {
     "version": "v5.11.3",
@@ -18,7 +9,7 @@
   "claude_code_version": "2.1.305",
   "claude": {
     "max_turns": 60,
-    "max_budget_usd": 3,
+    "max_budget_usd": 1000,
     "timeout_minutes": 12
   },
   "retry": {

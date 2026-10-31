@@ -92,15 +92,24 @@ jobs:
           sudo install -m 0755 "$BIN" /usr/local/bin/cc-switch
           cc-switch --version
 
-      - name: 配置 Provider 与 failover
+      - name: 配置多中转 Provider 与 failover 队列
         env:
-          RELAY_BASE_URL: ${{ vars.RELAY_BASE_URL }}
-          RELAY_API_KEY: ${{ secrets.RELAY_API_KEY }}
-          RELAY_MODEL: ${{ vars.RELAY_MODEL }}
-          RELAY_HAIKU_MODEL: ${{ vars.RELAY_HAIKU_MODEL }}
-          RELAY_FALLBACK_BASE_URL: ${{ vars.RELAY_FALLBACK_BASE_URL }}
-          RELAY_FALLBACK_API_KEY: ${{ secrets.RELAY_FALLBACK_API_KEY }}
-          RELAY_FALLBACK_MODEL: ${{ vars.RELAY_FALLBACK_MODEL }}
+          RELAY_1_BASE_URL: ${{ vars.RELAY_1_BASE_URL }}
+          RELAY_1_API_KEY: ${{ secrets.RELAY_1_API_KEY }}
+          RELAY_1_MODEL: ${{ vars.RELAY_1_MODEL }}
+          RELAY_1_HAIKU_MODEL: ${{ vars.RELAY_1_HAIKU_MODEL }}
+          RELAY_2_BASE_URL: ${{ vars.RELAY_2_BASE_URL }}
+          RELAY_2_API_KEY: ${{ secrets.RELAY_2_API_KEY }}
+          RELAY_2_MODEL: ${{ vars.RELAY_2_MODEL }}
+          RELAY_2_HAIKU_MODEL: ${{ vars.RELAY_2_HAIKU_MODEL }}
+          RELAY_3_BASE_URL: ${{ vars.RELAY_3_BASE_URL }}
+          RELAY_3_API_KEY: ${{ secrets.RELAY_3_API_KEY }}
+          RELAY_3_MODEL: ${{ vars.RELAY_3_MODEL }}
+          RELAY_3_HAIKU_MODEL: ${{ vars.RELAY_3_HAIKU_MODEL }}
+          RELAY_4_BASE_URL: ${{ vars.RELAY_4_BASE_URL }}
+          RELAY_4_API_KEY: ${{ secrets.RELAY_4_API_KEY }}
+          RELAY_4_MODEL: ${{ vars.RELAY_4_MODEL }}
+          RELAY_4_HAIKU_MODEL: ${{ vars.RELAY_4_HAIKU_MODEL }}
         run: bash scripts/ci/setup-ccswitch.sh
 
       - name: 选择当天厂商分组

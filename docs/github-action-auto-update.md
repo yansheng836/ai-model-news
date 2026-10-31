@@ -50,7 +50,7 @@ Claude Code ──Anthropic Messages──▶ 本地代理 ──OpenAI Chat Com
 
 - **非交互添加 Provider**（CLI 源码中明确标注 `Add` 为 non-interactive）
 - **协议转换代理**：`proxy serve --takeover claude --listen-port 15721`，前台模式全平台可用
-- **自动 failover 队列**：主 Provider 429/5xx 时切换备用 Provider
+- **自动 failover 队列**：当前 Provider 429/5xx/403 等失败时按队列顺序切换下一个中转
 - **健康检查**：`provider stream-check <id>` 可在正式运行前做一次冒烟测试
 
 ### 3.2 备选方案对比
@@ -69,7 +69,7 @@ Claude Code ──Anthropic Messages──▶ 本地代理 ──OpenAI Chat Com
 flowchart TD
     A[cron 每天 06:17<br/>或手动触发] --> B[计算当天分组<br/>day_of_year % 4]
     B --> C[安装 Claude Code CLI<br/>与 cc-switch-cli]
-    C --> D[配置主/备 Provider<br/>启用 failover]
+    C --> D[配置多中转 Provider<br/>填充 failover 队列]
     D --> E[启动本地代理<br/>127.0.0.1:15721]
     E --> F[claude -p<br/>只处理本组厂商]
     F --> G{运行成功?}
@@ -101,7 +101,7 @@ scripts/
 ├── pick_vendors.js              # 计算当天分组 / 校验覆盖
 ├── sort_timeline.js             # 已有：时间线排序
 └── ci/
-    ├── setup-ccswitch.sh        # 配置 Provider、failover、上游冒烟测试
+    ├── setup-ccswitch.sh        # 配置多中转 Provider、填充 failover 队列、上游冒烟测试
     ├── start-proxy.sh           # 启动本地代理并等待端口就绪
     ├── run-claude.sh            # 带退避重试的 Claude 调用
     ├── validate_run.js          # 运行结果校验
@@ -153,17 +153,8 @@ node scripts/ci/validate_run.js                    # 用默认路径校验最近
 
 ```json
 {
-  "primary": {
-    "base_url_var": "RELAY_BASE_URL",
-    "api_key_secret": "RELAY_API_KEY",
-    "model_var": "RELAY_MODEL",
-    "haiku_model_var": "RELAY_HAIKU_MODEL"
-  },
-  "fallback": {
-    "enabled": true,
-    "base_url_var": "RELAY_FALLBACK_BASE_URL",
-    "api_key_secret": "RELAY_FALLBACK_API_KEY",
-    "model_var": "RELAY_FALLBACK_MODEL"
+  "relays": {
+    "max": 4
   },
   "ccswitch": {
     "version": "v5.11.3",
@@ -172,7 +163,7 @@ node scripts/ci/validate_run.js                    # 用默认路径校验最近
   "claude_code_version": "2.1.305",
   "claude": {
     "max_turns": 60,
-    "max_budget_usd": 3,
+    "max_budget_usd": 1000,
     "timeout_minutes": 12
   },
   "retry": {
@@ -185,6 +176,8 @@ node scripts/ci/validate_run.js                    # 用默认路径校验最近
   }
 }
 ```
+
+`relays.max` 是中转槽位数；`setup-ccswitch.sh` 按 `RELAY_1_*`~`RELAY_<max>_*` 的顺序发现并注册中转，编号即 failover 优先级。`max_budget_usd` 默认 1000（等同不设上限），每次尝试的用量会打印在日志与运行摘要中，据此再收敛。
 
 `.claude/settings.json` 只放行为开关，**不放端点地址，也不放禁用 git 的规则**，避免影响本地开发：
 
@@ -202,34 +195,33 @@ node scripts/ci/validate_run.js                    # 用默认路径校验最近
 ### 6.3 Provider 配置与代理启动
 
 ```bash
-# 主 Provider（OpenAI Chat 格式）
-cc-switch --app claude provider add \
-  --id relay-primary --name relay-primary \
-  --base-url "$RELAY_BASE_URL" \
-  --api-key "$RELAY_API_KEY" \
-  --api-format openai_chat \
-  --sonnet-model "$RELAY_MODEL" \
-  --opus-model "$RELAY_MODEL" \
-  --haiku-model "$RELAY_HAIKU_MODEL"
-
-# 备用 Provider（可选）
-if [ -n "$RELAY_FALLBACK_BASE_URL" ]; then
+# 按编号顺序注册各中转（OpenAI Chat 格式），编号越小优先级越高
+PROVIDER_IDS=()
+for i in $(seq 1 "$RELAY_MAX"); do
+  # 实际脚本用间接展开取 RELAY_${i}_BASE_URL / _API_KEY / _MODEL / _HAIKU_MODEL
+  # 三者（BASE_URL/API_KEY/MODEL）齐全才注册；整组缺失则跳过；只缺其中一个则报错
   cc-switch --app claude provider add \
-    --id relay-fallback --name relay-fallback \
-    --base-url "$RELAY_FALLBACK_BASE_URL" \
-    --api-key "$RELAY_FALLBACK_API_KEY" \
+    --id "relay-$i" --name "relay-$i" \
+    --base-url "$base_url" \
+    --api-key "$api_key" \
     --api-format openai_chat \
-    --sonnet-model "$RELAY_FALLBACK_MODEL" \
-    --opus-model "$RELAY_FALLBACK_MODEL" \
-    --haiku-model "$RELAY_FALLBACK_MODEL"
-  cc-switch --app claude failover enable
-  cc-switch --app claude failover add relay-fallback
-fi
+    --sonnet-model "$model" \
+    --opus-model "$model" \
+    --haiku-model "$haiku_model"
+  PROVIDER_IDS+=("relay-$i")
+done
 
-cc-switch --app claude provider switch relay-primary
+# 依次填充 failover 队列；队列顺序即切换顺序
+for id in "${PROVIDER_IDS[@]}"; do
+  cc-switch --app claude failover add "$id"
+done
 
-# 冒烟测试：上游不可用就快速失败，不把时间浪费在跑 Claude 上
-cc-switch --app claude provider stream-check relay-primary
+cc-switch --app claude provider switch "${PROVIDER_IDS[0]}"
+
+# 冒烟测试：逐个检查上游连通性（不通过也保留在队列中，实际请求时会被跳过）
+for id in "${PROVIDER_IDS[@]}"; do
+  cc-switch --app claude provider stream-check "$id" || true
+done
 
 # 前台代理（CI 中必须前台运行）
 cc-switch proxy serve --takeover claude --listen-port 15721 &
@@ -240,7 +232,13 @@ for _ in $(seq 1 60); do
   (echo >/dev/tcp/127.0.0.1/15721) 2>/dev/null && break
   sleep 1
 done
+
+# 代理以 takeover 运行后再启用自动 failover
+cc-switch --app claude failover enable
+cc-switch --app claude failover show
 ```
+
+> ⚠️ 顺序不能颠倒：`failover enable` 要求队列非空，且要求代理已接管运行，否则 cc-switch 会弹出交互确认（CI 非 TTY 下会被取消，failover 静默不生效）。因此注册 Provider 与填充队列在 `setup-ccswitch.sh`，而 `failover enable` 放在代理启动之后（`run-claude.sh`）。
 
 Claude Code 侧只需要：
 
@@ -258,7 +256,7 @@ claude -p "$(cat "$RUNNER_TEMP/auto-update-prompt.md")" \
   --fallback-model haiku \
   --permission-mode acceptEdits \
   --max-turns 60 \
-  --max-budget-usd 3 \
+  --max-budget-usd 1000 \
   --allowedTools "Read" "Edit" "Write" "Grep" "Glob" "WebFetch" \
                  "Bash(curl:*)" "Bash(jq:*)" "Bash(node -e:*)" \
                  "Bash(node scripts/sort_timeline.js)" \
@@ -325,12 +323,20 @@ claude -p "$(cat "$RUNNER_TEMP/auto-update-prompt.md")" \
 | 层级 | 机制 | 失败后的行为 |
 | ---- | ---- | ------------ |
 | L1 分组隔离 | 每天只处理 6～7 家 | 单厂商失败不影响同组其他厂商 |
-| L2 Provider failover | cc-switch failover 队列 | 主通道 429/5xx 自动切备用 |
+| L2 Provider failover | cc-switch failover 队列（多中转） | 当前中转 429/5xx/403 等失败时按队列顺序切下一个 |
 | L3 CLI 内置重试 | Claude Code 对 429/529/5xx 指数退避 | 自动重试，`retry-after` 生效 |
 | L4 模型降级 | `--fallback-model haiku` | 主模型不可用时降级 |
 | L5 workflow 重试 | `run-claude.sh` 最多 3 次，退避 30s/120s | 保留已有编辑，幂等续跑 |
 | L6 预算/超时 | `--max-budget-usd`、`--max-turns`、`timeout` | 防止单次运行失控 |
 | L7 结果校验 | 排序、日期、变更范围 | 校验不过则不开 PR，只留日志 |
+
+### 7.1 failover 触发条件与容量（据 cc-switch-cli v5.11.3 源码）
+
+- **会触发切换**：`5xx`、`429`、`403`（第三方中转「额度不足」即此类）、传输错误、超时。
+- **不会触发切换**（客户端错误，直接返回）：`400`、`405`、`406`、`413`、`414`、`415`、`422`、`501`。
+- **例外**：官方 Codex 的 `401/403` 不切换；本项目用第三方 Claude 中转，走的是通用分支，因此 `403 额度不足` **会**切换到下一个中转。
+- **单请求上限**：一次请求最多尝试 `max_retries + 1` 个 Provider。cc-switch 默认 `max_retries = 3`，即最多 **4 个**；因此队列中转数不宜超过 4。
+- **注意**：`--max-budget-usd` 撞顶（`budget_exhausted`）是客户端预算行为，切换中转**无法**解决，只能调高预算或缩小分组。
 
 `run-claude.sh` 的重试原则：
 
@@ -357,15 +363,16 @@ claude -p "$(cat "$RUNNER_TEMP/auto-update-prompt.md")" \
 
 ## 9. 需要配置的 Secrets / Variables
 
-| 名称 | 类型 | 说明 |
-| ---- | ---- | ---- |
-| `RELAY_BASE_URL` | Variable | 主通道 OpenAI 兼容地址，如 `https://api.example.com/v1` |
-| `RELAY_API_KEY` | Secret | 主通道密钥 |
-| `RELAY_MODEL` | Variable | 主力模型名 |
-| `RELAY_HAIKU_MODEL` | Variable | 轻量模型名（用于别名 `haiku`） |
-| `RELAY_FALLBACK_BASE_URL` | Variable | 备用通道地址（可选） |
-| `RELAY_FALLBACK_API_KEY` | Secret | 备用通道密钥（可选） |
-| `RELAY_FALLBACK_MODEL` | Variable | 备用通道模型名（可选） |
+按编号 `i = 1..relays.max`（默认 4）配置多个中转，编号即 failover 优先级：
+
+| 名称 | 类型 | 必填 | 说明 |
+| ---- | ---- | ---- | ---- |
+| `RELAY_${i}_BASE_URL` | Variable | ✅ | 第 i 号中转的 OpenAI 兼容地址，如 `https://api.example.com/v1` |
+| `RELAY_${i}_API_KEY` | Secret | ✅ | 第 i 号中转密钥 |
+| `RELAY_${i}_MODEL` | Variable | ✅ | 第 i 号主力模型名 |
+| `RELAY_${i}_HAIKU_MODEL` | Variable | 可选 | 第 i 号轻量模型名（别名 `haiku`），默认同主模型 |
+
+至少配置 1 号，2~4 号可缺省（整组缺失则跳过）；若某编号只配了部分变量则脚本报错终止。
 
 密钥只在这些位置出现：GitHub Secrets → workflow `env` → cc-switch provider 配置。禁止写入仓库文件或日志。
 
@@ -374,7 +381,7 @@ claude -p "$(cat "$RUNNER_TEMP/auto-update-prompt.md")" \
 | 限制 | 影响 | 应对 |
 | ---- | ---- | ---- |
 | 轮换导致延迟 | 新模型最多延迟约 4 天 | `workflow_dispatch` 支持手动指定组或 `all` |
-| 第三方中转稳定性 | 可能限流、断流 | L2 failover + L5 重试 |
+| 第三方中转稳定性 | 可能限流、额度不足、断流 | L2 多中转 failover（`403 额度不足`亦会切换）+ L5 重试；注意客户端预算撞顶需调 `max_budget_usd` |
 | 中转对工具调用支持不一 | 可能出现 400/流式异常 | 启动前 `stream-check`，不通过则快速失败 |
 | 官网反爬 | 部分页面 403 | 按 CLAUDE.md 备用数据源降级 |
 | WebSearch 不可用 | 无法用服务端搜索 | 只用 WebFetch + OpenRouter API |
