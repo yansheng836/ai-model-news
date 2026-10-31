@@ -148,6 +148,14 @@ function checkReadmeRows(limits) {
       .map((line) => rowKey(line.slice(1).trim())),
   );
 
+  // 纯删除：key 被删但没有对应的 + 行（不是修改，是直接删行）
+  const addedKeys = new Set(addedRows.map(rowKey));
+  for (const key of removedKeys) {
+    if (!addedKeys.has(key)) {
+      errors.push(`README 删除了已有行（禁止删除，只能新增或就地修改）：${key}`);
+    }
+  }
+
   if (addedRows.length > limits.max_added_rows) {
     errors.push(`README 新增 ${addedRows.length} 行，超过上限 ${limits.max_added_rows}`);
   }
