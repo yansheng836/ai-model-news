@@ -39,7 +39,10 @@ function cell(value) {
 
 function diffStat(ref) {
   try {
-    return execFileSync('git', ['diff', '--stat', ref], { encoding: 'utf8' }).trim();
+    // core.quotepath=false 避免非 ASCII 文件名被转义成 "\344\270\255…"（CI 默认 true）
+    return execFileSync('git', ['-c', 'core.quotepath=false', 'diff', '--stat', ref], {
+      encoding: 'utf8',
+    }).trim();
   } catch {
     return '';
   }

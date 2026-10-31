@@ -51,7 +51,9 @@ function readJson(file, label) {
 }
 
 function git(args) {
-  return execFileSync('git', args, { encoding: 'utf8' });
+  // core.quotepath=false 保证非 ASCII 文件名不被转义（CI 全新克隆默认 true，
+  // 会把「中国-…」转成 "\344\270\255…"，导致与真实文件名比对失败）
+  return execFileSync('git', ['-c', 'core.quotepath=false', ...args], { encoding: 'utf8' });
 }
 
 function rowKey(row) {
