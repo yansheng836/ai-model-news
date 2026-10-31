@@ -223,22 +223,23 @@ for id in "${PROVIDER_IDS[@]}"; do
   cc-switch --app claude provider stream-check "$id" || true
 done
 
-# 前台代理（CI 中必须前台运行）
-cc-switch proxy serve --takeover claude --listen-port 15721 &
-PROXY_PID=$!
+# 启动 cc-switch daemon（自动 failover 要求 daemon 托管的 worker，
+# 前台 `proxy serve --takeover` 不满足，failover enable 会直接报错）
+cc-switch daemon start --detach
 
-# 等端口就绪
-for _ in $(seq 1 60); do
-  (echo >/dev/tcp/127.0.0.1/15721) 2>/dev/null && break
-  sleep 1
-done
+# 等待 daemon 就绪（status 正常输出以 "cc-switch daemon" 开头）
+cc-switch daemon status
 
-# 代理以 takeover 运行后再启用自动 failover
+# 把 claude 的 daemon worker 路由到 127.0.0.1:15721
+cc-switch --app claude proxy config --listen-port 15721
+cc-switch --app claude proxy enable
+
+# daemon 托管 worker 就绪后再启用自动 failover（幂等）
 cc-switch --app claude failover enable
 cc-switch --app claude failover show
 ```
 
-> ⚠️ 顺序不能颠倒：`failover enable` 要求队列非空，且要求代理已接管运行，否则 cc-switch 会弹出交互确认（CI 非 TTY 下会被取消，failover 静默不生效）。因此注册 Provider 与填充队列在 `setup-ccswitch.sh`，而 `failover enable` 放在代理启动之后（`run-claude.sh`）。
+> ⚠️ 顺序不能颠倒：`failover enable` 要求队列非空，且要求 **daemon 托管的 worker**（否则报 `automatic failover requires daemon-managed proxy routing`）。因此注册 Provider 与填充队列在 `setup-ccswitch.sh`，daemon 启动与 `failover enable` 在 `start-proxy.sh`/`run-claude.sh` 中按上序执行。
 
 Claude Code 侧只需要：
 

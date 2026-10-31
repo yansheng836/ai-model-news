@@ -61,12 +61,14 @@ node scripts/pick_vendors.js --group all   # 全量
 - `.github/auto-update.config.json` — 非敏感参数（中转数量 `relays.max`、重试次数、预算、上限）
 - `.github/prompts/auto-update.md` — 给 Claude 的任务提示词
 - `scripts/ci/setup-ccswitch.sh` — 按 `RELAY_1_*`~`RELAY_<max>_*` 注册多个 Provider 并填充 failover 队列
-- `scripts/ci/start-proxy.sh` — 启动 cc-switch 本地协议转换代理
+- `scripts/ci/start-proxy.sh` — 启动 cc-switch daemon 托管代理并启用 claude 路由
 - `scripts/ci/run-claude.sh` — 带退避重试的 Claude 调用（代理启动后启用 failover，并打印每次尝试的用量）
 - `scripts/ci/validate_run.js` — 校验运行报告与变更范围
 - `scripts/ci/build_pr_body.js` — 生成 PR 描述
 
 **手动触发：** Actions → 「自动更新模型数据」→ Run workflow，可指定 `group=0..3/all` 与 `dry_run`。
+
+**故障排查：** 历史运行问题与修复方法见 [docs/auto-update-troubleshooting.md](docs/auto-update-troubleshooting.md)。
 
 **中转配置（多中转 failover）：** 按编号顺序支持最多 `relays.max` 个中转，编号越小优先级越高，请求失败（含 `403 额度不足`）时自动切换到下一个。第 `i` 号需要：
 

@@ -107,7 +107,8 @@ for ((attempt = 1; attempt <= ATTEMPTS; attempt++)); do
   echo "==> Claude 第 ${attempt}/${ATTEMPTS} 次尝试"
   bash "$ROOT/scripts/ci/start-proxy.sh"
 
-  # 自动 failover 要求代理已在接管运行；否则 cc-switch 会弹交互确认，CI 非 TTY 下会被取消。
+  # 启用自动 failover：需 daemon 托管的 worker（由 start-proxy.sh 以 daemon 模式拉起）。
+  # 幂等，重复调用无副作用；失败则以主通道单独运行。
   if ! cc-switch --app claude failover enable; then
     echo "⚠ 启用自动 failover 失败，将以主通道单独运行" >&2
   fi
