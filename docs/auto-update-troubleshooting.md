@@ -15,7 +15,7 @@
 | 41194335744 | 10-31 10:49 | 手动 | 运行 Claude Code | failover 未启用 + 模型空转超时（P3/P6） |
 | 41199661294 | 10-31 12:06 | 手动 | 运行 Claude Code | daemon 生效但单次耗时逼近超时被砍（P8） |
 | 41203893719 | 10-31 13:04 | 手动（group=auto） | 运行 Claude Code | 旧 12 分钟超时持续失败，被取消（P8） |
-| 41206000437 | 10-31 13:32 | 手动（group=auto，未填文件名） | 校验运行结果 | Claude 步骤已成功，README 重复行被拦（P9） |
+| 41209465646 | 10-31 14:17 | 手动（group=法国-Mistral-Mistral.md） | 创建或更新 PR | `origin/auto-update` 不存在导致 create-pull-request reset 失败（P10） |
 
 ## 问题总览
 
@@ -29,7 +29,8 @@
 | P6 | Claude 步骤 3 次 12 分钟超时 | 模型输出被权限系统拦截后空转 | ✅ 已修（换主模型） |
 | P7 | 超时被杀时无用量统计 | 只读 `result` 事件 | ⬜ 待办 |
 | P8 | 单次运行逼近 12 分钟被砍，报告未写 | 超时过紧（实测需 9~12+ 分钟） | ✅ 已修（12→60 分钟） |
-| P9 | 新增 README 行与已有条目重复 | 模型重复添加已存在行 | 🔧 提示词需加强 |
+| P9 | 新增 README 行与已有条目重复 | 模型重复添加已存在行 | ✅ 已修（提示词加查重） |
+| P10 | `fatal: ambiguous argument 'origin/auto-update'` | 远端无 auto-update 分支，create-pull-request reset 失败 | ✅ 已修（新建时推送占位分支） |
 
 ## P1 单次预算上限过低
 
@@ -174,7 +175,28 @@ README 新增行与已有条目重复：法国|Mistral AI|Mistral|Mistral Large 
 
 **意义**：这一步说明流程已经能走到校验环节，只剩数据质量层面的问题。
 
-## 已知限制
+## P10 create-pull-request 无法 resolve origin/auto-update
+
+**现象**：run 41209465646 所有业务步骤（Claude、排序、校验、生成 PR 描述、标签）全部成功，唯一失败在 `创建或更新 PR`：
+
+```text
+fatal: ambiguous argument 'origin/auto-update': unknown revision or path not in the working tree.
+##[error] The process '/usr/bin/git' failed with exit code 128
+```
+
+**根因**：`peter-evans/create-pull-request@v8` 在创建 PR 前要先把 base branch（`auto-update`）重置到 `HEAD`，执行 `git checkout auto-update`，要求 `origin/auto-update` 已存在。但 workflow 的「准备滚动分支」步骤在远端没有 auto-update 分支时走 else 分支，只创建了**本地** `auto-update`，从不推到远端，导致 create-pull-request 解析失败。
+
+**修复**：在 else 分支里多推一次占位分支：
+
+```yaml
+else
+  echo "创建新的 auto-update 分支"
+  git checkout -B auto-update
+  git push -u origin auto-update
+fi
+```
+
+**意义**：这是流程里最后一个阻塞点；修完后应能真正创建 PR。
 
 - **job 内并发**：`concurrency: auto-update` + `cancel-in-progress: false`，后触发的运行会排队等待
 - **定时排队延迟**：cron 定为 UTC 22:17（北京 06:17），实际可能延迟数小时才启动
