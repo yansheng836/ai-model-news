@@ -49,7 +49,7 @@
 - 保持 Markdown 表格列数与表头一致
 - 不要修改已有条目的排版风格，不要重排整个文件
 - 不要执行任何 `git` 命令（提交与 PR 由 workflow 负责）
-- 完成后运行 `node scripts/sort_timeline.js` 对 README 时间线排序
+- 完成后运行 `node scripts/dedup_timeline.js` 对 README 时间线去重，再运行 `node scripts/sort_timeline.js` 排序
 
 ## 五、输出运行报告
 
@@ -105,5 +105,5 @@
 - [ ] 每个新增条目都有来源
 - [ ] 日期格式正确（单个日期，无括号注释或多日期拼接），没有编造
 - [ ] README 时间线行数与表头一致
-- [ ] 已运行 `node scripts/sort_timeline.js`
+- [ ] 已运行 `node scripts/dedup_timeline.js` 与 `node scripts/sort_timeline.js`
 - [ ] `.auto-update/report.json` 已写入且是合法 JSON

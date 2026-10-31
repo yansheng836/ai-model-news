@@ -131,6 +131,9 @@ jobs:
         id: run-claude
         run: bash scripts/ci/run-claude.sh
 
+      - name: 去重 README 时间线
+        run: node scripts/dedup_timeline.js
+
       - name: 排序 README 时间线
         run: node scripts/sort_timeline.js
 

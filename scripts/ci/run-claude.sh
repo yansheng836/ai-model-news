@@ -41,6 +41,7 @@ ALLOWED_TOOLS=(
   "Bash(curl:*)"
   "Bash(jq:*)"
   "Bash(node -e:*)"
+  "Bash(node scripts/dedup_timeline.js)"
   "Bash(node scripts/sort_timeline.js)"
 )
 DISALLOWED_TOOLS=(
