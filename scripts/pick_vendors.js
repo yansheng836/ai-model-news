@@ -7,6 +7,7 @@
  *   node scripts/pick_vendors.js --check          # 校验分组覆盖是否完整
  *   node scripts/pick_vendors.js --group 2        # 指定分组
  *   node scripts/pick_vendors.js --group all      # 全量厂商
+ *   node scripts/pick_vendors.js --group 法国-Mistral-Mistral.md   # 只处理单个厂商
  *   node scripts/pick_vendors.js --date 2026-10-30 --json
  *
  * 选项：
@@ -135,10 +136,23 @@ function checkCoverage(config, root) {
   return { errors, onDisk, seen };
 }
 
+function selectSingleVendor(config, file) {
+  if (!config.groups.some((g) => g.files.includes(file))) {
+    console.error(`不是分组内的厂商文件：${file}`);
+    console.error(`可用：0-${config.groups.length - 1}、auto、all 或分组内文件名`);
+    process.exit(2);
+  }
+  return { groupId: 'single', groupName: file, files: [file] };
+}
+
 function selectGroup(config, groupArg, dateStr) {
   if (groupArg === 'all') {
     const files = [...new Set(config.groups.flatMap((g) => g.files))];
     return { groupId: 'all', groupName: '全量', files };
+  }
+
+  if (groupArg.endsWith('.md')) {
+    return selectSingleVendor(config, groupArg);
   }
 
   let index;
