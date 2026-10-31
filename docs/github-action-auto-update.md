@@ -164,7 +164,7 @@ node scripts/ci/validate_run.js                    # 用默认路径校验最近
   "claude": {
     "max_turns": 60,
     "max_budget_usd": 1000,
-    "timeout_minutes": 12
+    "timeout_minutes": 60
   },
   "retry": {
     "attempts": 3,

@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       group:
-        description: '分组索引（0-3）、auto 或 all'
+        description: '分组索引（0-3）、auto、all，或单个厂商文件名（如 法国-Mistral-Mistral.md）'
         required: false
         default: 'auto'
         type: string
