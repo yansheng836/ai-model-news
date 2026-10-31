@@ -60,6 +60,9 @@ jobs:
           else
             echo "创建新的 auto-update 分支"
             git checkout -B auto-update
+            # 远端尚无 auto-update 分支，先推送占位以便 create-pull-request
+            # 能 resolve origin/auto-update（否则会报 "ambiguous argument"）
+            git push -u origin auto-update
           fi
 
       - name: 安装 Node.js
