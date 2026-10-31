@@ -136,10 +136,17 @@ function checkReadmeRows(limits) {
     return { errors, addedRows: 0 };
   }
 
-  const addedRows = diff
-    .split('\n')
+  const diffLines = diff.split('\n');
+  const addedRows = diffLines
     .filter((line) => line.startsWith('+') && !line.startsWith('+++') && COUNTRY_ROW_RE.test(line))
     .map((line) => line.slice(1).trim());
+
+  // 被删除的行的 rowKey：如果同一 key 既被删除又被添加，说明是「修改」而非「重复新增」
+  const removedKeys = new Set(
+    diffLines
+      .filter((line) => line.startsWith('-') && !line.startsWith('---') && COUNTRY_ROW_RE.test(line))
+      .map((line) => rowKey(line.slice(1).trim())),
+  );
 
   if (addedRows.length > limits.max_added_rows) {
     errors.push(`README 新增 ${addedRows.length} 行，超过上限 ${limits.max_added_rows}`);
@@ -159,7 +166,10 @@ function checkReadmeRows(limits) {
   const seen = new Set();
   for (const row of addedRows) {
     const key = rowKey(row);
-    if (existing.has(key)) errors.push(`README 新增行与已有条目重复：${key}`);
+    // 如果该 key 同时出现在删除行中，说明是就地修改，不算重复
+    if (!removedKeys.has(key) && existing.has(key)) {
+      errors.push(`README 新增行与已有条目重复：${key}`);
+    }
     if (seen.has(key)) errors.push(`README 新增行内部重复：${key}`);
     seen.add(key);
   }
