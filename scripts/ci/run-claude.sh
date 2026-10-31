@@ -122,7 +122,6 @@ for ((attempt = 1; attempt <= ATTEMPTS; attempt++)); do
   timeout "${TIMEOUT_MIN}m" claude -p "$(cat "$PROMPT_FILE")" \
     --model sonnet \
     --fallback-model haiku \
-    --context-window 1m \
     --permission-mode acceptEdits \
     --max-turns "$MAX_TURNS" \
     --max-budget-usd "$MAX_BUDGET" \

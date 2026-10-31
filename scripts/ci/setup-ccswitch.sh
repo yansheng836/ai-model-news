@@ -50,9 +50,9 @@ for i in $(seq 1 "$RELAY_MAX"); do
     --base-url "$base_url" \
     --api-key "$api_key" \
     --api-format openai_chat \
-    --sonnet-model "$model" \
-    --opus-model "$model" \
-    --haiku-model "$haiku_model"
+    --sonnet-model "${model} [1M]" \
+    --opus-model "${model} [1M]" \
+    --haiku-model "${haiku_model} [1M]"
 
   PROVIDER_IDS+=("$id")
 done
