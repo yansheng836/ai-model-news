@@ -269,8 +269,6 @@
 | 中国 | MiniMax | music | MiniMax-Music3 🆕 | 🎵 音乐生成 | 2B | — | 2026年7月16日 |
 | 中国 | 月之暗面 | Kimi | Kimi K3 🆕 | 🌐🧠💻 多模态+推理+代码 | 2.8T（开源权重） | 1M | 2026年7月16日 |
 | 美国 | Meta | Muse | Muse Spark 1.1 🆕 | 🌐📝👁️🎤 多模态推理 | 未公开 | 1M | 2026年7月16日 |
-| 美国 | Google | Gemini | Gemini 3.6 Flash 🆕 | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开（厂商未公开） | 1M | 2026年7月 |
-| 美国 | Google | Gemini | Gemini 3.5 Flash Lite 🆕 | 🌐🧠 多模态+推理 | 未公开（厂商未公开） | 1M | 2026年7月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen 3.7 Flash 🆕 | 👁️🌐 视觉理解+多模态 | 未公开 | 1M | 2026年7月 |
 | 中国 | 快手 | KAT | KAT-Coder-Pro V2.5 🆕 | 💻🧠🖥️ 代码+推理+智能体 | 未公开（MoE） | 256K | 2026年7月10日 |
 | 美国 | OpenAI | GPT | GPT-5.6 Sol / Sol Pro 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 2026年7月9日 |
@@ -319,7 +317,6 @@
 | 美国 | Google | Gemini | Gemini 3.5 Live Translate（Preview） | 🎤 | 未公开 | 未公开 | 2026年5月 |
 | 美国 | Google | Veo | Veo 3.1（Preview） | 🎬 | — | — | 2026年5月 |
 | 美国 | Google | Lyria | Lyria 3 Pro（Preview） | 🎵 | — | — | 2026年5月 |
-| 美国 | Google | Gemini | Gemini 3.1 Pro（Preview） | 🌐🧠💻🖥️ | 未公开 | 1M | 2026年5月 |
 | 中国 | 百度 | 文心一言 | ERNIE 5.1 | 📝 | 未公开 | 32K/128K | 2026年5月 |
 | 中国 | MiniMax | Speech | Speech-2.8-HD | 🎤 | — | — | 2026年5月 |
 | 中国 | MiniMax | Speech | Speech-2.8-Turbo | 🎤 | — | — | 2026年5月 |
@@ -419,7 +416,6 @@
 | 美国 | NVIDIA | Nemotron | Llama Nemotron RAG | 📝 | 未公开 | 未公开 | 2026年1月 |
 | 美国 | xAI | Grok | grok-imagine-video-1.5 | 🎬 | — | — | 2026年1月 |
 | 美国 | Google | Gemini | Gemini 3 Flash（Preview） | 🌐🧠 | 未公开 | 未公开 | 2026年1月 |
-| 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-35B-A3B | 📝 | 35B MoE/3B激活 | 262K | 2026年1月 |
 | 中国 | 智谱AI | GLM | GLM-4.7-FlashX | 📝 | 未公开 | 200K（128K输出） | 2026年1月 |
 | 中国 | 智谱AI | GLM | GLM-4.5-AirX | 📝 | 未公开 | 128K（96K输出） | 2026年1月 |
 | 中国 | 月之暗面 | Kimi | Kimi K2.5 | 📝🧠👁️ | 1T MoE/32B激活 | 256K | 2026年1月 |

@@ -37,7 +37,8 @@
 | Mistral Large 2.1 | 2024年11月 | 📝 纯文本 | 未公开 | 未公开 | Large 2升级版 |
 | Mistral Large 2（123B） | 2024年7月 | 📝 纯文本 | 123B | 128K | 旗舰模型，开放权重 |
 | Mistral Large 3 | 2025年12月 | 🌐 多模态 | 未公开 | 未公开 | 开放权重通用多模态 |
-| Mistral Large 4 🆕 | 2026年10月6日 | 🌐🧠💻 多模态+推理+代码 | 未公开（开放权重） | 1M | 前沿开放权重通用多模态，1M上下文/256K输出，支持工具调用与结构化输出，$0.68/$2.09 MTok |
+| Mistral Large 4（预览）🆕 | 2026年10月6日 | 🌐🧠💻 多模态+推理+代码 | 1000B MoE/52B激活 | 1M | 公开预览版（mistral-large-4-0），1T参数原生多模态MoE，1M上下文/256K输出，支持工具调用与结构化输出 |
+| Mistral Large 4 开放权重版（Le Chonk）🆕 | 2026年10月29日 | 🌐🧠💻 多模态+推理+代码 | 1000B MoE/52B激活 | 1M | 开放权重发布（Mistral-Large-4-1T-A52B，FP8），三档推理（low/medium/high，默认high），$0.70/$2.10 MTok（缓存输入$0.07），160+语言 |
 | Mistral Medium | 2024年1月 | 📝 纯文本 | 未公开 | 32K | API专用中等模型 |
 | Mistral Medium 3 | 2025年5月 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 131K | 中等规模升级版 |
 | Mistral Medium 3.1 | 2025年8月 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 131K | Medium 3升级版 |
@@ -60,6 +61,7 @@
 | OCR 4.1 🆕 | 2026年9月 | 👁️ 文档理解 | — | — | 段落级边界框+结构块标签+块级置信度分数 |
 | Pixtral 12B | 2024年9月 | 👁️📝 视觉+文本 | 12B | 128K | 多模态视觉模型 |
 | Pixtral Large（124B） | 2024年11月 | 👁️📝 视觉+文本 | 124B | 128K | 大规模多模态 |
+| Robostral Navigate 🆕 | 2026年7月8日 | 👁️ 具身导航 | 8B | 未公开 | 首个具身导航模型，单目RGB+自然语言指令，纯仿真训练，不依赖开源VLM基座 |
 | Shieldstral 1.0 🆕 | 2026年8月4日 | 👁️📝 多模态安全审核 | 3B | 未公开 | 文本+图像安全分类，Apache 2.0 开放权重，支持12种语言，单卡16GB可运行 |
 | Timestral 1.0 🆕 | 2026年10月15日 | 📝 时序预测（TSFM） | 5M/28M/123M/209M | 32,768时间步 | 首个时间序列基础模型家族，零样本概率预测，209M旗舰登顶GIFT-Eval/TIME/fev-bench，Modified MIT |
 | Voxtral Mini | 2025年7月 | 🎤 语音 | 未公开 | 未公开 | 轻量语音模型，⏰ 2026年5月31日退役，替代 Voxtral Mini Transcribe 2 |
@@ -87,10 +89,22 @@ Mistral AI的首个模型，仅7B参数但在多项基准上超越了13B的Llama
 
 - **Large 2**（123B，2024年7月）：旗舰模型，支持128K上下文，精通数十种语言
 - **Large 2.1**（2024年11月）：升级版
-- **Large 3**（2025年12月）：开放权重通用多模态模型
-- **Large 4**（v26.10，2026年10月6日）：新一代前沿开放权重通用多模态模型，面向推理、编码和代理工作负载。支持文本+图像输入、文本输出，1M上下文窗口、最长256K输出token，支持工具调用（tool calling）与结构化输出。定价 $0.68/$2.09 MTok（OpenRouter 上架价，含限时5折优惠，原价 $1.36/$4.18；Cache Read $0.07/MTok），参数规模未公开
+- **Large 3**（675B，2025年12月）：开放权重通用多模态模型，⏰ 2026年4月30日退役，替代 Mistral Large 4
+- **Large 4**（v26.10，2026年10月6日 公开预览）：新一代前沿开放权重通用多模态模型，面向推理、编码和代理工作负载。1T参数 MoE（52B激活），支持文本+图像输入、文本输出，1M上下文窗口、最长256K输出token，支持工具调用（tool calling）与结构化输出。在 3,800 张 NVIDIA Grace Blackwell 上于欧洲自建机房从零训练，原生支持 160+ 语言
+- **Large 4 开放权重版（Le Chonk，2026年10月29日）**：正式开放权重（HuggingFace `mistralai/Mistral-Large-4-1T-A52B`，FP8），开源权重中编码与防御性网络安全最强；新增三档推理模式 `low` / `medium` / `high`（默认 high）。定价 $0.70 输入 / $0.07 缓存输入 / $2.10 输出 MTok（每百万 token）
 
-### Mistral Medium系列
+### Le Chonk（Mistral Large 4 开放权重版，2026年10月29日）
+
+Mistral 在 10月6日公开预览后，经约三周追加强化学习，于 2026年10月29日 发布改进版 Mistral Large 4 的**开放权重**（代号 Le Chonk），HuggingFace 仓库 `mistralai/Mistral-Large-4-1T-A52B`（另有 NVFP4 量化版）：
+
+- **架构**：1 万亿参数原生多模态 MoE，52B 激活参数（1T-A52B），标称支持 vLLM / SGLang / llama.cpp 部署
+- **推理模式**：`low`（简单任务，取代原 None 档）/ `medium`（日常）/ `high`（默认，高精度复杂任务）
+- **编码**：Cognition FrontierCode 2.0 19.7%（开源权重第一）；Terminal-Bench 4.0 41%（较预览 +13pp，输出 token 减少 30%）；Artificial Analysis Coding Agent Index 48%，与 GLM-5.3 持平但平均每任务少用 47% token；Surge Code 盲测人类偏好上优于 GLM-5.3 / Kimi K3 / DeepSeek V4.1 Flash，仅次于 Claude Opus 5.5
+- **网络安全（防御向）**：Artificial Analysis Cyber Index 51%（开源权重第一）；恶意网络请求平均拒绝率 96.6%；B3 Agent 安全基准抗攻击 97.1%
+- **通用任务**：FinWorkBench (Finch) 73.3%、BrowseComp 84.5%
+- **许可**：Mistral Ecosystem Open-Weight License（修改版 MIT）——可自由使用、修改、微调、商用，唯一条件是以 Model-as-a-Service 形式对外提供者需另行取得商业许可
+- **获取方式**：Mistral API / Studio / OpenRouter / HuggingFace 开放权重 / Microsoft Foundry / NVIDIA NIM 容器
+
 
 - **Medium 3**（2025年5月）：中等规模多模态模型
 - **Medium 3.1**（2025年8月）：升级版
@@ -178,7 +192,12 @@ Mistral采用版本化命名（如v26.04表示2026年4月版本），并明确�
 
 | 模型 | 弃用日期 | 退役日期 | 替代模型 |
 |------|----------|----------|----------|
-| Z.ai GLM 5.2（Mistral托管） 🆕 | 2026/9/29 | 2026/10/31 | Z.ai GLM 5.3 |
+| Mistral Large 3 (v25.12) 🆕 | 2026/10/31 | 2027/4/30 | Mistral Large 4 |
+| Mistral Medium 3.5 (v26.04) 🆕 | 2026/10/31 | 2027/4/30 | Mistral Large 4 |
+| Voxtral TTS (v26.03) 🆕 | 2026/10/31 | 2027/4/30 | Voxtral TTS 3 |
+| Voxtral Mini Transcribe 2 (v26.02) 🆕 | 2026/10/31 | 2027/4/30 | Voxtral Mini Transcribe 3 |
+| Voxtral Mini Transcribe Realtime (v26.02) 🆕 | 2026/10/31 | 2027/4/30 | Voxtral Mini Transcribe Realtime 3 |
+| Z.ai GLM 5.2（Mistral托管） 🆕 | 2026/9/29 | 2026/10/31 ✅已退役 | Z.ai GLM 5.3 |
 | OCR 4.0 (v4.0) 🆕 | 2026/9/29 | 2026/9/30 ✅已退役 | OCR 4.1 |
 | Leanstral 1.5 (v1.5) 🆕 | 2026/9/29 | 2026/9/30 ✅已退役 | — |
 | Leanstral (v26.03) | 2026/5/22 | 2026/6/30 | Leanstral 1.5 |
