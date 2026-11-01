@@ -71,6 +71,12 @@
 | Isaac GR00T N1.7 | 2026年4月 | 🤖 机器人 | 未公开 | 未公开 | 人形机器人开放推理VLA模型 |
 | Isaac GR00T N1.5 | 2025年6月 | 🤖 机器人 | 未公开 | 未公开 | 机器人策略后训练 |
 
+### Metatron 系列（人形机器人控制）
+
+| 版本 | 发布时间 | 功能属性 | 参数规模 | 上下文长度 | 主要特点 |
+|------|----------|----------|----------|----------|----------|
+| Metatron v1（nvidia/Metatron-v1）🆕 | 未公开 | 🤖 机器人（人形运动与恢复策略） | 约459M（ONNX 导出 / PyTorch 原生权重） | 未公开 | 统一的 G1 场景交互与恢复策略，行走/场景交互/跌倒恢复共用同一策略（无独立恢复适配器），MaskedMimic 式 Transformer 学生模型；面向 Unitree G1 人形（29 个受控关节），已集成 NVlabs ProtoMotions，NVIDIA Open Model License |
+
 ### Earth-2 系列（气象AI）
 
 | 版本 | 发布时间 | 功能属性 | 参数规模 | 上下文长度 | 主要特点 |
@@ -141,6 +147,15 @@ NVIDIA的核心大语言模型家族，采用混合架构设计：
 人形机器人专用模型：
 - **GR00T N1.7**：开放推理VLA（Vision-Language-Action）模型
 - 支持从仿真到部署的完整机器人开发流程
+
+### Metatron 系列
+
+NVIDIA 面向人形机器人运动控制的新系列，首个版本 **Metatron v1** 已在 NVIDIA 官方 HuggingFace 组织发布（`nvidia/Metatron-v1`，官方模型卡未给出发布日期，故标为未公开）：
+- 统一策略：行走、场景交互与跌倒恢复共享同一套学习策略权重，不再需要独立的恢复适配器
+- 架构：MaskedMimic 式 Transformer 学生模型，基于 Unitree G1 人形（29 个受控关节）的 SAMP 能力统一学生检查点（epoch-6410）
+- 交付形态：原生 PyTorch G1 包（约 459 MB，含后验与归一化统计）+ ONNX 浏览器导出（`demo/model.onnx` 单机器人场景/恢复管线、`racer/network.onnx` 六机器人批量 G1 Racer 网络）
+- 集成：与 NVlabs ProtoMotions 集成，支持浏览器交互式人形控制、仿真器与监督式真机 G1 部署
+- 许可：NVIDIA Open Model License（源码 Apache-2.0）
 
 ### 核心技术特点
 

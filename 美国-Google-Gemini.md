@@ -29,7 +29,7 @@
 | Gemini 3.6 Flash | 2026年7月（Stable） | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开（厂商未公开） | 1M | 速度与智能平衡，适合广泛任务 |
 | Gemini 3.5 Flash Lite | 2026年7月（Stable） | 🌐🧠 多模态+推理 | 未公开（厂商未公开） | 1M | 最快最经济的3.5系列模型，成本优化前沿性能 |
 | Antigravity Agent | 2026年5月（Preview） | 🧠💻🌐 代理 | — | — | 通用代理：规划/推理/代码/文件/浏览 |
-| Computer Use | 2025年（Preview） | 🖥️ 计算机操作 | — | — | 屏幕理解+UI操作（点击/输入/导航） |
+| Computer Use 🆕 | 2026年10月30日（GA） | 🖥️ 计算机操作 | — | — | 屏幕理解+UI操作（点击/输入/导航）；2026年10月30日由 Preview 转 General Availability，在 Interactions 与 GenerateContent API 作为工具提供；旧 `gemini-2.5-computer-use-preview-10-2025` 已关停 |
 | Deep Research | 2026年4月（Preview） | 🧠🌐 推理+研究 | — | — | 自主多步骤研究，引用报告 |
 | Deep Research Max | 2026年4月（Preview） | 🧠🌐 推理+研究 | — | — | 最大深度研究 |
 | Gemini 1.0 Nano（Pro/Nano） | 2023年12月6日 | 📝 纯文本 | 1.8B/3.25B | 32K | 端侧模型 |
@@ -158,7 +158,7 @@ Google在图像生成领域推出多个品牌：
 
 ### 代理与工具模型
 
-- **Computer Use**（Preview）：屏幕理解+UI操作模型，可点击/输入/导航
+- **Computer Use**（2026年10月30日 GA）：屏幕理解+UI操作工具，可点击/输入/导航。由 Preview 转为 General Availability，在 Interactions 与 GenerateContent API 提供，附着于当前 Gemini 模型（此前 6月24日 支持 Gemini 3.5 Flash）；旧专用端点 `gemini-2.5-computer-use-preview-10-2025` 已关停
 - **Deep Research**（Preview）：自主多步骤研究，生成引用报告
 - **Deep Research Max**（Preview）：最大深度研究
 - **Antigravity Agent**（Preview）：通用代理，自主规划/推理/运行代码/管理文件/浏览网页；2026年9月17日发布 09-2026 版（`antigravity-preview-09-2026`），替换并弃用 05-2026 版
@@ -203,6 +203,7 @@ Google的开源模型系列，基于Gemini技术。Gemma 3首次在开源模型�
 
 ### ⚠️ 弃用与退役通知（2026年10月）
 
+- **Computer Use 工具于 2026年10月30日转为 GA**（Interactions 与 GenerateContent API），不再需要 Preview 端点；旧 `gemini-2.5-computer-use-preview-10-2025` 已关停
 - `gemini-3.1-flash-image` 于 2026年10月6日弃用，由 Nano Banana 2.1 接替
 - `gemini-3.7-flash` 于 2026年10月8日弃用，迁移至 `gemini-3.8-flash`；`gemini-3.5-flash` 迁移至 `gemini-3.6-flash`
 - `deep-research-pro-preview-12-2025` 于 2026年10月23日关停

@@ -50,7 +50,7 @@
 | Claude Opus 4.6（claude-opus-4-6） | 2025年底 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Extended Thinking，上下文提升至1M |
 | Claude Opus 4.7 Fast（claude-opus-4-7-fast） | 2026年初 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | Opus 4.7快速推理版，$30/$150 MTok |
 | Claude Opus 4.7（claude-opus-4-7） | 2026年初 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking（取代Extended Thinking），新tokenizer |
-| Claude Opus 4.8 Fast（claude-opus-4-8-fast） | 2026年5月28日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | Opus 4.8快速推理版，$10/$50 MTok |
+| Claude Opus 4.8 Fast（claude-opus-4-8-fast） | 2026年5月28日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | Opus 4.8快速推理版，$10/$50 MTok，⚠️ Fast模式已于2026年10月30日弃用，**2026年11月30日移除**，迁移至Claude Opus 5.5 |
 | Claude Opus 4.8（claude-opus-4-8） | 2026年5月28日 | 🌐🖥️ 多模态+计算机操作 | 未公开（厂商未公开） | 1M | 支持Adaptive Thinking，$5/$25 MTok，知识截止2026年1月 |
 | Claude Sonnet 4.5（claude-sonnet-4-5-20250929） | 2025年9月29日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，$3/$15 MTok，⚠️ 已弃用（2026年9月30日），⏰ 2026年11月30日退役，推荐替代claude-sonnet-5-5 |
 | Claude Sonnet 4.6（claude-sonnet-4-6） | 2026年2月17日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开（厂商未公开） | 1M | 支持Extended Thinking + Adaptive Thinking，$3/$15 MTok |
@@ -114,7 +114,7 @@ Anthropic的第二代模型，支持100K（后扩展至200K）上下文窗口。
 
 - **发布时间**：2026年9月22日
 - **定位**：长时程智能体编码与知识工作（long-running agentic coding and knowledge work）
-- **定价**：$4/$20 MTok（较Opus 5的$5/$25降价20%），5m缓存写$5、1h缓存写$8、缓存读$0.20（基础输入价0.05x）；Batch API 5折（$2/$10）；Fast模式（研究预览，仅Claude API）$8/$40 MTok
+- **定价**：$4/$20 MTok（较Opus 5的$5/$25降价20%），5m缓存写$5、1h缓存写$8、缓存读$0.20（基础输入价0.05x）；Batch API 5折（$2/$10）；Fast模式（2026年10月15日结束研究预览，Claude API 与 Google Cloud 可用）$8/$40 MTok
 - **规格**：1M上下文，128K最大输出（Batch API beta下最高300K，需output-300k-2026-03-24 header），知识截止2026年6月，相对延迟中等
 - **能力**：
   - Adaptive Thinking始终开启且**不可关闭**（`thinking: {type: "disabled"}`返回400），effort参数默认**medium**（Opus 5为high）
@@ -162,6 +162,15 @@ Anthropic的第二代模型，支持100K（后扩展至200K）上下文窗口。
 ### Claude Opus 4.1 退役状态
 
 ⛔ Claude Opus 4.1（claude-opus-4-1-20250805）已于 **2026年8月5日退役**（2026年6月5日弃用），请求将失败。官方推荐替代方案为 **claude-opus-4-8**。
+
+### Fast 模式生命周期（2026年10月更新）
+
+⚠️ 2026年10月30日官方公告：**Claude Opus 4.8 的 Fast 模式已弃用，将于 2026年11月30日移除**。移除后对 `claude-opus-4-8` 传入 `speed: "fast"` 将返回错误，官方迁移路径为改用 **Claude Opus 5.5**。
+
+- **Claude Opus 4.6 Fast**：2026年6月29日移除 Fast 模式（改按标准速度运行，不报错）
+- **Claude Opus 4.7 Fast**：2026年6月25日弃用，2026年7月24日移除
+- **Claude Opus 4.8 Fast**：2026年10月30日弃用，2026年11月30日移除
+- **Claude Opus 5.5 Fast**：2026年10月15日结束研究预览（调用无需 beta header），2026年10月22日上线 Google Cloud（Anthropic managed），当前可用
 
 #### Fable 5 / Mythos 5 访问暂停事件（已恢复）
 
