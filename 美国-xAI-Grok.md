@@ -38,11 +38,13 @@
 | Grok-4.6 | 2026年8月12日 | 🌐🧠💻 多模态+推理+代码 | 未公开（厂商未公开） | 未公开 | 500K | xAI最智能模型，编码/知识/STEM前沿，$2/$6 MTok |
 | Grok-4.7 🆕 | 2026年9月21日 | 🌐🧠💻 多模态+推理+代码 | 未公开（厂商未公开） | 未公开 | 500K | 最新旗舰，编码/代理任务/知识工作，可配置推理，知识截止2026年5月，$2/$6 MTok |
 | grok-imagine-image | 2025-2026年 | 🖼️ 文生图 | — | — | — | 标准图像生成，$0.02/张 |
-| grok-imagine-image-quality | 2025-2026年 | 🖼️ 文生图 | — | — | — | 高质量图像生成，$0.05/张，⏰ 2026年11月2日退役 |
-| Grok Imagine Image 2.0 🆕 | 待确认 | 🖼️ 文生图/图像编辑 | — | — | — | 新一代图像生成与编辑，$0.02/张起 |
+| grok-imagine-image-quality | 2025-2026年 | 🖼️ 文生图 | — | — | — | 高质量图像生成，$0.05/张，⏰ 2026年11月2日退役（请求路由至 grok-imagine-image-2.0，quality=low） |
+| Grok Imagine Image 2.0（grok-imagine-image-2.0） | 未公开 | 🖼️ 文生图/图像编辑 | — | — | — | 新一代图像生成与编辑，支持五张参考图与多种画幅，$0.04/张；接替退役的 grok-imagine-image-quality |
 | grok-imagine-video | 2025-2026年 | 🎬 文生视频 | — | — | — | 视频生成，$0.050/秒 |
-| grok-imagine-video-1.5 | 2025-2026年 | 🎬 文生视频 | — | — | — | 视频生成v1.5，$0.080/秒 |
-| Realtime（语音） | 2025-2026年 | 🎤 语音交互 | — | — | — | 实时语音（STS），$0.08/分钟 |
+| grok-imagine-video-1.5 | 2025-2026年 | 🎬 文生视频 | — | — | — | 视频生成v1.5，$0.080/秒，支持480p/720p/1080p |
+| grok-imagine-video-1.5-lite 🆕 | 未公开 | 🎬 文生视频 | — | — | — | 视频生成v1.5轻量版，480p起，$0.020/秒 |
+| Grok Voice 3.0（grok-voice-3.0）🆕 | 2026年10月 | 🎤 语音交互（语音到语音） | — | — | — | 新一代实时语音（STS），与 Voice 2.0 同价（$0.08/分钟），API 不变；grok-voice-latest 已指向 3.0 |
+| Realtime（语音） | 2025-2026年 | 🎤 语音交互 | — | — | — | 实时语音（STS），$0.08/分钟；⚠️ grok-voice-2.0 已弃用，迁移至 grok-voice-3.0 |
 | Speech to Text（REST） | 2025-2026年 | 🎤 语音识别 | — | — | — | 语音转文本，$0.10/小时 |
 | Speech to Text（Streaming） | 2025-2026年 | 🎤 语音识别 | — | — | — | 流式语音转文本，$0.20/小时 |
 | Text to Speech | 2025-2026年 | 🎤 语音合成 | — | — | — | 文本转语音，$15/百万字符 |
@@ -89,16 +91,18 @@ xAI推出的快速编程模型，专为代理软件工程工作流训练：
 
 xAI在图像和视频生成领域布局：
 - **grok-imagine-image**：标准图像生成，$0.02/张
-- **grok-imagine-image-quality**：高质量图像生成，$0.05/张，⏰ 2026年11月2日退役（详见官方迁移指南 Imagine Image Quality Retirement）
-- **Grok Imagine Image 2.0**（发布时间待确认）：新一代图像生成/编辑模型，支持生成与编辑，$0.02/张起
+- **grok-imagine-image-quality**：高质量图像生成，$0.05/张，⏰ 2026年11月2日退役（详见官方迁移指南 Imagine Image Quality Retirement；退役后请求由 `grok-imagine-image-2.0` 以 `quality=low` 承接）
+- **Grok Imagine Image 2.0**（`grok-imagine-image-2.0`，发布时间未公开）：新一代图像生成/编辑模型，支持生成与编辑、多张参考图与多种画幅，$0.04/张
 - **grok-imagine-video**：视频生成，$0.050/秒
 - **grok-imagine-video-1.5**：视频生成v1.5，$0.080/秒，支持480p/720p/1080p，$0.02/秒起
+- **grok-imagine-video-1.5-lite**（发布时间未公开）：视频生成v1.5轻量版，480p起，$0.020/秒
 
 ### 语音模型系列
 
 - **Realtime / Voice API（STS）**：实时语音交互，$0.08/分钟
+- **Grok Voice 3.0**（`grok-voice-3.0`，2026年10月）：新一代语音到语音（STS）模型，价格与 Voice 2.0 相同（$0.08/分钟，另计 $0.004/千字符文本输入），API 不变；别名 `grok-voice-latest` 已自动指向 3.0。⚠️ `grok-voice-2.0` 已弃用（官方未给出具体日期），迁移方式为把 `model` 设为 `grok-voice-3.0` 或 `grok-voice-latest`
 - **Text to Speech**：文本转语音，$15/百万字符
-- **Speech to Text**：语音转文本（Batch $0.10/小时，Streaming $0.20/小时）
+- **Speech to Text**：语音转文本（Batch $0.10/小时，Streaming $0.20/小时；⚠️ `grok-voice-transcribe-1.0` 已于 2026年10月2日 EOL，请求路由至 `grok-voice-transcribe-2.0`）
 
 ### 模型命名规则
 
@@ -112,6 +116,9 @@ xAI在图像和视频生成领域布局：
 - **2026年5月15日**：xAI进行了模型退役(Model Retirement)，旧版Grok模型已停止服务
 - 用户需迁移到 Grok 4.3 或 Grok Build 0.1
 - 详见官方迁移指南：https://docs.x.ai/docs/guides/model-retirement-on-may-15
+- **2026年10月2日**：`grok-voice-transcribe-1.0` 达到 EOL，请求路由至 `grok-voice-transcribe-2.0`（同价、更高准确率）
+- **2026年11月2日**：`grok-imagine-image-quality` 退役，由 `grok-imagine-image-2.0` 承接
+- **已弃用（具体日期未公开）**：`grok-voice-2.0` 弃用，迁移至 `grok-voice-3.0` / `grok-voice-latest`
 
 ### 定价体系（当前模型）
 

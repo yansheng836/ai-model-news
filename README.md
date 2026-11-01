@@ -164,6 +164,8 @@
 
 | 国家 | 公司名 | 大模型名称 | 版本 | 功能属性 | 参数规模 | 上下文 | 发版时间 |
 |------|--------|-----------|------|----------|----------|--------|----------|
+| 美国 | OpenAI | GPT | GPT-6 Rosalind（gpt-6-rosalind）🆕 | 🧠 推理（生命科学） | 未公开（厂商未公开） | 未公开 | 2026年10月30日 |
+| 美国 | OpenAI | GPT | GPT-6.1 Terra / Terra Pro（gpt-6.1-terra / gpt-6.1-terra-pro）🆕 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开（厂商未公开） | 1050K（128K输出） | 2026年10月26日 |
 | 中国 | 月之暗面 | Kimi | Kimi K3.1 Pro（kimi-k3.1-pro）🆕 | 🌐🧠💻 多模态+推理+代码 | 3T级（开放权重） | 1M | 2026年10月24日 |
 | 中国 | 腾讯 | 混元 | WeVisOne-VL-4B / 2B 🆕 | 👁️ 视觉感知（检测/OCR/分割/抠图） | 4B / 2B | 未公开 | 2026年10月22日 |
 | 中国 | 腾讯 | 混元 | Hy-Nomas 🆕 | 🎬 交互式世界/视频生成 | 未公开 | — | 2026年10月21日 |
@@ -181,6 +183,7 @@
 | 美国 | NVIDIA | Nemotron | Nemotron 3.5 Super VL（nemotron-3.5-super-vl）🆕 | 🌐👁️ 多模态（文本+图像+视频）+推理 | 120B MoE/12B激活 | 1M（262K输出） | 2026年10月15日 |
 | 美国 | NVIDIA | Nemotron | Nemotron 3.5 Rerank-8B 🆕 | 📝 重排序（多语言+多模态） | 8B | 未公开 | 2026年10月15日 |
 | 美国 | NVIDIA | Nemotron | Nemotron 3.5 Bolt 74B-A9B 24GB 🆕 | 🌐👁️🧠 多模态（文本+图像+视频）+推理 | 74B MoE/9B激活 | 256K | 2026年10月15日 |
+| 美国 | xAI | Grok | Grok Voice 3.0（grok-voice-3.0）🆕 | 🎤 语音交互（语音到语音） | 未公开 | 未公开 | 2026年10月 |
 | 中国 | 蚂蚁集团 | Ming | Ming-3.0-asr-tiny（inclusionAI/Ming-3.0-asr-tiny）🆕 | 🎤 语音识别 | 未公开 | 未公开 | 2026年10月14日（HF权重） |
 | 中国 | 蚂蚁集团 | Ling | Ling-3.0-flash-UBTree（inclusionAI/Ling-3.0-flash-UBTree）🆕 | 📝 推理加速（投机解码草稿） | 482M | 262K | 2026年10月14日 |
 | 中国 | 阶跃星辰 | Step | Step-5-Preview-NVFP4（stepfun-ai/Step-5-Preview-NVFP4）🆕 | 🌐🧠💻 多模态+推理+代码 | 600B MoE/27B激活 | 1M | 2026年10月14日 |
@@ -269,8 +272,6 @@
 | 中国 | MiniMax | music | MiniMax-Music3 🆕 | 🎵 音乐生成 | 2B | — | 2026年7月16日 |
 | 中国 | 月之暗面 | Kimi | Kimi K3 🆕 | 🌐🧠💻 多模态+推理+代码 | 2.8T（开源权重） | 1M | 2026年7月16日 |
 | 美国 | Meta | Muse | Muse Spark 1.1 🆕 | 🌐📝👁️🎤 多模态推理 | 未公开 | 1M | 2026年7月16日 |
-| 美国 | Google | Gemini | Gemini 3.6 Flash 🆕 | 🌐🧠💻🖥️ 多模态+推理+代码+代理 | 未公开（厂商未公开） | 1M | 2026年7月 |
-| 美国 | Google | Gemini | Gemini 3.5 Flash Lite 🆕 | 🌐🧠 多模态+推理 | 未公开（厂商未公开） | 1M | 2026年7月 |
 | 中国 | 阿里巴巴 | 通义千问 | Qwen 3.7 Flash 🆕 | 👁️🌐 视觉理解+多模态 | 未公开 | 1M | 2026年7月 |
 | 中国 | 快手 | KAT | KAT-Coder-Pro V2.5 🆕 | 💻🧠🖥️ 代码+推理+智能体 | 未公开（MoE） | 256K | 2026年7月10日 |
 | 美国 | OpenAI | GPT | GPT-5.6 Sol / Sol Pro 🆕 | 🌐🧠💻 多模态+推理+代码 | 未公开 | 1050K | 2026年7月9日 |
@@ -319,7 +320,6 @@
 | 美国 | Google | Gemini | Gemini 3.5 Live Translate（Preview） | 🎤 | 未公开 | 未公开 | 2026年5月 |
 | 美国 | Google | Veo | Veo 3.1（Preview） | 🎬 | — | — | 2026年5月 |
 | 美国 | Google | Lyria | Lyria 3 Pro（Preview） | 🎵 | — | — | 2026年5月 |
-| 美国 | Google | Gemini | Gemini 3.1 Pro（Preview） | 🌐🧠💻🖥️ | 未公开 | 1M | 2026年5月 |
 | 中国 | 百度 | 文心一言 | ERNIE 5.1 | 📝 | 未公开 | 32K/128K | 2026年5月 |
 | 中国 | MiniMax | Speech | Speech-2.8-HD | 🎤 | — | — | 2026年5月 |
 | 中国 | MiniMax | Speech | Speech-2.8-Turbo | 🎤 | — | — | 2026年5月 |
@@ -419,7 +419,6 @@
 | 美国 | NVIDIA | Nemotron | Llama Nemotron RAG | 📝 | 未公开 | 未公开 | 2026年1月 |
 | 美国 | xAI | Grok | grok-imagine-video-1.5 | 🎬 | — | — | 2026年1月 |
 | 美国 | Google | Gemini | Gemini 3 Flash（Preview） | 🌐🧠 | 未公开 | 未公开 | 2026年1月 |
-| 中国 | 阿里巴巴 | 通义千问 | Qwen3.5-35B-A3B | 📝 | 35B MoE/3B激活 | 262K | 2026年1月 |
 | 中国 | 智谱AI | GLM | GLM-4.7-FlashX | 📝 | 未公开 | 200K（128K输出） | 2026年1月 |
 | 中国 | 智谱AI | GLM | GLM-4.5-AirX | 📝 | 未公开 | 128K（96K输出） | 2026年1月 |
 | 中国 | 月之暗面 | Kimi | Kimi K2.5 | 📝🧠👁️ | 1T MoE/32B激活 | 256K | 2026年1月 |
@@ -463,7 +462,7 @@
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V3.2 | 📝 | 685B MoE | 160K | 2025年12月 |
 | 中国 | DeepSeek | DeepSeek | DeepSeek-V3.2-Speciale | 📝 | 685B MoE | 未公开 | 2025年12月 |
 | 中国 | 智谱AI | GLM | GLM-ASR-2512 | 🎤 | — | — | 2025年12月 |
-| 美国 | Google | Gemini | Computer Use（Preview） | 🖥️ | 未公开 | 未公开 | 2025年12月 |
+| 美国 | Google | Gemini | Computer Use（⚠️ 2026年10月30日已转GA） | 🖥️ | 未公开 | 未公开 | 2025年12月 |
 | 中国 | 腾讯 | 混元 | Tencent HY 2.0 Think | 🧠 | 未公开 | 128K | 2025年12月 |
 | 中国 | 腾讯 | 混元 | Tencent HY 2.0 Instruct | 📝 | 未公开 | 128K | 2025年12月 |
 | 中国 | 科大讯飞 | 星火 | 星火V5.0 | 🌐🧠💻 | 未公开 | 未公开 | 2025年12月 |
