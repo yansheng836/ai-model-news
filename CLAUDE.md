@@ -183,7 +183,7 @@ OpenRouter 聚合了所有主流厂商的模型数据，提供标准化的 API �
 - **统一格式**：所有模型使用相同的数据结构（id、context_length、pricing）
 
 | 数据 | URL | 说明 |
-|------|-----|------|
+|------|------|------|
 | 全部模型列表 | `https://openrouter.ai/api/v1/models` | JSON格式，含340+模型 |
 | 按厂商筛选 | `https://openrouter.ai/models?q={关键词}` | 网页版，JS动态渲染需用API |
 | 模型详情 | `https://openrouter.ai/{model-id}` | 单个模型的详细信息页 |
@@ -213,7 +213,7 @@ process.stdin.on('end', () => {
 ### Official Documentation URLs (优先级从高到低)
 
 | Vendor | URL | Status | 备注 |
-|--------|-----|--------|------|
+|------|------|------|------|
 | **OpenRouter** | `https://openrouter.ai/api/v1/models` | ✅ Verified | **跨厂商统一API**，340+模型，含上下文/定价/模型ID，适合交叉验证 |
 | **Anthropic** | `https://platform.claude.com/docs/en/docs/about-claude/models` | ✅ Verified | 完整模型列表，含定价、上下文、弃用信息 |
 | **Anthropic（中文）** | `https://platform.claude.com/docs/zh-CN/about-claude/models/overview` | ✅ Verified | 中文版模型概述，含Fable 5/Mythos 5/Opus 4.8详细参数 |
@@ -282,7 +282,7 @@ process.stdin.on('end', () => {
 ### 备用数据源（当官方文档不可用时）
 
 | 数据源 | URL | 适用场景 |
-|--------|-----|----------|
+|------|------|------|
 | **HuggingFace** | `https://huggingface.co/{org}` | 开源模型列表、参数、架构 |
 | **Wikipedia** | `https://en.wikipedia.org/wiki/{Model}` | 模型历史、发布时间、用户规模 |
 | **GitHub** | `https://github.com/{org}/{repo}` | 模型详情、基准分数、训练数据 |
@@ -290,7 +290,7 @@ process.stdin.on('end', () => {
 ### 已验证的HuggingFace组织页面
 
 | 厂商 | HuggingFace URL | 模型数量 | 信息丰富度 |
-|------|-----------------|----------|-----------|
+|------|------|------|------|
 | DeepSeek | `https://huggingface.co/deepseek-ai` | 87 | ⭐⭐⭐ 含参数、架构 |
 | 百川智能 | `https://huggingface.co/baichuan-inc` | 25 | ⭐⭐⭐ 含M2/M3/Med系列 |
 | 01.AI | `https://huggingface.co/01-ai` | 28 | ⭐⭐⭐ 含完整Yi系列 |

@@ -20,7 +20,7 @@
 ## 2. 结论速览
 
 | 问题 | 结论 |
-| ---- | ---- |
+|------|------|
 | GitHub Actions 能否定时跑？ | ✅ 用 `on.schedule`，公开仓库不消耗额度 |
 | 能否用第三方 OpenAI Chat 格式 API 驱动 Claude Code？ | ✅ 需要一层本地协议转换代理 |
 | ccswitch 有 Linux 版吗？ | ✅ 桌面版有 AppImage/deb/rpm；**CLI 版有 Linux 预编译二进制，适合 CI** |
@@ -42,7 +42,7 @@ Claude Code ──Anthropic Messages──▶ 本地代理 ──OpenAI Chat Com
 两个同名项目容易混淆，CI 场景要用后者：
 
 | 项目 | 形态 | Linux 产物 | 是否适合 Actions |
-| ---- | ---- | ---------- | ---------------- |
+|------|------|------|------|
 | `farion1231/cc-switch` | Tauri 桌面 GUI | `.AppImage` / `.deb` / `.rpm`（x86_64、arm64） | ❌ 无显示器，GUI 跑不起来 |
 | `SaladDay/cc-switch-cli` | Rust CLI + TUI | `cc-switch-cli-linux-x64-musl.tar.gz` 等预编译二进制 | ✅ 纯命令行，可 headless |
 
@@ -56,7 +56,7 @@ Claude Code ──Anthropic Messages──▶ 本地代理 ──OpenAI Chat Com
 ### 3.2 备选方案对比
 
 | 方案 | 协议转换 | CI 友好度 | 429 容错 | 结论 |
-| ---- | -------- | --------- | -------- | ---- |
+|------|------|------|------|------|
 | **cc-switch-cli 本地代理** | ✅ | ✅ 单二进制 | ✅ 内置 failover 队列 | **采用** |
 | claude-code-router (CCR) | ✅ | ✅ npm 安装 | ⚠️ 需自行配置重试 | 备选 |
 | LiteLLM Proxy | ✅ `/v1/messages` | ⚠️ Python 依赖较重 | ✅ 重试/fallback 成熟 | 备选 |
@@ -111,7 +111,7 @@ scripts/
 每个组件职责单一，可独立运行验证：
 
 | 组件 | 输入 | 输出 |
-| ---- | ---- | ---- |
+|------|------|------|
 | `pick_vendors.js` | 日期、`vendors.json` | 当天厂商文件列表、`context.json` |
 | `setup-ccswitch.sh` | Provider 环境变量 | 已就绪的 Provider 与 failover 队列 |
 | `start-proxy.sh` | 端口配置 | 可用的 `127.0.0.1:15721` |
@@ -322,7 +322,7 @@ claude -p "$(cat "$RUNNER_TEMP/auto-update-prompt.md")" \
 ## 7. 429 与故障容错
 
 | 层级 | 机制 | 失败后的行为 |
-| ---- | ---- | ------------ |
+|------|------|------|
 | L1 分组隔离 | 每天只处理 6～7 家 | 单厂商失败不影响同组其他厂商 |
 | L2 Provider failover | cc-switch failover 队列（多中转） | 当前中转 429/5xx/403 等失败时按队列顺序切下一个 |
 | L3 CLI 内置重试 | Claude Code 对 429/529/5xx 指数退避 | 自动重试，`retry-after` 生效 |
@@ -351,7 +351,7 @@ claude -p "$(cat "$RUNNER_TEMP/auto-update-prompt.md")" \
 `validate_run.js` 在开 PR 前执行，任一失败即中止：
 
 | 校验项 | 规则 |
-| ------ | ---- |
+|------|------|
 | 时间线顺序 | `node scripts/sort_timeline.js --check` 返回 0 |
 | 日期格式 | 新增行日期匹配 `YYYY年MM月DD日` 或 `YYYY年MM月` |
 | 变更文件范围 | 只允许本组厂商文件 + `README.md` |
@@ -367,7 +367,7 @@ claude -p "$(cat "$RUNNER_TEMP/auto-update-prompt.md")" \
 按编号 `i = 1..relays.max`（默认 4）配置多个中转，编号即 failover 优先级：
 
 | 名称 | 类型 | 必填 | 说明 |
-| ---- | ---- | ---- | ---- |
+|------|------|------|------|
 | `RELAY_${i}_BASE_URL` | Variable | ✅ | 第 i 号中转的 OpenAI 兼容地址，如 `https://api.example.com/v1` |
 | `RELAY_${i}_API_KEY` | Secret | ✅ | 第 i 号中转密钥 |
 | `RELAY_${i}_MODEL` | Variable | ✅ | 第 i 号主力模型名 |
@@ -380,7 +380,7 @@ claude -p "$(cat "$RUNNER_TEMP/auto-update-prompt.md")" \
 ## 10. 已知限制与应对
 
 | 限制 | 影响 | 应对 |
-| ---- | ---- | ---- |
+|------|------|------|
 | 轮换导致延迟 | 新模型最多延迟约 4 天 | `workflow_dispatch` 支持手动指定组或 `all` |
 | 第三方中转稳定性 | 可能限流、额度不足、断流 | L2 多中转 failover（`403 额度不足`亦会切换）+ L5 重试；注意客户端预算撞顶需调 `max_budget_usd` |
 | 中转对工具调用支持不一 | 可能出现 400/流式异常 | 启动前 `stream-check`，不通过则快速失败 |

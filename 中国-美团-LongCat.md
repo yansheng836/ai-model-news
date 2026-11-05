@@ -17,7 +17,7 @@
 ### LongCat 系列（2025年-2026年）
 
 | 版本 | 发布时间 | 功能属性 | 参数规模 | 激活参数 | 上下文长度 | 主要特点 |
-|------|----------|----------|----------|----------|----------|----------|
+|------|------|------|------|------|------|------|
 | LongCat-Flash-Lite-MoE | 2025年（推测） | 📝 | 68.5B | 3B | 未公开 | 轻量级MoE基座，用于LongCat-Next |
 | LongCat-Flash-Thinking | 2025年（推测） | 📝🧠 | 未公开 | 未公开 | 未公开 | 推理模型，Flash-Thinking-2601基座 |
 | LongCat-Flash-Thinking-2601 | 2026年1月20日 | 📝🧠💻 | 未公开 | 未公开 | 未公开 | 工具调用能力登顶开源SOTA，"重思考"模式 |
@@ -64,7 +64,7 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 **基准测试成绩：**
 
 | 评测集 | 分数 | 说明 |
-|--------|------|------|
+|------|------|------|
 | AIME-25 | 100.0 | 数学推理（开启重思考模式），满分 |
 | IMO-AnswerBench | 86.8 | 数学推理，达到 SOTA |
 | τ²-Bench | 88.2 | 工具调用，开源 SOTA |
@@ -103,7 +103,7 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 **基准测试成绩：**
 
 | 评测集 | 分数 | 说明 |
-|--------|------|------|
+|------|------|------|
 | MMLU-Pro | 77.02 | 语言理解 |
 | C-Eval | 86.80 | 中文语言理解 |
 | MathVista | 83.1 | 视觉数学推理 |
@@ -165,7 +165,7 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 **基准测试成绩：**
 
 | 评测集 | 分数 | 对比 |
-|--------|------|------|
+|------|------|------|
 | **SWE-bench Pro** | 59.5 | 领先 Gemini 3.1 Pro（54.2）、GPT-5.5（58.6）、Claude Opus 4.6（57.3） |
 | **SWE-bench Multilingual** | 77.3 | 与 Claude Opus 4.6（77.8）同一水位 |
 | **Terminal-Bench 2.1** | 70.8 | 真实运维与开发终端任务 |
@@ -199,7 +199,7 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 **基准测试成绩（完整系统对比，含原生工具与预算）：**
 
 | 评测集 | LongCat-DeepResearch | ChatGPT-DeepResearch | Claude-DeepResearch | Gemini-DeepResearch |
-|--------|---------------------|---------------------|--------------------|--------------------|
+|------|------|------|------|------|
 | DeepResearchBench | 55.25 | 54.95 | 53.43 | 50.21 |
 | DeepResearchBench II | 51.35 | 47.16 | 48.18 | 46.72 |
 | ResearchRubrics | 79.83 | 74.21 | 72.91 | 64.92 |
@@ -227,7 +227,7 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 ## 访问链接
 
 | 平台 | URL |
-|------|-----|
+|------|------|
 | 美团技术博客 | <https://tech.meituan.com> |
 | LongCat 官网 | <https://longcat.ai> |
 | LongCat API 平台 | <https://longcat.chat/platform/product> |

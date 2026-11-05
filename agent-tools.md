@@ -291,7 +291,7 @@
 围绕 agentic AI 的开发框架，适合开发者自建 Agent。
 
 | 框架 | 厂商 | 语言 | License | GitHub 创建 | 最近更新 | 定位 |
-|------|------|------|---------|-----------|---------|------|
+|------|------|------|------|------|------|------|
 | [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-typescript) | Anthropic | Python / TS | 开源（极简许可） | 2025年6月 | 2026年9月 | 构建基于 Claude 的编码/通用 agent（支持 sandbox、subagent、hook）。Claude Code 底层 |
 | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | OpenAI | Python / TS | MIT | 2025年3月 | 2026年9月 (v0.22.3) | 多 Agent 工作流轻量框架 |
 | [ADK (Agent Development Kit)](https://github.com/google/adk-python) | Google | Python | Apache-2.0 | 2025年4月1日 | 2026年9月15日 (v2.9.1) | 构建/评估/部署 agent，可绑定 Gemini |

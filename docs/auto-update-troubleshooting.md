@@ -7,7 +7,7 @@
 ## 运行索引
 
 | Run | 时间（UTC） | 触发 | 失败步骤 | 主要原因 |
-| --- | --- | --- | --- | --- |
+|------|------|------|------|------|
 | 41037517271 | 10-30 10:00 | 手动 | 运行 Claude Code | 预算撞顶（P1） |
 | 41156100633 | 10-31 01:35 | 定时 | 运行 Claude Code | 额度不足 403（P2） |
 | 41187953171 | 10-31 09:15 | 手动 | 运行 Claude Code | 预算撞顶 + 额度不足（P1/P2） |
@@ -20,7 +20,7 @@
 ## 问题总览
 
 | 编号 | 现象 | 根因 | 状态 |
-| --- | --- | --- | --- |
+|------|------|------|------|
 | P1 | `Reached maximum budget ($3)` | 单次预算上限过低 | ✅ 已修 |
 | P2 | `403 Not enough quota` | 中转账户余额耗尽 | ⚠️ 需充值 / 靠 P3 兜底 |
 | P3 | `failover enable` 从未生效 | 顺序错误 + 要求 daemon 托管 | ✅ 已修（daemon 模式） |
@@ -126,7 +126,7 @@ execFileSync('git', ['-c', 'core.quotepath=false', ...args], { encoding: 'utf8' 
 **证据**：产物 `claude-run.jsonl` 中**没有任何 API 错误**，全部是 Claude Code 的权限拒绝：
 
 | 拒绝原因 | 次数 |
-| --- | --- |
+|------|------|
 | `can't be checked before it runs`（多行 `\` 续行 / 带变量命令） | 12 |
 | `contains multiple operations ... require approval`（复合命令、for 循环） | 4+ |
 | `path is outside the working directories`（向 `/tmp` 写文件） | 3 |

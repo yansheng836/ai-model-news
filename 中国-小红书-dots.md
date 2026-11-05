@@ -17,7 +17,7 @@
 ### dots 系列（2025年-2026年）
 
 | 版本 | 发布时间 | 功能属性 | 参数规模 | 激活参数 | 上下文长度 | 主要特点 |
-|------|----------|----------|----------|----------|----------|----------|
+|------|------|------|------|------|------|------|
 | dots3-note-preview | 2026年8月9日 | 📝🧠 | 280B（MoE，256专家） | 16B | 512K | dots3 家族最轻量的开源 MoE 预览版，每 token 激活 8 专家（另有 FP8 版） |
 | dots.tts 系列 | 2026年6月3日起 | 🎤 | 未公开 | 未公开 | — | 文本转语音系列（soar / base / mf 多个版本），支持语音编辑 |
 | dots.mocr | 2026年3月19日 | 👁️ | 未公开 | 未公开 | 未公开 | 多语言文档 OCR 升级版（含 SVG 输出版本） |
@@ -60,7 +60,7 @@ dots 第三代（dots3）家族的开源预览模型，也是该家族中**最�
 ## 访问链接
 
 | 平台 | URL |
-|------|-----|
+|------|------|
 | HuggingFace（dots-studio） | <https://huggingface.co/dots-studio> |
 | HuggingFace（rednote-hilab） | <https://huggingface.co/rednote-hilab> |
 | 小红书官网 | <https://www.xiaohongshu.com> |
