@@ -21,7 +21,7 @@
 | LongCat-Flash-Lite-MoE | 2025年（推测） | 📝 | 68.5B | 3B | 未公开 | 轻量级MoE基座，用于LongCat-Next |
 | LongCat-Flash-Thinking | 2025年（推测） | 📝🧠 | 未公开 | 未公开 | 未公开 | 推理模型，Flash-Thinking-2601基座 |
 | LongCat-Flash-Thinking-2601 | 2026年1月20日 | 📝🧠💻 | 未公开 | 未公开 | 未公开 | 工具调用能力登顶开源SOTA，"重思考"模式 |
-| LongCat-AudioDiT（1B / 3.5B）🆕 | 2026年3月（arXiv:2603.29339） | 🎤 文生语音（TTS） | 1B / 3.5B | — | — | 波形潜空间扩散 TTS，Wav-VAE+扩散骨干，零样本音色克隆，Seed-ZH SIM 0.818（SOTA），MIT 开源 |
+| LongCat-AudioDiT（1B / 3.5B）🆕 | 2026年3月30日（arXiv:2603.29339） | 🎤 文生语音（TTS） | 1B / 3.5B | — | — | 波形潜空间扩散 TTS，Wav-VAE+扩散骨干，零样本音色克隆，Seed-ZH SIM 0.818（SOTA），MIT 开源 |
 | LongCat-Next | 2026年4月2日 | 🌐👁️🎤🖼️ | 68.5B（基于Flash-Lite MoE） | 3B | 未公开 | 原生多模态（视觉+语音+文本），DiNA架构，全开源 |
 | LongCat-2.0 | 2026年6月30日 | 📝🧠💻 | 1.6T | 平均48B（动态33B~56B） | 1M | 万亿参数MoE，五万卡国产算力训练，MOPD架构，开源 |
 | LongCat-Flash-Lite-Sparse 🆕 | 2026年7月31日 | 📝 纯文本 | 69B MoE | ~3B | 1M | 在 Flash-Lite 基础上以 LongCat Sparse Attention（LSA）替换稠密 MLA，原生支持 1M 上下文，MIT 开源（arXiv:2608.01662） |
@@ -213,7 +213,7 @@ LongCat 团队的首款推理模型，作为 LongCat-Flash-Thinking-2601 的前�
 - 官网体验：<https://longcat.ai>
 - 框架仅依赖 Python 标准库（Python 3.10+），用户需自行实现 llm、web_search、web_fetch 三个后端方法接入自有模型与工具服务
 
-### LongCat-AudioDiT（2026年3月）🆕
+### LongCat-AudioDiT（2026年3月30日）🆕
 
 美团 LongCat 团队的非自回归扩散式文本转语音（TTS）模型，论文称 LongCat-TTS。核心创新是**直接在波形潜空间（waveform latent space）建模**，不再依赖 mel 频谱等中间声学表示，从而减少误差累积并把管线简化为「波形 VAE（Wav-VAE）+ 扩散骨干」两部分；权重的模型 ID 命名沿用 LongCat-AudioDiT。
 

@@ -46,10 +46,10 @@
 | Claude Mythos Preview（claude-mythos-preview） | 2025年 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 研究预览模型，⚠️ 已弃用（2026年6月9日，退役日期待公布），迁移至claude-mythos-5 |
 | Claude Opus 4.1（claude-opus-4-1-20250805） | 2025年8月5日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，$15/$75 MTok，⚠️ 已弃用（2026-06-05），⛔ **2026年8月5日已退役**，推荐替代claude-opus-4-8 |
 | Claude Opus 4.5（claude-opus-4-5-20251101） | 2025年11月1日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，知识截止2025年5月 |
-| Claude Opus 4.6 Fast（claude-opus-4-6-fast） | 2025年底 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | Opus 4.6快速推理版，$30/$150 MTok |
-| Claude Opus 4.6（claude-opus-4-6） | 2025年底 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Extended Thinking，上下文提升至1M |
-| Claude Opus 4.7 Fast（claude-opus-4-7-fast） | 2026年初 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | Opus 4.7快速推理版，$30/$150 MTok |
-| Claude Opus 4.7（claude-opus-4-7） | 2026年初 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking（取代Extended Thinking），新tokenizer |
+| Claude Opus 4.6 Fast（claude-opus-4-6-fast） | 2026年2月4日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | Opus 4.6快速推理版，$30/$150 MTok |
+| Claude Opus 4.6（claude-opus-4-6） | 2026年2月4日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Extended Thinking，上下文提升至1M |
+| Claude Opus 4.7 Fast（claude-opus-4-7-fast） | 2026年4月16日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | Opus 4.7快速推理版，$30/$150 MTok |
+| Claude Opus 4.7（claude-opus-4-7） | 2026年4月16日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | 支持Adaptive Thinking（取代Extended Thinking），新tokenizer |
 | Claude Opus 4.8 Fast（claude-opus-4-8-fast） | 2026年5月28日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | Opus 4.8快速推理版，$10/$50 MTok |
 | Claude Opus 4.8（claude-opus-4-8） | 2026年5月28日 | 🌐🖥️ 多模态+计算机操作 | 未公开（厂商未公开） | 1M | 支持Adaptive Thinking，$5/$25 MTok，知识截止2026年1月 |
 | Claude Sonnet 4.5（claude-sonnet-4-5-20250929） | 2025年9月29日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，$3/$15 MTok，⚠️ 已弃用（2026年9月30日），⏰ 2026年11月30日退役，推荐替代claude-sonnet-5-5 |
@@ -85,8 +85,8 @@ Anthropic的第二代模型，支持100K（后扩展至200K）上下文窗口。
 - **Haiku 4.5**（2025年10月）：新一代轻量模型，$1/$5 MTok，支持Extended Thinking
 - **Sonnet 4.5**（2025年9月）：性能与成本的最佳平衡，$3/$15 MTok，⚠️ 已弃用（2026年9月30日），2026年11月30日退役，推荐替代Sonnet 5.5
 - **Opus 4.5**（2025年11月）：知识截止2025年5月，支持Extended Thinking
-- **Opus 4.6**（2025年底）：上下文窗口从200K提升至1M
-- **Opus 4.7**（2026年初）：引入Adaptive Thinking（自适应思考，取代固定Extended Thinking），新tokenizer（相同文本产生约30%更多token）
+- **Opus 4.6**（2026年2月4日）：上下文窗口从200K提升至1M
+- **Opus 4.7**（2026年4月16日）：引入Adaptive Thinking（自适应思考，取代固定Extended Thinking），新tokenizer（相同文本产生约30%更多token）
 - **Sonnet 4.6**（2026年）：同时支持Extended Thinking和Adaptive Thinking
 - **Opus 4.8**（2026年）：当前最强Opus模型，知识截止2026年1月，effort参数默认为high
 - **Opus 5**（2026年7月23日）：新一代最强旗舰Opus模型，最强推理/编程/Agent能力，$5/$25 MTok，1M上下文，128K最大输出。Fast版$10/$50 MTok

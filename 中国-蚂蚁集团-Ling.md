@@ -29,7 +29,7 @@
 | Ling-3.0-flash-UBTree 🆕 | 2026年10月14日 | 📝 推理加速（投机解码草稿） | 482M | — | 262K（同目标模型） | Ling-3.0-flash 的 UBTree 树状投机解码草稿模型，5层DFlash骨干+bigram选择器，须配合目标模型使用 |
 | Ling-2.6-flash（inclusionai/Ling-2.6-flash）🆕 ⚠️ 2026年11月15日下线 | 2026年4月28日 | 📝🧠 纯文本+推理 | 104B | 7.4B | 未公开 | 2.x高效版，混合线性架构，4×H20下340 token/s，token高效；日期为HuggingFace上传时间 |
 | Ling-2.6-1T（inclusionai/Ling-2.6-1T）🆕 ⚠️ 2026年11月15日下线 | 2026年4月29日 | 📝🧠💻 纯文本+推理+代码 | 1T | 未公开 | 262K | 2.x综合旗舰，MLA+线性注意力混合，"Fast Thinking"降低token开销；日期为HuggingFace上传时间 |
-| Ling-2.5-1T ⚠️ 2026年9月30日已下线 | 2026年2月（待确认） | 📝🧠💻 文本+推理+代码 | 1T | 63B | 256K→1M（YaRN） | 2.x旗舰，混合线性注意力，预训练29T tokens，兼容Claude Code/OpenCode，BFCL-V4开源领先 |
+| Ling-2.5-1T ⚠️ 2026年9月30日已下线 | 2026年2月11日 | 📝🧠💻 文本+推理+代码 | 1T | 63B | 256K→1M（YaRN） | 2.x旗舰，混合线性注意力，预训练29T tokens，兼容Claude Code/OpenCode，BFCL-V4开源领先 |
 | Ling-flash-2.0 | 2025年9月（待确认） | 📝 纯文本 | 100B | 6.1B | 32K→128K（YaRN） | 2.x高速版，高效稀疏 |
 | Ling-mini-2.0 | 2025年9月（待确认） | 📝 纯文本 | 16B | 1.4B | 32K→128K（YaRN） | 1/32激活比，训练20T tokens，300+ token/s，FP8训练 |
 | Ling-lite-1.5 | 2025年5月10日 | 📝 纯文本 | 16.8B | 2.75B | 128K | 1.x轻量版最终迭代，推理能力显著提升 |
