@@ -43,7 +43,7 @@
 | Claude Instant 1.2 | 2023年中 | 📝 纯文本 | 未公开 | 100K | 快速轻量版 |
 | Claude Mythos 5.1（claude-mythos-5-1）🆕 | 2026年9月1日 | 🌐🖥️🧠 多模态+计算机操作+推理 | 未公开（厂商未公开） | 1M（128K输出） | 仅限通过Anthropic验证计划（如Cyber Verification Program）的组织使用，规格与定价同Fable 5.1（$10/$50 MTok，缓存读$0.25），知识截止2026年6月 |
 | Claude Mythos 5（claude-mythos-5） | 2026年6月9日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 1M | 仅限Project Glasswing邀请用户（⚠️ 6月12日曾短暂暂停，已恢复） |
-| Claude Mythos Preview（claude-mythos-preview） | 2025年 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 研究预览模型，⚠️ 已弃用（2026年6月9日，退役日期待公布），迁移至claude-mythos-5 |
+| Claude Mythos Preview（claude-mythos-preview） | 2026年4月7日 | 🌐🖥️ 多模态+计算机操作 | 未公开 | 200K | 研究预览模型，⚠️ 已弃用（2026年6月9日，退役日期待公布），迁移至claude-mythos-5 |
 | Claude Opus 4.1（claude-opus-4-1-20250805） | 2025年8月5日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，$15/$75 MTok，⚠️ 已弃用（2026-06-05），⛔ **2026年8月5日已退役**，推荐替代claude-opus-4-8 |
 | Claude Opus 4.5（claude-opus-4-5-20251101） | 2025年11月1日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 200K | 支持Extended Thinking，知识截止2025年5月 |
 | Claude Opus 4.6 Fast（claude-opus-4-6-fast） | 2026年2月4日 | 🌐🧠🖥️ 多模态+推理+计算机操作 | 未公开 | 1M | Opus 4.6快速推理版，$30/$150 MTok |

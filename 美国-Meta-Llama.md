@@ -28,7 +28,7 @@
 | Llama 4 Maverick（17B激活/400B总） | 2025年4月5日 | 🌐 多模态 | 400B（17B激活，128专家） | 1M | MoE架构，$0.15/$0.60 MTok |
 | Llama 4 Scout（17B激活/109B总） | 2025年4月5日 | 🌐 多模态 | 109B（17B激活，16专家） | 10M | MoE架构，千万级上下文，$0.10/$0.30 MTok |
 | Llama Guard 4 12B | 2025年 | 📝 安全审核 | 12B | 163K | 内容安全审核模型 |
-| Muse Spark | 2026年4月（官方未公布精确日） | 🌐 多模态 | 未公开 | 未公开 | Meta Superintelligence Labs发布，Llama替代品 |
+| Muse Spark | 2026年4月8日 | 🌐 多模态 | 未公开 | 未公开 | Meta Superintelligence Labs发布，Llama替代品 |
 | Muse Spark 1.1 | 2026年7月16日 | 🌐📝👁️🎤 多模态推理 | 未公开 | 1M | 推理增强版，支持文本/图像/视频/音频/PDF输入 |
 | Muse Spark Open 🆕 | 2026年10月15日 | 🌐💻 多模态+编码 | 816B MoE（42B激活） | 1M（约943K输出） | 开放权重，面向Agent编码工作流优化，提升首次通过率与工具调用可靠性，$1.25/$4.25 MTok |
 | Muse Wonder 🆕 | 2026年10月12日 | 🌐🧠 多模态推理 | 未公开（厂商未公开） | 1M（约943K输出） | 前沿推理模型，面向个人与专业Agent任务，支持文本/图像/视频/音频/PDF输入，$4/$20 MTok |
@@ -50,7 +50,7 @@ Meta首个可商用的开源大模型，发布时包含7B、13B、70B三个规�
 
 Meta首个MoE（混合专家）架构模型，2025年4月5日发布。Scout版本16专家，Maverick版本128专家，均采用17B激活参数设计，大幅降低推理成本。Scout支持1000万token超长上下文。Behemoth是更大规模的前沿模型，仍在训练中。
 
-### Muse Spark（2026年4月，官方未公布精确日）
+### Muse Spark（2026年4月8日）
 
 Meta Superintelligence Labs发布的新模型，作为Llama系列的替代品。标志着Meta在大模型战略上的重大转变。
 
