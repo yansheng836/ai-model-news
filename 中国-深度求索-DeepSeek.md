@@ -23,10 +23,10 @@
 | DeepSeek-V4.1-Flash | 2026年9月10日 | 🌐🧠 多模态（支持图像理解）+推理 | 官方未公开 | 未公开 | 1M（384K输出） | V4 Flash新一代版本，全面超越V4 Pro（性能/费用/速度），支持思考/非思考切换，JSON Output/Tool Calls/Responses API |
 | DeepSeek-V4-Flash-0731 | 2026年7月31日 | 📝 纯文本 | 158B MoE | 13B | 1M（384K输出） | V4 Flash 0731版本快照，⚠️ 2026年9月已退役（路由至V4.1-Flash） |
 | DeepSeek-V4-Pro-0813 🆕 | 2026年8月12日 | 📝 纯文本 | 862B MoE | 未公开 | 1M（384K输出） | V4 Pro 0813 GA版本；DeepSeek 于 2026年9月10日公告：应广大用户需求，2026年9月14日之后继续提供 V4 Pro API 服务（计费方式不变，原退役并路由至 V4.1-Flash 的计划已撤销）；OpenRouter Pro 家族 `~deepseek/deepseek-pro-latest` 别名始终指向 Pro 家族最新模型 |
-| DeepSeek Coder V1 | 2024年1月 | 💻 代码 | 未公开 | 未公开 | 16K | 首个代码模型 |
-| DeepSeek Coder V2 | 2024年6月 | 💻📝 代码+文本 | 236B MoE | 21B | 128K | 代码专用模型 |
+| DeepSeek Coder V1 | 2023年11月2日（官方发布，GitHub仓库创建于2023-10-20） | 💻 代码 | 未公开 | 未公开 | 16K | 首个代码模型 |
+| DeepSeek Coder V2 | 2024年6月17日（官方发布，GitHub仓库创建于2024-06-14） | 💻📝 代码+文本 | 236B MoE | 21B | 128K | 代码专用模型 |
 | DeepSeek LLM 67B | 2024年1月5日 | 📝 纯文本 | 67B | 67B | 4K | 首个开源模型 |
-| deepseek-chat | 2024年 | 📝 纯文本 | — | — | 128K | ⚠️ **2026年7月24日已弃用**，迁移至 deepseek-v4-flash 非思考模式 |
+| deepseek-chat | 2024年12月26日（API别名，指向 DeepSeek-V3） | 📝 纯文本 | — | — | 128K | ⚠️ **2026年7月24日已弃用**，迁移至 deepseek-v4-flash 非思考模式 |
 | DeepSeek-Math-V2 | 2025年11月27日 | 📝🧠 文本+推理 | 685B MoE | 未公开 | 128K | 数学推理专用 |
 | DeepSeek-OCR | 2025年10月17日 | 👁️📝 视觉+文本 | 3B | 3B | — | OCR专用模型 |
 | DeepSeek-OCR-2 | 2026年1月27日 | 👁️📝 视觉+文本 | 3B | 3B | — | OCR升级版，视觉因果流 |
@@ -35,9 +35,9 @@
 | DeepSeek-R1-Lite | 2024年11月20日 | 🧠 推理 | 未公开 | 未公开 | 128K | 推理模型预览版 |
 | DeepSeek-R1-Zero | 2025年1月28日 | 🧠 推理 | 671B MoE | 37B | 160K | 纯强化学习训练 |
 | DeepSeek-R1蒸馏（1.5B~70B） | 2025年1月28日 | 🧠 推理 | 1.5B~70B | — | 160K | 多规模蒸馏版 |
-| deepseek-reasoner | 2025年 | 🧠 推理 | — | — | 160K | ⚠️ **2026年7月24日已弃用**，迁移至 deepseek-v4-flash 思考模式 |
-| DeepSeek-V2-Lite | 2024年5月 | 📝 纯文本 | 15.7B MoE | 2.4B | 32K | V2轻量版 |
-| DeepSeek-V2.5 | 2024年9月 | 📝💻 文本+代码 | 236B MoE | 21B | 128K | 融合Chat和Coder |
+| deepseek-reasoner | 2025年1月20日（随 DeepSeek-R1 上线） | 🧠 推理 | — | — | 160K | ⚠️ **2026年7月24日已弃用**，迁移至 deepseek-v4-flash 思考模式 |
+| DeepSeek-V2-Lite | 2024年5月15日（HF权重上传日） | 📝 纯文本 | 15.7B MoE | 2.4B | 32K | V2轻量版 |
+| DeepSeek-V2.5 | 2024年9月5日（HF权重上传日） | 📝💻 文本+代码 | 236B MoE | 21B | 128K | 融合Chat和Coder |
 | DeepSeek-V2.5-0905 | 2024年9月 | 📝💻 文本+代码 | 236B MoE | 21B | 128K | V2到V3过渡版 |
 | DeepSeek-V2（236B/21B） | 2024年5月6日 | 📝 纯文本 | 236B MoE | 21B（160专家） | 128K | MoE架构创新 |
 | DeepSeek-V3-0324 | 2025年3月24日 | 📝 纯文本 | 671B MoE | 37B | 160K | V3更新版 |
@@ -49,10 +49,10 @@
 | DeepSeek-V3.2-Speciale | 2025年12月1日 | 📝 纯文本 | 685B MoE | 未公开 | 128K | V3.2特别版 |
 | DeepSeek-V3（671B/37B） | 2024年12月26日 | 📝 纯文本 | 671B MoE | 37B（256专家） | 128K | 训练成本仅$5.5M，FP8训练 |
 | DeepSeek-V4-Flash | 2026年4月23日 | 📝 纯文本 | 158B MoE | 未公开 | 1M（384K输出） | V4轻量版，定价0.02/1.00/2.00元/M tokens |
-| DeepSeek-V4-Flash-Base | 2026年4月（仅确认到月） | 📝 纯文本 | 292B MoE | 未公开 | 未公开 | V4 Flash基座模型 |
+| DeepSeek-V4-Flash-Base | 2026年4月22日（HF权重上传日） | 📝 纯文本 | 292B MoE | 未公开 | 未公开 | V4 Flash基座模型 |
 | DeepSeek-V4-Pro | 2026年4月23日 | 📝 纯文本 | 862B MoE | 未公开 | 1M（384K输出） | V4旗舰版，⚠️ 2026年8月17日起峰谷定价：缓存命中0.15/0.30、缓存未命中4.5/9.0、输出13.5/27.0元/M tokens（空闲/高峰） |
-| DeepSeek-V4-Pro-Base | 2026年4月（仅确认到月） | 📝 纯文本 | 1.6T MoE | 未公开 | 未公开 | V4 Pro基座模型 |
-| DeepSeek-VL | 2024年3月 | 👁️📝 视觉+文本 | 未公开 | 未公开 | 未公开 | 首个视觉语言模型 |
+| DeepSeek-V4-Pro-Base | 2026年4月22日（HF权重上传日） | 📝 纯文本 | 1.6T MoE | 未公开 | 未公开 | V4 Pro基座模型 |
+| DeepSeek-VL | 2024年3月7日（GitHub仓库创建/模型卡） | 👁️📝 视觉+文本 | 未公开 | 未公开 | 未公开 | 首个视觉语言模型 |
 | DeepSeek-VL2 | 2024年12月13日 | 👁️📝 视觉+文本 | 未公开MoE | 未公开 | 128K | 视觉语言模型 |
 
 ## 模型详细介绍
@@ -61,11 +61,11 @@
 
 深度求索首个开源模型，67B参数稠密模型，4K上下文。在多项基准上表现出色，奠定了DeepSeek开源模型的基础。
 
-### DeepSeek Coder V1（2024年1月）
+### DeepSeek Coder V1（2023年11月2日）
 
 首个代码专用模型，支持多种编程语言的代码生成和理解。
 
-### DeepSeek-VL（2024年3月）
+### DeepSeek-VL（2024年3月7日）
 
 首个视觉语言模型，结合视觉理解和文本生成能力，支持图像描述、视觉问答等任务。
 
@@ -73,7 +73,7 @@
 
 首个采用MoE架构的版本，236B总参数仅21B激活，大幅降低推理成本。创新性地使用了多头潜在注意力（MLA）机制，在保持性能的同时显著减少KV Cache内存占用。
 
-### DeepSeek-V2-Lite（2024年5月）
+### DeepSeek-V2-Lite（2024年5月15日）
 
 V2的轻量版本，15.7B MoE架构仅2.4B激活参数，适合资源受限场景。
 
